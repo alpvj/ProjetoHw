@@ -1,5 +1,6 @@
-module ShiftLeft2de26pra28(input logic [25:0] inputSL, output logic [27:0] ouputSL);
-always_comb begin
-	outputSL = (inputSL, 2'b0);
+module ShiftLeft2de26pra28(input wire clk, input wire [25:0] inputSL, output reg [27:0] outputSL);
+	
+always @(posedge clk) begin
+	outputSL = {inputSL, 2'b0};
 end
-endmodule: ShiftLeft2de26pra28
+endmodule

@@ -1,4 +1,6 @@
 module SignExtend16to32bits(input wire clk, input wire [15:0]inputSE, output reg [31:0] outputSE);
+
+input wire clk;
 	
 always @(posedge clk) begin
 	if (inputSE[15] == 0) begin

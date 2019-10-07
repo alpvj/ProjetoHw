@@ -1,4 +1,4 @@
-module AluControl(input wire clk, input wire[5:0] funct, input wire [1:0] ALUOp, output reg[2:0] ALUOpSelector);
+module AluControl(input wire clk, input logic[5:0] funct, input logic [1:0] ALUOp, output logic[2:0] ALUOpSelector);
 
 //enum logic [5:0] {add = 6'h20, andULA = 6'h24, sub = 6'h22, xorULA = 6'h26} man;
 parameter add = 6'h20;
