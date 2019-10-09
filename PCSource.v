@@ -1,4 +1,4 @@
-module mux8pra5bits (input wire clk, input wire [2:0] controlador, input wire [4:0] input0, input1, input2, input3, input4, input5, input6, input7, output reg [4:0] outputMux);
+module PCSource (input wire clk, input wire [2:0] controlador, input wire [31:0] input0, input1, input2, input3, input4, input5, input6, input7, output reg [31:0] outputMux);
 	
 always @(posedge clk) begin
 	case(controlador)

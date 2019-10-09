@@ -1,6 +1,4 @@
-module mux8pra5bits (input logic [2:0] controlador, input logic [4:0] input0, input1, input2, input3, input4, input5, input6, input7, output logic [4:0] outputMux);
-
-input wire clk;
+module RegDst (input wire clk, input wire [2:0] controlador, input wire [4:0] input0, input1, input4, input5, input6, input7, output reg [4:0] outputMux);
 	
 always @(posedge clk) begin
 	case(controlador)
@@ -11,10 +9,10 @@ always @(posedge clk) begin
 			outputMux <= input1;
 			end
 		3'b010:begin
-			outputMux <= input2;
+			outputMux <= 5'd29;
 			end
 		3'b011:begin
-			outputMux <= input3;
+			outputMux <= 5'd31;
 			end
 		3'b100:begin
 			outputMux <= input4;

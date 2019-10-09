@@ -1,4 +1,4 @@
-module mux4pra32bits (input wire clk, input wire [1:0] controlador, input wire [31:0] input0, input1, input2, input3, output reg [31:0] outputMux);
+module ALUSrcB (input wire clk, input wire [1:0] controlador, input wire [31:0] input0, input2, input3, output reg [31:0] outputMux);
 	
 always @(posedge clk)begin
 	case(controlador)
@@ -6,7 +6,7 @@ always @(posedge clk)begin
 			outputMux <= input0;
 			end
 		2'b01:begin
-			outputMux <= input1;
+			outputMux <= 32'd4;
 			end
 		2'b10:begin
 			outputMux <= input2;

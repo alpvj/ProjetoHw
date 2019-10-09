@@ -1,0 +1,12 @@
+
+State Machine - |Hardware|Controle:inst4|estado
+Name estado.Instruction estado.Decode2 estado.EsperaDecode estado.Decode1 estado.Fetch2 estado.Espera2Fetch estado.Espera1Fetch estado.Fetch1 estado.AddSubAnd 
+estado.Fetch1 0 0 0 0 0 0 0 0 0 
+estado.Espera1Fetch 0 0 0 0 0 0 1 1 0 
+estado.Espera2Fetch 0 0 0 0 0 1 0 1 0 
+estado.Fetch2 0 0 0 0 1 0 0 1 0 
+estado.Decode1 0 0 0 1 0 0 0 1 0 
+estado.EsperaDecode 0 0 1 0 0 0 0 1 0 
+estado.Decode2 0 1 0 0 0 0 0 1 0 
+estado.Instruction 1 0 0 0 0 0 0 1 0 
+estado.AddSubAnd 0 0 0 0 0 0 0 1 1 

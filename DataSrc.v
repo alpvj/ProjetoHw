@@ -1,6 +1,4 @@
-module mux16pra32bits (input logic [3:0] controlador, input logic [31:0] input0, input1, input2, input3, input4, input5, input6, input7, input8, input9, input10, input11, input12, input13, input14, input15, output logic [31:0] outputMux);
-
-input wire clk;
+module DataSrc(input wire clk, input wire [3:0] controlador, input wire [31:0] input0, input1, input2, input3, input4, input5, input6, input7, input9, input10, input11, input12, input13, input14, input15, output reg [31:0] outputMux);
 	
 always @(posedge clk) begin
 	case(controlador)
@@ -29,7 +27,7 @@ always @(posedge clk) begin
 			outputMux <= input7;
 			end
 		4'b1000:begin
-			outputMux <= input8;
+			outputMux <= 32'd227;
 			end
 		4'b1001:begin
 			outputMux <= input9;

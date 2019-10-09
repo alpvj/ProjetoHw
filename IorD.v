@@ -1,6 +1,4 @@
-module mux4pra32bits (input logic [1:0] controlador, input logic [31:0] input0, input1, input2, input3, output logic [31:0] outputMux);
-
-input wire clk;
+module IorD (input wire clk, input wire [1:0] controlador, input wire [31:0] input0, input1, input2, input3, output reg [31:0] outputMux);
 	
 always @(posedge clk)begin
 	case(controlador)

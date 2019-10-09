@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ProjetoCPU
-Wed Oct 09 12:02:50 2019
+Wed Oct 09 17:00:19 2019
 Quartus II 64-Bit Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
 
 
@@ -13,9 +13,21 @@ Quartus II 64-Bit Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Versio
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. Registers Removed During Synthesis
-  9. General Register Statistics
- 10. Analysis & Synthesis Messages
+  8. State Machine - |Hardware|Controle:inst4|estado
+  9. Registers Removed During Synthesis
+ 10. Removed Registers Triggering Further Register Optimizations
+ 11. General Register Statistics
+ 12. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 13. Source assignments for Memoria:MemCtrl|LPM_RAM_DQ:MEM|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated
+ 14. Source assignments for Memoria:MemCtrl|LPM_RAM_DQ:MEM_plus_One|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated
+ 15. Source assignments for Memoria:MemCtrl|LPM_RAM_DQ:MEM_plus_Two|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated
+ 16. Source assignments for Memoria:MemCtrl|LPM_RAM_DQ:MEM_plus_Three|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated
+ 17. Parameter Settings for User Entity Instance: Controle:inst4
+ 18. Parameter Settings for User Entity Instance: Memoria:MemCtrl|LPM_RAM_DQ:MEM
+ 19. Parameter Settings for User Entity Instance: Memoria:MemCtrl|LPM_RAM_DQ:MEM_plus_One
+ 20. Parameter Settings for User Entity Instance: Memoria:MemCtrl|LPM_RAM_DQ:MEM_plus_Two
+ 21. Parameter Settings for User Entity Instance: Memoria:MemCtrl|LPM_RAM_DQ:MEM_plus_Three
+ 22. Analysis & Synthesis Messages
 
 
 
@@ -41,16 +53,16 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +-------------------------------+-----------------------------------------------+
-; Analysis & Synthesis Status   ; Successful - Wed Oct 09 12:02:50 2019         ;
+; Analysis & Synthesis Status   ; Successful - Wed Oct 09 17:00:19 2019         ;
 ; Quartus II 64-Bit Version     ; 9.1 Build 350 03/24/2010 SP 2 SJ Full Version ;
 ; Revision Name                 ; ProjetoCPU                                    ;
-; Top-level Entity Name         ; SignExtend1to32bits                           ;
+; Top-level Entity Name         ; Hardware                                      ;
 ; Family                        ; Stratix II                                    ;
 ; Logic utilization             ; N/A                                           ;
 ;     Combinational ALUTs       ; 0                                             ;
-;     Dedicated logic registers ; 2                                             ;
-; Total registers               ; 2                                             ;
-; Total pins                    ; 34                                            ;
+;     Dedicated logic registers ; 0                                             ;
+; Total registers               ; 0                                             ;
+; Total pins                    ; 1                                             ;
 ; Total virtual pins            ; 0                                             ;
 ; Total block memory bits       ; 0                                             ;
 ; DSP block 9-bit elements      ; 0                                             ;
@@ -59,84 +71,84 @@ applicable agreement for further details.
 +-------------------------------+-----------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Settings                                                                                         ;
-+----------------------------------------------------------------------------+---------------------+--------------------+
-; Option                                                                     ; Setting             ; Default Value      ;
-+----------------------------------------------------------------------------+---------------------+--------------------+
-; Top-level entity name                                                      ; SignExtend1to32bits ; ProjetoCPU         ;
-; Family name                                                                ; Stratix II          ; Stratix II         ;
-; Use Generated Physical Constraints File                                    ; Off                 ;                    ;
-; Use smart compilation                                                      ; Off                 ; Off                ;
-; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                  ; On                 ;
-; Enable compact report table                                                ; Off                 ; Off                ;
-; Restructure Multiplexers                                                   ; Auto                ; Auto               ;
-; Create Debugging Nodes for IP Cores                                        ; Off                 ; Off                ;
-; Preserve fewer node names                                                  ; On                  ; On                 ;
-; Disable OpenCore Plus hardware evaluation                                  ; Off                 ; Off                ;
-; Verilog Version                                                            ; Verilog_2001        ; Verilog_2001       ;
-; VHDL Version                                                               ; VHDL_1993           ; VHDL_1993          ;
-; State Machine Processing                                                   ; Auto                ; Auto               ;
-; Safe State Machine                                                         ; Off                 ; Off                ;
-; Extract Verilog State Machines                                             ; On                  ; On                 ;
-; Extract VHDL State Machines                                                ; On                  ; On                 ;
-; Ignore Verilog initial constructs                                          ; Off                 ; Off                ;
-; Iteration limit for constant Verilog loops                                 ; 5000                ; 5000               ;
-; Iteration limit for non-constant Verilog loops                             ; 250                 ; 250                ;
-; Add Pass-Through Logic to Inferred RAMs                                    ; On                  ; On                 ;
-; Parallel Synthesis                                                         ; On                  ; On                 ;
-; DSP Block Balancing                                                        ; Auto                ; Auto               ;
-; NOT Gate Push-Back                                                         ; On                  ; On                 ;
-; Power-Up Don't Care                                                        ; On                  ; On                 ;
-; Remove Redundant Logic Cells                                               ; Off                 ; Off                ;
-; Remove Duplicate Registers                                                 ; On                  ; On                 ;
-; Ignore CARRY Buffers                                                       ; Off                 ; Off                ;
-; Ignore CASCADE Buffers                                                     ; Off                 ; Off                ;
-; Ignore GLOBAL Buffers                                                      ; Off                 ; Off                ;
-; Ignore ROW GLOBAL Buffers                                                  ; Off                 ; Off                ;
-; Ignore LCELL Buffers                                                       ; Off                 ; Off                ;
-; Ignore SOFT Buffers                                                        ; On                  ; On                 ;
-; Limit AHDL Integers to 32 Bits                                             ; Off                 ; Off                ;
-; Optimization Technique                                                     ; Balanced            ; Balanced           ;
-; Carry Chain Length                                                         ; 70                  ; 70                 ;
-; Auto Carry Chains                                                          ; On                  ; On                 ;
-; Auto Open-Drain Pins                                                       ; On                  ; On                 ;
-; Perform WYSIWYG Primitive Resynthesis                                      ; Off                 ; Off                ;
-; Auto ROM Replacement                                                       ; On                  ; On                 ;
-; Auto RAM Replacement                                                       ; On                  ; On                 ;
-; Auto DSP Block Replacement                                                 ; On                  ; On                 ;
-; Auto Shift Register Replacement                                            ; Auto                ; Auto               ;
-; Auto Clock Enable Replacement                                              ; On                  ; On                 ;
-; Strict RAM Replacement                                                     ; Off                 ; Off                ;
-; Allow Synchronous Control Signals                                          ; On                  ; On                 ;
-; Force Use of Synchronous Clear Signals                                     ; Off                 ; Off                ;
-; Auto RAM Block Balancing                                                   ; On                  ; On                 ;
-; Auto RAM to Logic Cell Conversion                                          ; Off                 ; Off                ;
-; Auto Resource Sharing                                                      ; Off                 ; Off                ;
-; Allow Any RAM Size For Recognition                                         ; Off                 ; Off                ;
-; Allow Any ROM Size For Recognition                                         ; Off                 ; Off                ;
-; Allow Any Shift Register Size For Recognition                              ; Off                 ; Off                ;
-; Use LogicLock Constraints during Resource Balancing                        ; On                  ; On                 ;
-; Ignore translate_off and synthesis_off directives                          ; Off                 ; Off                ;
-; Timing-Driven Synthesis                                                    ; Off                 ; Off                ;
-; Show Parameter Settings Tables in Synthesis Report                         ; On                  ; On                 ;
-; Ignore Maximum Fan-Out Assignments                                         ; Off                 ; Off                ;
-; Synchronization Register Chain Length                                      ; 2                   ; 2                  ;
-; PowerPlay Power Optimization                                               ; Normal compilation  ; Normal compilation ;
-; HDL message level                                                          ; Level2              ; Level2             ;
-; Suppress Register Optimization Related Messages                            ; Off                 ; Off                ;
-; Number of Removed Registers Reported in Synthesis Report                   ; 5000                ; 5000               ;
-; Number of Inverted Registers Reported in Synthesis Report                  ; 100                 ; 100                ;
-; Clock MUX Protection                                                       ; On                  ; On                 ;
-; Auto Gated Clock Conversion                                                ; Off                 ; Off                ;
-; Block Design Naming                                                        ; Auto                ; Auto               ;
-; SDC constraint protection                                                  ; Off                 ; Off                ;
-; Synthesis Effort                                                           ; Auto                ; Auto               ;
-; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                  ; On                 ;
-; Analysis & Synthesis Message Level                                         ; Medium              ; Medium             ;
-; Disable Register Merging Across Hierarchies                                ; Auto                ; Auto               ;
-; Resource Aware Inference For Block RAM                                     ; On                  ; On                 ;
-+----------------------------------------------------------------------------+---------------------+--------------------+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Top-level entity name                                                      ; Hardware           ; ProjetoCPU         ;
+; Family name                                                                ; Stratix II         ; Stratix II         ;
+; Use Generated Physical Constraints File                                    ; Off                ;                    ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; Off                ; Off                ;
+; Show Parameter Settings Tables in Synthesis Report                         ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
++----------------------------------------------------------------------------+--------------------+--------------------+
 
 
 +------------------------------------------+
@@ -156,102 +168,524 @@ applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                     ;
-+----------------------------------+-----------------+------------------------+--------------------------------------------------------------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                 ;
-+----------------------------------+-----------------+------------------------+--------------------------------------------------------------+
-; SignExtend1to32bits.v            ; yes             ; User Verilog HDL File  ; C:/Users/alpvj/Desktop/pasta/ProjetoHw/SignExtend1to32bits.v ;
-+----------------------------------+-----------------+------------------------+--------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                        ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                        ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------------+
+; Banco_reg.vhd                    ; yes             ; User VHDL File                     ; E:/Users/alpvj/Desktop/pasta/ProjetoHw/Banco_reg.vhd                                ;
+; Instr_Reg.vhd                    ; yes             ; User VHDL File                     ; E:/Users/alpvj/Desktop/pasta/ProjetoHw/Instr_Reg.vhd                                ;
+; Memoria.vhd                      ; yes             ; User VHDL File                     ; E:/Users/alpvj/Desktop/pasta/ProjetoHw/Memoria.vhd                                  ;
+; Registrador.vhd                  ; yes             ; User VHDL File                     ; E:/Users/alpvj/Desktop/pasta/ProjetoHw/Registrador.vhd                              ;
+; ShiftLeft2de32pra32.v            ; yes             ; User Verilog HDL File              ; E:/Users/alpvj/Desktop/pasta/ProjetoHw/ShiftLeft2de32pra32.v                        ;
+; SignExtend16to32bits.v           ; yes             ; User Verilog HDL File              ; E:/Users/alpvj/Desktop/pasta/ProjetoHw/SignExtend16to32bits.v                       ;
+; ula32.vhd                        ; yes             ; User VHDL File                     ; E:/Users/alpvj/Desktop/pasta/ProjetoHw/ula32.vhd                                    ;
+; Hardware.bdf                     ; yes             ; User Block Diagram/Schematic File  ; E:/Users/alpvj/Desktop/pasta/ProjetoHw/Hardware.bdf                                 ;
+; Controle.v                       ; yes             ; User Verilog HDL File              ; E:/Users/alpvj/Desktop/pasta/ProjetoHw/Controle.v                                   ;
+; ALUSrcB.v                        ; yes             ; User Verilog HDL File              ; E:/Users/alpvj/Desktop/pasta/ProjetoHw/ALUSrcB.v                                    ;
+; ALUSrcA.v                        ; yes             ; User Verilog HDL File              ; E:/Users/alpvj/Desktop/pasta/ProjetoHw/ALUSrcA.v                                    ;
+; DataSrc.v                        ; yes             ; User Verilog HDL File              ; E:/Users/alpvj/Desktop/pasta/ProjetoHw/DataSrc.v                                    ;
+; RegDst.v                         ; yes             ; User Verilog HDL File              ; E:/Users/alpvj/Desktop/pasta/ProjetoHw/RegDst.v                                     ;
+; IorD.v                           ; yes             ; User Verilog HDL File              ; E:/Users/alpvj/Desktop/pasta/ProjetoHw/IorD.v                                       ;
+; PCSource.v                       ; yes             ; User Verilog HDL File              ; E:/Users/alpvj/Desktop/pasta/ProjetoHw/PCSource.v                                   ;
+; lpm_ram_dq.tdf                   ; yes             ; Megafunction                       ; e:/programfiles/quartus/altera/91sp2/quartus/libraries/megafunctions/lpm_ram_dq.tdf ;
+; altram.tdf                       ; yes             ; Megafunction                       ; e:/programfiles/quartus/altera/91sp2/quartus/libraries/megafunctions/altram.tdf     ;
+; altsyncram.tdf                   ; yes             ; Megafunction                       ; e:/programfiles/quartus/altera/91sp2/quartus/libraries/megafunctions/altsyncram.tdf ;
+; db/altsyncram_g2a1.tdf           ; yes             ; Auto-Generated Megafunction        ; E:/Users/alpvj/Desktop/pasta/ProjetoHw/db/altsyncram_g2a1.tdf                       ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------------+
 
 
-+---------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary             ;
-+-----------------------------------------------+---------+
-; Resource                                      ; Usage   ;
-+-----------------------------------------------+---------+
-; Estimated ALUTs Used                          ; 0       ;
-; Dedicated logic registers                     ; 2       ;
-;                                               ;         ;
-; Estimated ALUTs Unavailable                   ; 0       ;
-;                                               ;         ;
-; Total combinational functions                 ; 0       ;
-; Combinational ALUT usage by number of inputs  ;         ;
-;     -- 7 input functions                      ; 0       ;
-;     -- 6 input functions                      ; 0       ;
-;     -- 5 input functions                      ; 0       ;
-;     -- 4 input functions                      ; 0       ;
-;     -- <=3 input functions                    ; 0       ;
-;                                               ;         ;
-; Combinational ALUTs by mode                   ;         ;
-;     -- normal mode                            ; 0       ;
-;     -- extended LUT mode                      ; 0       ;
-;     -- arithmetic mode                        ; 0       ;
-;     -- shared arithmetic mode                 ; 0       ;
-;                                               ;         ;
-; Estimated ALUT/register pairs used            ; 2       ;
-;                                               ;         ;
-; Total registers                               ; 2       ;
-;     -- Dedicated logic registers              ; 2       ;
-;     -- I/O registers                          ; 0       ;
-;                                               ;         ;
-; Estimated ALMs:  partially or completely used ; 1       ;
-;                                               ;         ;
-; I/O pins                                      ; 34      ;
-; Maximum fan-out node                          ; inputSE ;
-; Maximum fan-out                               ; 2       ;
-; Total fan-out                                 ; 6       ;
-; Average fan-out                               ; 0.17    ;
-+-----------------------------------------------+---------+
++------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary          ;
++----------------------------------------------+-------+
+; Resource                                     ; Usage ;
++----------------------------------------------+-------+
+; Estimated ALUTs Used                         ; 0     ;
+; Dedicated logic registers                    ; 0     ;
+;                                              ;       ;
+; Estimated ALUTs Unavailable                  ; 0     ;
+;                                              ;       ;
+; Total combinational functions                ; 0     ;
+; Combinational ALUT usage by number of inputs ;       ;
+;     -- 7 input functions                     ; 0     ;
+;     -- 6 input functions                     ; 0     ;
+;     -- 5 input functions                     ; 0     ;
+;     -- 4 input functions                     ; 0     ;
+;     -- <=3 input functions                   ; 0     ;
+;                                              ;       ;
+; Combinational ALUTs by mode                  ;       ;
+;     -- normal mode                           ; 0     ;
+;     -- extended LUT mode                     ; 0     ;
+;     -- arithmetic mode                       ; 0     ;
+;     -- shared arithmetic mode                ; 0     ;
+;                                              ;       ;
+; Estimated ALUT/register pairs used           ; 0     ;
+;                                              ;       ;
+; Total registers                              ; 0     ;
+;     -- Dedicated logic registers             ; 0     ;
+;     -- I/O registers                         ; 0     ;
+;                                              ;       ;
+;                                              ;       ;
+; I/O pins                                     ; 1     ;
++----------------------------------------------+-------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                            ;
-+----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+----------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name  ; Library Name ;
-+----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+----------------------+--------------+
-; |SignExtend1to32bits       ; 0 (0)             ; 2 (2)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 34   ; 0            ; |SignExtend1to32bits ; work         ;
-+----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+----------------------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                           ;
++----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
++----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
+; |Hardware                  ; 0 (0)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 1    ; 0            ; |Hardware           ; work         ;
++----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+---------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                              ;
-+----------------------------------------+----------------------------------------+
-; Register name                          ; Reason for Removal                     ;
-+----------------------------------------+----------------------------------------+
-; outputSE[2]~reg0                       ; Stuck at GND due to stuck port data_in ;
-; outputSE[3]~reg0                       ; Stuck at GND due to stuck port data_in ;
-; outputSE[4]~reg0                       ; Stuck at GND due to stuck port data_in ;
-; outputSE[5]~reg0                       ; Stuck at GND due to stuck port data_in ;
-; outputSE[6]~reg0                       ; Stuck at GND due to stuck port data_in ;
-; outputSE[7]~reg0                       ; Stuck at GND due to stuck port data_in ;
-; outputSE[8]~reg0                       ; Stuck at GND due to stuck port data_in ;
-; outputSE[9]~reg0                       ; Stuck at GND due to stuck port data_in ;
-; outputSE[10]~reg0                      ; Stuck at GND due to stuck port data_in ;
-; outputSE[11]~reg0                      ; Stuck at GND due to stuck port data_in ;
-; outputSE[12]~reg0                      ; Stuck at GND due to stuck port data_in ;
-; outputSE[13]~reg0                      ; Stuck at GND due to stuck port data_in ;
-; outputSE[14]~reg0                      ; Stuck at GND due to stuck port data_in ;
-; outputSE[15]~reg0                      ; Stuck at GND due to stuck port data_in ;
-; outputSE[16]~reg0                      ; Stuck at GND due to stuck port data_in ;
-; outputSE[17]~reg0                      ; Stuck at GND due to stuck port data_in ;
-; outputSE[18]~reg0                      ; Stuck at GND due to stuck port data_in ;
-; outputSE[19]~reg0                      ; Stuck at GND due to stuck port data_in ;
-; outputSE[20]~reg0                      ; Stuck at GND due to stuck port data_in ;
-; outputSE[21]~reg0                      ; Stuck at GND due to stuck port data_in ;
-; outputSE[22]~reg0                      ; Stuck at GND due to stuck port data_in ;
-; outputSE[23]~reg0                      ; Stuck at GND due to stuck port data_in ;
-; outputSE[24]~reg0                      ; Stuck at GND due to stuck port data_in ;
-; outputSE[25]~reg0                      ; Stuck at GND due to stuck port data_in ;
-; outputSE[26]~reg0                      ; Stuck at GND due to stuck port data_in ;
-; outputSE[27]~reg0                      ; Stuck at GND due to stuck port data_in ;
-; outputSE[28]~reg0                      ; Stuck at GND due to stuck port data_in ;
-; outputSE[29]~reg0                      ; Stuck at GND due to stuck port data_in ;
-; outputSE[30]~reg0                      ; Stuck at GND due to stuck port data_in ;
-; outputSE[31]~reg0                      ; Stuck at GND due to stuck port data_in ;
-; Total Number of Removed Registers = 30 ;                                        ;
-+----------------------------------------+----------------------------------------+
+Encoding Type:  One-Hot
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |Hardware|Controle:inst4|estado                                                                                                                                                 ;
++---------------------+--------------------+----------------+---------------------+----------------+---------------+---------------------+---------------------+---------------+------------------+
+; Name                ; estado.Instruction ; estado.Decode2 ; estado.EsperaDecode ; estado.Decode1 ; estado.Fetch2 ; estado.Espera2Fetch ; estado.Espera1Fetch ; estado.Fetch1 ; estado.AddSubAnd ;
++---------------------+--------------------+----------------+---------------------+----------------+---------------+---------------------+---------------------+---------------+------------------+
+; estado.Fetch1       ; 0                  ; 0              ; 0                   ; 0              ; 0             ; 0                   ; 0                   ; 0             ; 0                ;
+; estado.Espera1Fetch ; 0                  ; 0              ; 0                   ; 0              ; 0             ; 0                   ; 1                   ; 1             ; 0                ;
+; estado.Espera2Fetch ; 0                  ; 0              ; 0                   ; 0              ; 0             ; 1                   ; 0                   ; 1             ; 0                ;
+; estado.Fetch2       ; 0                  ; 0              ; 0                   ; 0              ; 1             ; 0                   ; 0                   ; 1             ; 0                ;
+; estado.Decode1      ; 0                  ; 0              ; 0                   ; 1              ; 0             ; 0                   ; 0                   ; 1             ; 0                ;
+; estado.EsperaDecode ; 0                  ; 0              ; 1                   ; 0              ; 0             ; 0                   ; 0                   ; 1             ; 0                ;
+; estado.Decode2      ; 0                  ; 1              ; 0                   ; 0              ; 0             ; 0                   ; 0                   ; 1             ; 0                ;
+; estado.Instruction  ; 1                  ; 0              ; 0                   ; 0              ; 0             ; 0                   ; 0                   ; 1             ; 0                ;
+; estado.AddSubAnd    ; 0                  ; 0              ; 0                   ; 0              ; 0             ; 0                   ; 0                   ; 1             ; 1                ;
++---------------------+--------------------+----------------+---------------------+----------------+---------------+---------------------+---------------------+---------------+------------------+
+
+
++-------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                  ;
++--------------------------------------------+----------------------------------------+
+; Register name                              ; Reason for Removal                     ;
++--------------------------------------------+----------------------------------------+
+; ShiftLeft2de32pra32:inst|outputSL[0..1]    ; Stuck at GND due to stuck port data_in ;
+; Controle:inst4|PCSource[2]                 ; Merged with Controle:inst4|DataSrc[0]  ;
+; Controle:inst4|ALUControl[2]               ; Merged with Controle:inst4|DataSrc[0]  ;
+; Controle:inst4|RegDst[1]                   ; Merged with Controle:inst4|DataSrc[0]  ;
+; Controle:inst4|IorD[1]                     ; Merged with Controle:inst4|DataSrc[0]  ;
+; Controle:inst4|ALUSrcA[1]                  ; Merged with Controle:inst4|DataSrc[0]  ;
+; Controle:inst4|DataSrc[1,3]                ; Merged with Controle:inst4|DataSrc[0]  ;
+; Controle:inst4|RegDst[2]                   ; Merged with Controle:inst4|DataSrc[0]  ;
+; Controle:inst4|PCSource[1]                 ; Merged with Controle:inst4|DataSrc[0]  ;
+; Controle:inst4|MemCtrl                     ; Merged with Controle:inst4|DataSrc[0]  ;
+; Controle:inst4|DataSrc[2]                  ; Merged with Controle:inst4|DataSrc[0]  ;
+; Controle:inst4|PCSource[0]                 ; Merged with Controle:inst4|DataSrc[0]  ;
+; Controle:inst4|IorD[0]                     ; Merged with Controle:inst4|DataSrc[0]  ;
+; Controle:inst4|DataSrc[0]                  ; Stuck at GND due to stuck port data_in ;
+; Controle:inst4|RegControl                  ; Merged with Controle:inst4|RegDst[0]   ;
+; Controle:inst4|A_Control                   ; Merged with Controle:inst4|B_Control   ;
+; Controle:inst4|ALUSrcB[1]                  ; Merged with Controle:inst4|SEControl   ;
+; Controle:inst4|PCWrite                     ; Merged with Controle:inst4|EPCWrite    ;
+; Controle:inst4|estado~11                   ; Lost fanout                            ;
+; Controle:inst4|estado~12                   ; Lost fanout                            ;
+; Controle:inst4|estado~13                   ; Lost fanout                            ;
+; Instr_Reg:IRWrite|Instr15_0[0..5]          ; Lost fanout                            ;
+; Instr_Reg:IRWrite|Instr31_26[0..5]         ; Lost fanout                            ;
+; Controle:inst4|IRWrite                     ; Lost fanout                            ;
+; IorD:inst1|outputMux[0..7]                 ; Lost fanout                            ;
+; Registrador:PCWrite|Saida[0..7]            ; Lost fanout                            ;
+; PCSource:inst7|outputMux[0]                ; Lost fanout                            ;
+; Controle:inst4|EPCWrite                    ; Lost fanout                            ;
+; PCSource:inst7|outputMux[1..7]             ; Lost fanout                            ;
+; Controle:inst4|ALUControl[0..1]            ; Lost fanout                            ;
+; ALUSrcA:inst5|outputMux[0]                 ; Lost fanout                            ;
+; ALUSrcB:inst6|outputMux[0]                 ; Lost fanout                            ;
+; ALUSrcA:inst5|outputMux[1]                 ; Lost fanout                            ;
+; ALUSrcB:inst6|outputMux[1]                 ; Lost fanout                            ;
+; ALUSrcA:inst5|outputMux[2]                 ; Lost fanout                            ;
+; ALUSrcB:inst6|outputMux[2]                 ; Lost fanout                            ;
+; ALUSrcA:inst5|outputMux[3]                 ; Lost fanout                            ;
+; ALUSrcB:inst6|outputMux[3]                 ; Lost fanout                            ;
+; ALUSrcA:inst5|outputMux[4]                 ; Lost fanout                            ;
+; ALUSrcB:inst6|outputMux[4]                 ; Lost fanout                            ;
+; ALUSrcA:inst5|outputMux[5]                 ; Lost fanout                            ;
+; ALUSrcB:inst6|outputMux[5]                 ; Lost fanout                            ;
+; ALUSrcA:inst5|outputMux[6]                 ; Lost fanout                            ;
+; ALUSrcB:inst6|outputMux[6]                 ; Lost fanout                            ;
+; ALUSrcA:inst5|outputMux[7]                 ; Lost fanout                            ;
+; ALUSrcB:inst6|outputMux[7]                 ; Lost fanout                            ;
+; Registrador:A_Control|Saida[0]             ; Lost fanout                            ;
+; Controle:inst4|ALUSrcA[0]                  ; Lost fanout                            ;
+; Registrador:B_Control|Saida[0]             ; Lost fanout                            ;
+; SignExtend16to32bits:SEControl|outputSE[0] ; Lost fanout                            ;
+; Controle:inst4|SEControl                   ; Lost fanout                            ;
+; Controle:inst4|ALUSrcB[0]                  ; Lost fanout                            ;
+; Registrador:A_Control|Saida[1]             ; Lost fanout                            ;
+; Registrador:B_Control|Saida[1]             ; Lost fanout                            ;
+; SignExtend16to32bits:SEControl|outputSE[1] ; Lost fanout                            ;
+; Registrador:A_Control|Saida[2]             ; Lost fanout                            ;
+; ShiftLeft2de32pra32:inst|outputSL[2]       ; Lost fanout                            ;
+; Registrador:B_Control|Saida[2]             ; Lost fanout                            ;
+; SignExtend16to32bits:SEControl|outputSE[2] ; Lost fanout                            ;
+; Registrador:A_Control|Saida[3]             ; Lost fanout                            ;
+; ShiftLeft2de32pra32:inst|outputSL[3]       ; Lost fanout                            ;
+; Registrador:B_Control|Saida[3]             ; Lost fanout                            ;
+; SignExtend16to32bits:SEControl|outputSE[3] ; Lost fanout                            ;
+; Registrador:A_Control|Saida[4]             ; Lost fanout                            ;
+; ShiftLeft2de32pra32:inst|outputSL[4]       ; Lost fanout                            ;
+; Registrador:B_Control|Saida[4]             ; Lost fanout                            ;
+; SignExtend16to32bits:SEControl|outputSE[4] ; Lost fanout                            ;
+; Registrador:A_Control|Saida[5]             ; Lost fanout                            ;
+; ShiftLeft2de32pra32:inst|outputSL[5]       ; Lost fanout                            ;
+; Registrador:B_Control|Saida[5]             ; Lost fanout                            ;
+; SignExtend16to32bits:SEControl|outputSE[5] ; Lost fanout                            ;
+; Registrador:A_Control|Saida[6]             ; Lost fanout                            ;
+; ShiftLeft2de32pra32:inst|outputSL[6]       ; Lost fanout                            ;
+; Registrador:B_Control|Saida[6]             ; Lost fanout                            ;
+; SignExtend16to32bits:SEControl|outputSE[6] ; Lost fanout                            ;
+; Registrador:A_Control|Saida[7]             ; Lost fanout                            ;
+; ShiftLeft2de32pra32:inst|outputSL[7]       ; Lost fanout                            ;
+; Registrador:B_Control|Saida[7]             ; Lost fanout                            ;
+; SignExtend16to32bits:SEControl|outputSE[7] ; Lost fanout                            ;
+; Instr_Reg:IRWrite|Instr25_21[0..4]         ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg0[0]              ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg16[0]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg8[0]              ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg24[0]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg6[0]              ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg22[0]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg14[0]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg30[0]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg4[0]              ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg20[0]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg12[0]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg28[0]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg1[0]              ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg17[0]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg9[0]              ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg25[0]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg5[0]              ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg21[0]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg13[0]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg29[0]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg3[0]              ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg19[0]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg11[0]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg27[0]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg7[0]              ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg23[0]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg15[0]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg31[0]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg2[0]              ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg18[0]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg10[0]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg26[0]             ; Lost fanout                            ;
+; Controle:inst4|B_Control                   ; Lost fanout                            ;
+; Instr_Reg:IRWrite|Instr20_16[0..4]         ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg0[1]              ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg16[1]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg8[1]              ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg24[1]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg6[1]              ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg22[1]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg14[1]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg30[1]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg4[1]              ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg20[1]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg12[1]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg28[1]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg1[1]              ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg17[1]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg9[1]              ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg25[1]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg5[1]              ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg21[1]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg13[1]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg29[1]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg3[1]              ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg19[1]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg11[1]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg27[1]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg7[1]              ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg23[1]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg15[1]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg31[1]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg2[1]              ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg18[1]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg10[1]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg26[1]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg0[2]              ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg16[2]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg8[2]              ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg24[2]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg6[2]              ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg22[2]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg14[2]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg30[2]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg4[2]              ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg20[2]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg12[2]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg28[2]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg1[2]              ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg17[2]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg9[2]              ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg25[2]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg5[2]              ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg21[2]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg13[2]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg29[2]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg3[2]              ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg19[2]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg11[2]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg27[2]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg7[2]              ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg23[2]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg15[2]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg31[2]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg2[2]              ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg18[2]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg10[2]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg26[2]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg0[3]              ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg16[3]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg8[3]              ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg24[3]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg6[3]              ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg22[3]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg14[3]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg30[3]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg4[3]              ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg20[3]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg12[3]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg28[3]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg1[3]              ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg17[3]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg9[3]              ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg25[3]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg5[3]              ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg21[3]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg13[3]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg29[3]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg3[3]              ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg19[3]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg11[3]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg27[3]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg7[3]              ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg23[3]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg15[3]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg31[3]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg2[3]              ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg18[3]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg10[3]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg26[3]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg0[4]              ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg16[4]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg8[4]              ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg24[4]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg6[4]              ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg22[4]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg14[4]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg30[4]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg4[4]              ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg20[4]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg12[4]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg28[4]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg1[4]              ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg17[4]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg9[4]              ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg25[4]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg5[4]              ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg21[4]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg13[4]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg29[4]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg3[4]              ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg19[4]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg11[4]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg27[4]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg7[4]              ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg23[4]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg15[4]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg31[4]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg2[4]              ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg18[4]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg10[4]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg26[4]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg0[5]              ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg16[5]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg8[5]              ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg24[5]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg6[5]              ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg22[5]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg14[5]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg30[5]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg4[5]              ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg20[5]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg12[5]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg28[5]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg1[5]              ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg17[5]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg9[5]              ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg25[5]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg5[5]              ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg21[5]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg13[5]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg29[5]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg3[5]              ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg19[5]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg11[5]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg27[5]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg7[5]              ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg23[5]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg15[5]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg31[5]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg2[5]              ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg18[5]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg10[5]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg26[5]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg0[6]              ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg16[6]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg8[6]              ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg24[6]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg6[6]              ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg22[6]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg14[6]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg30[6]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg4[6]              ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg20[6]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg12[6]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg28[6]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg1[6]              ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg17[6]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg9[6]              ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg25[6]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg5[6]              ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg21[6]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg13[6]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg29[6]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg3[6]              ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg19[6]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg11[6]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg27[6]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg7[6]              ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg23[6]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg15[6]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg31[6]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg2[6]              ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg18[6]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg10[6]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg26[6]             ; Lost fanout                            ;
+; Instr_Reg:IRWrite|Instr15_0[6]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg0[7]              ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg16[7]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg8[7]              ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg24[7]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg6[7]              ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg22[7]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg14[7]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg30[7]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg4[7]              ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg20[7]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg12[7]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg28[7]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg1[7]              ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg17[7]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg9[7]              ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg25[7]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg5[7]              ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg21[7]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg13[7]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg29[7]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg3[7]              ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg19[7]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg11[7]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg27[7]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg7[7]              ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg23[7]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg15[7]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg31[7]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg2[7]              ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg18[7]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg10[7]             ; Lost fanout                            ;
+; Banco_reg:Reg_Control|Reg26[7]             ; Lost fanout                            ;
+; Instr_Reg:IRWrite|Instr15_0[7]             ; Lost fanout                            ;
+; DataSrc:inst3|outputMux[0]                 ; Lost fanout                            ;
+; RegDst:inst2|outputMux[0..4]               ; Lost fanout                            ;
+; Controle:inst4|RegDst[0]                   ; Lost fanout                            ;
+; DataSrc:inst3|outputMux[1..7]              ; Lost fanout                            ;
+; Registrador:ALUOutControl|Saida[0]         ; Lost fanout                            ;
+; Instr_Reg:IRWrite|Instr15_0[11..15]        ; Lost fanout                            ;
+; Registrador:ALUOutControl|Saida[1..7]      ; Lost fanout                            ;
+; Controle:inst4|ALUOutControl               ; Lost fanout                            ;
+; Controle:inst4|estado.AddSubAnd            ; Lost fanout                            ;
+; Controle:inst4|estado.Fetch1               ; Lost fanout                            ;
+; Controle:inst4|estado.Espera1Fetch         ; Lost fanout                            ;
+; Controle:inst4|estado.Espera2Fetch         ; Lost fanout                            ;
+; Controle:inst4|estado.Fetch2               ; Lost fanout                            ;
+; Controle:inst4|estado.Decode1              ; Lost fanout                            ;
+; Controle:inst4|estado.EsperaDecode         ; Lost fanout                            ;
+; Controle:inst4|estado.Decode2              ; Lost fanout                            ;
+; Controle:inst4|estado.Instruction          ; Lost fanout                            ;
+; Total Number of Removed Registers = 418    ;                                        ;
++--------------------------------------------+----------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                            ;
++--------------------------------------+---------------------------+-------------------------------------------------------------------------------------+
+; Register name                        ; Reason for Removal        ; Registers Removed due to This Register                                              ;
++--------------------------------------+---------------------------+-------------------------------------------------------------------------------------+
+; Controle:inst4|DataSrc[0]            ; Stuck at GND              ; Registrador:PCWrite|Saida[0], Registrador:PCWrite|Saida[1],                         ;
+;                                      ; due to stuck port data_in ; Registrador:PCWrite|Saida[2], Registrador:PCWrite|Saida[3],                         ;
+;                                      ;                           ; Registrador:PCWrite|Saida[4], Registrador:PCWrite|Saida[5],                         ;
+;                                      ;                           ; Registrador:PCWrite|Saida[6], Registrador:PCWrite|Saida[7],                         ;
+;                                      ;                           ; PCSource:inst7|outputMux[0], Controle:inst4|EPCWrite, PCSource:inst7|outputMux[1],  ;
+;                                      ;                           ; PCSource:inst7|outputMux[2], PCSource:inst7|outputMux[3],                           ;
+;                                      ;                           ; PCSource:inst7|outputMux[4], PCSource:inst7|outputMux[5],                           ;
+;                                      ;                           ; PCSource:inst7|outputMux[6], PCSource:inst7|outputMux[7],                           ;
+;                                      ;                           ; Controle:inst4|ALUControl[0], Controle:inst4|ALUControl[1],                         ;
+;                                      ;                           ; ALUSrcA:inst5|outputMux[0], ALUSrcB:inst6|outputMux[0], ALUSrcA:inst5|outputMux[1], ;
+;                                      ;                           ; ALUSrcB:inst6|outputMux[1], ALUSrcA:inst5|outputMux[2], ALUSrcB:inst6|outputMux[2], ;
+;                                      ;                           ; ALUSrcA:inst5|outputMux[3], ALUSrcB:inst6|outputMux[3], ALUSrcA:inst5|outputMux[4], ;
+;                                      ;                           ; ALUSrcB:inst6|outputMux[4], ALUSrcA:inst5|outputMux[5], ALUSrcB:inst6|outputMux[5], ;
+;                                      ;                           ; ALUSrcA:inst5|outputMux[6], ALUSrcB:inst6|outputMux[6], ALUSrcA:inst5|outputMux[7], ;
+;                                      ;                           ; ALUSrcB:inst6|outputMux[7], Registrador:A_Control|Saida[0],                         ;
+;                                      ;                           ; Controle:inst4|ALUSrcA[0], Registrador:A_Control|Saida[1],                          ;
+;                                      ;                           ; Registrador:A_Control|Saida[2], ShiftLeft2de32pra32:inst|outputSL[2],               ;
+;                                      ;                           ; Registrador:B_Control|Saida[2], SignExtend16to32bits:SEControl|outputSE[2],         ;
+;                                      ;                           ; Registrador:A_Control|Saida[3], ShiftLeft2de32pra32:inst|outputSL[3],               ;
+;                                      ;                           ; Registrador:B_Control|Saida[3], SignExtend16to32bits:SEControl|outputSE[3],         ;
+;                                      ;                           ; Registrador:A_Control|Saida[4], ShiftLeft2de32pra32:inst|outputSL[4],               ;
+;                                      ;                           ; Registrador:B_Control|Saida[4], SignExtend16to32bits:SEControl|outputSE[4],         ;
+;                                      ;                           ; Registrador:A_Control|Saida[5], ShiftLeft2de32pra32:inst|outputSL[5],               ;
+;                                      ;                           ; Registrador:B_Control|Saida[5], SignExtend16to32bits:SEControl|outputSE[5],         ;
+;                                      ;                           ; Registrador:A_Control|Saida[6], ShiftLeft2de32pra32:inst|outputSL[6],               ;
+;                                      ;                           ; Registrador:B_Control|Saida[6], SignExtend16to32bits:SEControl|outputSE[6],         ;
+;                                      ;                           ; Registrador:A_Control|Saida[7], ShiftLeft2de32pra32:inst|outputSL[7],               ;
+;                                      ;                           ; Registrador:B_Control|Saida[7], SignExtend16to32bits:SEControl|outputSE[7],         ;
+;                                      ;                           ; Instr_Reg:IRWrite|Instr25_21[0], Instr_Reg:IRWrite|Instr25_21[2],                   ;
+;                                      ;                           ; Instr_Reg:IRWrite|Instr25_21[1], Controle:inst4|B_Control,                          ;
+;                                      ;                           ; Instr_Reg:IRWrite|Instr20_16[0], Instr_Reg:IRWrite|Instr20_16[2],                   ;
+;                                      ;                           ; Instr_Reg:IRWrite|Instr20_16[1], Instr_Reg:IRWrite|Instr20_16[4],                   ;
+;                                      ;                           ; Instr_Reg:IRWrite|Instr20_16[3], Instr_Reg:IRWrite|Instr15_0[6],                    ;
+;                                      ;                           ; Instr_Reg:IRWrite|Instr15_0[7], Controle:inst4|RegDst[0],                           ;
+;                                      ;                           ; Registrador:ALUOutControl|Saida[0], Instr_Reg:IRWrite|Instr15_0[11],                ;
+;                                      ;                           ; Instr_Reg:IRWrite|Instr15_0[12], Instr_Reg:IRWrite|Instr15_0[13],                   ;
+;                                      ;                           ; Instr_Reg:IRWrite|Instr15_0[14], Instr_Reg:IRWrite|Instr15_0[15],                   ;
+;                                      ;                           ; Registrador:ALUOutControl|Saida[1], Registrador:ALUOutControl|Saida[2],             ;
+;                                      ;                           ; Registrador:ALUOutControl|Saida[3], Registrador:ALUOutControl|Saida[4],             ;
+;                                      ;                           ; Registrador:ALUOutControl|Saida[5], Registrador:ALUOutControl|Saida[6],             ;
+;                                      ;                           ; Registrador:ALUOutControl|Saida[7], Controle:inst4|ALUOutControl                    ;
+; Instr_Reg:IRWrite|Instr15_0[0]       ; Lost Fanouts              ; Controle:inst4|IRWrite, IorD:inst1|outputMux[0], IorD:inst1|outputMux[1],           ;
+;                                      ;                           ; IorD:inst1|outputMux[2], IorD:inst1|outputMux[3], IorD:inst1|outputMux[4]           ;
+; Banco_reg:Reg_Control|Reg0[0]        ; Lost Fanouts              ; DataSrc:inst3|outputMux[0], RegDst:inst2|outputMux[0], RegDst:inst2|outputMux[1],   ;
+;                                      ;                           ; RegDst:inst2|outputMux[2], RegDst:inst2|outputMux[3], RegDst:inst2|outputMux[4]     ;
+; ShiftLeft2de32pra32:inst|outputSL[0] ; Stuck at GND              ; Registrador:B_Control|Saida[0], SignExtend16to32bits:SEControl|outputSE[0],         ;
+;                                      ; due to stuck port data_in ; Controle:inst4|SEControl, Controle:inst4|ALUSrcB[0]                                 ;
+; ShiftLeft2de32pra32:inst|outputSL[1] ; Stuck at GND              ; Registrador:B_Control|Saida[1], SignExtend16to32bits:SEControl|outputSE[1]          ;
+;                                      ; due to stuck port data_in ;                                                                                     ;
+; Banco_reg:Reg_Control|Reg0[1]        ; Lost Fanouts              ; DataSrc:inst3|outputMux[1]                                                          ;
+; Banco_reg:Reg_Control|Reg0[2]        ; Lost Fanouts              ; DataSrc:inst3|outputMux[2]                                                          ;
+; Banco_reg:Reg_Control|Reg0[3]        ; Lost Fanouts              ; DataSrc:inst3|outputMux[3]                                                          ;
+; Banco_reg:Reg_Control|Reg0[4]        ; Lost Fanouts              ; DataSrc:inst3|outputMux[4]                                                          ;
+; Banco_reg:Reg_Control|Reg0[5]        ; Lost Fanouts              ; DataSrc:inst3|outputMux[5]                                                          ;
+; Banco_reg:Reg_Control|Reg0[6]        ; Lost Fanouts              ; DataSrc:inst3|outputMux[6]                                                          ;
+; Banco_reg:Reg_Control|Reg0[7]        ; Lost Fanouts              ; DataSrc:inst3|outputMux[7]                                                          ;
++--------------------------------------+---------------------------+-------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -259,7 +693,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 2     ;
+; Total registers                              ; 0     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
@@ -269,13 +703,176 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
++--------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                         ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output               ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------+
+; 4:1                ; 2 bits    ; 4 ALUTs       ; 4 ALUTs              ; 0 ALUTs                ; Yes        ; |Hardware|ALUSrcB:inst6|outputMux[0]     ;
+; 4:1                ; 6 bits    ; 12 ALUTs      ; 12 ALUTs             ; 0 ALUTs                ; Yes        ; |Hardware|ALUSrcB:inst6|outputMux[3]     ;
+; 32:1               ; 8 bits    ; 168 ALUTs     ; 168 ALUTs            ; 0 ALUTs                ; Yes        ; |Hardware|Registrador:A_Control|Saida[7] ;
+; 32:1               ; 8 bits    ; 168 ALUTs     ; 168 ALUTs            ; 0 ALUTs                ; Yes        ; |Hardware|Registrador:B_Control|Saida[4] ;
+; 4:1                ; 8 bits    ; 16 ALUTs      ; 16 ALUTs             ; 0 ALUTs                ; No         ; |Hardware|Ula32:ALUControl|Mux25         ;
+; 3:1                ; 14 bits   ; 28 ALUTs      ; 14 ALUTs             ; 14 ALUTs               ; No         ; |Hardware|Controle:inst4|estado          ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Source assignments for Memoria:MemCtrl|LPM_RAM_DQ:MEM|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated ;
++---------------------------------+--------------------+------+---------------------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                                      ;
++---------------------------------+--------------------+------+---------------------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                       ;
++---------------------------------+--------------------+------+---------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------+
+; Source assignments for Memoria:MemCtrl|LPM_RAM_DQ:MEM_plus_One|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated ;
++---------------------------------+--------------------+------+------------------------------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                                               ;
++---------------------------------+--------------------+------+------------------------------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                                ;
++---------------------------------+--------------------+------+------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------+
+; Source assignments for Memoria:MemCtrl|LPM_RAM_DQ:MEM_plus_Two|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated ;
++---------------------------------+--------------------+------+------------------------------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                                               ;
++---------------------------------+--------------------+------+------------------------------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                                ;
++---------------------------------+--------------------+------+------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------+
+; Source assignments for Memoria:MemCtrl|LPM_RAM_DQ:MEM_plus_Three|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated ;
++---------------------------------+--------------------+------+--------------------------------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                                                 ;
++---------------------------------+--------------------+------+--------------------------------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                                  ;
++---------------------------------+--------------------+------+--------------------------------------------------------------------+
+
+
++-------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Controle:inst4 ;
++----------------+--------+-----------------------------------+
+; Parameter Name ; Value  ; Type                              ;
++----------------+--------+-----------------------------------+
+; Fetch1         ; 0000   ; Unsigned Binary                   ;
+; Espera1Fetch   ; 0001   ; Unsigned Binary                   ;
+; Espera2Fetch   ; 0010   ; Unsigned Binary                   ;
+; Fetch2         ; 0011   ; Unsigned Binary                   ;
+; Decode1        ; 0100   ; Unsigned Binary                   ;
+; EsperaDecode   ; 0101   ; Unsigned Binary                   ;
+; Decode2        ; 0110   ; Unsigned Binary                   ;
+; Instruction    ; 0111   ; Unsigned Binary                   ;
+; AddSubAnd      ; 1000   ; Unsigned Binary                   ;
+; Add            ; 100000 ; Unsigned Binary                   ;
+; Sub            ; 100010 ; Unsigned Binary                   ;
+; And            ; 100100 ; Unsigned Binary                   ;
++----------------+--------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Memoria:MemCtrl|LPM_RAM_DQ:MEM ;
++------------------------+----------------+-----------------------------------+
+; Parameter Name         ; Value          ; Type                              ;
++------------------------+----------------+-----------------------------------+
+; LPM_WIDTH              ; 8              ; Signed Integer                    ;
+; LPM_WIDTHAD            ; 8              ; Signed Integer                    ;
+; LPM_NUMWORDS           ; 0              ; Signed Integer                    ;
+; LPM_INDATA             ; REGISTERED     ; Untyped                           ;
+; LPM_ADDRESS_CONTROL    ; REGISTERED     ; Untyped                           ;
+; LPM_OUTDATA            ; REGISTERED     ; Untyped                           ;
+; LPM_FILE               ; instrucoes.mif ; Untyped                           ;
+; USE_EAB                ; ON             ; Untyped                           ;
+; DEVICE_FAMILY          ; Stratix II     ; Untyped                           ;
+; CBXI_PARAMETER         ; NOTHING        ; Untyped                           ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                        ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                      ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                      ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                    ;
++------------------------+----------------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Memoria:MemCtrl|LPM_RAM_DQ:MEM_plus_One ;
++------------------------+----------------+--------------------------------------------+
+; Parameter Name         ; Value          ; Type                                       ;
++------------------------+----------------+--------------------------------------------+
+; LPM_WIDTH              ; 8              ; Signed Integer                             ;
+; LPM_WIDTHAD            ; 8              ; Signed Integer                             ;
+; LPM_NUMWORDS           ; 0              ; Signed Integer                             ;
+; LPM_INDATA             ; REGISTERED     ; Untyped                                    ;
+; LPM_ADDRESS_CONTROL    ; REGISTERED     ; Untyped                                    ;
+; LPM_OUTDATA            ; REGISTERED     ; Untyped                                    ;
+; LPM_FILE               ; instrucoes.mif ; Untyped                                    ;
+; USE_EAB                ; ON             ; Untyped                                    ;
+; DEVICE_FAMILY          ; Stratix II     ; Untyped                                    ;
+; CBXI_PARAMETER         ; NOTHING        ; Untyped                                    ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                 ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                               ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                               ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                             ;
++------------------------+----------------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Memoria:MemCtrl|LPM_RAM_DQ:MEM_plus_Two ;
++------------------------+----------------+--------------------------------------------+
+; Parameter Name         ; Value          ; Type                                       ;
++------------------------+----------------+--------------------------------------------+
+; LPM_WIDTH              ; 8              ; Signed Integer                             ;
+; LPM_WIDTHAD            ; 8              ; Signed Integer                             ;
+; LPM_NUMWORDS           ; 0              ; Signed Integer                             ;
+; LPM_INDATA             ; REGISTERED     ; Untyped                                    ;
+; LPM_ADDRESS_CONTROL    ; REGISTERED     ; Untyped                                    ;
+; LPM_OUTDATA            ; REGISTERED     ; Untyped                                    ;
+; LPM_FILE               ; instrucoes.mif ; Untyped                                    ;
+; USE_EAB                ; ON             ; Untyped                                    ;
+; DEVICE_FAMILY          ; Stratix II     ; Untyped                                    ;
+; CBXI_PARAMETER         ; NOTHING        ; Untyped                                    ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                 ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                               ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                               ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                             ;
++------------------------+----------------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Memoria:MemCtrl|LPM_RAM_DQ:MEM_plus_Three ;
++------------------------+----------------+----------------------------------------------+
+; Parameter Name         ; Value          ; Type                                         ;
++------------------------+----------------+----------------------------------------------+
+; LPM_WIDTH              ; 8              ; Signed Integer                               ;
+; LPM_WIDTHAD            ; 8              ; Signed Integer                               ;
+; LPM_NUMWORDS           ; 0              ; Signed Integer                               ;
+; LPM_INDATA             ; REGISTERED     ; Untyped                                      ;
+; LPM_ADDRESS_CONTROL    ; REGISTERED     ; Untyped                                      ;
+; LPM_OUTDATA            ; REGISTERED     ; Untyped                                      ;
+; LPM_FILE               ; instrucoes.mif ; Untyped                                      ;
+; USE_EAB                ; ON             ; Untyped                                      ;
+; DEVICE_FAMILY          ; Stratix II     ; Untyped                                      ;
+; CBXI_PARAMETER         ; NOTHING        ; Untyped                                      ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                   ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                 ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                 ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                               ;
++------------------------+----------------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
-    Info: Processing started: Wed Oct 09 12:02:47 2019
+    Info: Processing started: Wed Oct 09 17:00:16 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ProjetoCPU -c ProjetoCPU
 Info: Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info: Found 1 design units, including 1 entities, in source file alucontrol.v
@@ -290,14 +887,6 @@ Info: Found 3 design units, including 1 entities, in source file memoria.vhd
     Info: Found design unit 1: ram_constants
     Info: Found design unit 2: Memoria-behavioral_arch
     Info: Found entity 1: Memoria
-Info: Found 1 design units, including 1 entities, in source file mux4pra5bits.v
-    Info: Found entity 1: mux4pra5bits
-Info: Found 1 design units, including 1 entities, in source file mux4pra32bits.v
-    Info: Found entity 1: mux4pra32bits
-Info: Found 1 design units, including 1 entities, in source file mux8pra5bits.v
-    Info: Found entity 1: mux8pra5bits
-Info: Found 1 design units, including 1 entities, in source file mux16pra32bits.v
-    Info: Found entity 1: mux16pra32bits
 Info: Found 2 design units, including 1 entities, in source file regdesloc.vhd
     Info: Found design unit 1: RegDesloc-behavioral_arch
     Info: Found entity 1: RegDesloc
@@ -319,45 +908,498 @@ Info: Found 1 design units, including 1 entities, in source file hardware.bdf
     Info: Found entity 1: Hardware
 Info: Found 1 design units, including 1 entities, in source file controle.v
     Info: Found entity 1: Controle
-Info: Elaborating entity "SignExtend1to32bits" for the top level hierarchy
-Warning: Output pins are stuck at VCC or GND
-    Warning (13410): Pin "outputSE[2]" is stuck at GND
-    Warning (13410): Pin "outputSE[3]" is stuck at GND
-    Warning (13410): Pin "outputSE[4]" is stuck at GND
-    Warning (13410): Pin "outputSE[5]" is stuck at GND
-    Warning (13410): Pin "outputSE[6]" is stuck at GND
-    Warning (13410): Pin "outputSE[7]" is stuck at GND
-    Warning (13410): Pin "outputSE[8]" is stuck at GND
-    Warning (13410): Pin "outputSE[9]" is stuck at GND
-    Warning (13410): Pin "outputSE[10]" is stuck at GND
-    Warning (13410): Pin "outputSE[11]" is stuck at GND
-    Warning (13410): Pin "outputSE[12]" is stuck at GND
-    Warning (13410): Pin "outputSE[13]" is stuck at GND
-    Warning (13410): Pin "outputSE[14]" is stuck at GND
-    Warning (13410): Pin "outputSE[15]" is stuck at GND
-    Warning (13410): Pin "outputSE[16]" is stuck at GND
-    Warning (13410): Pin "outputSE[17]" is stuck at GND
-    Warning (13410): Pin "outputSE[18]" is stuck at GND
-    Warning (13410): Pin "outputSE[19]" is stuck at GND
-    Warning (13410): Pin "outputSE[20]" is stuck at GND
-    Warning (13410): Pin "outputSE[21]" is stuck at GND
-    Warning (13410): Pin "outputSE[22]" is stuck at GND
-    Warning (13410): Pin "outputSE[23]" is stuck at GND
-    Warning (13410): Pin "outputSE[24]" is stuck at GND
-    Warning (13410): Pin "outputSE[25]" is stuck at GND
-    Warning (13410): Pin "outputSE[26]" is stuck at GND
-    Warning (13410): Pin "outputSE[27]" is stuck at GND
-    Warning (13410): Pin "outputSE[28]" is stuck at GND
-    Warning (13410): Pin "outputSE[29]" is stuck at GND
-    Warning (13410): Pin "outputSE[30]" is stuck at GND
-    Warning (13410): Pin "outputSE[31]" is stuck at GND
-Info: Implemented 36 device resources after synthesis - the final resource count might be different
-    Info: Implemented 2 input pins
-    Info: Implemented 32 output pins
-    Info: Implemented 2 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 31 warnings
-    Info: Peak virtual memory: 4458 megabytes
-    Info: Processing ended: Wed Oct 09 12:02:50 2019
+Info: Found 1 design units, including 1 entities, in source file alusrcb.v
+    Info: Found entity 1: ALUSrcB
+Info: Found 1 design units, including 1 entities, in source file alusrca.v
+    Info: Found entity 1: ALUSrcA
+Info: Found 1 design units, including 1 entities, in source file datasrc.v
+    Info: Found entity 1: DataSrc
+Info: Found 1 design units, including 1 entities, in source file regdst.v
+    Info: Found entity 1: RegDst
+Info: Found 1 design units, including 1 entities, in source file iord.v
+    Info: Found entity 1: IorD
+Info: Found 1 design units, including 1 entities, in source file pcsource.v
+    Info: Found entity 1: PCSource
+Info: Elaborating entity "Hardware" for the top level hierarchy
+Info: Elaborating entity "Registrador" for hierarchy "Registrador:A_Control"
+Info: Elaborating entity "Controle" for hierarchy "Controle:inst4"
+Info: Elaborating entity "Instr_Reg" for hierarchy "Instr_Reg:IRWrite"
+Info: Elaborating entity "Memoria" for hierarchy "Memoria:MemCtrl"
+Info: Elaborating entity "LPM_RAM_DQ" for hierarchy "Memoria:MemCtrl|LPM_RAM_DQ:MEM"
+Info: Elaborated megafunction instantiation "Memoria:MemCtrl|LPM_RAM_DQ:MEM"
+Info: Instantiated megafunction "Memoria:MemCtrl|LPM_RAM_DQ:MEM" with the following parameter:
+    Info: Parameter "LPM_WIDTH" = "8"
+    Info: Parameter "LPM_WIDTHAD" = "8"
+    Info: Parameter "LPM_NUMWORDS" = "0"
+    Info: Parameter "LPM_INDATA" = "REGISTERED"
+    Info: Parameter "LPM_ADDRESS_CONTROL" = "REGISTERED"
+    Info: Parameter "LPM_OUTDATA" = "REGISTERED"
+    Info: Parameter "LPM_FILE" = "instrucoes.mif"
+    Info: Parameter "LPM_TYPE" = "LPM_RAM_DQ"
+    Info: Parameter "USE_EAB" = "ON"
+    Info: Parameter "INTENDED_DEVICE_FAMILY" = "UNUSED"
+    Info: Parameter "LPM_HINT" = "UNUSED"
+Info: Elaborating entity "altram" for hierarchy "Memoria:MemCtrl|LPM_RAM_DQ:MEM|altram:sram"
+Warning: Assertion warning: altram does not support Stratix II device family -- attempting best-case memory conversions, but power-up states and read during write behavior will be different for Stratix II devices
+Info: Elaborated megafunction instantiation "Memoria:MemCtrl|LPM_RAM_DQ:MEM|altram:sram", which is child of megafunction instantiation "Memoria:MemCtrl|LPM_RAM_DQ:MEM"
+Info: Elaborating entity "altsyncram" for hierarchy "Memoria:MemCtrl|LPM_RAM_DQ:MEM|altram:sram|altsyncram:ram_block"
+Info: Elaborated megafunction instantiation "Memoria:MemCtrl|LPM_RAM_DQ:MEM|altram:sram|altsyncram:ram_block", which is child of megafunction instantiation "Memoria:MemCtrl|LPM_RAM_DQ:MEM"
+Info: Found 1 design units, including 1 entities, in source file db/altsyncram_g2a1.tdf
+    Info: Found entity 1: altsyncram_g2a1
+Info: Elaborating entity "altsyncram_g2a1" for hierarchy "Memoria:MemCtrl|LPM_RAM_DQ:MEM|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated"
+Info: Elaborating entity "IorD" for hierarchy "IorD:inst1"
+Info: Elaborating entity "PCSource" for hierarchy "PCSource:inst7"
+Info: Elaborating entity "Ula32" for hierarchy "Ula32:ALUControl"
+Info: Elaborating entity "ALUSrcA" for hierarchy "ALUSrcA:inst5"
+Info: Elaborating entity "ALUSrcB" for hierarchy "ALUSrcB:inst6"
+Info: Elaborating entity "Banco_reg" for hierarchy "Banco_reg:Reg_Control"
+Info: Elaborating entity "DataSrc" for hierarchy "DataSrc:inst3"
+Info: Elaborating entity "RegDst" for hierarchy "RegDst:inst2"
+Info: Elaborating entity "SignExtend16to32bits" for hierarchy "SignExtend16to32bits:SEControl"
+Info: Elaborating entity "ShiftLeft2de32pra32" for hierarchy "ShiftLeft2de32pra32:inst"
+Warning: Synthesized away the following node(s):
+    Warning: Synthesized away the following RAM node(s):
+        Warning (14320): Synthesized away node "Memoria:MemCtrl|lpm_ram_dq:MEM_plus_One|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated|q_a[0]"
+        Warning (14320): Synthesized away node "Memoria:MemCtrl|lpm_ram_dq:MEM_plus_One|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated|q_a[1]"
+        Warning (14320): Synthesized away node "Memoria:MemCtrl|lpm_ram_dq:MEM_plus_One|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated|q_a[2]"
+Warning: Synthesized away the following node(s):
+    Warning: Synthesized away the following RAM node(s):
+        Warning (14320): Synthesized away node "Memoria:MemCtrl|lpm_ram_dq:MEM|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated|q_a[0]"
+        Warning (14320): Synthesized away node "Memoria:MemCtrl|lpm_ram_dq:MEM|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated|q_a[1]"
+        Warning (14320): Synthesized away node "Memoria:MemCtrl|lpm_ram_dq:MEM|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated|q_a[2]"
+        Warning (14320): Synthesized away node "Memoria:MemCtrl|lpm_ram_dq:MEM|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated|q_a[3]"
+        Warning (14320): Synthesized away node "Memoria:MemCtrl|lpm_ram_dq:MEM|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated|q_a[4]"
+        Warning (14320): Synthesized away node "Memoria:MemCtrl|lpm_ram_dq:MEM|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated|q_a[5]"
+        Warning (14320): Synthesized away node "Memoria:MemCtrl|lpm_ram_dq:MEM_plus_Three|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated|q_a[7]"
+        Warning (14320): Synthesized away node "Memoria:MemCtrl|lpm_ram_dq:MEM_plus_Three|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated|q_a[6]"
+        Warning (14320): Synthesized away node "Memoria:MemCtrl|lpm_ram_dq:MEM_plus_Three|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated|q_a[5]"
+        Warning (14320): Synthesized away node "Memoria:MemCtrl|lpm_ram_dq:MEM_plus_Three|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated|q_a[4]"
+        Warning (14320): Synthesized away node "Memoria:MemCtrl|lpm_ram_dq:MEM_plus_Three|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated|q_a[3]"
+        Warning (14320): Synthesized away node "Memoria:MemCtrl|lpm_ram_dq:MEM_plus_Three|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated|q_a[2]"
+        Warning (14320): Synthesized away node "Memoria:MemCtrl|lpm_ram_dq:MEM_plus_Two|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated|q_a[5]"
+        Warning (14320): Synthesized away node "Memoria:MemCtrl|lpm_ram_dq:MEM_plus_Two|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated|q_a[7]"
+        Warning (14320): Synthesized away node "Memoria:MemCtrl|lpm_ram_dq:MEM_plus_Two|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated|q_a[6]"
+        Warning (14320): Synthesized away node "Memoria:MemCtrl|lpm_ram_dq:MEM_plus_Three|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated|q_a[1]"
+        Warning (14320): Synthesized away node "Memoria:MemCtrl|lpm_ram_dq:MEM_plus_Three|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated|q_a[0]"
+        Warning (14320): Synthesized away node "Memoria:MemCtrl|lpm_ram_dq:MEM_plus_Two|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated|q_a[0]"
+        Warning (14320): Synthesized away node "Memoria:MemCtrl|lpm_ram_dq:MEM_plus_Two|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated|q_a[2]"
+        Warning (14320): Synthesized away node "Memoria:MemCtrl|lpm_ram_dq:MEM_plus_Two|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated|q_a[1]"
+        Warning (14320): Synthesized away node "Memoria:MemCtrl|lpm_ram_dq:MEM_plus_Two|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated|q_a[4]"
+        Warning (14320): Synthesized away node "Memoria:MemCtrl|lpm_ram_dq:MEM_plus_Two|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated|q_a[3]"
+        Warning (14320): Synthesized away node "Memoria:MemCtrl|lpm_ram_dq:MEM|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated|q_a[6]"
+        Warning (14320): Synthesized away node "Memoria:MemCtrl|lpm_ram_dq:MEM|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated|q_a[7]"
+        Warning (14320): Synthesized away node "Memoria:MemCtrl|lpm_ram_dq:MEM_plus_One|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated|q_a[3]"
+        Warning (14320): Synthesized away node "Memoria:MemCtrl|lpm_ram_dq:MEM_plus_One|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated|q_a[4]"
+        Warning (14320): Synthesized away node "Memoria:MemCtrl|lpm_ram_dq:MEM_plus_One|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated|q_a[5]"
+        Warning (14320): Synthesized away node "Memoria:MemCtrl|lpm_ram_dq:MEM_plus_One|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated|q_a[6]"
+        Warning (14320): Synthesized away node "Memoria:MemCtrl|lpm_ram_dq:MEM_plus_One|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated|q_a[7]"
+Info: 398 registers lost all their fanouts during netlist optimizations. The first 398 are displayed below.
+    Info: Register "Controle:inst4|estado~11" lost all its fanouts during netlist optimizations.
+    Info: Register "Controle:inst4|estado~12" lost all its fanouts during netlist optimizations.
+    Info: Register "Controle:inst4|estado~13" lost all its fanouts during netlist optimizations.
+    Info: Register "Instr_Reg:IRWrite|Instr15_0[0]" lost all its fanouts during netlist optimizations.
+    Info: Register "Instr_Reg:IRWrite|Instr15_0[1]" lost all its fanouts during netlist optimizations.
+    Info: Register "Instr_Reg:IRWrite|Instr15_0[2]" lost all its fanouts during netlist optimizations.
+    Info: Register "Instr_Reg:IRWrite|Instr15_0[3]" lost all its fanouts during netlist optimizations.
+    Info: Register "Instr_Reg:IRWrite|Instr15_0[4]" lost all its fanouts during netlist optimizations.
+    Info: Register "Instr_Reg:IRWrite|Instr15_0[5]" lost all its fanouts during netlist optimizations.
+    Info: Register "Instr_Reg:IRWrite|Instr31_26[5]" lost all its fanouts during netlist optimizations.
+    Info: Register "Instr_Reg:IRWrite|Instr31_26[4]" lost all its fanouts during netlist optimizations.
+    Info: Register "Instr_Reg:IRWrite|Instr31_26[3]" lost all its fanouts during netlist optimizations.
+    Info: Register "Instr_Reg:IRWrite|Instr31_26[2]" lost all its fanouts during netlist optimizations.
+    Info: Register "Instr_Reg:IRWrite|Instr31_26[1]" lost all its fanouts during netlist optimizations.
+    Info: Register "Instr_Reg:IRWrite|Instr31_26[0]" lost all its fanouts during netlist optimizations.
+    Info: Register "Controle:inst4|IRWrite" lost all its fanouts during netlist optimizations.
+    Info: Register "IorD:inst1|outputMux[0]" lost all its fanouts during netlist optimizations.
+    Info: Register "IorD:inst1|outputMux[1]" lost all its fanouts during netlist optimizations.
+    Info: Register "IorD:inst1|outputMux[2]" lost all its fanouts during netlist optimizations.
+    Info: Register "IorD:inst1|outputMux[3]" lost all its fanouts during netlist optimizations.
+    Info: Register "IorD:inst1|outputMux[4]" lost all its fanouts during netlist optimizations.
+    Info: Register "IorD:inst1|outputMux[5]" lost all its fanouts during netlist optimizations.
+    Info: Register "IorD:inst1|outputMux[6]" lost all its fanouts during netlist optimizations.
+    Info: Register "IorD:inst1|outputMux[7]" lost all its fanouts during netlist optimizations.
+    Info: Register "Registrador:PCWrite|Saida[0]" lost all its fanouts during netlist optimizations.
+    Info: Register "Registrador:PCWrite|Saida[1]" lost all its fanouts during netlist optimizations.
+    Info: Register "Registrador:PCWrite|Saida[2]" lost all its fanouts during netlist optimizations.
+    Info: Register "Registrador:PCWrite|Saida[3]" lost all its fanouts during netlist optimizations.
+    Info: Register "Registrador:PCWrite|Saida[4]" lost all its fanouts during netlist optimizations.
+    Info: Register "Registrador:PCWrite|Saida[5]" lost all its fanouts during netlist optimizations.
+    Info: Register "Registrador:PCWrite|Saida[6]" lost all its fanouts during netlist optimizations.
+    Info: Register "Registrador:PCWrite|Saida[7]" lost all its fanouts during netlist optimizations.
+    Info: Register "PCSource:inst7|outputMux[0]" lost all its fanouts during netlist optimizations.
+    Info: Register "Controle:inst4|EPCWrite" lost all its fanouts during netlist optimizations.
+    Info: Register "PCSource:inst7|outputMux[1]" lost all its fanouts during netlist optimizations.
+    Info: Register "PCSource:inst7|outputMux[2]" lost all its fanouts during netlist optimizations.
+    Info: Register "PCSource:inst7|outputMux[3]" lost all its fanouts during netlist optimizations.
+    Info: Register "PCSource:inst7|outputMux[4]" lost all its fanouts during netlist optimizations.
+    Info: Register "PCSource:inst7|outputMux[5]" lost all its fanouts during netlist optimizations.
+    Info: Register "PCSource:inst7|outputMux[6]" lost all its fanouts during netlist optimizations.
+    Info: Register "PCSource:inst7|outputMux[7]" lost all its fanouts during netlist optimizations.
+    Info: Register "Controle:inst4|ALUControl[0]" lost all its fanouts during netlist optimizations.
+    Info: Register "Controle:inst4|ALUControl[1]" lost all its fanouts during netlist optimizations.
+    Info: Register "ALUSrcA:inst5|outputMux[0]" lost all its fanouts during netlist optimizations.
+    Info: Register "ALUSrcB:inst6|outputMux[0]" lost all its fanouts during netlist optimizations.
+    Info: Register "ALUSrcA:inst5|outputMux[1]" lost all its fanouts during netlist optimizations.
+    Info: Register "ALUSrcB:inst6|outputMux[1]" lost all its fanouts during netlist optimizations.
+    Info: Register "ALUSrcA:inst5|outputMux[2]" lost all its fanouts during netlist optimizations.
+    Info: Register "ALUSrcB:inst6|outputMux[2]" lost all its fanouts during netlist optimizations.
+    Info: Register "ALUSrcA:inst5|outputMux[3]" lost all its fanouts during netlist optimizations.
+    Info: Register "ALUSrcB:inst6|outputMux[3]" lost all its fanouts during netlist optimizations.
+    Info: Register "ALUSrcA:inst5|outputMux[4]" lost all its fanouts during netlist optimizations.
+    Info: Register "ALUSrcB:inst6|outputMux[4]" lost all its fanouts during netlist optimizations.
+    Info: Register "ALUSrcA:inst5|outputMux[5]" lost all its fanouts during netlist optimizations.
+    Info: Register "ALUSrcB:inst6|outputMux[5]" lost all its fanouts during netlist optimizations.
+    Info: Register "ALUSrcA:inst5|outputMux[6]" lost all its fanouts during netlist optimizations.
+    Info: Register "ALUSrcB:inst6|outputMux[6]" lost all its fanouts during netlist optimizations.
+    Info: Register "ALUSrcA:inst5|outputMux[7]" lost all its fanouts during netlist optimizations.
+    Info: Register "ALUSrcB:inst6|outputMux[7]" lost all its fanouts during netlist optimizations.
+    Info: Register "Registrador:A_Control|Saida[0]" lost all its fanouts during netlist optimizations.
+    Info: Register "Controle:inst4|ALUSrcA[0]" lost all its fanouts during netlist optimizations.
+    Info: Register "Registrador:B_Control|Saida[0]" lost all its fanouts during netlist optimizations.
+    Info: Register "SignExtend16to32bits:SEControl|outputSE[0]" lost all its fanouts during netlist optimizations.
+    Info: Register "Controle:inst4|SEControl" lost all its fanouts during netlist optimizations.
+    Info: Register "Controle:inst4|ALUSrcB[0]" lost all its fanouts during netlist optimizations.
+    Info: Register "Registrador:A_Control|Saida[1]" lost all its fanouts during netlist optimizations.
+    Info: Register "Registrador:B_Control|Saida[1]" lost all its fanouts during netlist optimizations.
+    Info: Register "SignExtend16to32bits:SEControl|outputSE[1]" lost all its fanouts during netlist optimizations.
+    Info: Register "Registrador:A_Control|Saida[2]" lost all its fanouts during netlist optimizations.
+    Info: Register "ShiftLeft2de32pra32:inst|outputSL[2]" lost all its fanouts during netlist optimizations.
+    Info: Register "Registrador:B_Control|Saida[2]" lost all its fanouts during netlist optimizations.
+    Info: Register "SignExtend16to32bits:SEControl|outputSE[2]" lost all its fanouts during netlist optimizations.
+    Info: Register "Registrador:A_Control|Saida[3]" lost all its fanouts during netlist optimizations.
+    Info: Register "ShiftLeft2de32pra32:inst|outputSL[3]" lost all its fanouts during netlist optimizations.
+    Info: Register "Registrador:B_Control|Saida[3]" lost all its fanouts during netlist optimizations.
+    Info: Register "SignExtend16to32bits:SEControl|outputSE[3]" lost all its fanouts during netlist optimizations.
+    Info: Register "Registrador:A_Control|Saida[4]" lost all its fanouts during netlist optimizations.
+    Info: Register "ShiftLeft2de32pra32:inst|outputSL[4]" lost all its fanouts during netlist optimizations.
+    Info: Register "Registrador:B_Control|Saida[4]" lost all its fanouts during netlist optimizations.
+    Info: Register "SignExtend16to32bits:SEControl|outputSE[4]" lost all its fanouts during netlist optimizations.
+    Info: Register "Registrador:A_Control|Saida[5]" lost all its fanouts during netlist optimizations.
+    Info: Register "ShiftLeft2de32pra32:inst|outputSL[5]" lost all its fanouts during netlist optimizations.
+    Info: Register "Registrador:B_Control|Saida[5]" lost all its fanouts during netlist optimizations.
+    Info: Register "SignExtend16to32bits:SEControl|outputSE[5]" lost all its fanouts during netlist optimizations.
+    Info: Register "Registrador:A_Control|Saida[6]" lost all its fanouts during netlist optimizations.
+    Info: Register "ShiftLeft2de32pra32:inst|outputSL[6]" lost all its fanouts during netlist optimizations.
+    Info: Register "Registrador:B_Control|Saida[6]" lost all its fanouts during netlist optimizations.
+    Info: Register "SignExtend16to32bits:SEControl|outputSE[6]" lost all its fanouts during netlist optimizations.
+    Info: Register "Registrador:A_Control|Saida[7]" lost all its fanouts during netlist optimizations.
+    Info: Register "ShiftLeft2de32pra32:inst|outputSL[7]" lost all its fanouts during netlist optimizations.
+    Info: Register "Registrador:B_Control|Saida[7]" lost all its fanouts during netlist optimizations.
+    Info: Register "SignExtend16to32bits:SEControl|outputSE[7]" lost all its fanouts during netlist optimizations.
+    Info: Register "Instr_Reg:IRWrite|Instr25_21[0]" lost all its fanouts during netlist optimizations.
+    Info: Register "Instr_Reg:IRWrite|Instr25_21[2]" lost all its fanouts during netlist optimizations.
+    Info: Register "Instr_Reg:IRWrite|Instr25_21[1]" lost all its fanouts during netlist optimizations.
+    Info: Register "Instr_Reg:IRWrite|Instr25_21[4]" lost all its fanouts during netlist optimizations.
+    Info: Register "Instr_Reg:IRWrite|Instr25_21[3]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg0[0]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg16[0]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg8[0]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg24[0]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg6[0]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg22[0]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg14[0]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg30[0]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg4[0]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg20[0]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg12[0]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg28[0]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg1[0]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg17[0]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg9[0]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg25[0]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg5[0]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg21[0]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg13[0]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg29[0]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg3[0]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg19[0]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg11[0]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg27[0]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg7[0]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg23[0]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg15[0]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg31[0]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg2[0]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg18[0]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg10[0]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg26[0]" lost all its fanouts during netlist optimizations.
+    Info: Register "Controle:inst4|B_Control" lost all its fanouts during netlist optimizations.
+    Info: Register "Instr_Reg:IRWrite|Instr20_16[0]" lost all its fanouts during netlist optimizations.
+    Info: Register "Instr_Reg:IRWrite|Instr20_16[2]" lost all its fanouts during netlist optimizations.
+    Info: Register "Instr_Reg:IRWrite|Instr20_16[1]" lost all its fanouts during netlist optimizations.
+    Info: Register "Instr_Reg:IRWrite|Instr20_16[4]" lost all its fanouts during netlist optimizations.
+    Info: Register "Instr_Reg:IRWrite|Instr20_16[3]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg0[1]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg16[1]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg8[1]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg24[1]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg6[1]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg22[1]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg14[1]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg30[1]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg4[1]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg20[1]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg12[1]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg28[1]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg1[1]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg17[1]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg9[1]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg25[1]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg5[1]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg21[1]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg13[1]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg29[1]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg3[1]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg19[1]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg11[1]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg27[1]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg7[1]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg23[1]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg15[1]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg31[1]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg2[1]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg18[1]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg10[1]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg26[1]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg0[2]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg16[2]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg8[2]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg24[2]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg6[2]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg22[2]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg14[2]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg30[2]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg4[2]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg20[2]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg12[2]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg28[2]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg1[2]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg17[2]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg9[2]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg25[2]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg5[2]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg21[2]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg13[2]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg29[2]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg3[2]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg19[2]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg11[2]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg27[2]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg7[2]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg23[2]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg15[2]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg31[2]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg2[2]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg18[2]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg10[2]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg26[2]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg0[3]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg16[3]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg8[3]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg24[3]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg6[3]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg22[3]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg14[3]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg30[3]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg4[3]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg20[3]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg12[3]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg28[3]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg1[3]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg17[3]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg9[3]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg25[3]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg5[3]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg21[3]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg13[3]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg29[3]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg3[3]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg19[3]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg11[3]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg27[3]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg7[3]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg23[3]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg15[3]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg31[3]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg2[3]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg18[3]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg10[3]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg26[3]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg0[4]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg16[4]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg8[4]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg24[4]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg6[4]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg22[4]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg14[4]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg30[4]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg4[4]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg20[4]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg12[4]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg28[4]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg1[4]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg17[4]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg9[4]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg25[4]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg5[4]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg21[4]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg13[4]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg29[4]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg3[4]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg19[4]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg11[4]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg27[4]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg7[4]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg23[4]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg15[4]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg31[4]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg2[4]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg18[4]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg10[4]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg26[4]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg0[5]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg16[5]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg8[5]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg24[5]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg6[5]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg22[5]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg14[5]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg30[5]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg4[5]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg20[5]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg12[5]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg28[5]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg1[5]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg17[5]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg9[5]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg25[5]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg5[5]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg21[5]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg13[5]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg29[5]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg3[5]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg19[5]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg11[5]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg27[5]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg7[5]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg23[5]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg15[5]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg31[5]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg2[5]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg18[5]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg10[5]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg26[5]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg0[6]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg16[6]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg8[6]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg24[6]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg6[6]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg22[6]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg14[6]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg30[6]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg4[6]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg20[6]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg12[6]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg28[6]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg1[6]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg17[6]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg9[6]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg25[6]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg5[6]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg21[6]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg13[6]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg29[6]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg3[6]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg19[6]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg11[6]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg27[6]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg7[6]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg23[6]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg15[6]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg31[6]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg2[6]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg18[6]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg10[6]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg26[6]" lost all its fanouts during netlist optimizations.
+    Info: Register "Instr_Reg:IRWrite|Instr15_0[6]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg0[7]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg16[7]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg8[7]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg24[7]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg6[7]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg22[7]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg14[7]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg30[7]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg4[7]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg20[7]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg12[7]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg28[7]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg1[7]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg17[7]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg9[7]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg25[7]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg5[7]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg21[7]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg13[7]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg29[7]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg3[7]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg19[7]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg11[7]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg27[7]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg7[7]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg23[7]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg15[7]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg31[7]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg2[7]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg18[7]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg10[7]" lost all its fanouts during netlist optimizations.
+    Info: Register "Banco_reg:Reg_Control|Reg26[7]" lost all its fanouts during netlist optimizations.
+    Info: Register "Instr_Reg:IRWrite|Instr15_0[7]" lost all its fanouts during netlist optimizations.
+    Info: Register "DataSrc:inst3|outputMux[0]" lost all its fanouts during netlist optimizations.
+    Info: Register "RegDst:inst2|outputMux[0]" lost all its fanouts during netlist optimizations.
+    Info: Register "RegDst:inst2|outputMux[1]" lost all its fanouts during netlist optimizations.
+    Info: Register "RegDst:inst2|outputMux[2]" lost all its fanouts during netlist optimizations.
+    Info: Register "RegDst:inst2|outputMux[3]" lost all its fanouts during netlist optimizations.
+    Info: Register "RegDst:inst2|outputMux[4]" lost all its fanouts during netlist optimizations.
+    Info: Register "Controle:inst4|RegDst[0]" lost all its fanouts during netlist optimizations.
+    Info: Register "DataSrc:inst3|outputMux[1]" lost all its fanouts during netlist optimizations.
+    Info: Register "DataSrc:inst3|outputMux[2]" lost all its fanouts during netlist optimizations.
+    Info: Register "DataSrc:inst3|outputMux[3]" lost all its fanouts during netlist optimizations.
+    Info: Register "DataSrc:inst3|outputMux[4]" lost all its fanouts during netlist optimizations.
+    Info: Register "DataSrc:inst3|outputMux[5]" lost all its fanouts during netlist optimizations.
+    Info: Register "DataSrc:inst3|outputMux[6]" lost all its fanouts during netlist optimizations.
+    Info: Register "DataSrc:inst3|outputMux[7]" lost all its fanouts during netlist optimizations.
+    Info: Register "Registrador:ALUOutControl|Saida[0]" lost all its fanouts during netlist optimizations.
+    Info: Register "Instr_Reg:IRWrite|Instr15_0[11]" lost all its fanouts during netlist optimizations.
+    Info: Register "Instr_Reg:IRWrite|Instr15_0[12]" lost all its fanouts during netlist optimizations.
+    Info: Register "Instr_Reg:IRWrite|Instr15_0[13]" lost all its fanouts during netlist optimizations.
+    Info: Register "Instr_Reg:IRWrite|Instr15_0[14]" lost all its fanouts during netlist optimizations.
+    Info: Register "Instr_Reg:IRWrite|Instr15_0[15]" lost all its fanouts during netlist optimizations.
+    Info: Register "Registrador:ALUOutControl|Saida[1]" lost all its fanouts during netlist optimizations.
+    Info: Register "Registrador:ALUOutControl|Saida[2]" lost all its fanouts during netlist optimizations.
+    Info: Register "Registrador:ALUOutControl|Saida[3]" lost all its fanouts during netlist optimizations.
+    Info: Register "Registrador:ALUOutControl|Saida[4]" lost all its fanouts during netlist optimizations.
+    Info: Register "Registrador:ALUOutControl|Saida[5]" lost all its fanouts during netlist optimizations.
+    Info: Register "Registrador:ALUOutControl|Saida[6]" lost all its fanouts during netlist optimizations.
+    Info: Register "Registrador:ALUOutControl|Saida[7]" lost all its fanouts during netlist optimizations.
+    Info: Register "Controle:inst4|ALUOutControl" lost all its fanouts during netlist optimizations.
+    Info: Register "Controle:inst4|estado.AddSubAnd" lost all its fanouts during netlist optimizations.
+    Info: Register "Controle:inst4|estado.Fetch1" lost all its fanouts during netlist optimizations.
+    Info: Register "Controle:inst4|estado.Espera1Fetch" lost all its fanouts during netlist optimizations.
+    Info: Register "Controle:inst4|estado.Espera2Fetch" lost all its fanouts during netlist optimizations.
+    Info: Register "Controle:inst4|estado.Fetch2" lost all its fanouts during netlist optimizations.
+    Info: Register "Controle:inst4|estado.Decode1" lost all its fanouts during netlist optimizations.
+    Info: Register "Controle:inst4|estado.EsperaDecode" lost all its fanouts during netlist optimizations.
+    Info: Register "Controle:inst4|estado.Decode2" lost all its fanouts during netlist optimizations.
+    Info: Register "Controle:inst4|estado.Instruction" lost all its fanouts during netlist optimizations.
+Warning: Design contains 1 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "clk"
+Info: Implemented 1 device resources after synthesis - the final resource count might be different
+    Info: Implemented 1 input pins
+    Info: Implemented 0 output pins
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 39 warnings
+    Info: Peak virtual memory: 4494 megabytes
+    Info: Processing ended: Wed Oct 09 17:00:19 2019
     Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:03
 
