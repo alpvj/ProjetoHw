@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ProjetoCPU
-Mon Oct 07 14:51:42 2019
+Wed Oct 09 12:02:50 2019
 Quartus II 64-Bit Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
 
 
@@ -41,7 +41,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +-------------------------------+-----------------------------------------------+
-; Analysis & Synthesis Status   ; Successful - Mon Oct 07 14:51:42 2019         ;
+; Analysis & Synthesis Status   ; Successful - Wed Oct 09 12:02:50 2019         ;
 ; Quartus II 64-Bit Version     ; 9.1 Build 350 03/24/2010 SP 2 SJ Full Version ;
 ; Revision Name                 ; ProjetoCPU                                    ;
 ; Top-level Entity Name         ; SignExtend1to32bits                           ;
@@ -156,13 +156,13 @@ applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                       ;
-+----------------------------------+-----------------+------------------------+----------------------------------------------------------------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                   ;
-+----------------------------------+-----------------+------------------------+----------------------------------------------------------------+
-; SignExtend1to32bits.v            ; yes             ; User Verilog HDL File  ; C:/Users/alpvj/Desktop/projeto/ProjetoHw/SignExtend1to32bits.v ;
-+----------------------------------+-----------------+------------------------+----------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                     ;
++----------------------------------+-----------------+------------------------+--------------------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                 ;
++----------------------------------+-----------------+------------------------+--------------------------------------------------------------+
+; SignExtend1to32bits.v            ; yes             ; User Verilog HDL File  ; C:/Users/alpvj/Desktop/pasta/ProjetoHw/SignExtend1to32bits.v ;
++----------------------------------+-----------------+------------------------+--------------------------------------------------------------+
 
 
 +---------------------------------------------------------+
@@ -275,7 +275,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
-    Info: Processing started: Mon Oct 07 14:51:40 2019
+    Info: Processing started: Wed Oct 09 12:02:47 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ProjetoCPU -c ProjetoCPU
 Info: Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info: Found 1 design units, including 1 entities, in source file alucontrol.v
@@ -315,6 +315,10 @@ Info: Found 1 design units, including 1 entities, in source file signextend16to3
 Info: Found 2 design units, including 1 entities, in source file ula32.vhd
     Info: Found design unit 1: Ula32-behavioral
     Info: Found entity 1: Ula32
+Info: Found 1 design units, including 1 entities, in source file hardware.bdf
+    Info: Found entity 1: Hardware
+Info: Found 1 design units, including 1 entities, in source file controle.v
+    Info: Found entity 1: Controle
 Info: Elaborating entity "SignExtend1to32bits" for the top level hierarchy
 Warning: Output pins are stuck at VCC or GND
     Warning (13410): Pin "outputSE[2]" is stuck at GND
@@ -352,9 +356,9 @@ Info: Implemented 36 device resources after synthesis - the final resource count
     Info: Implemented 32 output pins
     Info: Implemented 2 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 31 warnings
-    Info: Peak virtual memory: 4457 megabytes
-    Info: Processing ended: Mon Oct 07 14:51:42 2019
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Peak virtual memory: 4458 megabytes
+    Info: Processing ended: Wed Oct 09 12:02:50 2019
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:03
 
 

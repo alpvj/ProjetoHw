@@ -21,107 +21,7 @@ applicable agreement for further details.
 //#pragma file_not_in_maxplusii_format
 (header "graphic" (version "1.3"))
 (symbol
-	(rect 384 -56 600 104)
-	(text "mux4pra32bits" (rect 5 0 76 12)(font "Arial" ))
-	(text "inst1" (rect 8 144 31 156)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "clk" (rect 0 0 14 12)(font "Arial" ))
-		(text "clk" (rect 21 27 35 39)(font "Arial" ))
-		(line (pt 0 32)(pt 16 32)(line_width 1))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "controlador[1..0]" (rect 0 0 80 12)(font "Arial" ))
-		(text "controlador[1..0]" (rect 21 43 101 55)(font "Arial" ))
-		(line (pt 0 48)(pt 16 48)(line_width 3))
-	)
-	(port
-		(pt 0 64)
-		(input)
-		(text "input0[31..0]" (rect 0 0 61 12)(font "Arial" ))
-		(text "input0[31..0]" (rect 21 59 82 71)(font "Arial" ))
-		(line (pt 0 64)(pt 16 64)(line_width 3))
-	)
-	(port
-		(pt 0 80)
-		(input)
-		(text "input1[31..0]" (rect 0 0 61 12)(font "Arial" ))
-		(text "input1[31..0]" (rect 21 75 82 87)(font "Arial" ))
-		(line (pt 0 80)(pt 16 80)(line_width 3))
-	)
-	(port
-		(pt 0 96)
-		(input)
-		(text "input2[31..0]" (rect 0 0 61 12)(font "Arial" ))
-		(text "input2[31..0]" (rect 21 91 82 103)(font "Arial" ))
-		(line (pt 0 96)(pt 16 96)(line_width 3))
-	)
-	(port
-		(pt 0 112)
-		(input)
-		(text "input3[31..0]" (rect 0 0 61 12)(font "Arial" ))
-		(text "input3[31..0]" (rect 21 107 82 119)(font "Arial" ))
-		(line (pt 0 112)(pt 16 112)(line_width 3))
-	)
-	(port
-		(pt 216 32)
-		(output)
-		(text "outputMux[31..0]" (rect 0 0 82 12)(font "Arial" ))
-		(text "outputMux[31..0]" (rect 113 27 195 39)(font "Arial" ))
-		(line (pt 216 32)(pt 200 32)(line_width 3))
-	)
-	(drawing
-		(rectangle (rect 16 16 200 144)(line_width 1))
-	)
-)
-(symbol
-	(rect 64 -40 248 88)
-	(text "Registrador" (rect 5 0 61 12)(font "Arial" ))
-	(text "inst" (rect 8 112 25 124)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "Clk" (rect 0 0 16 12)(font "Arial" ))
-		(text "Clk" (rect 21 27 37 39)(font "Arial" ))
-		(line (pt 0 32)(pt 16 32)(line_width 1))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "Reset" (rect 0 0 29 12)(font "Arial" ))
-		(text "Reset" (rect 21 43 50 55)(font "Arial" ))
-		(line (pt 0 48)(pt 16 48)(line_width 1))
-	)
-	(port
-		(pt 0 64)
-		(input)
-		(text "Load" (rect 0 0 23 12)(font "Arial" ))
-		(text "Load" (rect 21 59 44 71)(font "Arial" ))
-		(line (pt 0 64)(pt 16 64)(line_width 1))
-	)
-	(port
-		(pt 0 80)
-		(input)
-		(text "Entrada[31..0]" (rect 0 0 69 12)(font "Arial" ))
-		(text "Entrada[31..0]" (rect 21 75 90 87)(font "Arial" ))
-		(line (pt 0 80)(pt 16 80)(line_width 3))
-	)
-	(port
-		(pt 184 32)
-		(output)
-		(text "Saida[31..0]" (rect 0 0 59 12)(font "Arial" ))
-		(text "Saida[31..0]" (rect 104 27 163 39)(font "Arial" ))
-		(line (pt 184 32)(pt 168 32)(line_width 3))
-	)
-	(drawing
-		(rectangle (rect 16 16 168 112)(line_width 1))
-	)
-)
-(symbol
-	(rect 136 -224 336 -96)
+	(rect 480 -352 680 -224)
 	(text "Instr_Reg" (rect 5 0 53 12)(font "Arial" ))
 	(text "inst3" (rect 8 112 31 124)(font "Arial" ))
 	(port
@@ -182,5 +82,258 @@ applicable agreement for further details.
 	)
 	(drawing
 		(rectangle (rect 16 16 184 112)(line_width 1))
+	)
+)
+(symbol
+	(rect 520 -640 840 -440)
+	(text "Controle" (rect 0 5 12 46)(font "Arial" )(vertical))
+	(text "inst4" (rect 304 8 316 31)(font "Arial" )(vertical))
+	(port
+		(pt 32 0)
+		(input)
+		(text "clk" (rect 0 0 14 12)(font "Arial" ))
+		(text "clk" (rect 27 21 39 35)(font "Arial" )(vertical))
+		(line (pt 32 0)(pt 32 16)(line_width 1))
+	)
+	(port
+		(pt 48 0)
+		(input)
+		(text "reset" (rect 0 0 24 12)(font "Arial" ))
+		(text "reset" (rect 43 21 55 45)(font "Arial" )(vertical))
+		(line (pt 48 0)(pt 48 16)(line_width 1))
+	)
+	(port
+		(pt 64 0)
+		(input)
+		(text "OpCode[5..0]" (rect 0 0 66 12)(font "Arial" ))
+		(text "OpCode[5..0]" (rect 59 21 71 87)(font "Arial" )(vertical))
+		(line (pt 64 0)(pt 64 16)(line_width 3))
+	)
+	(port
+		(pt 80 0)
+		(input)
+		(text "funct[5..0]" (rect 0 0 51 12)(font "Arial" ))
+		(text "funct[5..0]" (rect 75 21 87 72)(font "Arial" )(vertical))
+		(line (pt 80 0)(pt 80 16)(line_width 3))
+	)
+	(port
+		(pt 32 200)
+		(output)
+		(text "PCWrite" (rect 0 0 41 12)(font "Arial" ))
+		(text "PCWrite" (rect 27 138 39 179)(font "Arial" )(vertical))
+		(line (pt 32 200)(pt 32 184)(line_width 1))
+	)
+	(port
+		(pt 48 200)
+		(output)
+		(text "MemCtrl" (rect 0 0 41 12)(font "Arial" ))
+		(text "MemCtrl" (rect 43 138 55 179)(font "Arial" )(vertical))
+		(line (pt 48 200)(pt 48 184)(line_width 1))
+	)
+	(port
+		(pt 64 200)
+		(output)
+		(text "IRWrite" (rect 0 0 37 12)(font "Arial" ))
+		(text "IRWrite" (rect 59 142 71 179)(font "Arial" )(vertical))
+		(line (pt 64 200)(pt 64 184)(line_width 1))
+	)
+	(port
+		(pt 80 200)
+		(output)
+		(text "SEControl" (rect 0 0 49 12)(font "Arial" ))
+		(text "SEControl" (rect 75 130 87 179)(font "Arial" )(vertical))
+		(line (pt 80 200)(pt 80 184)(line_width 1))
+	)
+	(port
+		(pt 96 200)
+		(output)
+		(text "A_Control" (rect 0 0 48 12)(font "Arial" ))
+		(text "A_Control" (rect 91 131 103 179)(font "Arial" )(vertical))
+		(line (pt 96 200)(pt 96 184)(line_width 1))
+	)
+	(port
+		(pt 112 200)
+		(output)
+		(text "B_Control" (rect 0 0 48 12)(font "Arial" ))
+		(text "B_Control" (rect 107 131 119 179)(font "Arial" )(vertical))
+		(line (pt 112 200)(pt 112 184)(line_width 1))
+	)
+	(port
+		(pt 128 200)
+		(output)
+		(text "RegControl" (rect 0 0 55 12)(font "Arial" ))
+		(text "RegControl" (rect 123 124 135 179)(font "Arial" )(vertical))
+		(line (pt 128 200)(pt 128 184)(line_width 1))
+	)
+	(port
+		(pt 144 200)
+		(output)
+		(text "ALUOutControl" (rect 0 0 74 12)(font "Arial" ))
+		(text "ALUOutControl" (rect 139 105 151 179)(font "Arial" )(vertical))
+		(line (pt 144 200)(pt 144 184)(line_width 1))
+	)
+	(port
+		(pt 160 200)
+		(output)
+		(text "EPCWrite" (rect 0 0 48 12)(font "Arial" ))
+		(text "EPCWrite" (rect 155 131 167 179)(font "Arial" )(vertical))
+		(line (pt 160 200)(pt 160 184)(line_width 1))
+	)
+	(port
+		(pt 176 200)
+		(output)
+		(text "IorD[1..0]" (rect 0 0 47 12)(font "Arial" ))
+		(text "IorD[1..0]" (rect 171 132 183 179)(font "Arial" )(vertical))
+		(line (pt 176 200)(pt 176 184)(line_width 3))
+	)
+	(port
+		(pt 192 200)
+		(output)
+		(text "ALUSrcA[1..0]" (rect 0 0 70 12)(font "Arial" ))
+		(text "ALUSrcA[1..0]" (rect 187 109 199 179)(font "Arial" )(vertical))
+		(line (pt 192 200)(pt 192 184)(line_width 3))
+	)
+	(port
+		(pt 208 200)
+		(output)
+		(text "ALUSrcB[1..0]" (rect 0 0 70 12)(font "Arial" ))
+		(text "ALUSrcB[1..0]" (rect 203 109 215 179)(font "Arial" )(vertical))
+		(line (pt 208 200)(pt 208 184)(line_width 3))
+	)
+	(port
+		(pt 224 200)
+		(output)
+		(text "RegDst[2..0]" (rect 0 0 63 12)(font "Arial" ))
+		(text "RegDst[2..0]" (rect 219 116 231 179)(font "Arial" )(vertical))
+		(line (pt 224 200)(pt 224 184)(line_width 3))
+	)
+	(port
+		(pt 240 200)
+		(output)
+		(text "PCSource[2..0]" (rect 0 0 75 12)(font "Arial" ))
+		(text "PCSource[2..0]" (rect 235 104 247 179)(font "Arial" )(vertical))
+		(line (pt 240 200)(pt 240 184)(line_width 3))
+	)
+	(port
+		(pt 256 200)
+		(output)
+		(text "ALUControl[2..0]" (rect 0 0 82 12)(font "Arial" ))
+		(text "ALUControl[2..0]" (rect 251 97 263 179)(font "Arial" )(vertical))
+		(line (pt 256 200)(pt 256 184)(line_width 3))
+	)
+	(port
+		(pt 272 200)
+		(output)
+		(text "DataSrc[3..0]" (rect 0 0 66 12)(font "Arial" ))
+		(text "DataSrc[3..0]" (rect 267 113 279 179)(font "Arial" )(vertical))
+		(line (pt 272 200)(pt 272 184)(line_width 3))
+	)
+	(parameter
+		"Fetch1"
+		"0000"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Espera1Fetch"
+		"0001"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Espera2Fetch"
+		"0010"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Fetch2"
+		"0011"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Decode1"
+		"0100"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"EsperaDecode"
+		"0101"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Decode2"
+		"0110"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Instruction"
+		"0111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"AddSubAnd"
+		"1000"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Add"
+		"100000"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Sub"
+		"100010"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"And"
+		"100100"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(drawing
+		(rectangle (rect 16 16 304 184)(line_width 1))
+	)
+	(flipy_rotate90)
+	(annotation_block (parameter)(rect 736 -840 936 -656))
+)
+(symbol
+	(rect 64 -136 248 -8)
+	(text "Registrador" (rect 5 0 61 12)(font "Arial" ))
+	(text "PC" (rect 8 112 23 124)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Clk" (rect 0 0 16 12)(font "Arial" ))
+		(text "Clk" (rect 21 27 37 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 1))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Reset" (rect 0 0 29 12)(font "Arial" ))
+		(text "Reset" (rect 21 43 50 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 1))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Load" (rect 0 0 23 12)(font "Arial" ))
+		(text "Load" (rect 21 59 44 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 1))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "Entrada[31..0]" (rect 0 0 69 12)(font "Arial" ))
+		(text "Entrada[31..0]" (rect 21 75 90 87)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 184 32)
+		(output)
+		(text "Saida[31..0]" (rect 0 0 59 12)(font "Arial" ))
+		(text "Saida[31..0]" (rect 104 27 163 39)(font "Arial" ))
+		(line (pt 184 32)(pt 168 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 168 112)(line_width 1))
 	)
 )

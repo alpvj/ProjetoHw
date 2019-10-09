@@ -1,5 +1,5 @@
 Flow report for ProjetoCPU
-Mon Oct 07 14:51:54 2019
+Wed Oct 09 12:03:09 2019
 Quartus II 64-Bit Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
 
 
@@ -38,7 +38,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +-------------------------------+-----------------------------------------------+
-; Flow Status                   ; Successful - Mon Oct 07 14:51:53 2019         ;
+; Flow Status                   ; Successful - Wed Oct 09 12:03:09 2019         ;
 ; Quartus II 64-Bit Version     ; 9.1 Build 350 03/24/2010 SP 2 SJ Full Version ;
 ; Revision Name                 ; ProjetoCPU                                    ;
 ; Top-level Entity Name         ; SignExtend1to32bits                           ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/07/2019 14:51:41 ;
+; Start date & time ; 10/09/2019 12:02:47 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; ProjetoCPU          ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +------------------------------------+--------------------------------+---------------+---------------------+----------------+
 ; Assignment Name                    ; Value                          ; Default Value ; Entity Name         ; Section Id     ;
 +------------------------------------+--------------------------------+---------------+---------------------+----------------+
-; COMPILER_SIGNATURE_ID              ; 10995770589201.157047070101832 ; --            ; --                  ; --             ;
+; COMPILER_SIGNATURE_ID              ; 10995770589202.157063336713144 ; --            ; --                  ; --             ;
 ; PARTITION_COLOR                    ; 16764057                       ; --            ; SignExtend1to32bits ; Top            ;
 ; PARTITION_NETLIST_TYPE             ; SOURCE                         ; --            ; SignExtend1to32bits ; Top            ;
 ; TOP_LEVEL_ENTITY                   ; SignExtend1to32bits            ; ProjetoCPU    ; --                  ; --             ;
@@ -88,11 +88,11 @@ applicable agreement for further details.
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name             ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis    ; 00:00:02     ; 1.0                     ; 4457 MB             ; 00:00:02                           ;
-; Fitter                  ; 00:00:05     ; 1.0                     ; 4589 MB             ; 00:00:05                           ;
-; Assembler               ; 00:00:03     ; 1.0                     ; 4418 MB             ; 00:00:02                           ;
-; Classic Timing Analyzer ; 00:00:00     ; 1.0                     ; 4345 MB             ; 00:00:00                           ;
-; Total                   ; 00:00:10     ; --                      ; --                  ; 00:00:09                           ;
+; Analysis & Synthesis    ; 00:00:03     ; 1.0                     ; 4458 MB             ; 00:00:02                           ;
+; Fitter                  ; 00:00:08     ; 2.1                     ; 4590 MB             ; 00:00:05                           ;
+; Assembler               ; 00:00:04     ; 1.0                     ; 4418 MB             ; 00:00:02                           ;
+; Classic Timing Analyzer ; 00:00:01     ; 1.0                     ; 4345 MB             ; 00:00:00                           ;
+; Total                   ; 00:00:16     ; --                      ; --                  ; 00:00:09                           ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -101,10 +101,10 @@ applicable agreement for further details.
 +-------------------------+------------------+---------------+------------+----------------+
 ; Module Name             ; Machine Hostname ; OS Name       ; OS Version ; Processor type ;
 +-------------------------+------------------+---------------+------------+----------------+
-; Analysis & Synthesis    ; G4C26            ; Windows Vista ; 6.2        ; x86_64         ;
-; Fitter                  ; G4C26            ; Windows Vista ; 6.2        ; x86_64         ;
-; Assembler               ; G4C26            ; Windows Vista ; 6.2        ; x86_64         ;
-; Classic Timing Analyzer ; G4C26            ; Windows Vista ; 6.2        ; x86_64         ;
+; Analysis & Synthesis    ; G2C22            ; Windows Vista ; 6.2        ; x86_64         ;
+; Fitter                  ; G2C22            ; Windows Vista ; 6.2        ; x86_64         ;
+; Assembler               ; G2C22            ; Windows Vista ; 6.2        ; x86_64         ;
+; Classic Timing Analyzer ; G2C22            ; Windows Vista ; 6.2        ; x86_64         ;
 +-------------------------+------------------+---------------+------------+----------------+
 
 
