@@ -44,11 +44,11 @@ AUTO_ROM_RECOGNITION
 ON
 }
 # hierarchies {
+Registrador:EPCWrite
 Registrador:PCWrite
 Registrador:A_Control
 Registrador:ALUOutControl
 Registrador:B_Control
-Registrador:EPCWrite
 }
 # lmf
 |programfiles|quartus|altera|91sp2|quartus|lmf|maxplus2.lmf
@@ -1203,7 +1203,7 @@ address_a0
 }
 # memory_file {
 instrucoes.mif
-97c649cf8c2c35eb7cee891d98f65c7
+29732d5ce0a3220b252afbd9ceede54
 }
 # hierarchies {
 Memoria:MemCtrl|lpm_ram_dq:MEM|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated
@@ -1222,7 +1222,7 @@ db|ProjetoCPU.(0).cnf
 # case_insensitive
 # source_file
 hardware.bdf
-4e8562fd2425374c42658bb965a7be1
+f0246b595b2ac24caedbbd277f0eb
 26
 # internal_option {
 BLOCK_DESIGN_NAMING
@@ -1246,7 +1246,7 @@ ON
 # case_sensitive
 # source_file
 controle.v
-894d1e82ef41e78643ea654dcdd414b
+95791abe9f7d88a0d89e908c82af625d
 8
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -1293,6 +1293,10 @@ Decode2
 0110
 PARAMETER_UNSIGNED_BIN
 USR
+EsperaDecode2
+0000111
+PARAMETER_UNSIGNED_BIN
+USR
 Instruction
 0111
 PARAMETER_UNSIGNED_BIN
@@ -1315,6 +1319,10 @@ PARAMETER_UNSIGNED_BIN
 USR
 AddiAddiu
 1100
+PARAMETER_UNSIGNED_BIN
+USR
+Addi2
+0001101
 PARAMETER_UNSIGNED_BIN
 USR
 ADD

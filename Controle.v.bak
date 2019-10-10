@@ -4,19 +4,23 @@ output reg [1:0] IorD, ALUSrcA, ALUSrcB,
 output reg [2:0] RegDst, PCSource, ALUControl,
 output reg [3:0] DataSrc, output reg [6:0] estado);
 
-parameter Fetch1 = 7'd0;
-parameter Espera1Fetch = 7'd1;
-parameter Espera2Fetch = 7'd2;
-parameter Fetch2 = 7'd3;
-parameter Decode1 = 7'd4;
-parameter EsperaDecode = 7'd5;
-parameter Decode2 = 7'd6;
-parameter Instruction = 7'd7;
-parameter Add2 = 7'd1000;
-parameter Sub2 = 7'd1001;
-parameter And2 = 7'b1011;
-parameter AddSubAnd = 7'b1011;
-parameter AddiAddiu = 7'b1100;
+parameter Fetch1 = 7'b0000;
+parameter Espera1Fetch = 7'b0001;
+parameter Espera2Fetch = 7'b0010;
+parameter Fetch2 = 7'b0011;
+parameter Decode1 = 7'b0100;
+parameter EsperaDecode = 7'b0101;
+parameter Decode2 = 7'b0110;
+parameter EsperaDecode2 = 7'b0111;
+parameter Instruction = 7'b1000;
+
+parameter Add2 = 7'b1001;//9
+parameter Sub2 = 7'b1010;//10
+parameter And2 = 7'b1011;//11
+parameter AddSubAnd = 7'b1100;//12
+parameter AddiAddiu = 7'b1101;//13
+parameter Addi2 = 7'b1110;//14
+
 
 //Tipo R
 parameter ADD = 6'b100000;
@@ -156,6 +160,24 @@ always @(posedge clk) begin
 			ALUOutControl = 1'b1;
 			RegDst = 3'b000;
 			DataSrc = 4'b0000;
+			estado = EsperaDecode2;
+		end
+		EsperaDecode2: begin
+			IorD = 2'b00;
+			MemCtrl = 1'b0;
+			IRWrite = 1'b0;
+			ALUSrcA = 2'b00;
+			ALUSrcB = 2'b00;
+			ALUControl = 3'b000;
+			PCSource = 3'b000;
+			PCWrite = 1'b0;
+			EPCWrite = 1'b0;
+			RegControl = 1'b0;
+			A_Control = 1'b0;
+			B_Control = 1'b0;
+			ALUOutControl = 1'b0;
+			RegDst = 3'b000;
+			DataSrc = 4'b0000;
 			estado = Instruction;
 		end
 		Instruction: begin
@@ -224,17 +246,17 @@ always @(posedge clk) begin
 					IRWrite = 1'b0;
 					ALUSrcA = 2'b01;
 					ALUSrcB = 2'b10;
-					ALUControl = 3'b000;
+					ALUControl = 3'b001;
 					PCSource = 3'b000;
 					PCWrite = 1'b0;
 					EPCWrite = 1'b0;
 					RegControl = 1'b0;
 					A_Control = 1'b0;
 					B_Control = 1'b0;
-					ALUOutControl = 1'b1;
+					ALUOutControl = 1'b0;
 					RegDst = 3'b000;
 					DataSrc = 4'b0000;
-					estado = AddiAddiu;
+					estado = Addi2;
 				end
 				ADDIU: begin
 					IorD = 2'b00;
@@ -242,17 +264,17 @@ always @(posedge clk) begin
 					IRWrite = 1'b0;
 					ALUSrcA = 2'b01;
 					ALUSrcB = 2'b10;
-					ALUControl = 3'b000;
+					ALUControl = 3'b001;
 					PCSource = 3'b000;
 					PCWrite = 1'b0;
 					EPCWrite = 1'b0;
 					RegControl = 1'b0;
 					A_Control = 1'b0;
 					B_Control = 1'b0;
-					ALUOutControl = 1'b1;
+					ALUOutControl = 1'b0;
 					RegDst = 3'b000;
 					DataSrc = 4'b0000;
-					estado = AddiAddiu;
+					estado = Addi2;
 				end
 			endcase
 		end
@@ -327,6 +349,24 @@ always @(posedge clk) begin
 			RegDst = 3'b001;
 			DataSrc = 4'b0000;
 			estado = Fetch1;
+		end
+		Addi2: begin
+			IorD = 2'b00;
+			MemCtrl = 1'b0;
+			IRWrite = 1'b0;
+			ALUSrcA = 2'b01;
+			ALUSrcB = 2'b10;
+			ALUControl = 3'b001;
+			PCSource = 3'b000;
+			PCWrite = 1'b0;
+			EPCWrite = 1'b0;
+			RegControl = 1'b0;
+			A_Control = 1'b0;
+			B_Control = 1'b0;
+			ALUOutControl = 1'b1;
+			RegDst = 3'b000;
+			DataSrc = 4'b0000;
+			estado = AddiAddiu;
 		end
 		AddiAddiu: begin
 			IorD = 2'b00;

@@ -199,33 +199,43 @@ applicable agreement for further details.
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
-		"Instruction"
+		"EsperaDecode2"
 		"0000111"
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
+		"Instruction"
+		"0001000"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
 		"Add2"
-		"1101000"
+		"0001001"
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
 		"Sub2"
-		"1101001"
-		""
-		(type "PARAMETER_UNSIGNED_BIN")	)
-	(parameter
-		"And2"
 		"0001010"
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
-		"AddSubAnd"
+		"And2"
 		"0001011"
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
-		"AddiAddiu"
+		"AddSubAnd"
 		"0001100"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"AddiAddiu"
+		"0001101"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Addi2"
+		"0001110"
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter

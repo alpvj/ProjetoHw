@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Thu Oct 10 13:29:13 2019
+Analysis & Synthesis Status : Successful - Thu Oct 10 14:17:51 2019
 Quartus II 64-Bit Version : 9.1 Build 350 03/24/2010 SP 2 SJ Full Version
 Revision Name : ProjetoCPU
 Top-level Entity Name : Hardware
 Family : Stratix II
 Logic utilization : N/A
-    Combinational ALUTs : 921
-    Dedicated logic registers : 1,388
-Total registers : 1388
-Total pins : 305
+    Combinational ALUTs : 102
+    Dedicated logic registers : 209
+Total registers : 209
+Total pins : 303
 Total virtual pins : 0
 Total block memory bits : 8,192
 DSP block 9-bit elements : 0
