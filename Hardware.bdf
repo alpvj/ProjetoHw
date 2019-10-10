@@ -1465,8 +1465,8 @@ applicable agreement for further details.
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
-		"AddSubAnd"
-		"1000"
+		"Sub2"
+		"1001"
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
@@ -1475,13 +1475,13 @@ applicable agreement for further details.
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
-		"Sub2"
-		"1001"
+		"AddSubAnd"
+		"1011"
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
 		"AddiAddiu"
-		"1001"
+		"1100"
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter

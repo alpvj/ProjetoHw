@@ -205,12 +205,12 @@ applicable agreement for further details.
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
 		"Add2"
-		"0001000"
+		"1101000"
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
-		"AddSubAnd"
-		"0001001"
+		"Sub2"
+		"1101001"
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
@@ -219,7 +219,7 @@ applicable agreement for further details.
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
-		"Sub2"
+		"AddSubAnd"
 		"0001011"
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)

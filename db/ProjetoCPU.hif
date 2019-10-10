@@ -1222,7 +1222,7 @@ db|ProjetoCPU.(0).cnf
 # case_insensitive
 # source_file
 hardware.bdf
-9320efad427899fb17da40b87856f73
+4e8562fd2425374c42658bb965a7be1
 26
 # internal_option {
 BLOCK_DESIGN_NAMING
@@ -1246,7 +1246,7 @@ ON
 # case_sensitive
 # source_file
 controle.v
-dd391bc54fac91df37510d345d7c0a
+894d1e82ef41e78643ea654dcdd414b
 8
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -1301,20 +1301,20 @@ Add2
 1000
 PARAMETER_UNSIGNED_BIN
 USR
-AddSubAnd
-1000
+Sub2
+1001
 PARAMETER_UNSIGNED_BIN
 USR
 And2
 1010
 PARAMETER_UNSIGNED_BIN
 USR
-Sub2
-1001
+AddSubAnd
+1011
 PARAMETER_UNSIGNED_BIN
 USR
 AddiAddiu
-1001
+1100
 PARAMETER_UNSIGNED_BIN
 USR
 ADD

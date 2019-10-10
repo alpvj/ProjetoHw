@@ -12,11 +12,11 @@ parameter Decode1 = 7'd4;
 parameter EsperaDecode = 7'd5;
 parameter Decode2 = 7'd6;
 parameter Instruction = 7'd7;
-parameter Add2 = 7'd8;
-parameter AddSubAnd = 7'd9;
-parameter And2 = 7'd10;
-parameter Sub2 = 7'd11;
-parameter AddiAddiu = 7'd12;
+parameter Add2 = 7'd1000;
+parameter Sub2 = 7'd1001;
+parameter And2 = 7'b1011;
+parameter AddSubAnd = 7'b1011;
+parameter AddiAddiu = 7'b1100;
 
 //Tipo R
 parameter ADD = 6'b100000;
