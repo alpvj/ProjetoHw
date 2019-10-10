@@ -1,22 +1,30 @@
 module Controle(input wire clk, reset, input wire [5:0] OpCode, funct,
-output reg PCWrite, MemCtrl, IRWrite, SEControl, A_Control, B_Control, RegControl, ALUOutControl, EPCWrite,
+output reg PCWrite, MemCtrl, IRWrite, A_Control, B_Control, RegControl, ALUOutControl, EPCWrite,
 output reg [1:0] IorD, ALUSrcA, ALUSrcB,
 output reg [2:0] RegDst, PCSource, ALUControl,
-output reg [3:0] DataSrc);
+output reg [3:0] DataSrc, output reg [6:0] estado);
 
-parameter Fetch1 = 4'd0;
-parameter Espera1Fetch = 4'd1;
-parameter Espera2Fetch = 4'd2;
-parameter Fetch2 = 4'd3;
-parameter Decode1 = 4'd4;
-parameter EsperaDecode = 4'd5;
-parameter Decode2 = 4'd6;
-parameter AddSubAnd = 4'd7;
-reg[3:0] estado;
+parameter Fetch1 = 7'd0;
+parameter Espera1Fetch = 7'd1;
+parameter Espera2Fetch = 7'd2;
+parameter Fetch2 = 7'd3;
+parameter Decode1 = 7'd4;
+parameter EsperaDecode = 7'd5;
+parameter Decode2 = 7'd6;
+parameter Instruction = 7'd7;
+parameter Add2 = 7'd8;
+parameter AddSubAnd = 7'd9;
+parameter And2 = 7'd10;
+parameter Sub2 = 7'd11;
+parameter AddiAddiu = 7'd12;
 
-parameter Add = 6'b100000;
-parameter Sub = 6'b100010;
-parameter And = 6'b100100;
+//Tipo R
+parameter ADD = 6'b100000;
+parameter SUB = 6'b100010;
+parameter AND = 6'b100100;
+//Tipo I
+parameter ADDI = 6'b001000;
+parameter ADDIU = 6'b001001;
 
 initial begin
 	estado = Fetch1;
@@ -35,7 +43,6 @@ always @(posedge clk) begin
 			PCWrite = 1'b0;
 			EPCWrite = 1'b0;
 			RegControl = 1'b0;
-			SEControl = 1'b0;
 			A_Control = 1'b0;
 			B_Control = 1'b0;
 			ALUOutControl = 1'b0;
@@ -54,7 +61,6 @@ always @(posedge clk) begin
 			PCWrite = 1'b0;
 			EPCWrite = 1'b0;
 			RegControl = 1'b0;
-			SEControl = 1'b0;
 			A_Control = 1'b0;
 			B_Control = 1'b0;
 			ALUOutControl = 1'b0;
@@ -73,7 +79,6 @@ always @(posedge clk) begin
 			PCWrite = 1'b0;
 			EPCWrite = 1'b0;
 			RegControl = 1'b0;
-			SEControl = 1'b0;
 			A_Control = 1'b0;
 			B_Control = 1'b0;
 			ALUOutControl = 1'b0;
@@ -92,7 +97,6 @@ always @(posedge clk) begin
 			PCWrite = 1'b1;
 			EPCWrite = 1'b1;
 			RegControl = 1'b0;
-			SEControl = 1'b0;
 			A_Control = 1'b0;
 			B_Control = 1'b0;
 			ALUOutControl = 1'b0;
@@ -111,7 +115,6 @@ always @(posedge clk) begin
 			PCWrite = 1'b0;
 			EPCWrite = 1'b0;
 			RegControl = 1'b0;
-			SEControl = 1'b1;
 			A_Control = 1'b0;
 			B_Control = 1'b0;
 			ALUOutControl = 1'b0;
@@ -130,7 +133,6 @@ always @(posedge clk) begin
 			PCWrite = 1'b0;
 			EPCWrite = 1'b0;
 			RegControl = 1'b0;
-			SEControl = 1'b1;
 			A_Control = 1'b0;
 			B_Control = 1'b0;
 			ALUOutControl = 1'b0;
@@ -149,7 +151,6 @@ always @(posedge clk) begin
 			PCWrite = 1'b0;
 			EPCWrite = 1'b0;
 			RegControl = 1'b0;
-			SEControl = 1'b1;
 			A_Control = 1'b1;
 			B_Control = 1'b1;
 			ALUOutControl = 1'b1;
@@ -161,7 +162,7 @@ always @(posedge clk) begin
 			case(OpCode)
 				6'b0: begin //aritmeticos
 					case(funct)
-						Add: begin
+						ADD: begin
 							IorD = 2'b00;
 							MemCtrl = 1'b0;
 							IRWrite = 1'b0;
@@ -172,15 +173,14 @@ always @(posedge clk) begin
 							PCWrite = 1'b0;
 							EPCWrite = 1'b0;
 							RegControl = 1'b0;
-							SEControl = 1'b0;
 							A_Control = 1'b0;
 							B_Control = 1'b0;
-							ALUOutControl = 1'b1;
+							ALUOutControl = 1'b0;
 							RegDst = 3'b000;
 							DataSrc = 4'b0000;
-							estado = AddSubAnd;
+							estado = Add2;
 						end
-						Sub: begin
+						SUB: begin
 							IorD = 2'b00;
 							MemCtrl = 1'b0;
 							IRWrite = 1'b0;
@@ -191,15 +191,14 @@ always @(posedge clk) begin
 							PCWrite = 1'b0;
 							EPCWrite = 1'b0;
 							RegControl = 1'b0;
-							SEControl = 1'b0;
 							A_Control = 1'b0;
 							B_Control = 1'b0;
-							ALUOutControl = 1'b1;
+							ALUOutControl = 1'b0;
 							RegDst = 3'b000;
 							DataSrc = 4'b0000;
-							estado = AddSubAnd;
+							estado = Sub2;
 						end
-						And: begin
+						AND: begin
 							IorD = 2'b00;
 							MemCtrl = 1'b0;
 							IRWrite = 1'b0;
@@ -210,17 +209,106 @@ always @(posedge clk) begin
 							PCWrite = 1'b0;
 							EPCWrite = 1'b0;
 							RegControl = 1'b0;
-							SEControl = 1'b0;
 							A_Control = 1'b0;
 							B_Control = 1'b0;
-							ALUOutControl = 1'b1;
+							ALUOutControl = 1'b0;
 							RegDst = 3'b000;
 							DataSrc = 4'b0000;
-							estado = AddSubAnd;
+							estado = And2;
 						end
 					endcase
 				end
+				ADDI: begin
+					IorD = 2'b00;
+					MemCtrl = 1'b0;
+					IRWrite = 1'b0;
+					ALUSrcA = 2'b01;
+					ALUSrcB = 2'b10;
+					ALUControl = 3'b000;
+					PCSource = 3'b000;
+					PCWrite = 1'b0;
+					EPCWrite = 1'b0;
+					RegControl = 1'b0;
+					A_Control = 1'b0;
+					B_Control = 1'b0;
+					ALUOutControl = 1'b1;
+					RegDst = 3'b000;
+					DataSrc = 4'b0000;
+					estado = AddiAddiu;
+				end
+				ADDIU: begin
+					IorD = 2'b00;
+					MemCtrl = 1'b0;
+					IRWrite = 1'b0;
+					ALUSrcA = 2'b01;
+					ALUSrcB = 2'b10;
+					ALUControl = 3'b000;
+					PCSource = 3'b000;
+					PCWrite = 1'b0;
+					EPCWrite = 1'b0;
+					RegControl = 1'b0;
+					A_Control = 1'b0;
+					B_Control = 1'b0;
+					ALUOutControl = 1'b1;
+					RegDst = 3'b000;
+					DataSrc = 4'b0000;
+					estado = AddiAddiu;
+				end
 			endcase
+		end
+		Add2: begin
+			IorD = 2'b00;
+			MemCtrl = 1'b0;
+			IRWrite = 1'b0;
+			ALUSrcA = 2'b01;
+			ALUSrcB = 2'b00;
+			ALUControl = 3'b001;
+			PCSource = 3'b000;
+			PCWrite = 1'b0;
+			EPCWrite = 1'b0;
+			RegControl = 1'b0;
+			A_Control = 1'b0;
+			B_Control = 1'b0;
+			ALUOutControl = 1'b1;
+			RegDst = 3'b000;
+			DataSrc = 4'b0000;
+			estado = AddSubAnd;
+		end
+		Sub2: begin
+			IorD = 2'b00;
+			MemCtrl = 1'b0;
+			IRWrite = 1'b0;
+			ALUSrcA = 2'b01;
+			ALUSrcB = 2'b00;
+			ALUControl = 3'b001;
+			PCSource = 3'b000;
+			PCWrite = 1'b0;
+			EPCWrite = 1'b0;
+			RegControl = 1'b0;
+			A_Control = 1'b0;
+			B_Control = 1'b0;
+			ALUOutControl = 1'b1;
+			RegDst = 3'b000;
+			DataSrc = 4'b0000;
+			estado = AddSubAnd;
+		end
+		And2: begin
+			IorD = 2'b00;
+			MemCtrl = 1'b0;
+			IRWrite = 1'b0;
+			ALUSrcA = 2'b01;
+			ALUSrcB = 2'b00;
+			ALUControl = 3'b001;
+			PCSource = 3'b000;
+			PCWrite = 1'b0;
+			EPCWrite = 1'b0;
+			RegControl = 1'b0;
+			A_Control = 1'b0;
+			B_Control = 1'b0;
+			ALUOutControl = 1'b1;
+			RegDst = 3'b000;
+			DataSrc = 4'b0000;
+			estado = AddSubAnd;
 		end
 		AddSubAnd: begin
 			IorD = 2'b00;
@@ -233,11 +321,28 @@ always @(posedge clk) begin
 			PCWrite = 1'b0;
 			EPCWrite = 1'b0;
 			RegControl = 1'b1;
-			SEControl = 1'b0;
 			A_Control = 1'b0;
 			B_Control = 1'b0;
 			ALUOutControl = 1'b0;
 			RegDst = 3'b001;
+			DataSrc = 4'b0000;
+			estado = Fetch1;
+		end
+		AddiAddiu: begin
+			IorD = 2'b00;
+			MemCtrl = 1'b0;
+			IRWrite = 1'b0;
+			ALUSrcA = 2'b00;
+			ALUSrcB = 2'b00;
+			ALUControl = 3'b000;
+			PCSource = 3'b000;
+			PCWrite = 1'b0;
+			EPCWrite = 1'b0;
+			RegControl = 1'b1;
+			A_Control = 1'b0;
+			B_Control = 1'b0;
+			ALUOutControl = 1'b0;
+			RegDst = 3'b000;
 			DataSrc = 4'b0000;
 			estado = Fetch1;
 		end

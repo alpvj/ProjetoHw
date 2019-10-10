@@ -1,0 +1,15 @@
+Success, your file was converted:
+DEPTH = 4;
+WIDTH = 8;
+
+ADDRESS_RADIX = DEC;
+DATA_RADIX = BIN;
+CONTENT
+BEGIN
+
+000 : 00100000; --add 17 15 16
+001 : 10001000;
+002 : 11110000;
+003 : 00000001;
+
+END;

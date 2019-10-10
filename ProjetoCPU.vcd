@@ -1,0 +1,460 @@
+$comment
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+$end
+
+$date 
+  10/10/2019 12:48:18 
+$end
+$version 
+ QUARTUS_VCD_EXPORT 1.0 
+$end
+$timescale
+  1 ps
+$end
+$scope module Hardware $end
+$var reg 1 ! clk $end
+$var reg 4 " estado[3:0] $end
+$var reg 1 # reset $end
+$var reg 6 $ opcode[5:0] $end
+$var reg 16 % Inst15a0[15:0] $end
+$var reg 6 & funct[5:0] $end
+$var reg 5 ' Inst20a16[4:0] $end
+$var reg 5 ( Inst25a21[4:0] $end
+$var reg 32 ) MDR[31:0] $end
+$var reg 32 * PCOut[31:0] $end
+$var reg 32 + EPC[31:0] $end
+$var reg 32 , RegA[31:0] $end
+$var reg 32 - RegB[31:0] $end
+$var reg 32 . SrcA[31:0] $end
+$var reg 32 / SrcB[31:0] $end
+$var reg 32 0 S[31:0] $end
+$var reg 2 1 ALUSrcA[1:0] $end
+$var reg 1 2 estado[6] $end
+$var reg 1 3 estado[5] $end
+$var reg 1 4 estado[4] $end
+$scope module Reg_Control $end
+$var reg 32 5 Reg15[31:0] $end
+$var reg 32 6 Reg16[31:0] $end
+$var reg 32 7 Reg17[31:0] $end
+$var reg 32 8 Reg0[31:0] $end
+$var reg 32 9 Reg1[31:0] $end
+$var reg 32 : Reg2[31:0] $end
+$var reg 32 ; Reg3[31:0] $end
+$var reg 32 < Reg4[31:0] $end
+$var reg 32 = Reg5[31:0] $end
+$var reg 32 > Reg6[31:0] $end
+$var reg 32 ? Reg7[31:0] $end
+$var reg 32 @ Reg8[31:0] $end
+$var reg 32 A Reg9[31:0] $end
+$var reg 32 B Reg10[31:0] $end
+$var reg 32 C Reg11[31:0] $end
+$var reg 32 D Reg12[31:0] $end
+$var reg 32 E Reg13[31:0] $end
+$var reg 32 F Reg14[31:0] $end
+$var reg 32 G Reg18[31:0] $end
+$var reg 32 H Reg19[31:0] $end
+$var reg 32 I Reg20[31:0] $end
+$var reg 32 J Reg21[31:0] $end
+$var reg 32 K Reg22[31:0] $end
+$var reg 32 L Reg23[31:0] $end
+$var reg 32 M Reg24[31:0] $end
+$var reg 32 N Reg25[31:0] $end
+$var reg 32 O Reg26[31:0] $end
+$var reg 32 P Reg27[31:0] $end
+$var reg 32 Q Reg28[31:0] $end
+$var reg 32 R Reg29[31:0] $end
+$var reg 32 S Reg30[31:0] $end
+$var reg 32 T Reg31[31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+b0 "
+0#
+b0 $
+b0 %
+b0 &
+b0 '
+b0 (
+b0 )
+b0 *
+b0 +
+b0 ,
+b0 -
+b0 .
+b0 /
+b0 0
+b0 1
+02
+03
+04
+b0 5
+b0 6
+b0 7
+b0 8
+b0 9
+b0 :
+b0 ;
+b0 <
+b0 =
+b0 >
+b0 ?
+b0 @
+b0 A
+b0 B
+b0 C
+b0 D
+b0 E
+b0 F
+b0 G
+b0 H
+b0 I
+b0 J
+b0 K
+b0 L
+b0 M
+b0 N
+b0 O
+b0 P
+b0 Q
+b0 R
+b0 S
+b0 T
+$end
+#10000
+1!
+b1 "
+1#
+#20000
+0!
+0#
+#30000
+1!
+b10 "
+1#
+b1111100001000100000100000 )
+b100 /
+b100 0
+#40000
+0!
+0#
+#50000
+1!
+b11 "
+1#
+b1000100000100000 %
+b100000 &
+b10000 '
+b1111 (
+#60000
+0!
+0#
+#70000
+1!
+b100 "
+1#
+#80000
+0!
+0#
+#90000
+1!
+b101 "
+1#
+b100 *
+b100 +
+#100000
+0!
+0#
+#110000
+1!
+b110 "
+1#
+b100 .
+b11111111111111100010000010000000 /
+b11111111111111100010000010000100 0
+#120000
+0!
+0#
+#130000
+1!
+b111 "
+1#
+#140000
+0!
+0#
+#150000
+1!
+b1000 "
+1#
+b0 )
+b1 1
+#160000
+0!
+0#
+#170000
+1!
+1#
+b0 .
+b0 /
+b0 0
+#180000
+0!
+0#
+#190000
+1!
+1#
+#200000
+0!
+0#
+#210000
+1!
+1#
+#220000
+0!
+0#
+#230000
+1!
+1#
+#240000
+0!
+0#
+#250000
+1!
+1#
+#260000
+0!
+0#
+#270000
+1!
+1#
+#280000
+0!
+0#
+#290000
+1!
+1#
+#300000
+0!
+0#
+#310000
+1!
+1#
+#320000
+0!
+0#
+#330000
+1!
+1#
+#340000
+0!
+0#
+#350000
+1!
+1#
+#360000
+0!
+0#
+#370000
+1!
+1#
+#380000
+0!
+0#
+#390000
+1!
+1#
+#400000
+0!
+0#
+#410000
+1!
+1#
+#420000
+0!
+0#
+#430000
+1!
+1#
+#440000
+0!
+0#
+#450000
+1!
+1#
+#460000
+0!
+0#
+#470000
+1!
+1#
+#480000
+0!
+0#
+#490000
+1!
+1#
+#500000
+0!
+0#
+#510000
+1!
+1#
+#520000
+0!
+0#
+#530000
+1!
+1#
+#540000
+0!
+0#
+#550000
+1!
+1#
+#560000
+0!
+0#
+#570000
+1!
+1#
+#580000
+0!
+0#
+#590000
+1!
+1#
+#600000
+0!
+0#
+#610000
+1!
+1#
+#620000
+0!
+0#
+#630000
+1!
+1#
+#640000
+0!
+0#
+#650000
+1!
+1#
+#660000
+0!
+0#
+#670000
+1!
+1#
+#680000
+0!
+0#
+#690000
+1!
+1#
+#700000
+0!
+0#
+#710000
+1!
+1#
+#720000
+0!
+0#
+#730000
+1!
+1#
+#740000
+0!
+0#
+#750000
+1!
+1#
+#760000
+0!
+0#
+#770000
+1!
+1#
+#780000
+0!
+0#
+#790000
+1!
+1#
+#800000
+0!
+0#
+#810000
+1!
+1#
+#820000
+0!
+0#
+#830000
+1!
+1#
+#840000
+0!
+0#
+#850000
+1!
+1#
+#860000
+0!
+0#
+#870000
+1!
+1#
+#880000
+0!
+0#
+#890000
+1!
+1#
+#900000
+0!
+0#
+#910000
+1!
+1#
+#920000
+0!
+0#
+#930000
+1!
+1#
+#940000
+0!
+0#
+#950000
+1!
+1#
+#960000
+0!
+0#
+#970000
+1!
+1#
+#980000
+0!
+0#
+#990000
+1!
+1#
+#1000000

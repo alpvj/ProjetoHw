@@ -2,33 +2,23 @@
 Timing Analyzer Summary
 --------------------------------------------------------------------------------------
 
-Type           : Worst-case tsu
-Slack          : N/A
-Required Time  : None
-Actual Time    : 2.204 ns
-From           : inputSE
-To             : outputSE[0]~reg0
-From Clock     : --
-To Clock       : clk
-Failed Paths   : 0
-
 Type           : Worst-case tco
 Slack          : N/A
 Required Time  : None
-Actual Time    : 6.249 ns
-From           : outputSE[1]~reg0
-To             : outputSE[1]
+Actual Time    : 12.633 ns
+From           : Controle:inst4|ALUControl[1]
+To             : S[29]
 From Clock     : clk
 To Clock       : --
 Failed Paths   : 0
 
-Type           : Worst-case th
+Type           : Clock Setup: 'clk'
 Slack          : N/A
 Required Time  : None
-Actual Time    : -1.864 ns
-From           : inputSE
-To             : outputSE[1]~reg0
-From Clock     : --
+Actual Time    : 146.65 MHz ( period = 6.819 ns )
+From           : Controle:inst4|ALUControl[1]
+To             : Registrador:EPCWrite|Saida[30]
+From Clock     : clk
 To Clock       : clk
 Failed Paths   : 0
 

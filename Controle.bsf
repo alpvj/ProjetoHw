@@ -75,152 +75,182 @@ applicable agreement for further details.
 	(port
 		(pt 200 80)
 		(output)
-		(text "SEControl" (rect 0 0 49 12)(font "Arial" ))
-		(text "SEControl" (rect 130 75 179 87)(font "Arial" ))
+		(text "A_Control" (rect 0 0 48 12)(font "Arial" ))
+		(text "A_Control" (rect 131 75 179 87)(font "Arial" ))
 		(line (pt 200 80)(pt 184 80)(line_width 1))
 	)
 	(port
 		(pt 200 96)
 		(output)
-		(text "A_Control" (rect 0 0 48 12)(font "Arial" ))
-		(text "A_Control" (rect 131 91 179 103)(font "Arial" ))
+		(text "B_Control" (rect 0 0 48 12)(font "Arial" ))
+		(text "B_Control" (rect 131 91 179 103)(font "Arial" ))
 		(line (pt 200 96)(pt 184 96)(line_width 1))
 	)
 	(port
 		(pt 200 112)
 		(output)
-		(text "B_Control" (rect 0 0 48 12)(font "Arial" ))
-		(text "B_Control" (rect 131 107 179 119)(font "Arial" ))
+		(text "RegControl" (rect 0 0 55 12)(font "Arial" ))
+		(text "RegControl" (rect 124 107 179 119)(font "Arial" ))
 		(line (pt 200 112)(pt 184 112)(line_width 1))
 	)
 	(port
 		(pt 200 128)
 		(output)
-		(text "RegControl" (rect 0 0 55 12)(font "Arial" ))
-		(text "RegControl" (rect 124 123 179 135)(font "Arial" ))
+		(text "ALUOutControl" (rect 0 0 74 12)(font "Arial" ))
+		(text "ALUOutControl" (rect 105 123 179 135)(font "Arial" ))
 		(line (pt 200 128)(pt 184 128)(line_width 1))
 	)
 	(port
 		(pt 200 144)
 		(output)
-		(text "ALUOutControl" (rect 0 0 74 12)(font "Arial" ))
-		(text "ALUOutControl" (rect 105 139 179 151)(font "Arial" ))
+		(text "EPCWrite" (rect 0 0 48 12)(font "Arial" ))
+		(text "EPCWrite" (rect 131 139 179 151)(font "Arial" ))
 		(line (pt 200 144)(pt 184 144)(line_width 1))
 	)
 	(port
 		(pt 200 160)
 		(output)
-		(text "EPCWrite" (rect 0 0 48 12)(font "Arial" ))
-		(text "EPCWrite" (rect 131 155 179 167)(font "Arial" ))
-		(line (pt 200 160)(pt 184 160)(line_width 1))
+		(text "IorD[1..0]" (rect 0 0 47 12)(font "Arial" ))
+		(text "IorD[1..0]" (rect 132 155 179 167)(font "Arial" ))
+		(line (pt 200 160)(pt 184 160)(line_width 3))
 	)
 	(port
 		(pt 200 176)
 		(output)
-		(text "IorD[1..0]" (rect 0 0 47 12)(font "Arial" ))
-		(text "IorD[1..0]" (rect 132 171 179 183)(font "Arial" ))
+		(text "ALUSrcA[1..0]" (rect 0 0 70 12)(font "Arial" ))
+		(text "ALUSrcA[1..0]" (rect 109 171 179 183)(font "Arial" ))
 		(line (pt 200 176)(pt 184 176)(line_width 3))
 	)
 	(port
 		(pt 200 192)
 		(output)
-		(text "ALUSrcA[1..0]" (rect 0 0 70 12)(font "Arial" ))
-		(text "ALUSrcA[1..0]" (rect 109 187 179 199)(font "Arial" ))
+		(text "ALUSrcB[1..0]" (rect 0 0 70 12)(font "Arial" ))
+		(text "ALUSrcB[1..0]" (rect 109 187 179 199)(font "Arial" ))
 		(line (pt 200 192)(pt 184 192)(line_width 3))
 	)
 	(port
 		(pt 200 208)
 		(output)
-		(text "ALUSrcB[1..0]" (rect 0 0 70 12)(font "Arial" ))
-		(text "ALUSrcB[1..0]" (rect 109 203 179 215)(font "Arial" ))
+		(text "RegDst[2..0]" (rect 0 0 63 12)(font "Arial" ))
+		(text "RegDst[2..0]" (rect 116 203 179 215)(font "Arial" ))
 		(line (pt 200 208)(pt 184 208)(line_width 3))
 	)
 	(port
 		(pt 200 224)
 		(output)
-		(text "RegDst[2..0]" (rect 0 0 63 12)(font "Arial" ))
-		(text "RegDst[2..0]" (rect 116 219 179 231)(font "Arial" ))
+		(text "PCSource[2..0]" (rect 0 0 75 12)(font "Arial" ))
+		(text "PCSource[2..0]" (rect 104 219 179 231)(font "Arial" ))
 		(line (pt 200 224)(pt 184 224)(line_width 3))
 	)
 	(port
 		(pt 200 240)
 		(output)
-		(text "PCSource[2..0]" (rect 0 0 75 12)(font "Arial" ))
-		(text "PCSource[2..0]" (rect 104 235 179 247)(font "Arial" ))
+		(text "ALUControl[2..0]" (rect 0 0 82 12)(font "Arial" ))
+		(text "ALUControl[2..0]" (rect 97 235 179 247)(font "Arial" ))
 		(line (pt 200 240)(pt 184 240)(line_width 3))
 	)
 	(port
 		(pt 200 256)
 		(output)
-		(text "ALUControl[2..0]" (rect 0 0 82 12)(font "Arial" ))
-		(text "ALUControl[2..0]" (rect 97 251 179 263)(font "Arial" ))
+		(text "DataSrc[3..0]" (rect 0 0 66 12)(font "Arial" ))
+		(text "DataSrc[3..0]" (rect 113 251 179 263)(font "Arial" ))
 		(line (pt 200 256)(pt 184 256)(line_width 3))
 	)
 	(port
 		(pt 200 272)
 		(output)
-		(text "DataSrc[3..0]" (rect 0 0 66 12)(font "Arial" ))
-		(text "DataSrc[3..0]" (rect 113 267 179 279)(font "Arial" ))
+		(text "estado[6..0]" (rect 0 0 59 12)(font "Arial" ))
+		(text "estado[6..0]" (rect 120 267 179 279)(font "Arial" ))
 		(line (pt 200 272)(pt 184 272)(line_width 3))
 	)
 	(parameter
 		"Fetch1"
-		"0000"
+		"0000000"
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
 		"Espera1Fetch"
-		"0001"
+		"0000001"
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
 		"Espera2Fetch"
-		"0010"
+		"0000010"
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
 		"Fetch2"
-		"0011"
+		"0000011"
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
 		"Decode1"
-		"0100"
+		"0000100"
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
 		"EsperaDecode"
-		"0101"
+		"0000101"
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
 		"Decode2"
-		"0110"
+		"0000110"
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
 		"Instruction"
-		"0111"
+		"0000111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Add2"
+		"0001000"
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
 		"AddSubAnd"
-		"1000"
+		"0001001"
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
-		"Add"
+		"And2"
+		"0001010"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Sub2"
+		"0001011"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"AddiAddiu"
+		"0001100"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"ADD"
 		"100000"
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
-		"Sub"
+		"SUB"
 		"100010"
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
-		"And"
+		"AND"
 		"100100"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"ADDI"
+		"001000"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"ADDIU"
+		"001001"
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(drawing
