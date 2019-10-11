@@ -11,17 +11,14 @@ parameter Fetch2 = 7'b0000011;
 parameter Decode1 = 7'b0000100;
 parameter EsperaDecode = 7'b0000101;
 parameter Decode2 = 7'b0000110;
-parameter EsperaDecode2 = 7'b0000111;
-parameter Instruction = 7'b0001000;
-
-parameter Add2 = 7'b0001001;//9
-parameter Sub2 = 7'b0001010;//10
-parameter And2 = 7'b0001011;//11
-parameter AddSubAnd = 7'b0001100;//12
-parameter AddiAddiu = 7'b0001101;//13
-parameter Addi2 = 7'b0001110;//14
-
-
+parameter EsperaDecode2 = 7'd7;
+parameter Instruction = 7'd8;
+parameter Add2 = 7'd9;//9
+parameter Sub2 = 7'd10;//10
+parameter And2 = 7'd11;//11
+parameter AddSubAnd = 7'd12;//12
+parameter AddiAddiu = 7'd13;//13
+parameter Addi2 = 7'd14;//14
 //Tipo R
 parameter ADD = 6'b100000;
 parameter SUB = 6'b100010;
@@ -160,9 +157,9 @@ always @(posedge clk) begin
 			ALUOutControl = 1'b1;
 			RegDst = 3'b000;
 			DataSrc = 4'b0000;
-			estado = EsperaDecode2;
+			estado = 7'd7;
 		end
-		EsperaDecode2: begin
+		7'd7: begin
 			IorD = 2'b00;
 			MemCtrl = 1'b0;
 			IRWrite = 1'b0;
@@ -178,9 +175,9 @@ always @(posedge clk) begin
 			ALUOutControl = 1'b0;
 			RegDst = 3'b000;
 			DataSrc = 4'b0000;
-			estado = Instruction;
+			estado = 7'd8;
 		end
-		Instruction: begin
+		7'd8: begin
 			case(OpCode)
 				6'b0: begin //aritmeticos
 					case(funct)
@@ -200,7 +197,7 @@ always @(posedge clk) begin
 							ALUOutControl = 1'b0;
 							RegDst = 3'b000;
 							DataSrc = 4'b0000;
-							estado = Add2;
+							estado = 7'd9;
 						end
 						SUB: begin
 							IorD = 2'b00;
@@ -256,7 +253,7 @@ always @(posedge clk) begin
 					ALUOutControl = 1'b0;
 					RegDst = 3'b000;
 					DataSrc = 4'b0000;
-					estado = Addi2;
+					estado = 7'b0001110;
 				end
 				ADDIU: begin
 					IorD = 2'b00;
@@ -274,11 +271,11 @@ always @(posedge clk) begin
 					ALUOutControl = 1'b0;
 					RegDst = 3'b000;
 					DataSrc = 4'b0000;
-					estado = Addi2;
+					estado = 7'b0001110;
 				end
 			endcase
 		end
-		Add2: begin
+		7'd9: begin
 			IorD = 2'b00;
 			MemCtrl = 1'b0;
 			IRWrite = 1'b0;
@@ -294,7 +291,7 @@ always @(posedge clk) begin
 			ALUOutControl = 1'b1;
 			RegDst = 3'b000;
 			DataSrc = 4'b0000;
-			estado = AddSubAnd;
+			estado = 7'b0001100;
 		end
 		Sub2: begin
 			IorD = 2'b00;
@@ -312,7 +309,7 @@ always @(posedge clk) begin
 			ALUOutControl = 1'b1;
 			RegDst = 3'b000;
 			DataSrc = 4'b0000;
-			estado = AddSubAnd;
+			estado = 7'b0001100;
 		end
 		And2: begin
 			IorD = 2'b00;
@@ -330,9 +327,9 @@ always @(posedge clk) begin
 			ALUOutControl = 1'b1;
 			RegDst = 3'b000;
 			DataSrc = 4'b0000;
-			estado = AddSubAnd;
+			estado = 7'b0001100;
 		end
-		AddSubAnd: begin
+		7'b0001100: begin
 			IorD = 2'b00;
 			MemCtrl = 1'b0;
 			IRWrite = 1'b0;
@@ -350,7 +347,7 @@ always @(posedge clk) begin
 			DataSrc = 4'b0000;
 			estado = Fetch1;
 		end
-		Addi2: begin
+		7'b0001110: begin
 			IorD = 2'b00;
 			MemCtrl = 1'b0;
 			IRWrite = 1'b0;
@@ -366,9 +363,9 @@ always @(posedge clk) begin
 			ALUOutControl = 1'b1;
 			RegDst = 3'b000;
 			DataSrc = 4'b0000;
-			estado = AddiAddiu;
+			estado = 7'b0001101;
 		end
-		AddiAddiu: begin
+		7'b0001101: begin
 			IorD = 2'b00;
 			MemCtrl = 1'b0;
 			IRWrite = 1'b0;
