@@ -1,6 +1,6 @@
 Assembler report for ProjetoCPU
-Fri Oct 11 11:56:52 2019
-Quartus II 64-Bit Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
+Sun Oct 13 18:18:48 2019
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
 ---------------------
@@ -10,8 +10,8 @@ Quartus II 64-Bit Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Versio
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: C:/Users/alpvj/Desktop/pasta/ProjetoHw/ProjetoCPU.sof
-  6. Assembler Device Options: C:/Users/alpvj/Desktop/pasta/ProjetoHw/ProjetoCPU.pof
+  5. Assembler Device Options: C:/Users/Rodolpho/Desktop/Andre/Projeto/ProjetoHw/ProjetoCPU.sof
+  6. Assembler Device Options: C:/Users/Rodolpho/Desktop/Andre/Projeto/ProjetoHw/ProjetoCPU.pof
   7. Assembler Messages
 
 
@@ -38,11 +38,11 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Fri Oct 11 11:56:52 2019 ;
+; Assembler Status      ; Successful - Sun Oct 13 18:18:48 2019 ;
 ; Revision Name         ; ProjetoCPU                            ;
 ; Top-level Entity Name ; Hardware                              ;
 ; Family                ; Stratix II                            ;
-; Device                ; EP2S15F484C3                          ;
+; Device                ; EP2S15F672C3                          ;
 +-----------------------+---------------------------------------+
 
 
@@ -79,53 +79,53 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------+----------+---------------+
 
 
-+-------------------------------------------------------+
-; Assembler Generated Files                             ;
-+-------------------------------------------------------+
-; File Name                                             ;
-+-------------------------------------------------------+
-; C:/Users/alpvj/Desktop/pasta/ProjetoHw/ProjetoCPU.sof ;
-; C:/Users/alpvj/Desktop/pasta/ProjetoHw/ProjetoCPU.pof ;
-+-------------------------------------------------------+
++------------------------------------------------------------------+
+; Assembler Generated Files                                        ;
++------------------------------------------------------------------+
+; File Name                                                        ;
++------------------------------------------------------------------+
+; C:/Users/Rodolpho/Desktop/Andre/Projeto/ProjetoHw/ProjetoCPU.sof ;
+; C:/Users/Rodolpho/Desktop/Andre/Projeto/ProjetoHw/ProjetoCPU.pof ;
++------------------------------------------------------------------+
 
 
-+---------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/alpvj/Desktop/pasta/ProjetoHw/ProjetoCPU.sof ;
-+----------------+----------------------------------------------------------------+
-; Option         ; Setting                                                        ;
-+----------------+----------------------------------------------------------------+
-; Device         ; EP2S15F484C3                                                   ;
-; JTAG usercode  ; 0xFFFFFFFF                                                     ;
-; Checksum       ; 0x00465213                                                     ;
-+----------------+----------------------------------------------------------------+
++--------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/Rodolpho/Desktop/Andre/Projeto/ProjetoHw/ProjetoCPU.sof ;
++----------------+---------------------------------------------------------------------------+
+; Option         ; Setting                                                                   ;
++----------------+---------------------------------------------------------------------------+
+; Device         ; EP2S15F672C3                                                              ;
+; JTAG usercode  ; 0xFFFFFFFF                                                                ;
+; Checksum       ; 0x00464C3C                                                                ;
++----------------+---------------------------------------------------------------------------+
 
 
-+---------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/alpvj/Desktop/pasta/ProjetoHw/ProjetoCPU.pof ;
-+--------------------+------------------------------------------------------------+
-; Option             ; Setting                                                    ;
-+--------------------+------------------------------------------------------------+
-; Device             ; EPC16                                                      ;
-; JTAG usercode      ; 0xFFFFFFFF                                                 ;
-; Checksum           ; 0x1E8C659B                                                 ;
-; Compression Ratio  ; 2                                                          ;
-+--------------------+------------------------------------------------------------+
++--------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/Rodolpho/Desktop/Andre/Projeto/ProjetoHw/ProjetoCPU.pof ;
++--------------------+-----------------------------------------------------------------------+
+; Option             ; Setting                                                               ;
++--------------------+-----------------------------------------------------------------------+
+; Device             ; EPC16                                                                 ;
+; JTAG usercode      ; 0xFFFFFFFF                                                            ;
+; Checksum           ; 0x1E82E2D1                                                            ;
+; Compression Ratio  ; 2                                                                     ;
++--------------------+-----------------------------------------------------------------------+
 
 
 +--------------------+
 ; Assembler Messages ;
 +--------------------+
 Info: *******************************************************************
-Info: Running Quartus II 64-Bit Assembler
-    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
-    Info: Processing started: Fri Oct 11 11:56:49 2019
+Info: Running Quartus II Assembler
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Sun Oct 13 18:18:47 2019
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off ProjetoCPU -c ProjetoCPU
 Info: Writing out detailed assembly data for power analysis
 Info: Assembler is generating device programming files
-Info: Quartus II 64-Bit Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4426 megabytes
-    Info: Processing ended: Fri Oct 11 11:56:52 2019
-    Info: Elapsed time: 00:00:03
+Info: Quartus II Assembler was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 239 megabytes
+    Info: Processing ended: Sun Oct 13 18:18:48 2019
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:02
 
 
