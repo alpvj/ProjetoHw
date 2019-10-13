@@ -1,5 +1,5 @@
 Flow report for ProjetoCPU
-Sun Oct 13 18:18:50 2019
+Sun Oct 13 18:29:35 2019
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -38,7 +38,7 @@ applicable agreement for further details.
 +------------------------------------------------------------------------------+
 ; Flow Summary                                                                 ;
 +-------------------------------+----------------------------------------------+
-; Flow Status                   ; Successful - Sun Oct 13 18:18:50 2019        ;
+; Flow Status                   ; Successful - Sun Oct 13 18:29:35 2019        ;
 ; Quartus II Version            ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
 ; Revision Name                 ; ProjetoCPU                                   ;
 ; Top-level Entity Name         ; Hardware                                     ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/13/2019 18:18:29 ;
+; Start date & time ; 10/13/2019 18:29:14 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; ProjetoCPU          ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +------------------------------------+---------------------------------+---------------+-------------+----------------+
 ; Assignment Name                    ; Value                           ; Default Value ; Entity Name ; Section Id     ;
 +------------------------------------+---------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID              ; 269178633149210.157100150911280 ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID              ; 269178633149210.157100215405536 ; --            ; --          ; --             ;
 ; PARTITION_COLOR                    ; 16764057                        ; --            ; Hardware    ; Top            ;
 ; PARTITION_NETLIST_TYPE             ; SOURCE                          ; --            ; Hardware    ; Top            ;
 ; TOP_LEVEL_ENTITY                   ; Hardware                        ; ProjetoCPU    ; --          ; --             ;
@@ -89,10 +89,10 @@ applicable agreement for further details.
 ; Module Name             ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Analysis & Synthesis    ; 00:00:07     ; 1.0                     ; 274 MB              ; 00:00:09                           ;
-; Fitter                  ; 00:00:08     ; 1.0                     ; 274 MB              ; 00:00:08                           ;
+; Fitter                  ; 00:00:08     ; 1.0                     ; 274 MB              ; 00:00:10                           ;
 ; Assembler               ; 00:00:02     ; 1.0                     ; 239 MB              ; 00:00:02                           ;
-; Classic Timing Analyzer ; 00:00:01     ; 1.0                     ; 179 MB              ; 00:00:01                           ;
-; Total                   ; 00:00:18     ; --                      ; --                  ; 00:00:20                           ;
+; Classic Timing Analyzer ; 00:00:00     ; 1.0                     ; 179 MB              ; 00:00:01                           ;
+; Total                   ; 00:00:17     ; --                      ; --                  ; 00:00:22                           ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
