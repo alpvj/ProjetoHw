@@ -1,6 +1,6 @@
-module ALUSrcA (input wire clk, input wire [1:0] controlador, input wire [31:0] input0, input1, input2, input3, output reg [31:0] outputMux);
+module ALUSrcA (input wire [1:0] controlador, input wire [31:0] input0, input1, input2, input3, output reg [31:0] outputMux);
 	
-always @(posedge clk)begin
+always @(*) begin
 	case(controlador)
 		2'b00:begin
 			outputMux <= input0;

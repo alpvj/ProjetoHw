@@ -1,6 +1,6 @@
-module RegDst (input wire clk, input wire [2:0] controlador, input wire [4:0] input0, input1, input4, input5, input6, input7, output reg [4:0] outputMux);
+module RegDst (input wire [2:0] controlador, input wire [4:0] input0, input1, input4, input5, input6, input7, output reg [4:0] outputMux);
 	
-always @(posedge clk) begin
+always @(*) begin
 	case(controlador)
 		3'b000:begin
 			outputMux <= input0;

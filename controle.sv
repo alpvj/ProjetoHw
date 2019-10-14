@@ -134,7 +134,7 @@ always @(posedge clk) begin
 				estado = Espera2Fetch;
 			end
 			Espera2Fetch: begin
-				PCWrite = 1'b1;
+				PCWrite = 1'b0;
 				MemCtrl = 1'b0;
 				IRWrite = 1'b1;
 				A_Control = 1'b0;
@@ -161,7 +161,7 @@ always @(posedge clk) begin
 				estado = Fetch2;
 			end
 			Fetch2: begin
-				PCWrite = 1'b0;
+				PCWrite = 1'b1;
 				MemCtrl = 1'b0;
 				IRWrite = 1'b1;
 				A_Control = 1'b0;
@@ -655,7 +655,7 @@ always @(posedge clk) begin
 				estado = Fetch1;
 			end
 			Break2: begin
-				PCWrite = 1'b0;
+				PCWrite = 1'b1;
 				MemCtrl = 1'b0;
 				IRWrite = 1'b0;
 				A_Control = 1'b0;
@@ -682,7 +682,7 @@ always @(posedge clk) begin
 				estado = Break3;
 			end
 			Break3: begin
-				PCWrite = 1'b1;
+				PCWrite = 1'b0;
 				MemCtrl = 1'b0;
 				IRWrite = 1'b0;
 				A_Control = 1'b0;

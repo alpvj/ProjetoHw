@@ -11325,8 +11325,8 @@ VECTOR("C:/Users/Rodolpho/Desktop/Andre/Projeto/ProjetoHw/WaveAND.vwf")
 VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 {
 	ZOOM{
-		ZBEGIN = 0;
-		ZEND = 125000;
+		ZBEGIN = 580500;
+		ZEND = 717200;
 		NUMERATOR = 0;
 		DENOMINATOR = 0;
 		TOP_INDEX = 0;
