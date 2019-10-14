@@ -16,6 +16,7 @@ clk => ALUSrcB:inst6.clk
 clk => Registrador:B_Control.Clk
 clk => ShiftLeft2de32pra32:inst.clk
 clk => Registrador:EPCWrite.Clk
+ResetSignal <= Controle:inst4.reset
 ALUOut[0] <= Registrador:ALUOutControl.Saida[0]
 ALUOut[1] <= Registrador:ALUOutControl.Saida[1]
 ALUOut[2] <= Registrador:ALUOutControl.Saida[2]
@@ -402,7 +403,7 @@ clk => A_Control~reg0.CLK
 clk => IRWrite~reg0.CLK
 clk => MemCtrl~reg0.CLK
 clk => PCWrite~reg0.CLK
-reset => ~NO_FANOUT~
+clk => reset~reg0.CLK
 OpCode[0] => Equal0.IN11
 OpCode[1] => Equal0.IN10
 OpCode[2] => Equal0.IN9
@@ -465,6 +466,7 @@ estado[3] <= estado[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 estado[4] <= estado[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 estado[5] <= estado[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 estado[6] <= estado[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+reset <= reset~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Hardware|Instr_Reg:IRWrite

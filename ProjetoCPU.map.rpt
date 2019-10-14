@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ProjetoCPU
-Mon Oct 14 10:20:50 2019
+Mon Oct 14 11:15:51 2019
 Quartus II 64-Bit Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
 
 
@@ -16,17 +16,18 @@ Quartus II 64-Bit Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Versio
   8. Analysis & Synthesis RAM Summary
   9. Registers Removed During Synthesis
  10. General Register Statistics
- 11. Multiplexer Restructuring Statistics (Restructuring Performed)
- 12. Source assignments for Memoria:MemCtrl|LPM_RAM_DQ:MEM|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated
- 13. Source assignments for Memoria:MemCtrl|LPM_RAM_DQ:MEM_plus_One|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated
- 14. Source assignments for Memoria:MemCtrl|LPM_RAM_DQ:MEM_plus_Two|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated
- 15. Source assignments for Memoria:MemCtrl|LPM_RAM_DQ:MEM_plus_Three|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated
- 16. Parameter Settings for User Entity Instance: Controle:inst4
- 17. Parameter Settings for User Entity Instance: Memoria:MemCtrl|LPM_RAM_DQ:MEM
- 18. Parameter Settings for User Entity Instance: Memoria:MemCtrl|LPM_RAM_DQ:MEM_plus_One
- 19. Parameter Settings for User Entity Instance: Memoria:MemCtrl|LPM_RAM_DQ:MEM_plus_Two
- 20. Parameter Settings for User Entity Instance: Memoria:MemCtrl|LPM_RAM_DQ:MEM_plus_Three
- 21. Analysis & Synthesis Messages
+ 11. Inverted Register Statistics
+ 12. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 13. Source assignments for Memoria:MemCtrl|LPM_RAM_DQ:MEM|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated
+ 14. Source assignments for Memoria:MemCtrl|LPM_RAM_DQ:MEM_plus_One|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated
+ 15. Source assignments for Memoria:MemCtrl|LPM_RAM_DQ:MEM_plus_Two|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated
+ 16. Source assignments for Memoria:MemCtrl|LPM_RAM_DQ:MEM_plus_Three|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated
+ 17. Parameter Settings for User Entity Instance: Controle:inst4
+ 18. Parameter Settings for User Entity Instance: Memoria:MemCtrl|LPM_RAM_DQ:MEM
+ 19. Parameter Settings for User Entity Instance: Memoria:MemCtrl|LPM_RAM_DQ:MEM_plus_One
+ 20. Parameter Settings for User Entity Instance: Memoria:MemCtrl|LPM_RAM_DQ:MEM_plus_Two
+ 21. Parameter Settings for User Entity Instance: Memoria:MemCtrl|LPM_RAM_DQ:MEM_plus_Three
+ 22. Analysis & Synthesis Messages
 
 
 
@@ -52,16 +53,16 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +-------------------------------+-----------------------------------------------+
-; Analysis & Synthesis Status   ; Successful - Mon Oct 14 10:20:50 2019         ;
+; Analysis & Synthesis Status   ; Successful - Mon Oct 14 11:15:51 2019         ;
 ; Quartus II 64-Bit Version     ; 9.1 Build 350 03/24/2010 SP 2 SJ Full Version ;
 ; Revision Name                 ; ProjetoCPU                                    ;
 ; Top-level Entity Name         ; Hardware                                      ;
 ; Family                        ; Stratix II                                    ;
 ; Logic utilization             ; N/A                                           ;
-;     Combinational ALUTs       ; 918                                           ;
-;     Dedicated logic registers ; 1,389                                         ;
-; Total registers               ; 1389                                          ;
-; Total pins                    ; 335                                           ;
+;     Combinational ALUTs       ; 919                                           ;
+;     Dedicated logic registers ; 1,390                                         ;
+; Total registers               ; 1390                                          ;
+; Total pins                    ; 336                                           ;
 ; Total virtual pins            ; 0                                             ;
 ; Total block memory bits       ; 8,192                                         ;
 ; DSP block 9-bit elements      ; 0                                             ;
@@ -200,39 +201,39 @@ applicable agreement for further details.
 +-----------------------------------------------+-------+
 ; Resource                                      ; Usage ;
 +-----------------------------------------------+-------+
-; Estimated ALUTs Used                          ; 918   ;
-; Dedicated logic registers                     ; 1389  ;
+; Estimated ALUTs Used                          ; 919   ;
+; Dedicated logic registers                     ; 1390  ;
 ;                                               ;       ;
 ; Estimated ALUTs Unavailable                   ; 0     ;
 ;                                               ;       ;
-; Total combinational functions                 ; 918   ;
+; Total combinational functions                 ; 919   ;
 ; Combinational ALUT usage by number of inputs  ;       ;
 ;     -- 7 input functions                      ; 0     ;
 ;     -- 6 input functions                      ; 702   ;
-;     -- 5 input functions                      ; 47    ;
+;     -- 5 input functions                      ; 48    ;
 ;     -- 4 input functions                      ; 37    ;
 ;     -- <=3 input functions                    ; 132   ;
 ;                                               ;       ;
 ; Combinational ALUTs by mode                   ;       ;
-;     -- normal mode                            ; 895   ;
+;     -- normal mode                            ; 896   ;
 ;     -- extended LUT mode                      ; 0     ;
 ;     -- arithmetic mode                        ; 23    ;
 ;     -- shared arithmetic mode                 ; 0     ;
 ;                                               ;       ;
-; Estimated ALUT/register pairs used            ; 2116  ;
+; Estimated ALUT/register pairs used            ; 2118  ;
 ;                                               ;       ;
-; Total registers                               ; 1389  ;
-;     -- Dedicated logic registers              ; 1389  ;
+; Total registers                               ; 1390  ;
+;     -- Dedicated logic registers              ; 1390  ;
 ;     -- I/O registers                          ; 0     ;
 ;                                               ;       ;
-; Estimated ALMs:  partially or completely used ; 1,058 ;
+; Estimated ALMs:  partially or completely used ; 1,059 ;
 ;                                               ;       ;
-; I/O pins                                      ; 335   ;
+; I/O pins                                      ; 336   ;
 ; Total block memory bits                       ; 8192  ;
 ; Maximum fan-out node                          ; clk   ;
-; Maximum fan-out                               ; 1421  ;
-; Total fan-out                                 ; 9728  ;
-; Average fan-out                               ; 3.64  ;
+; Maximum fan-out                               ; 1422  ;
+; Total fan-out                                 ; 10951 ;
+; Average fan-out                               ; 4.09  ;
 +-----------------------------------------------+-------+
 
 
@@ -241,37 +242,37 @@ applicable agreement for further details.
 +-------------------------------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                      ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                 ; Library Name ;
 +-------------------------------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------+--------------+
-; |Hardware                                       ; 918 (1)           ; 1389 (0)     ; 8192              ; 0            ; 0       ; 0         ; 0         ; 335  ; 0            ; |Hardware                                                                                                           ; work         ;
+; |Hardware                                       ; 919 (1)           ; 1390 (0)     ; 8192              ; 0            ; 0       ; 0         ; 0         ; 336  ; 0            ; |Hardware                                                                                                           ; work         ;
 ;    |ALUSrcA:inst5|                              ; 0 (0)             ; 32 (32)      ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|ALUSrcA:inst5                                                                                             ; work         ;
-;    |ALUSrcB:inst6|                              ; 19 (19)           ; 32 (32)      ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|ALUSrcB:inst6                                                                                             ;              ;
+;    |ALUSrcB:inst6|                              ; 19 (19)           ; 32 (32)      ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|ALUSrcB:inst6                                                                                             ; work         ;
 ;    |Banco_reg:Reg_Control|                      ; 736 (736)         ; 1024 (1024)  ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Banco_reg:Reg_Control                                                                                     ; work         ;
-;    |Controle:inst4|                             ; 27 (27)           ; 16 (16)      ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Controle:inst4                                                                                            ;              ;
+;    |Controle:inst4|                             ; 28 (28)           ; 17 (17)      ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Controle:inst4                                                                                            ;              ;
 ;    |DataSrc:inst3|                              ; 0 (0)             ; 32 (32)      ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|DataSrc:inst3                                                                                             ; work         ;
 ;    |Instr_Reg:IRWrite|                          ; 0 (0)             ; 32 (32)      ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Instr_Reg:IRWrite                                                                                         ; work         ;
 ;    |IorD:inst1|                                 ; 0 (0)             ; 8 (8)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|IorD:inst1                                                                                                ; work         ;
-;    |Memoria:MemCtrl|                            ; 23 (23)           ; 0 (0)        ; 8192              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Memoria:MemCtrl                                                                                           ;              ;
+;    |Memoria:MemCtrl|                            ; 23 (23)           ; 0 (0)        ; 8192              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Memoria:MemCtrl                                                                                           ; work         ;
 ;       |lpm_ram_dq:MEM_plus_One|                 ; 0 (0)             ; 0 (0)        ; 2048              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Memoria:MemCtrl|lpm_ram_dq:MEM_plus_One                                                                   ; work         ;
 ;          |altram:sram|                          ; 0 (0)             ; 0 (0)        ; 2048              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Memoria:MemCtrl|lpm_ram_dq:MEM_plus_One|altram:sram                                                       ;              ;
-;             |altsyncram:ram_block|              ; 0 (0)             ; 0 (0)        ; 2048              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Memoria:MemCtrl|lpm_ram_dq:MEM_plus_One|altram:sram|altsyncram:ram_block                                  ; work         ;
+;             |altsyncram:ram_block|              ; 0 (0)             ; 0 (0)        ; 2048              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Memoria:MemCtrl|lpm_ram_dq:MEM_plus_One|altram:sram|altsyncram:ram_block                                  ;              ;
 ;                |altsyncram_g2a1:auto_generated| ; 0 (0)             ; 0 (0)        ; 2048              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Memoria:MemCtrl|lpm_ram_dq:MEM_plus_One|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated   ;              ;
 ;       |lpm_ram_dq:MEM_plus_Three|               ; 0 (0)             ; 0 (0)        ; 2048              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Memoria:MemCtrl|lpm_ram_dq:MEM_plus_Three                                                                 ;              ;
 ;          |altram:sram|                          ; 0 (0)             ; 0 (0)        ; 2048              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Memoria:MemCtrl|lpm_ram_dq:MEM_plus_Three|altram:sram                                                     ; work         ;
 ;             |altsyncram:ram_block|              ; 0 (0)             ; 0 (0)        ; 2048              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Memoria:MemCtrl|lpm_ram_dq:MEM_plus_Three|altram:sram|altsyncram:ram_block                                ; work         ;
 ;                |altsyncram_g2a1:auto_generated| ; 0 (0)             ; 0 (0)        ; 2048              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Memoria:MemCtrl|lpm_ram_dq:MEM_plus_Three|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated ; work         ;
-;       |lpm_ram_dq:MEM_plus_Two|                 ; 0 (0)             ; 0 (0)        ; 2048              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Memoria:MemCtrl|lpm_ram_dq:MEM_plus_Two                                                                   ; work         ;
+;       |lpm_ram_dq:MEM_plus_Two|                 ; 0 (0)             ; 0 (0)        ; 2048              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Memoria:MemCtrl|lpm_ram_dq:MEM_plus_Two                                                                   ;              ;
 ;          |altram:sram|                          ; 0 (0)             ; 0 (0)        ; 2048              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Memoria:MemCtrl|lpm_ram_dq:MEM_plus_Two|altram:sram                                                       ;              ;
-;             |altsyncram:ram_block|              ; 0 (0)             ; 0 (0)        ; 2048              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Memoria:MemCtrl|lpm_ram_dq:MEM_plus_Two|altram:sram|altsyncram:ram_block                                  ; work         ;
+;             |altsyncram:ram_block|              ; 0 (0)             ; 0 (0)        ; 2048              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Memoria:MemCtrl|lpm_ram_dq:MEM_plus_Two|altram:sram|altsyncram:ram_block                                  ;              ;
 ;                |altsyncram_g2a1:auto_generated| ; 0 (0)             ; 0 (0)        ; 2048              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Memoria:MemCtrl|lpm_ram_dq:MEM_plus_Two|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated   ;              ;
 ;       |lpm_ram_dq:MEM|                          ; 0 (0)             ; 0 (0)        ; 2048              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Memoria:MemCtrl|lpm_ram_dq:MEM                                                                            ; work         ;
-;          |altram:sram|                          ; 0 (0)             ; 0 (0)        ; 2048              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Memoria:MemCtrl|lpm_ram_dq:MEM|altram:sram                                                                ;              ;
+;          |altram:sram|                          ; 0 (0)             ; 0 (0)        ; 2048              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Memoria:MemCtrl|lpm_ram_dq:MEM|altram:sram                                                                ; work         ;
 ;             |altsyncram:ram_block|              ; 0 (0)             ; 0 (0)        ; 2048              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Memoria:MemCtrl|lpm_ram_dq:MEM|altram:sram|altsyncram:ram_block                                           ; work         ;
-;                |altsyncram_g2a1:auto_generated| ; 0 (0)             ; 0 (0)        ; 2048              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Memoria:MemCtrl|lpm_ram_dq:MEM|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated            ;              ;
+;                |altsyncram_g2a1:auto_generated| ; 0 (0)             ; 0 (0)        ; 2048              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Memoria:MemCtrl|lpm_ram_dq:MEM|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated            ; work         ;
 ;    |PCSource:PCSource|                          ; 0 (0)             ; 32 (32)      ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|PCSource:PCSource                                                                                         ; work         ;
 ;    |RegDst:inst2|                               ; 5 (5)             ; 5 (5)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|RegDst:inst2                                                                                              ; work         ;
 ;    |Registrador:ALUOutControl|                  ; 0 (0)             ; 32 (32)      ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Registrador:ALUOutControl                                                                                 ; work         ;
 ;    |Registrador:A_Control|                      ; 0 (0)             ; 32 (32)      ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Registrador:A_Control                                                                                     ; work         ;
 ;    |Registrador:B_Control|                      ; 0 (0)             ; 32 (32)      ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Registrador:B_Control                                                                                     ; work         ;
-;    |Registrador:EPCWrite|                       ; 0 (0)             ; 32 (32)      ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Registrador:EPCWrite                                                                                      ;              ;
+;    |Registrador:EPCWrite|                       ; 0 (0)             ; 32 (32)      ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Registrador:EPCWrite                                                                                      ; work         ;
 ;    |Registrador:PCWrite|                        ; 0 (0)             ; 32 (32)      ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Registrador:PCWrite                                                                                       ; work         ;
 ;    |ShiftLeft2de32pra32:inst|                   ; 0 (0)             ; 16 (16)      ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|ShiftLeft2de32pra32:inst                                                                                  ; work         ;
 ;    |Ula32:ALUControl|                           ; 107 (107)         ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Ula32:ALUControl                                                                                          ; work         ;
@@ -298,16 +299,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------------------+---------------------------------------------------+
 ; ShiftLeft2de32pra32:inst|outputSL[0..1]   ; Stuck at GND due to stuck port data_in            ;
 ; ShiftLeft2de32pra32:inst|outputSL[18..31] ; Merged with ShiftLeft2de32pra32:inst|outputSL[17] ;
-; Controle:inst4|estado[6]                  ; Merged with Controle:inst4|estado[5]              ;
-; Controle:inst4|DataSrc[0..3]              ; Merged with Controle:inst4|estado[5]              ;
-; Controle:inst4|ALUControl[2]              ; Merged with Controle:inst4|estado[5]              ;
-; Controle:inst4|PCSource[0..2]             ; Merged with Controle:inst4|estado[5]              ;
-; Controle:inst4|RegDst[1..2]               ; Merged with Controle:inst4|estado[5]              ;
-; Controle:inst4|ALUSrcA[1]                 ; Merged with Controle:inst4|estado[5]              ;
-; Controle:inst4|IorD[0..1]                 ; Merged with Controle:inst4|estado[5]              ;
-; Controle:inst4|MemCtrl                    ; Merged with Controle:inst4|estado[5]              ;
+; Controle:inst4|estado[4..6]               ; Merged with Controle:inst4|DataSrc[0]             ;
+; Controle:inst4|DataSrc[2..3]              ; Merged with Controle:inst4|DataSrc[1]             ;
+; Controle:inst4|ALUControl[2]              ; Merged with Controle:inst4|DataSrc[1]             ;
+; Controle:inst4|PCSource[0..2]             ; Merged with Controle:inst4|DataSrc[1]             ;
+; Controle:inst4|RegDst[1..2]               ; Merged with Controle:inst4|DataSrc[1]             ;
+; Controle:inst4|ALUSrcA[1]                 ; Merged with Controle:inst4|DataSrc[1]             ;
+; Controle:inst4|IorD[0..1]                 ; Merged with Controle:inst4|DataSrc[1]             ;
+; Controle:inst4|MemCtrl                    ; Merged with Controle:inst4|DataSrc[1]             ;
 ; Controle:inst4|A_Control                  ; Merged with Controle:inst4|B_Control              ;
-; Controle:inst4|estado[4..5]               ; Stuck at GND due to stuck port clock_enable       ;
+; Controle:inst4|DataSrc[0..1]              ; Stuck at GND due to stuck port data_in            ;
 ; Total Number of Removed Registers = 34    ;                                                   ;
 +-------------------------------------------+---------------------------------------------------+
 
@@ -317,36 +318,46 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 1389  ;
+; Total registers                              ; 1390  ;
 ; Number of registers using Synchronous Clear  ; 19    ;
 ; Number of registers using Synchronous Load   ; 52    ;
-; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Clear ; 1216  ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 1228  ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                         ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output               ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------+
-; 4:1                ; 32 bits   ; 64 ALUTs      ; 0 ALUTs              ; 64 ALUTs               ; Yes        ; |Hardware|ALUSrcA:inst5|outputMux[9]     ;
-; 3:1                ; 15 bits   ; 30 ALUTs      ; 0 ALUTs              ; 30 ALUTs               ; Yes        ; |Hardware|ALUSrcB:inst6|outputMux[30]    ;
-; 4:1                ; 2 bits    ; 4 ALUTs       ; 4 ALUTs              ; 0 ALUTs                ; Yes        ; |Hardware|ALUSrcB:inst6|outputMux[0]     ;
-; 4:1                ; 13 bits   ; 26 ALUTs      ; 26 ALUTs             ; 0 ALUTs                ; Yes        ; |Hardware|ALUSrcB:inst6|outputMux[13]    ;
-; 4:1                ; 5 bits    ; 10 ALUTs      ; 10 ALUTs             ; 0 ALUTs                ; Yes        ; |Hardware|RegDst:inst2|outputMux[4]      ;
-; 4:1                ; 2 bits    ; 4 ALUTs       ; 4 ALUTs              ; 0 ALUTs                ; Yes        ; |Hardware|ALUSrcB:inst6|outputMux[16]    ;
-; 32:1               ; 32 bits   ; 672 ALUTs     ; 672 ALUTs            ; 0 ALUTs                ; Yes        ; |Hardware|Registrador:B_Control|Saida[0] ;
-; 32:1               ; 32 bits   ; 672 ALUTs     ; 672 ALUTs            ; 0 ALUTs                ; Yes        ; |Hardware|Registrador:A_Control|Saida[0] ;
-; 66:1               ; 4 bits    ; 176 ALUTs     ; 64 ALUTs             ; 112 ALUTs              ; Yes        ; |Hardware|Controle:inst4|estado[2]       ;
-; 66:1               ; 10 bits   ; 440 ALUTs     ; 70 ALUTs             ; 370 ALUTs              ; Yes        ; |Hardware|Controle:inst4|ALUSrcB[1]      ;
-; 128:1              ; 2 bits    ; 170 ALUTs     ; 28 ALUTs             ; 142 ALUTs              ; Yes        ; |Hardware|Controle:inst4|estado[0]       ;
-; 128:1              ; 2 bits    ; 170 ALUTs     ; 16 ALUTs             ; 154 ALUTs              ; Yes        ; |Hardware|Controle:inst4|ALUControl[0]   ;
-; 8:1                ; 32 bits   ; 160 ALUTs     ; 64 ALUTs             ; 96 ALUTs               ; No         ; |Hardware|Ula32:ALUControl|Mux47         ;
-; 8:1                ; 32 bits   ; 160 ALUTs     ; 128 ALUTs            ; 32 ALUTs               ; No         ; |Hardware|Ula32:ALUControl|Mux15         ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------+
++--------------------------------------------------+
+; Inverted Register Statistics                     ;
++----------------------------------------+---------+
+; Inverted Register                      ; Fan out ;
++----------------------------------------+---------+
+; Controle:inst4|reset                   ; 1223    ;
+; Total number of inverted registers = 1 ;         ;
++----------------------------------------+---------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                          ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------+
+; 4:1                ; 32 bits   ; 64 ALUTs      ; 0 ALUTs              ; 64 ALUTs               ; Yes        ; |Hardware|ALUSrcA:inst5|outputMux[24]     ;
+; 3:1                ; 15 bits   ; 30 ALUTs      ; 0 ALUTs              ; 30 ALUTs               ; Yes        ; |Hardware|ALUSrcB:inst6|outputMux[31]     ;
+; 4:1                ; 2 bits    ; 4 ALUTs       ; 4 ALUTs              ; 0 ALUTs                ; Yes        ; |Hardware|ALUSrcB:inst6|outputMux[1]      ;
+; 4:1                ; 13 bits   ; 26 ALUTs      ; 26 ALUTs             ; 0 ALUTs                ; Yes        ; |Hardware|ALUSrcB:inst6|outputMux[10]     ;
+; 4:1                ; 5 bits    ; 10 ALUTs      ; 10 ALUTs             ; 0 ALUTs                ; Yes        ; |Hardware|RegDst:inst2|outputMux[0]       ;
+; 4:1                ; 2 bits    ; 4 ALUTs       ; 4 ALUTs              ; 0 ALUTs                ; Yes        ; |Hardware|ALUSrcB:inst6|outputMux[15]     ;
+; 32:1               ; 32 bits   ; 672 ALUTs     ; 672 ALUTs            ; 0 ALUTs                ; Yes        ; |Hardware|Registrador:B_Control|Saida[28] ;
+; 32:1               ; 32 bits   ; 672 ALUTs     ; 672 ALUTs            ; 0 ALUTs                ; Yes        ; |Hardware|Registrador:A_Control|Saida[2]  ;
+; 34:1               ; 3 bits    ; 66 ALUTs      ; 30 ALUTs             ; 36 ALUTs               ; Yes        ; |Hardware|Controle:inst4|estado[3]        ;
+; 34:1               ; 11 bits   ; 242 ALUTs     ; 77 ALUTs             ; 165 ALUTs              ; Yes        ; |Hardware|Controle:inst4|ALUSrcB[1]       ;
+; 96:1               ; 2 bits    ; 128 ALUTs     ; 24 ALUTs             ; 104 ALUTs              ; Yes        ; |Hardware|Controle:inst4|estado[1]        ;
+; 96:1               ; 2 bits    ; 128 ALUTs     ; 16 ALUTs             ; 112 ALUTs              ; Yes        ; |Hardware|Controle:inst4|ALUControl[0]    ;
+; 8:1                ; 32 bits   ; 160 ALUTs     ; 64 ALUTs             ; 96 ALUTs               ; No         ; |Hardware|Ula32:ALUControl|Mux59          ;
+; 8:1                ; 32 bits   ; 160 ALUTs     ; 128 ALUTs            ; 32 ALUTs               ; No         ; |Hardware|Ula32:ALUControl|Mux18          ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------+
@@ -511,7 +522,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
-    Info: Processing started: Mon Oct 14 10:20:39 2019
+    Info: Processing started: Mon Oct 14 11:15:44 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ProjetoCPU -c ProjetoCPU
 Info: Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info: Found 2 design units, including 1 entities, in source file banco_reg.vhd
@@ -583,7 +594,6 @@ Info: Elaborated megafunction instantiation "Memoria:MemCtrl|LPM_RAM_DQ:MEM|altr
 Info: Found 1 design units, including 1 entities, in source file db/altsyncram_g2a1.tdf
     Info: Found entity 1: altsyncram_g2a1
 Info: Elaborating entity "altsyncram_g2a1" for hierarchy "Memoria:MemCtrl|LPM_RAM_DQ:MEM|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated"
-Critical Warning: Memory depth (256) in the design file differs from memory depth (12) in the Memory Initialization File "instrucoes.mif" -- setting initial value for remaining addresses to 0
 Info: Elaborating entity "IorD" for hierarchy "IorD:inst1"
 Info: Elaborating entity "Registrador" for hierarchy "Registrador:PCWrite"
 Info: Elaborating entity "PCSource" for hierarchy "PCSource:PCSource"
@@ -599,15 +609,15 @@ Warning: Output pins are stuck at VCC or GND
     Warning (13410): Pin "state[6]" is stuck at GND
     Warning (13410): Pin "state[5]" is stuck at GND
     Warning (13410): Pin "state[4]" is stuck at GND
-Info: Implemented 2576 device resources after synthesis - the final resource count might be different
+Info: Implemented 2579 device resources after synthesis - the final resource count might be different
     Info: Implemented 1 input pins
-    Info: Implemented 334 output pins
-    Info: Implemented 2209 logic cells
+    Info: Implemented 335 output pins
+    Info: Implemented 2211 logic cells
     Info: Implemented 32 RAM segments
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 4524 megabytes
-    Info: Processing ended: Mon Oct 14 10:20:50 2019
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:07
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 4521 megabytes
+    Info: Processing ended: Mon Oct 14 11:15:51 2019
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:12
 
 
