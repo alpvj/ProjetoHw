@@ -14148,7 +14148,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg0";
+		SIGNAL = "Banco_reg:Reg_Control|Reg17";
 		INDEX = 351;
 		FORMAT = T;
 		SCALE = 1;
@@ -14156,7 +14156,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg0[31]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg17[31]";
 		INDEX = 352;
 		FORMAT = E;
 		SCALE = 1;
@@ -14164,7 +14164,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg0[30]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg17[30]";
 		INDEX = 353;
 		FORMAT = E;
 		SCALE = 1;
@@ -14172,7 +14172,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg0[29]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg17[29]";
 		INDEX = 354;
 		FORMAT = E;
 		SCALE = 1;
@@ -14180,7 +14180,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg0[28]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg17[28]";
 		INDEX = 355;
 		FORMAT = E;
 		SCALE = 1;
@@ -14188,7 +14188,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg0[27]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg17[27]";
 		INDEX = 356;
 		FORMAT = E;
 		SCALE = 1;
@@ -14196,7 +14196,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg0[26]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg17[26]";
 		INDEX = 357;
 		FORMAT = E;
 		SCALE = 1;
@@ -14204,7 +14204,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg0[25]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg17[25]";
 		INDEX = 358;
 		FORMAT = E;
 		SCALE = 1;
@@ -14212,7 +14212,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg0[24]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg17[24]";
 		INDEX = 359;
 		FORMAT = E;
 		SCALE = 1;
@@ -14220,7 +14220,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg0[23]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg17[23]";
 		INDEX = 360;
 		FORMAT = E;
 		SCALE = 1;
@@ -14228,7 +14228,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg0[22]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg17[22]";
 		INDEX = 361;
 		FORMAT = E;
 		SCALE = 1;
@@ -14236,7 +14236,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg0[21]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg17[21]";
 		INDEX = 362;
 		FORMAT = E;
 		SCALE = 1;
@@ -14244,7 +14244,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg0[20]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg17[20]";
 		INDEX = 363;
 		FORMAT = E;
 		SCALE = 1;
@@ -14252,7 +14252,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg0[19]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg17[19]";
 		INDEX = 364;
 		FORMAT = E;
 		SCALE = 1;
@@ -14260,7 +14260,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg0[18]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg17[18]";
 		INDEX = 365;
 		FORMAT = E;
 		SCALE = 1;
@@ -14268,7 +14268,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg0[17]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg17[17]";
 		INDEX = 366;
 		FORMAT = E;
 		SCALE = 1;
@@ -14276,7 +14276,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg0[16]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg17[16]";
 		INDEX = 367;
 		FORMAT = E;
 		SCALE = 1;
@@ -14284,7 +14284,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg0[15]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg17[15]";
 		INDEX = 368;
 		FORMAT = E;
 		SCALE = 1;
@@ -14292,7 +14292,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg0[14]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg17[14]";
 		INDEX = 369;
 		FORMAT = E;
 		SCALE = 1;
@@ -14300,7 +14300,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg0[13]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg17[13]";
 		INDEX = 370;
 		FORMAT = E;
 		SCALE = 1;
@@ -14308,7 +14308,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg0[12]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg17[12]";
 		INDEX = 371;
 		FORMAT = E;
 		SCALE = 1;
@@ -14316,7 +14316,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg0[11]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg17[11]";
 		INDEX = 372;
 		FORMAT = E;
 		SCALE = 1;
@@ -14324,7 +14324,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg0[10]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg17[10]";
 		INDEX = 373;
 		FORMAT = E;
 		SCALE = 1;
@@ -14332,7 +14332,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg0[9]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg17[9]";
 		INDEX = 374;
 		FORMAT = E;
 		SCALE = 1;
@@ -14340,7 +14340,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg0[8]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg17[8]";
 		INDEX = 375;
 		FORMAT = E;
 		SCALE = 1;
@@ -14348,7 +14348,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg0[7]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg17[7]";
 		INDEX = 376;
 		FORMAT = E;
 		SCALE = 1;
@@ -14356,7 +14356,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg0[6]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg17[6]";
 		INDEX = 377;
 		FORMAT = E;
 		SCALE = 1;
@@ -14364,7 +14364,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg0[5]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg17[5]";
 		INDEX = 378;
 		FORMAT = E;
 		SCALE = 1;
@@ -14372,7 +14372,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg0[4]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg17[4]";
 		INDEX = 379;
 		FORMAT = E;
 		SCALE = 1;
@@ -14380,7 +14380,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg0[3]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg17[3]";
 		INDEX = 380;
 		FORMAT = E;
 		SCALE = 1;
@@ -14388,7 +14388,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg0[2]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg17[2]";
 		INDEX = 381;
 		FORMAT = E;
 		SCALE = 1;
@@ -14396,7 +14396,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg0[1]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg17[1]";
 		INDEX = 382;
 		FORMAT = E;
 		SCALE = 1;
@@ -14404,7 +14404,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg0[0]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg17[0]";
 		INDEX = 383;
 		FORMAT = E;
 		SCALE = 1;
@@ -14934,798 +14934,6 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 	LINE{
 		SIGNAL = "Banco_reg:Reg_Control|Reg16[0]";
 		INDEX = 449;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg17";
-		INDEX = 450;
-		FORMAT = T;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg17[31]";
-		INDEX = 451;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg17[30]";
-		INDEX = 452;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg17[29]";
-		INDEX = 453;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg17[28]";
-		INDEX = 454;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg17[27]";
-		INDEX = 455;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg17[26]";
-		INDEX = 456;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg17[25]";
-		INDEX = 457;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg17[24]";
-		INDEX = 458;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg17[23]";
-		INDEX = 459;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg17[22]";
-		INDEX = 460;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg17[21]";
-		INDEX = 461;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg17[20]";
-		INDEX = 462;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg17[19]";
-		INDEX = 463;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg17[18]";
-		INDEX = 464;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg17[17]";
-		INDEX = 465;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg17[16]";
-		INDEX = 466;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg17[15]";
-		INDEX = 467;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg17[14]";
-		INDEX = 468;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg17[13]";
-		INDEX = 469;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg17[12]";
-		INDEX = 470;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg17[11]";
-		INDEX = 471;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg17[10]";
-		INDEX = 472;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg17[9]";
-		INDEX = 473;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg17[8]";
-		INDEX = 474;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg17[7]";
-		INDEX = 475;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg17[6]";
-		INDEX = 476;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg17[5]";
-		INDEX = 477;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg17[4]";
-		INDEX = 478;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg17[3]";
-		INDEX = 479;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg17[2]";
-		INDEX = 480;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg17[1]";
-		INDEX = 481;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg17[0]";
-		INDEX = 482;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg29";
-		INDEX = 483;
-		FORMAT = T;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg29[31]";
-		INDEX = 484;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg29[30]";
-		INDEX = 485;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg29[29]";
-		INDEX = 486;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg29[28]";
-		INDEX = 487;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg29[27]";
-		INDEX = 488;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg29[26]";
-		INDEX = 489;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg29[25]";
-		INDEX = 490;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg29[24]";
-		INDEX = 491;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg29[23]";
-		INDEX = 492;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg29[22]";
-		INDEX = 493;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg29[21]";
-		INDEX = 494;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg29[20]";
-		INDEX = 495;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg29[19]";
-		INDEX = 496;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg29[18]";
-		INDEX = 497;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg29[17]";
-		INDEX = 498;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg29[16]";
-		INDEX = 499;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg29[15]";
-		INDEX = 500;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg29[14]";
-		INDEX = 501;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg29[13]";
-		INDEX = 502;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg29[12]";
-		INDEX = 503;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg29[11]";
-		INDEX = 504;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg29[10]";
-		INDEX = 505;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg29[9]";
-		INDEX = 506;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg29[8]";
-		INDEX = 507;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg29[7]";
-		INDEX = 508;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg29[6]";
-		INDEX = 509;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg29[5]";
-		INDEX = 510;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg29[4]";
-		INDEX = 511;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg29[3]";
-		INDEX = 512;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg29[2]";
-		INDEX = 513;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg29[1]";
-		INDEX = 514;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg29[0]";
-		INDEX = 515;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg31";
-		INDEX = 516;
-		FORMAT = T;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg31[31]";
-		INDEX = 517;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg31[30]";
-		INDEX = 518;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg31[29]";
-		INDEX = 519;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg31[28]";
-		INDEX = 520;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg31[27]";
-		INDEX = 521;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg31[26]";
-		INDEX = 522;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg31[25]";
-		INDEX = 523;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg31[24]";
-		INDEX = 524;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg31[23]";
-		INDEX = 525;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg31[22]";
-		INDEX = 526;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg31[21]";
-		INDEX = 527;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg31[20]";
-		INDEX = 528;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg31[19]";
-		INDEX = 529;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg31[18]";
-		INDEX = 530;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg31[17]";
-		INDEX = 531;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg31[16]";
-		INDEX = 532;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg31[15]";
-		INDEX = 533;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg31[14]";
-		INDEX = 534;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg31[13]";
-		INDEX = 535;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg31[12]";
-		INDEX = 536;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg31[11]";
-		INDEX = 537;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg31[10]";
-		INDEX = 538;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg31[9]";
-		INDEX = 539;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg31[8]";
-		INDEX = 540;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg31[7]";
-		INDEX = 541;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg31[6]";
-		INDEX = 542;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg31[5]";
-		INDEX = 543;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg31[4]";
-		INDEX = 544;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg31[3]";
-		INDEX = 545;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg31[2]";
-		INDEX = 546;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg31[1]";
-		INDEX = 547;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg31[0]";
-		INDEX = 548;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;

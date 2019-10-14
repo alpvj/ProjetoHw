@@ -15,7 +15,7 @@ applicable agreement for further details.
 $end
 
 $date 
-  10/14/2019 11:43:30 
+  10/14/2019 11:53:54 
 $end
 $version 
  QUARTUS_VCD_EXPORT 1.0 
@@ -42,6 +42,11 @@ $var reg 32 / SrcB[31:0] $end
 $var reg 32 0 S[31:0] $end
 $var reg 1 1 AluOutWritel $end
 $var reg 32 2 ALUOut[31:0] $end
+$scope module Reg_Control $end
+$var reg 32 3 Reg17[31:0] $end
+$var reg 32 4 Reg15[31:0] $end
+$var reg 32 5 Reg16[31:0] $end
+$upscope $end
 $upscope $end
 $enddefinitions $end
 #0
@@ -64,6 +69,9 @@ b0 /
 b0 0
 01
 b0 2
+b0 3
+b0 4
+b0 5
 $end
 #5000
 0!
