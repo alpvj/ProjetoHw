@@ -17,6 +17,7 @@ clk => Registrador:B_Control.Clk
 clk => ShiftLeft2de32pra32:inst.clk
 clk => Registrador:EPCWrite.Clk
 ResetSignal <= Controle:inst4.reset
+PC_Write <= Controle:inst4.PCWrite
 ALUOut[0] <= Registrador:ALUOutControl.Saida[0]
 ALUOut[1] <= Registrador:ALUOutControl.Saida[1]
 ALUOut[2] <= Registrador:ALUOutControl.Saida[2]

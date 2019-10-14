@@ -314,6 +314,22 @@ applicable agreement for further details.
 	)
 	(flipy_rotate90)
 )
+(pin
+	(output)
+	(rect 104 -608 280 -592)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "PC_Write" (rect 90 0 137 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8)(line_width 1))
+		(line (pt 52 4)(pt 78 4)(line_width 1))
+		(line (pt 52 12)(pt 78 12)(line_width 1))
+		(line (pt 52 12)(pt 52 4)(line_width 1))
+		(line (pt 78 4)(pt 82 8)(line_width 1))
+		(line (pt 82 8)(pt 78 12)(line_width 1))
+		(line (pt 78 12)(pt 82 8)(line_width 1))
+	)
+)
 (symbol
 	(rect 824 -360 1016 -232)
 	(text "Memoria" (rect 5 0 46 12)(font "Arial" ))
@@ -1580,6 +1596,16 @@ applicable agreement for further details.
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
+		"Break2"
+		"0010000"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Break3"
+		"0010001"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
 		"ADD"
 		"100000"
 		""
@@ -1592,6 +1618,11 @@ applicable agreement for further details.
 	(parameter
 		"AND"
 		"100100"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"BREAK"
+		"001101"
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
@@ -2098,10 +2129,6 @@ applicable agreement for further details.
 	(pt -24 -432)
 	(pt 88 -432)
 	(bus)
-)
-(connector
-	(pt 40 -1192)
-	(pt 40 -448)
 )
 (connector
 	(pt 3672 -144)
@@ -2802,6 +2829,18 @@ applicable agreement for further details.
 	(pt 2152 1360)
 	(pt 3688 1360)
 )
+(connector
+	(pt 104 -600)
+	(pt 40 -600)
+)
+(connector
+	(pt 40 -1192)
+	(pt 40 -600)
+)
+(connector
+	(pt 40 -600)
+	(pt 40 -448)
+)
 (junction (pt 3648 -440))
 (junction (pt 3712 -424))
 (junction (pt 4048 -424))
@@ -2846,3 +2885,4 @@ applicable agreement for further details.
 (junction (pt 2152 -128))
 (junction (pt 3688 -296))
 (junction (pt 24 8))
+(junction (pt 40 -600))

@@ -11326,7 +11326,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 {
 	ZOOM{
 		ZBEGIN = 0;
-		ZEND = 68350;
+		ZEND = 125000;
 		NUMERATOR = 0;
 		DENOMINATOR = 0;
 		TOP_INDEX = 0;
@@ -12028,8 +12028,16 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "PC";
+		SIGNAL = "PC_Write";
 		INDEX = 86;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "PC";
+		INDEX = 87;
 		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -12037,14 +12045,6 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 	}
 	LINE{
 		SIGNAL = "PC[31]";
-		INDEX = 87;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "PC[30]";
 		INDEX = 88;
 		FORMAT = E;
 		SCALE = 1;
@@ -12052,7 +12052,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "PC[29]";
+		SIGNAL = "PC[30]";
 		INDEX = 89;
 		FORMAT = E;
 		SCALE = 1;
@@ -12060,7 +12060,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "PC[28]";
+		SIGNAL = "PC[29]";
 		INDEX = 90;
 		FORMAT = E;
 		SCALE = 1;
@@ -12068,7 +12068,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "PC[27]";
+		SIGNAL = "PC[28]";
 		INDEX = 91;
 		FORMAT = E;
 		SCALE = 1;
@@ -12076,7 +12076,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "PC[26]";
+		SIGNAL = "PC[27]";
 		INDEX = 92;
 		FORMAT = E;
 		SCALE = 1;
@@ -12084,7 +12084,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "PC[25]";
+		SIGNAL = "PC[26]";
 		INDEX = 93;
 		FORMAT = E;
 		SCALE = 1;
@@ -12092,7 +12092,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "PC[24]";
+		SIGNAL = "PC[25]";
 		INDEX = 94;
 		FORMAT = E;
 		SCALE = 1;
@@ -12100,7 +12100,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "PC[23]";
+		SIGNAL = "PC[24]";
 		INDEX = 95;
 		FORMAT = E;
 		SCALE = 1;
@@ -12108,7 +12108,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "PC[22]";
+		SIGNAL = "PC[23]";
 		INDEX = 96;
 		FORMAT = E;
 		SCALE = 1;
@@ -12116,7 +12116,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "PC[21]";
+		SIGNAL = "PC[22]";
 		INDEX = 97;
 		FORMAT = E;
 		SCALE = 1;
@@ -12124,7 +12124,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "PC[20]";
+		SIGNAL = "PC[21]";
 		INDEX = 98;
 		FORMAT = E;
 		SCALE = 1;
@@ -12132,7 +12132,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "PC[19]";
+		SIGNAL = "PC[20]";
 		INDEX = 99;
 		FORMAT = E;
 		SCALE = 1;
@@ -12140,7 +12140,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "PC[18]";
+		SIGNAL = "PC[19]";
 		INDEX = 100;
 		FORMAT = E;
 		SCALE = 1;
@@ -12148,7 +12148,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "PC[17]";
+		SIGNAL = "PC[18]";
 		INDEX = 101;
 		FORMAT = E;
 		SCALE = 1;
@@ -12156,7 +12156,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "PC[16]";
+		SIGNAL = "PC[17]";
 		INDEX = 102;
 		FORMAT = E;
 		SCALE = 1;
@@ -12164,7 +12164,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "PC[15]";
+		SIGNAL = "PC[16]";
 		INDEX = 103;
 		FORMAT = E;
 		SCALE = 1;
@@ -12172,7 +12172,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "PC[14]";
+		SIGNAL = "PC[15]";
 		INDEX = 104;
 		FORMAT = E;
 		SCALE = 1;
@@ -12180,7 +12180,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "PC[13]";
+		SIGNAL = "PC[14]";
 		INDEX = 105;
 		FORMAT = E;
 		SCALE = 1;
@@ -12188,7 +12188,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "PC[12]";
+		SIGNAL = "PC[13]";
 		INDEX = 106;
 		FORMAT = E;
 		SCALE = 1;
@@ -12196,7 +12196,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "PC[11]";
+		SIGNAL = "PC[12]";
 		INDEX = 107;
 		FORMAT = E;
 		SCALE = 1;
@@ -12204,7 +12204,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "PC[10]";
+		SIGNAL = "PC[11]";
 		INDEX = 108;
 		FORMAT = E;
 		SCALE = 1;
@@ -12212,7 +12212,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "PC[9]";
+		SIGNAL = "PC[10]";
 		INDEX = 109;
 		FORMAT = E;
 		SCALE = 1;
@@ -12220,7 +12220,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "PC[8]";
+		SIGNAL = "PC[9]";
 		INDEX = 110;
 		FORMAT = E;
 		SCALE = 1;
@@ -12228,7 +12228,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "PC[7]";
+		SIGNAL = "PC[8]";
 		INDEX = 111;
 		FORMAT = E;
 		SCALE = 1;
@@ -12236,7 +12236,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "PC[6]";
+		SIGNAL = "PC[7]";
 		INDEX = 112;
 		FORMAT = E;
 		SCALE = 1;
@@ -12244,7 +12244,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "PC[5]";
+		SIGNAL = "PC[6]";
 		INDEX = 113;
 		FORMAT = E;
 		SCALE = 1;
@@ -12252,7 +12252,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "PC[4]";
+		SIGNAL = "PC[5]";
 		INDEX = 114;
 		FORMAT = E;
 		SCALE = 1;
@@ -12260,7 +12260,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "PC[3]";
+		SIGNAL = "PC[4]";
 		INDEX = 115;
 		FORMAT = E;
 		SCALE = 1;
@@ -12268,7 +12268,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "PC[2]";
+		SIGNAL = "PC[3]";
 		INDEX = 116;
 		FORMAT = E;
 		SCALE = 1;
@@ -12276,7 +12276,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "PC[1]";
+		SIGNAL = "PC[2]";
 		INDEX = 117;
 		FORMAT = E;
 		SCALE = 1;
@@ -12284,7 +12284,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "PC[0]";
+		SIGNAL = "PC[1]";
 		INDEX = 118;
 		FORMAT = E;
 		SCALE = 1;
@@ -12292,8 +12292,16 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "EPC";
+		SIGNAL = "PC[0]";
 		INDEX = 119;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "EPC";
+		INDEX = 120;
 		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -12301,14 +12309,6 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 	}
 	LINE{
 		SIGNAL = "EPC[31]";
-		INDEX = 120;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "EPC[30]";
 		INDEX = 121;
 		FORMAT = E;
 		SCALE = 1;
@@ -12316,7 +12316,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "EPC[29]";
+		SIGNAL = "EPC[30]";
 		INDEX = 122;
 		FORMAT = E;
 		SCALE = 1;
@@ -12324,7 +12324,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "EPC[28]";
+		SIGNAL = "EPC[29]";
 		INDEX = 123;
 		FORMAT = E;
 		SCALE = 1;
@@ -12332,7 +12332,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "EPC[27]";
+		SIGNAL = "EPC[28]";
 		INDEX = 124;
 		FORMAT = E;
 		SCALE = 1;
@@ -12340,7 +12340,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "EPC[26]";
+		SIGNAL = "EPC[27]";
 		INDEX = 125;
 		FORMAT = E;
 		SCALE = 1;
@@ -12348,7 +12348,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "EPC[25]";
+		SIGNAL = "EPC[26]";
 		INDEX = 126;
 		FORMAT = E;
 		SCALE = 1;
@@ -12356,7 +12356,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "EPC[24]";
+		SIGNAL = "EPC[25]";
 		INDEX = 127;
 		FORMAT = E;
 		SCALE = 1;
@@ -12364,7 +12364,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "EPC[23]";
+		SIGNAL = "EPC[24]";
 		INDEX = 128;
 		FORMAT = E;
 		SCALE = 1;
@@ -12372,7 +12372,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "EPC[22]";
+		SIGNAL = "EPC[23]";
 		INDEX = 129;
 		FORMAT = E;
 		SCALE = 1;
@@ -12380,7 +12380,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "EPC[21]";
+		SIGNAL = "EPC[22]";
 		INDEX = 130;
 		FORMAT = E;
 		SCALE = 1;
@@ -12388,7 +12388,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "EPC[20]";
+		SIGNAL = "EPC[21]";
 		INDEX = 131;
 		FORMAT = E;
 		SCALE = 1;
@@ -12396,7 +12396,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "EPC[19]";
+		SIGNAL = "EPC[20]";
 		INDEX = 132;
 		FORMAT = E;
 		SCALE = 1;
@@ -12404,7 +12404,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "EPC[18]";
+		SIGNAL = "EPC[19]";
 		INDEX = 133;
 		FORMAT = E;
 		SCALE = 1;
@@ -12412,7 +12412,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "EPC[17]";
+		SIGNAL = "EPC[18]";
 		INDEX = 134;
 		FORMAT = E;
 		SCALE = 1;
@@ -12420,7 +12420,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "EPC[16]";
+		SIGNAL = "EPC[17]";
 		INDEX = 135;
 		FORMAT = E;
 		SCALE = 1;
@@ -12428,7 +12428,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "EPC[15]";
+		SIGNAL = "EPC[16]";
 		INDEX = 136;
 		FORMAT = E;
 		SCALE = 1;
@@ -12436,7 +12436,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "EPC[14]";
+		SIGNAL = "EPC[15]";
 		INDEX = 137;
 		FORMAT = E;
 		SCALE = 1;
@@ -12444,7 +12444,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "EPC[13]";
+		SIGNAL = "EPC[14]";
 		INDEX = 138;
 		FORMAT = E;
 		SCALE = 1;
@@ -12452,7 +12452,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "EPC[12]";
+		SIGNAL = "EPC[13]";
 		INDEX = 139;
 		FORMAT = E;
 		SCALE = 1;
@@ -12460,7 +12460,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "EPC[11]";
+		SIGNAL = "EPC[12]";
 		INDEX = 140;
 		FORMAT = E;
 		SCALE = 1;
@@ -12468,7 +12468,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "EPC[10]";
+		SIGNAL = "EPC[11]";
 		INDEX = 141;
 		FORMAT = E;
 		SCALE = 1;
@@ -12476,7 +12476,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "EPC[9]";
+		SIGNAL = "EPC[10]";
 		INDEX = 142;
 		FORMAT = E;
 		SCALE = 1;
@@ -12484,7 +12484,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "EPC[8]";
+		SIGNAL = "EPC[9]";
 		INDEX = 143;
 		FORMAT = E;
 		SCALE = 1;
@@ -12492,7 +12492,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "EPC[7]";
+		SIGNAL = "EPC[8]";
 		INDEX = 144;
 		FORMAT = E;
 		SCALE = 1;
@@ -12500,7 +12500,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "EPC[6]";
+		SIGNAL = "EPC[7]";
 		INDEX = 145;
 		FORMAT = E;
 		SCALE = 1;
@@ -12508,7 +12508,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "EPC[5]";
+		SIGNAL = "EPC[6]";
 		INDEX = 146;
 		FORMAT = E;
 		SCALE = 1;
@@ -12516,7 +12516,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "EPC[4]";
+		SIGNAL = "EPC[5]";
 		INDEX = 147;
 		FORMAT = E;
 		SCALE = 1;
@@ -12524,7 +12524,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "EPC[3]";
+		SIGNAL = "EPC[4]";
 		INDEX = 148;
 		FORMAT = E;
 		SCALE = 1;
@@ -12532,7 +12532,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "EPC[2]";
+		SIGNAL = "EPC[3]";
 		INDEX = 149;
 		FORMAT = E;
 		SCALE = 1;
@@ -12540,7 +12540,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "EPC[1]";
+		SIGNAL = "EPC[2]";
 		INDEX = 150;
 		FORMAT = E;
 		SCALE = 1;
@@ -12548,7 +12548,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "EPC[0]";
+		SIGNAL = "EPC[1]";
 		INDEX = 151;
 		FORMAT = E;
 		SCALE = 1;
@@ -12556,8 +12556,16 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "RegA";
+		SIGNAL = "EPC[0]";
 		INDEX = 152;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "RegA";
+		INDEX = 153;
 		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -12565,14 +12573,6 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 	}
 	LINE{
 		SIGNAL = "RegA[31]";
-		INDEX = 153;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RegA[30]";
 		INDEX = 154;
 		FORMAT = E;
 		SCALE = 1;
@@ -12580,7 +12580,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "RegA[29]";
+		SIGNAL = "RegA[30]";
 		INDEX = 155;
 		FORMAT = E;
 		SCALE = 1;
@@ -12588,7 +12588,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "RegA[28]";
+		SIGNAL = "RegA[29]";
 		INDEX = 156;
 		FORMAT = E;
 		SCALE = 1;
@@ -12596,7 +12596,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "RegA[27]";
+		SIGNAL = "RegA[28]";
 		INDEX = 157;
 		FORMAT = E;
 		SCALE = 1;
@@ -12604,7 +12604,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "RegA[26]";
+		SIGNAL = "RegA[27]";
 		INDEX = 158;
 		FORMAT = E;
 		SCALE = 1;
@@ -12612,7 +12612,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "RegA[25]";
+		SIGNAL = "RegA[26]";
 		INDEX = 159;
 		FORMAT = E;
 		SCALE = 1;
@@ -12620,7 +12620,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "RegA[24]";
+		SIGNAL = "RegA[25]";
 		INDEX = 160;
 		FORMAT = E;
 		SCALE = 1;
@@ -12628,7 +12628,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "RegA[23]";
+		SIGNAL = "RegA[24]";
 		INDEX = 161;
 		FORMAT = E;
 		SCALE = 1;
@@ -12636,7 +12636,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "RegA[22]";
+		SIGNAL = "RegA[23]";
 		INDEX = 162;
 		FORMAT = E;
 		SCALE = 1;
@@ -12644,7 +12644,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "RegA[21]";
+		SIGNAL = "RegA[22]";
 		INDEX = 163;
 		FORMAT = E;
 		SCALE = 1;
@@ -12652,7 +12652,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "RegA[20]";
+		SIGNAL = "RegA[21]";
 		INDEX = 164;
 		FORMAT = E;
 		SCALE = 1;
@@ -12660,7 +12660,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "RegA[19]";
+		SIGNAL = "RegA[20]";
 		INDEX = 165;
 		FORMAT = E;
 		SCALE = 1;
@@ -12668,7 +12668,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "RegA[18]";
+		SIGNAL = "RegA[19]";
 		INDEX = 166;
 		FORMAT = E;
 		SCALE = 1;
@@ -12676,7 +12676,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "RegA[17]";
+		SIGNAL = "RegA[18]";
 		INDEX = 167;
 		FORMAT = E;
 		SCALE = 1;
@@ -12684,7 +12684,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "RegA[16]";
+		SIGNAL = "RegA[17]";
 		INDEX = 168;
 		FORMAT = E;
 		SCALE = 1;
@@ -12692,7 +12692,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "RegA[15]";
+		SIGNAL = "RegA[16]";
 		INDEX = 169;
 		FORMAT = E;
 		SCALE = 1;
@@ -12700,7 +12700,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "RegA[14]";
+		SIGNAL = "RegA[15]";
 		INDEX = 170;
 		FORMAT = E;
 		SCALE = 1;
@@ -12708,7 +12708,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "RegA[13]";
+		SIGNAL = "RegA[14]";
 		INDEX = 171;
 		FORMAT = E;
 		SCALE = 1;
@@ -12716,7 +12716,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "RegA[12]";
+		SIGNAL = "RegA[13]";
 		INDEX = 172;
 		FORMAT = E;
 		SCALE = 1;
@@ -12724,7 +12724,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "RegA[11]";
+		SIGNAL = "RegA[12]";
 		INDEX = 173;
 		FORMAT = E;
 		SCALE = 1;
@@ -12732,7 +12732,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "RegA[10]";
+		SIGNAL = "RegA[11]";
 		INDEX = 174;
 		FORMAT = E;
 		SCALE = 1;
@@ -12740,7 +12740,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "RegA[9]";
+		SIGNAL = "RegA[10]";
 		INDEX = 175;
 		FORMAT = E;
 		SCALE = 1;
@@ -12748,7 +12748,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "RegA[8]";
+		SIGNAL = "RegA[9]";
 		INDEX = 176;
 		FORMAT = E;
 		SCALE = 1;
@@ -12756,7 +12756,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "RegA[7]";
+		SIGNAL = "RegA[8]";
 		INDEX = 177;
 		FORMAT = E;
 		SCALE = 1;
@@ -12764,7 +12764,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "RegA[6]";
+		SIGNAL = "RegA[7]";
 		INDEX = 178;
 		FORMAT = E;
 		SCALE = 1;
@@ -12772,7 +12772,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "RegA[5]";
+		SIGNAL = "RegA[6]";
 		INDEX = 179;
 		FORMAT = E;
 		SCALE = 1;
@@ -12780,7 +12780,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "RegA[4]";
+		SIGNAL = "RegA[5]";
 		INDEX = 180;
 		FORMAT = E;
 		SCALE = 1;
@@ -12788,7 +12788,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "RegA[3]";
+		SIGNAL = "RegA[4]";
 		INDEX = 181;
 		FORMAT = E;
 		SCALE = 1;
@@ -12796,7 +12796,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "RegA[2]";
+		SIGNAL = "RegA[3]";
 		INDEX = 182;
 		FORMAT = E;
 		SCALE = 1;
@@ -12804,7 +12804,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "RegA[1]";
+		SIGNAL = "RegA[2]";
 		INDEX = 183;
 		FORMAT = E;
 		SCALE = 1;
@@ -12812,7 +12812,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "RegA[0]";
+		SIGNAL = "RegA[1]";
 		INDEX = 184;
 		FORMAT = E;
 		SCALE = 1;
@@ -12820,8 +12820,16 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "RegB";
+		SIGNAL = "RegA[0]";
 		INDEX = 185;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "RegB";
+		INDEX = 186;
 		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -12829,14 +12837,6 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 	}
 	LINE{
 		SIGNAL = "RegB[31]";
-		INDEX = 186;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RegB[30]";
 		INDEX = 187;
 		FORMAT = E;
 		SCALE = 1;
@@ -12844,7 +12844,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "RegB[29]";
+		SIGNAL = "RegB[30]";
 		INDEX = 188;
 		FORMAT = E;
 		SCALE = 1;
@@ -12852,7 +12852,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "RegB[28]";
+		SIGNAL = "RegB[29]";
 		INDEX = 189;
 		FORMAT = E;
 		SCALE = 1;
@@ -12860,7 +12860,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "RegB[27]";
+		SIGNAL = "RegB[28]";
 		INDEX = 190;
 		FORMAT = E;
 		SCALE = 1;
@@ -12868,7 +12868,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "RegB[26]";
+		SIGNAL = "RegB[27]";
 		INDEX = 191;
 		FORMAT = E;
 		SCALE = 1;
@@ -12876,7 +12876,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "RegB[25]";
+		SIGNAL = "RegB[26]";
 		INDEX = 192;
 		FORMAT = E;
 		SCALE = 1;
@@ -12884,7 +12884,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "RegB[24]";
+		SIGNAL = "RegB[25]";
 		INDEX = 193;
 		FORMAT = E;
 		SCALE = 1;
@@ -12892,7 +12892,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "RegB[23]";
+		SIGNAL = "RegB[24]";
 		INDEX = 194;
 		FORMAT = E;
 		SCALE = 1;
@@ -12900,7 +12900,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "RegB[22]";
+		SIGNAL = "RegB[23]";
 		INDEX = 195;
 		FORMAT = E;
 		SCALE = 1;
@@ -12908,7 +12908,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "RegB[21]";
+		SIGNAL = "RegB[22]";
 		INDEX = 196;
 		FORMAT = E;
 		SCALE = 1;
@@ -12916,7 +12916,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "RegB[20]";
+		SIGNAL = "RegB[21]";
 		INDEX = 197;
 		FORMAT = E;
 		SCALE = 1;
@@ -12924,7 +12924,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "RegB[19]";
+		SIGNAL = "RegB[20]";
 		INDEX = 198;
 		FORMAT = E;
 		SCALE = 1;
@@ -12932,7 +12932,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "RegB[18]";
+		SIGNAL = "RegB[19]";
 		INDEX = 199;
 		FORMAT = E;
 		SCALE = 1;
@@ -12940,7 +12940,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "RegB[17]";
+		SIGNAL = "RegB[18]";
 		INDEX = 200;
 		FORMAT = E;
 		SCALE = 1;
@@ -12948,7 +12948,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "RegB[16]";
+		SIGNAL = "RegB[17]";
 		INDEX = 201;
 		FORMAT = E;
 		SCALE = 1;
@@ -12956,7 +12956,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "RegB[15]";
+		SIGNAL = "RegB[16]";
 		INDEX = 202;
 		FORMAT = E;
 		SCALE = 1;
@@ -12964,7 +12964,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "RegB[14]";
+		SIGNAL = "RegB[15]";
 		INDEX = 203;
 		FORMAT = E;
 		SCALE = 1;
@@ -12972,7 +12972,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "RegB[13]";
+		SIGNAL = "RegB[14]";
 		INDEX = 204;
 		FORMAT = E;
 		SCALE = 1;
@@ -12980,7 +12980,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "RegB[12]";
+		SIGNAL = "RegB[13]";
 		INDEX = 205;
 		FORMAT = E;
 		SCALE = 1;
@@ -12988,7 +12988,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "RegB[11]";
+		SIGNAL = "RegB[12]";
 		INDEX = 206;
 		FORMAT = E;
 		SCALE = 1;
@@ -12996,7 +12996,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "RegB[10]";
+		SIGNAL = "RegB[11]";
 		INDEX = 207;
 		FORMAT = E;
 		SCALE = 1;
@@ -13004,7 +13004,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "RegB[9]";
+		SIGNAL = "RegB[10]";
 		INDEX = 208;
 		FORMAT = E;
 		SCALE = 1;
@@ -13012,7 +13012,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "RegB[8]";
+		SIGNAL = "RegB[9]";
 		INDEX = 209;
 		FORMAT = E;
 		SCALE = 1;
@@ -13020,7 +13020,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "RegB[7]";
+		SIGNAL = "RegB[8]";
 		INDEX = 210;
 		FORMAT = E;
 		SCALE = 1;
@@ -13028,7 +13028,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "RegB[6]";
+		SIGNAL = "RegB[7]";
 		INDEX = 211;
 		FORMAT = E;
 		SCALE = 1;
@@ -13036,7 +13036,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "RegB[5]";
+		SIGNAL = "RegB[6]";
 		INDEX = 212;
 		FORMAT = E;
 		SCALE = 1;
@@ -13044,7 +13044,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "RegB[4]";
+		SIGNAL = "RegB[5]";
 		INDEX = 213;
 		FORMAT = E;
 		SCALE = 1;
@@ -13052,7 +13052,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "RegB[3]";
+		SIGNAL = "RegB[4]";
 		INDEX = 214;
 		FORMAT = E;
 		SCALE = 1;
@@ -13060,7 +13060,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "RegB[2]";
+		SIGNAL = "RegB[3]";
 		INDEX = 215;
 		FORMAT = E;
 		SCALE = 1;
@@ -13068,7 +13068,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "RegB[1]";
+		SIGNAL = "RegB[2]";
 		INDEX = 216;
 		FORMAT = E;
 		SCALE = 1;
@@ -13076,7 +13076,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "RegB[0]";
+		SIGNAL = "RegB[1]";
 		INDEX = 217;
 		FORMAT = E;
 		SCALE = 1;
@@ -13084,8 +13084,16 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SrcA";
+		SIGNAL = "RegB[0]";
 		INDEX = 218;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "SrcA";
+		INDEX = 219;
 		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -13093,14 +13101,6 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 	}
 	LINE{
 		SIGNAL = "SrcA[31]";
-		INDEX = 219;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "SrcA[30]";
 		INDEX = 220;
 		FORMAT = E;
 		SCALE = 1;
@@ -13108,7 +13108,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SrcA[29]";
+		SIGNAL = "SrcA[30]";
 		INDEX = 221;
 		FORMAT = E;
 		SCALE = 1;
@@ -13116,7 +13116,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SrcA[28]";
+		SIGNAL = "SrcA[29]";
 		INDEX = 222;
 		FORMAT = E;
 		SCALE = 1;
@@ -13124,7 +13124,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SrcA[27]";
+		SIGNAL = "SrcA[28]";
 		INDEX = 223;
 		FORMAT = E;
 		SCALE = 1;
@@ -13132,7 +13132,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SrcA[26]";
+		SIGNAL = "SrcA[27]";
 		INDEX = 224;
 		FORMAT = E;
 		SCALE = 1;
@@ -13140,7 +13140,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SrcA[25]";
+		SIGNAL = "SrcA[26]";
 		INDEX = 225;
 		FORMAT = E;
 		SCALE = 1;
@@ -13148,7 +13148,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SrcA[24]";
+		SIGNAL = "SrcA[25]";
 		INDEX = 226;
 		FORMAT = E;
 		SCALE = 1;
@@ -13156,7 +13156,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SrcA[23]";
+		SIGNAL = "SrcA[24]";
 		INDEX = 227;
 		FORMAT = E;
 		SCALE = 1;
@@ -13164,7 +13164,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SrcA[22]";
+		SIGNAL = "SrcA[23]";
 		INDEX = 228;
 		FORMAT = E;
 		SCALE = 1;
@@ -13172,7 +13172,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SrcA[21]";
+		SIGNAL = "SrcA[22]";
 		INDEX = 229;
 		FORMAT = E;
 		SCALE = 1;
@@ -13180,7 +13180,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SrcA[20]";
+		SIGNAL = "SrcA[21]";
 		INDEX = 230;
 		FORMAT = E;
 		SCALE = 1;
@@ -13188,7 +13188,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SrcA[19]";
+		SIGNAL = "SrcA[20]";
 		INDEX = 231;
 		FORMAT = E;
 		SCALE = 1;
@@ -13196,7 +13196,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SrcA[18]";
+		SIGNAL = "SrcA[19]";
 		INDEX = 232;
 		FORMAT = E;
 		SCALE = 1;
@@ -13204,7 +13204,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SrcA[17]";
+		SIGNAL = "SrcA[18]";
 		INDEX = 233;
 		FORMAT = E;
 		SCALE = 1;
@@ -13212,7 +13212,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SrcA[16]";
+		SIGNAL = "SrcA[17]";
 		INDEX = 234;
 		FORMAT = E;
 		SCALE = 1;
@@ -13220,7 +13220,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SrcA[15]";
+		SIGNAL = "SrcA[16]";
 		INDEX = 235;
 		FORMAT = E;
 		SCALE = 1;
@@ -13228,7 +13228,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SrcA[14]";
+		SIGNAL = "SrcA[15]";
 		INDEX = 236;
 		FORMAT = E;
 		SCALE = 1;
@@ -13236,7 +13236,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SrcA[13]";
+		SIGNAL = "SrcA[14]";
 		INDEX = 237;
 		FORMAT = E;
 		SCALE = 1;
@@ -13244,7 +13244,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SrcA[12]";
+		SIGNAL = "SrcA[13]";
 		INDEX = 238;
 		FORMAT = E;
 		SCALE = 1;
@@ -13252,7 +13252,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SrcA[11]";
+		SIGNAL = "SrcA[12]";
 		INDEX = 239;
 		FORMAT = E;
 		SCALE = 1;
@@ -13260,7 +13260,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SrcA[10]";
+		SIGNAL = "SrcA[11]";
 		INDEX = 240;
 		FORMAT = E;
 		SCALE = 1;
@@ -13268,7 +13268,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SrcA[9]";
+		SIGNAL = "SrcA[10]";
 		INDEX = 241;
 		FORMAT = E;
 		SCALE = 1;
@@ -13276,7 +13276,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SrcA[8]";
+		SIGNAL = "SrcA[9]";
 		INDEX = 242;
 		FORMAT = E;
 		SCALE = 1;
@@ -13284,7 +13284,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SrcA[7]";
+		SIGNAL = "SrcA[8]";
 		INDEX = 243;
 		FORMAT = E;
 		SCALE = 1;
@@ -13292,7 +13292,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SrcA[6]";
+		SIGNAL = "SrcA[7]";
 		INDEX = 244;
 		FORMAT = E;
 		SCALE = 1;
@@ -13300,7 +13300,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SrcA[5]";
+		SIGNAL = "SrcA[6]";
 		INDEX = 245;
 		FORMAT = E;
 		SCALE = 1;
@@ -13308,7 +13308,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SrcA[4]";
+		SIGNAL = "SrcA[5]";
 		INDEX = 246;
 		FORMAT = E;
 		SCALE = 1;
@@ -13316,7 +13316,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SrcA[3]";
+		SIGNAL = "SrcA[4]";
 		INDEX = 247;
 		FORMAT = E;
 		SCALE = 1;
@@ -13324,7 +13324,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SrcA[2]";
+		SIGNAL = "SrcA[3]";
 		INDEX = 248;
 		FORMAT = E;
 		SCALE = 1;
@@ -13332,7 +13332,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SrcA[1]";
+		SIGNAL = "SrcA[2]";
 		INDEX = 249;
 		FORMAT = E;
 		SCALE = 1;
@@ -13340,7 +13340,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SrcA[0]";
+		SIGNAL = "SrcA[1]";
 		INDEX = 250;
 		FORMAT = E;
 		SCALE = 1;
@@ -13348,8 +13348,16 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SrcB";
+		SIGNAL = "SrcA[0]";
 		INDEX = 251;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "SrcB";
+		INDEX = 252;
 		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -13357,14 +13365,6 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 	}
 	LINE{
 		SIGNAL = "SrcB[31]";
-		INDEX = 252;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "SrcB[30]";
 		INDEX = 253;
 		FORMAT = E;
 		SCALE = 1;
@@ -13372,7 +13372,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SrcB[29]";
+		SIGNAL = "SrcB[30]";
 		INDEX = 254;
 		FORMAT = E;
 		SCALE = 1;
@@ -13380,7 +13380,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SrcB[28]";
+		SIGNAL = "SrcB[29]";
 		INDEX = 255;
 		FORMAT = E;
 		SCALE = 1;
@@ -13388,7 +13388,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SrcB[27]";
+		SIGNAL = "SrcB[28]";
 		INDEX = 256;
 		FORMAT = E;
 		SCALE = 1;
@@ -13396,7 +13396,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SrcB[26]";
+		SIGNAL = "SrcB[27]";
 		INDEX = 257;
 		FORMAT = E;
 		SCALE = 1;
@@ -13404,7 +13404,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SrcB[25]";
+		SIGNAL = "SrcB[26]";
 		INDEX = 258;
 		FORMAT = E;
 		SCALE = 1;
@@ -13412,7 +13412,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SrcB[24]";
+		SIGNAL = "SrcB[25]";
 		INDEX = 259;
 		FORMAT = E;
 		SCALE = 1;
@@ -13420,7 +13420,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SrcB[23]";
+		SIGNAL = "SrcB[24]";
 		INDEX = 260;
 		FORMAT = E;
 		SCALE = 1;
@@ -13428,7 +13428,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SrcB[22]";
+		SIGNAL = "SrcB[23]";
 		INDEX = 261;
 		FORMAT = E;
 		SCALE = 1;
@@ -13436,7 +13436,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SrcB[21]";
+		SIGNAL = "SrcB[22]";
 		INDEX = 262;
 		FORMAT = E;
 		SCALE = 1;
@@ -13444,7 +13444,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SrcB[20]";
+		SIGNAL = "SrcB[21]";
 		INDEX = 263;
 		FORMAT = E;
 		SCALE = 1;
@@ -13452,7 +13452,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SrcB[19]";
+		SIGNAL = "SrcB[20]";
 		INDEX = 264;
 		FORMAT = E;
 		SCALE = 1;
@@ -13460,7 +13460,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SrcB[18]";
+		SIGNAL = "SrcB[19]";
 		INDEX = 265;
 		FORMAT = E;
 		SCALE = 1;
@@ -13468,7 +13468,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SrcB[17]";
+		SIGNAL = "SrcB[18]";
 		INDEX = 266;
 		FORMAT = E;
 		SCALE = 1;
@@ -13476,7 +13476,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SrcB[16]";
+		SIGNAL = "SrcB[17]";
 		INDEX = 267;
 		FORMAT = E;
 		SCALE = 1;
@@ -13484,7 +13484,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SrcB[15]";
+		SIGNAL = "SrcB[16]";
 		INDEX = 268;
 		FORMAT = E;
 		SCALE = 1;
@@ -13492,7 +13492,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SrcB[14]";
+		SIGNAL = "SrcB[15]";
 		INDEX = 269;
 		FORMAT = E;
 		SCALE = 1;
@@ -13500,7 +13500,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SrcB[13]";
+		SIGNAL = "SrcB[14]";
 		INDEX = 270;
 		FORMAT = E;
 		SCALE = 1;
@@ -13508,7 +13508,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SrcB[12]";
+		SIGNAL = "SrcB[13]";
 		INDEX = 271;
 		FORMAT = E;
 		SCALE = 1;
@@ -13516,7 +13516,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SrcB[11]";
+		SIGNAL = "SrcB[12]";
 		INDEX = 272;
 		FORMAT = E;
 		SCALE = 1;
@@ -13524,7 +13524,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SrcB[10]";
+		SIGNAL = "SrcB[11]";
 		INDEX = 273;
 		FORMAT = E;
 		SCALE = 1;
@@ -13532,7 +13532,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SrcB[9]";
+		SIGNAL = "SrcB[10]";
 		INDEX = 274;
 		FORMAT = E;
 		SCALE = 1;
@@ -13540,7 +13540,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SrcB[8]";
+		SIGNAL = "SrcB[9]";
 		INDEX = 275;
 		FORMAT = E;
 		SCALE = 1;
@@ -13548,7 +13548,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SrcB[7]";
+		SIGNAL = "SrcB[8]";
 		INDEX = 276;
 		FORMAT = E;
 		SCALE = 1;
@@ -13556,7 +13556,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SrcB[6]";
+		SIGNAL = "SrcB[7]";
 		INDEX = 277;
 		FORMAT = E;
 		SCALE = 1;
@@ -13564,7 +13564,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SrcB[5]";
+		SIGNAL = "SrcB[6]";
 		INDEX = 278;
 		FORMAT = E;
 		SCALE = 1;
@@ -13572,7 +13572,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SrcB[4]";
+		SIGNAL = "SrcB[5]";
 		INDEX = 279;
 		FORMAT = E;
 		SCALE = 1;
@@ -13580,7 +13580,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SrcB[3]";
+		SIGNAL = "SrcB[4]";
 		INDEX = 280;
 		FORMAT = E;
 		SCALE = 1;
@@ -13588,7 +13588,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SrcB[2]";
+		SIGNAL = "SrcB[3]";
 		INDEX = 281;
 		FORMAT = E;
 		SCALE = 1;
@@ -13596,7 +13596,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SrcB[1]";
+		SIGNAL = "SrcB[2]";
 		INDEX = 282;
 		FORMAT = E;
 		SCALE = 1;
@@ -13604,7 +13604,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "SrcB[0]";
+		SIGNAL = "SrcB[1]";
 		INDEX = 283;
 		FORMAT = E;
 		SCALE = 1;
@@ -13612,8 +13612,16 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "S";
+		SIGNAL = "SrcB[0]";
 		INDEX = 284;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "S";
+		INDEX = 285;
 		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -13621,14 +13629,6 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 	}
 	LINE{
 		SIGNAL = "S[31]";
-		INDEX = 285;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "S[30]";
 		INDEX = 286;
 		FORMAT = E;
 		SCALE = 1;
@@ -13636,7 +13636,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "S[29]";
+		SIGNAL = "S[30]";
 		INDEX = 287;
 		FORMAT = E;
 		SCALE = 1;
@@ -13644,7 +13644,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "S[28]";
+		SIGNAL = "S[29]";
 		INDEX = 288;
 		FORMAT = E;
 		SCALE = 1;
@@ -13652,7 +13652,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "S[27]";
+		SIGNAL = "S[28]";
 		INDEX = 289;
 		FORMAT = E;
 		SCALE = 1;
@@ -13660,7 +13660,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "S[26]";
+		SIGNAL = "S[27]";
 		INDEX = 290;
 		FORMAT = E;
 		SCALE = 1;
@@ -13668,7 +13668,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "S[25]";
+		SIGNAL = "S[26]";
 		INDEX = 291;
 		FORMAT = E;
 		SCALE = 1;
@@ -13676,7 +13676,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "S[24]";
+		SIGNAL = "S[25]";
 		INDEX = 292;
 		FORMAT = E;
 		SCALE = 1;
@@ -13684,7 +13684,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "S[23]";
+		SIGNAL = "S[24]";
 		INDEX = 293;
 		FORMAT = E;
 		SCALE = 1;
@@ -13692,7 +13692,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "S[22]";
+		SIGNAL = "S[23]";
 		INDEX = 294;
 		FORMAT = E;
 		SCALE = 1;
@@ -13700,7 +13700,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "S[21]";
+		SIGNAL = "S[22]";
 		INDEX = 295;
 		FORMAT = E;
 		SCALE = 1;
@@ -13708,7 +13708,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "S[20]";
+		SIGNAL = "S[21]";
 		INDEX = 296;
 		FORMAT = E;
 		SCALE = 1;
@@ -13716,7 +13716,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "S[19]";
+		SIGNAL = "S[20]";
 		INDEX = 297;
 		FORMAT = E;
 		SCALE = 1;
@@ -13724,7 +13724,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "S[18]";
+		SIGNAL = "S[19]";
 		INDEX = 298;
 		FORMAT = E;
 		SCALE = 1;
@@ -13732,7 +13732,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "S[17]";
+		SIGNAL = "S[18]";
 		INDEX = 299;
 		FORMAT = E;
 		SCALE = 1;
@@ -13740,7 +13740,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "S[16]";
+		SIGNAL = "S[17]";
 		INDEX = 300;
 		FORMAT = E;
 		SCALE = 1;
@@ -13748,7 +13748,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "S[15]";
+		SIGNAL = "S[16]";
 		INDEX = 301;
 		FORMAT = E;
 		SCALE = 1;
@@ -13756,7 +13756,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "S[14]";
+		SIGNAL = "S[15]";
 		INDEX = 302;
 		FORMAT = E;
 		SCALE = 1;
@@ -13764,7 +13764,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "S[13]";
+		SIGNAL = "S[14]";
 		INDEX = 303;
 		FORMAT = E;
 		SCALE = 1;
@@ -13772,7 +13772,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "S[12]";
+		SIGNAL = "S[13]";
 		INDEX = 304;
 		FORMAT = E;
 		SCALE = 1;
@@ -13780,7 +13780,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "S[11]";
+		SIGNAL = "S[12]";
 		INDEX = 305;
 		FORMAT = E;
 		SCALE = 1;
@@ -13788,7 +13788,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "S[10]";
+		SIGNAL = "S[11]";
 		INDEX = 306;
 		FORMAT = E;
 		SCALE = 1;
@@ -13796,7 +13796,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "S[9]";
+		SIGNAL = "S[10]";
 		INDEX = 307;
 		FORMAT = E;
 		SCALE = 1;
@@ -13804,7 +13804,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "S[8]";
+		SIGNAL = "S[9]";
 		INDEX = 308;
 		FORMAT = E;
 		SCALE = 1;
@@ -13812,7 +13812,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "S[7]";
+		SIGNAL = "S[8]";
 		INDEX = 309;
 		FORMAT = E;
 		SCALE = 1;
@@ -13820,7 +13820,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "S[6]";
+		SIGNAL = "S[7]";
 		INDEX = 310;
 		FORMAT = E;
 		SCALE = 1;
@@ -13828,7 +13828,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "S[5]";
+		SIGNAL = "S[6]";
 		INDEX = 311;
 		FORMAT = E;
 		SCALE = 1;
@@ -13836,7 +13836,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "S[4]";
+		SIGNAL = "S[5]";
 		INDEX = 312;
 		FORMAT = E;
 		SCALE = 1;
@@ -13844,7 +13844,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "S[3]";
+		SIGNAL = "S[4]";
 		INDEX = 313;
 		FORMAT = E;
 		SCALE = 1;
@@ -13852,7 +13852,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "S[2]";
+		SIGNAL = "S[3]";
 		INDEX = 314;
 		FORMAT = E;
 		SCALE = 1;
@@ -13860,7 +13860,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "S[1]";
+		SIGNAL = "S[2]";
 		INDEX = 315;
 		FORMAT = E;
 		SCALE = 1;
@@ -13868,7 +13868,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "S[0]";
+		SIGNAL = "S[1]";
 		INDEX = 316;
 		FORMAT = E;
 		SCALE = 1;
@@ -13876,7 +13876,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "AluOutWritel";
+		SIGNAL = "S[0]";
 		INDEX = 317;
 		FORMAT = E;
 		SCALE = 1;
@@ -13884,8 +13884,16 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "ALUOut";
+		SIGNAL = "AluOutWritel";
 		INDEX = 318;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "ALUOut";
+		INDEX = 319;
 		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -13893,14 +13901,6 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 	}
 	LINE{
 		SIGNAL = "ALUOut[31]";
-		INDEX = 319;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "ALUOut[30]";
 		INDEX = 320;
 		FORMAT = E;
 		SCALE = 1;
@@ -13908,7 +13908,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "ALUOut[29]";
+		SIGNAL = "ALUOut[30]";
 		INDEX = 321;
 		FORMAT = E;
 		SCALE = 1;
@@ -13916,7 +13916,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "ALUOut[28]";
+		SIGNAL = "ALUOut[29]";
 		INDEX = 322;
 		FORMAT = E;
 		SCALE = 1;
@@ -13924,7 +13924,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "ALUOut[27]";
+		SIGNAL = "ALUOut[28]";
 		INDEX = 323;
 		FORMAT = E;
 		SCALE = 1;
@@ -13932,7 +13932,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "ALUOut[26]";
+		SIGNAL = "ALUOut[27]";
 		INDEX = 324;
 		FORMAT = E;
 		SCALE = 1;
@@ -13940,7 +13940,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "ALUOut[25]";
+		SIGNAL = "ALUOut[26]";
 		INDEX = 325;
 		FORMAT = E;
 		SCALE = 1;
@@ -13948,7 +13948,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "ALUOut[24]";
+		SIGNAL = "ALUOut[25]";
 		INDEX = 326;
 		FORMAT = E;
 		SCALE = 1;
@@ -13956,7 +13956,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "ALUOut[23]";
+		SIGNAL = "ALUOut[24]";
 		INDEX = 327;
 		FORMAT = E;
 		SCALE = 1;
@@ -13964,7 +13964,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "ALUOut[22]";
+		SIGNAL = "ALUOut[23]";
 		INDEX = 328;
 		FORMAT = E;
 		SCALE = 1;
@@ -13972,7 +13972,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "ALUOut[21]";
+		SIGNAL = "ALUOut[22]";
 		INDEX = 329;
 		FORMAT = E;
 		SCALE = 1;
@@ -13980,7 +13980,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "ALUOut[20]";
+		SIGNAL = "ALUOut[21]";
 		INDEX = 330;
 		FORMAT = E;
 		SCALE = 1;
@@ -13988,7 +13988,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "ALUOut[19]";
+		SIGNAL = "ALUOut[20]";
 		INDEX = 331;
 		FORMAT = E;
 		SCALE = 1;
@@ -13996,7 +13996,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "ALUOut[18]";
+		SIGNAL = "ALUOut[19]";
 		INDEX = 332;
 		FORMAT = E;
 		SCALE = 1;
@@ -14004,7 +14004,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "ALUOut[17]";
+		SIGNAL = "ALUOut[18]";
 		INDEX = 333;
 		FORMAT = E;
 		SCALE = 1;
@@ -14012,7 +14012,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "ALUOut[16]";
+		SIGNAL = "ALUOut[17]";
 		INDEX = 334;
 		FORMAT = E;
 		SCALE = 1;
@@ -14020,7 +14020,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "ALUOut[15]";
+		SIGNAL = "ALUOut[16]";
 		INDEX = 335;
 		FORMAT = E;
 		SCALE = 1;
@@ -14028,7 +14028,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "ALUOut[14]";
+		SIGNAL = "ALUOut[15]";
 		INDEX = 336;
 		FORMAT = E;
 		SCALE = 1;
@@ -14036,7 +14036,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "ALUOut[13]";
+		SIGNAL = "ALUOut[14]";
 		INDEX = 337;
 		FORMAT = E;
 		SCALE = 1;
@@ -14044,7 +14044,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "ALUOut[12]";
+		SIGNAL = "ALUOut[13]";
 		INDEX = 338;
 		FORMAT = E;
 		SCALE = 1;
@@ -14052,7 +14052,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "ALUOut[11]";
+		SIGNAL = "ALUOut[12]";
 		INDEX = 339;
 		FORMAT = E;
 		SCALE = 1;
@@ -14060,7 +14060,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "ALUOut[10]";
+		SIGNAL = "ALUOut[11]";
 		INDEX = 340;
 		FORMAT = E;
 		SCALE = 1;
@@ -14068,7 +14068,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "ALUOut[9]";
+		SIGNAL = "ALUOut[10]";
 		INDEX = 341;
 		FORMAT = E;
 		SCALE = 1;
@@ -14076,7 +14076,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "ALUOut[8]";
+		SIGNAL = "ALUOut[9]";
 		INDEX = 342;
 		FORMAT = E;
 		SCALE = 1;
@@ -14084,7 +14084,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "ALUOut[7]";
+		SIGNAL = "ALUOut[8]";
 		INDEX = 343;
 		FORMAT = E;
 		SCALE = 1;
@@ -14092,7 +14092,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "ALUOut[6]";
+		SIGNAL = "ALUOut[7]";
 		INDEX = 344;
 		FORMAT = E;
 		SCALE = 1;
@@ -14100,7 +14100,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "ALUOut[5]";
+		SIGNAL = "ALUOut[6]";
 		INDEX = 345;
 		FORMAT = E;
 		SCALE = 1;
@@ -14108,7 +14108,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "ALUOut[4]";
+		SIGNAL = "ALUOut[5]";
 		INDEX = 346;
 		FORMAT = E;
 		SCALE = 1;
@@ -14116,7 +14116,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "ALUOut[3]";
+		SIGNAL = "ALUOut[4]";
 		INDEX = 347;
 		FORMAT = E;
 		SCALE = 1;
@@ -14124,7 +14124,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "ALUOut[2]";
+		SIGNAL = "ALUOut[3]";
 		INDEX = 348;
 		FORMAT = E;
 		SCALE = 1;
@@ -14132,7 +14132,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "ALUOut[1]";
+		SIGNAL = "ALUOut[2]";
 		INDEX = 349;
 		FORMAT = E;
 		SCALE = 1;
@@ -14140,7 +14140,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "ALUOut[0]";
+		SIGNAL = "ALUOut[1]";
 		INDEX = 350;
 		FORMAT = E;
 		SCALE = 1;
@@ -14148,8 +14148,16 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg17";
+		SIGNAL = "ALUOut[0]";
 		INDEX = 351;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "Banco_reg:Reg_Control|Reg17";
+		INDEX = 352;
 		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -14157,14 +14165,6 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 	}
 	LINE{
 		SIGNAL = "Banco_reg:Reg_Control|Reg17[31]";
-		INDEX = 352;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg17[30]";
 		INDEX = 353;
 		FORMAT = E;
 		SCALE = 1;
@@ -14172,7 +14172,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg17[29]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg17[30]";
 		INDEX = 354;
 		FORMAT = E;
 		SCALE = 1;
@@ -14180,7 +14180,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg17[28]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg17[29]";
 		INDEX = 355;
 		FORMAT = E;
 		SCALE = 1;
@@ -14188,7 +14188,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg17[27]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg17[28]";
 		INDEX = 356;
 		FORMAT = E;
 		SCALE = 1;
@@ -14196,7 +14196,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg17[26]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg17[27]";
 		INDEX = 357;
 		FORMAT = E;
 		SCALE = 1;
@@ -14204,7 +14204,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg17[25]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg17[26]";
 		INDEX = 358;
 		FORMAT = E;
 		SCALE = 1;
@@ -14212,7 +14212,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg17[24]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg17[25]";
 		INDEX = 359;
 		FORMAT = E;
 		SCALE = 1;
@@ -14220,7 +14220,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg17[23]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg17[24]";
 		INDEX = 360;
 		FORMAT = E;
 		SCALE = 1;
@@ -14228,7 +14228,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg17[22]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg17[23]";
 		INDEX = 361;
 		FORMAT = E;
 		SCALE = 1;
@@ -14236,7 +14236,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg17[21]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg17[22]";
 		INDEX = 362;
 		FORMAT = E;
 		SCALE = 1;
@@ -14244,7 +14244,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg17[20]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg17[21]";
 		INDEX = 363;
 		FORMAT = E;
 		SCALE = 1;
@@ -14252,7 +14252,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg17[19]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg17[20]";
 		INDEX = 364;
 		FORMAT = E;
 		SCALE = 1;
@@ -14260,7 +14260,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg17[18]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg17[19]";
 		INDEX = 365;
 		FORMAT = E;
 		SCALE = 1;
@@ -14268,7 +14268,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg17[17]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg17[18]";
 		INDEX = 366;
 		FORMAT = E;
 		SCALE = 1;
@@ -14276,7 +14276,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg17[16]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg17[17]";
 		INDEX = 367;
 		FORMAT = E;
 		SCALE = 1;
@@ -14284,7 +14284,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg17[15]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg17[16]";
 		INDEX = 368;
 		FORMAT = E;
 		SCALE = 1;
@@ -14292,7 +14292,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg17[14]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg17[15]";
 		INDEX = 369;
 		FORMAT = E;
 		SCALE = 1;
@@ -14300,7 +14300,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg17[13]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg17[14]";
 		INDEX = 370;
 		FORMAT = E;
 		SCALE = 1;
@@ -14308,7 +14308,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg17[12]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg17[13]";
 		INDEX = 371;
 		FORMAT = E;
 		SCALE = 1;
@@ -14316,7 +14316,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg17[11]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg17[12]";
 		INDEX = 372;
 		FORMAT = E;
 		SCALE = 1;
@@ -14324,7 +14324,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg17[10]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg17[11]";
 		INDEX = 373;
 		FORMAT = E;
 		SCALE = 1;
@@ -14332,7 +14332,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg17[9]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg17[10]";
 		INDEX = 374;
 		FORMAT = E;
 		SCALE = 1;
@@ -14340,7 +14340,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg17[8]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg17[9]";
 		INDEX = 375;
 		FORMAT = E;
 		SCALE = 1;
@@ -14348,7 +14348,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg17[7]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg17[8]";
 		INDEX = 376;
 		FORMAT = E;
 		SCALE = 1;
@@ -14356,7 +14356,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg17[6]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg17[7]";
 		INDEX = 377;
 		FORMAT = E;
 		SCALE = 1;
@@ -14364,7 +14364,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg17[5]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg17[6]";
 		INDEX = 378;
 		FORMAT = E;
 		SCALE = 1;
@@ -14372,7 +14372,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg17[4]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg17[5]";
 		INDEX = 379;
 		FORMAT = E;
 		SCALE = 1;
@@ -14380,7 +14380,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg17[3]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg17[4]";
 		INDEX = 380;
 		FORMAT = E;
 		SCALE = 1;
@@ -14388,7 +14388,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg17[2]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg17[3]";
 		INDEX = 381;
 		FORMAT = E;
 		SCALE = 1;
@@ -14396,7 +14396,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg17[1]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg17[2]";
 		INDEX = 382;
 		FORMAT = E;
 		SCALE = 1;
@@ -14404,7 +14404,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg17[0]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg17[1]";
 		INDEX = 383;
 		FORMAT = E;
 		SCALE = 1;
@@ -14412,8 +14412,16 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg15";
+		SIGNAL = "Banco_reg:Reg_Control|Reg17[0]";
 		INDEX = 384;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "Banco_reg:Reg_Control|Reg15";
+		INDEX = 385;
 		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -14421,14 +14429,6 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 	}
 	LINE{
 		SIGNAL = "Banco_reg:Reg_Control|Reg15[31]";
-		INDEX = 385;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg15[30]";
 		INDEX = 386;
 		FORMAT = E;
 		SCALE = 1;
@@ -14436,7 +14436,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg15[29]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg15[30]";
 		INDEX = 387;
 		FORMAT = E;
 		SCALE = 1;
@@ -14444,7 +14444,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg15[28]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg15[29]";
 		INDEX = 388;
 		FORMAT = E;
 		SCALE = 1;
@@ -14452,7 +14452,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg15[27]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg15[28]";
 		INDEX = 389;
 		FORMAT = E;
 		SCALE = 1;
@@ -14460,7 +14460,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg15[26]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg15[27]";
 		INDEX = 390;
 		FORMAT = E;
 		SCALE = 1;
@@ -14468,7 +14468,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg15[25]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg15[26]";
 		INDEX = 391;
 		FORMAT = E;
 		SCALE = 1;
@@ -14476,7 +14476,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg15[24]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg15[25]";
 		INDEX = 392;
 		FORMAT = E;
 		SCALE = 1;
@@ -14484,7 +14484,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg15[23]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg15[24]";
 		INDEX = 393;
 		FORMAT = E;
 		SCALE = 1;
@@ -14492,7 +14492,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg15[22]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg15[23]";
 		INDEX = 394;
 		FORMAT = E;
 		SCALE = 1;
@@ -14500,7 +14500,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg15[21]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg15[22]";
 		INDEX = 395;
 		FORMAT = E;
 		SCALE = 1;
@@ -14508,7 +14508,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg15[20]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg15[21]";
 		INDEX = 396;
 		FORMAT = E;
 		SCALE = 1;
@@ -14516,7 +14516,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg15[19]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg15[20]";
 		INDEX = 397;
 		FORMAT = E;
 		SCALE = 1;
@@ -14524,7 +14524,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg15[18]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg15[19]";
 		INDEX = 398;
 		FORMAT = E;
 		SCALE = 1;
@@ -14532,7 +14532,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg15[17]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg15[18]";
 		INDEX = 399;
 		FORMAT = E;
 		SCALE = 1;
@@ -14540,7 +14540,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg15[16]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg15[17]";
 		INDEX = 400;
 		FORMAT = E;
 		SCALE = 1;
@@ -14548,7 +14548,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg15[15]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg15[16]";
 		INDEX = 401;
 		FORMAT = E;
 		SCALE = 1;
@@ -14556,7 +14556,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg15[14]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg15[15]";
 		INDEX = 402;
 		FORMAT = E;
 		SCALE = 1;
@@ -14564,7 +14564,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg15[13]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg15[14]";
 		INDEX = 403;
 		FORMAT = E;
 		SCALE = 1;
@@ -14572,7 +14572,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg15[12]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg15[13]";
 		INDEX = 404;
 		FORMAT = E;
 		SCALE = 1;
@@ -14580,7 +14580,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg15[11]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg15[12]";
 		INDEX = 405;
 		FORMAT = E;
 		SCALE = 1;
@@ -14588,7 +14588,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg15[10]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg15[11]";
 		INDEX = 406;
 		FORMAT = E;
 		SCALE = 1;
@@ -14596,7 +14596,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg15[9]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg15[10]";
 		INDEX = 407;
 		FORMAT = E;
 		SCALE = 1;
@@ -14604,7 +14604,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg15[8]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg15[9]";
 		INDEX = 408;
 		FORMAT = E;
 		SCALE = 1;
@@ -14612,7 +14612,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg15[7]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg15[8]";
 		INDEX = 409;
 		FORMAT = E;
 		SCALE = 1;
@@ -14620,7 +14620,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg15[6]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg15[7]";
 		INDEX = 410;
 		FORMAT = E;
 		SCALE = 1;
@@ -14628,7 +14628,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg15[5]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg15[6]";
 		INDEX = 411;
 		FORMAT = E;
 		SCALE = 1;
@@ -14636,7 +14636,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg15[4]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg15[5]";
 		INDEX = 412;
 		FORMAT = E;
 		SCALE = 1;
@@ -14644,7 +14644,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg15[3]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg15[4]";
 		INDEX = 413;
 		FORMAT = E;
 		SCALE = 1;
@@ -14652,7 +14652,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg15[2]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg15[3]";
 		INDEX = 414;
 		FORMAT = E;
 		SCALE = 1;
@@ -14660,7 +14660,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg15[1]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg15[2]";
 		INDEX = 415;
 		FORMAT = E;
 		SCALE = 1;
@@ -14668,7 +14668,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg15[0]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg15[1]";
 		INDEX = 416;
 		FORMAT = E;
 		SCALE = 1;
@@ -14676,8 +14676,16 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg16";
+		SIGNAL = "Banco_reg:Reg_Control|Reg15[0]";
 		INDEX = 417;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "Banco_reg:Reg_Control|Reg16";
+		INDEX = 418;
 		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -14685,14 +14693,6 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 	}
 	LINE{
 		SIGNAL = "Banco_reg:Reg_Control|Reg16[31]";
-		INDEX = 418;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg16[30]";
 		INDEX = 419;
 		FORMAT = E;
 		SCALE = 1;
@@ -14700,7 +14700,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg16[29]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg16[30]";
 		INDEX = 420;
 		FORMAT = E;
 		SCALE = 1;
@@ -14708,7 +14708,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg16[28]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg16[29]";
 		INDEX = 421;
 		FORMAT = E;
 		SCALE = 1;
@@ -14716,7 +14716,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg16[27]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg16[28]";
 		INDEX = 422;
 		FORMAT = E;
 		SCALE = 1;
@@ -14724,7 +14724,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg16[26]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg16[27]";
 		INDEX = 423;
 		FORMAT = E;
 		SCALE = 1;
@@ -14732,7 +14732,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg16[25]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg16[26]";
 		INDEX = 424;
 		FORMAT = E;
 		SCALE = 1;
@@ -14740,7 +14740,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg16[24]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg16[25]";
 		INDEX = 425;
 		FORMAT = E;
 		SCALE = 1;
@@ -14748,7 +14748,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg16[23]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg16[24]";
 		INDEX = 426;
 		FORMAT = E;
 		SCALE = 1;
@@ -14756,7 +14756,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg16[22]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg16[23]";
 		INDEX = 427;
 		FORMAT = E;
 		SCALE = 1;
@@ -14764,7 +14764,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg16[21]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg16[22]";
 		INDEX = 428;
 		FORMAT = E;
 		SCALE = 1;
@@ -14772,7 +14772,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg16[20]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg16[21]";
 		INDEX = 429;
 		FORMAT = E;
 		SCALE = 1;
@@ -14780,7 +14780,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg16[19]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg16[20]";
 		INDEX = 430;
 		FORMAT = E;
 		SCALE = 1;
@@ -14788,7 +14788,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg16[18]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg16[19]";
 		INDEX = 431;
 		FORMAT = E;
 		SCALE = 1;
@@ -14796,7 +14796,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg16[17]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg16[18]";
 		INDEX = 432;
 		FORMAT = E;
 		SCALE = 1;
@@ -14804,7 +14804,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg16[16]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg16[17]";
 		INDEX = 433;
 		FORMAT = E;
 		SCALE = 1;
@@ -14812,7 +14812,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg16[15]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg16[16]";
 		INDEX = 434;
 		FORMAT = E;
 		SCALE = 1;
@@ -14820,7 +14820,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg16[14]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg16[15]";
 		INDEX = 435;
 		FORMAT = E;
 		SCALE = 1;
@@ -14828,7 +14828,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg16[13]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg16[14]";
 		INDEX = 436;
 		FORMAT = E;
 		SCALE = 1;
@@ -14836,7 +14836,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg16[12]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg16[13]";
 		INDEX = 437;
 		FORMAT = E;
 		SCALE = 1;
@@ -14844,7 +14844,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg16[11]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg16[12]";
 		INDEX = 438;
 		FORMAT = E;
 		SCALE = 1;
@@ -14852,7 +14852,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg16[10]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg16[11]";
 		INDEX = 439;
 		FORMAT = E;
 		SCALE = 1;
@@ -14860,7 +14860,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg16[9]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg16[10]";
 		INDEX = 440;
 		FORMAT = E;
 		SCALE = 1;
@@ -14868,7 +14868,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg16[8]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg16[9]";
 		INDEX = 441;
 		FORMAT = E;
 		SCALE = 1;
@@ -14876,7 +14876,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg16[7]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg16[8]";
 		INDEX = 442;
 		FORMAT = E;
 		SCALE = 1;
@@ -14884,7 +14884,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg16[6]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg16[7]";
 		INDEX = 443;
 		FORMAT = E;
 		SCALE = 1;
@@ -14892,7 +14892,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg16[5]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg16[6]";
 		INDEX = 444;
 		FORMAT = E;
 		SCALE = 1;
@@ -14900,7 +14900,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg16[4]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg16[5]";
 		INDEX = 445;
 		FORMAT = E;
 		SCALE = 1;
@@ -14908,7 +14908,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg16[3]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg16[4]";
 		INDEX = 446;
 		FORMAT = E;
 		SCALE = 1;
@@ -14916,7 +14916,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg16[2]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg16[3]";
 		INDEX = 447;
 		FORMAT = E;
 		SCALE = 1;
@@ -14924,7 +14924,7 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg16[1]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg16[2]";
 		INDEX = 448;
 		FORMAT = E;
 		SCALE = 1;
@@ -14932,8 +14932,16 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Banco_reg:Reg_Control|Reg16[0]";
+		SIGNAL = "Banco_reg:Reg_Control|Reg16[1]";
 		INDEX = 449;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "Banco_reg:Reg_Control|Reg16[0]";
+		INDEX = 450;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;

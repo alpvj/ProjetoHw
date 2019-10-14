@@ -76,44 +76,44 @@ Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage 
 GND                          : A2        : gnd    :                   :         :           :                
 GND*                         : A3        :        :                   :         : 4         :                
 VCCIO4                       : A4        : power  :                   : 3.3V    : 4         :                
-ALUOut[25]                   : A5        : output : 3.3-V LVTTL       :         : 4         : N              
-GND*                         : A6        :        :                   :         : 4         :                
-SrcB[22]                     : A7        : output : 3.3-V LVTTL       :         : 4         : N              
-EPC[0]                       : A8        : output : 3.3-V LVTTL       :         : 4         : N              
-RegB[28]                     : A9        : output : 3.3-V LVTTL       :         : 4         : N              
-RegB[8]                      : A10       : output : 3.3-V LVTTL       :         : 4         : N              
+SrcA[5]                      : A5        : output : 3.3-V LVTTL       :         : 4         : N              
+PC[30]                       : A6        : output : 3.3-V LVTTL       :         : 4         : N              
+EPC[11]                      : A7        : output : 3.3-V LVTTL       :         : 4         : N              
+EPC[22]                      : A8        : output : 3.3-V LVTTL       :         : 4         : N              
+S[29]                        : A9        : output : 3.3-V LVTTL       :         : 4         : N              
+PC[20]                       : A10       : output : 3.3-V LVTTL       :         : 4         : N              
 VCCIO4                       : A11       : power  :                   : 3.3V    : 4         :                
-PC[25]                       : A12       : output : 3.3-V LVTTL       :         : 9         : N              
+S[8]                         : A12       : output : 3.3-V LVTTL       :         : 9         : N              
 GND                          : A13       : gnd    :                   :         :           :                
 GND                          : A14       : gnd    :                   :         :           :                
-RegB[16]                     : A15       : output : 3.3-V LVTTL       :         : 3         : N              
+RegB[7]                      : A15       : output : 3.3-V LVTTL       :         : 3         : N              
 VCCIO3                       : A16       : power  :                   : 3.3V    : 3         :                
-SrcB[15]                     : A17       : output : 3.3-V LVTTL       :         : 3         : N              
-MDR[2]                       : A18       : output : 3.3-V LVTTL       :         : 3         : N              
-RegA[14]                     : A19       : output : 3.3-V LVTTL       :         : 3         : N              
-MDR[24]                      : A20       : output : 3.3-V LVTTL       :         : 3         : N              
-RegA[28]                     : A21       : output : 3.3-V LVTTL       :         : 3         : N              
-RegB[2]                      : A22       : output : 3.3-V LVTTL       :         : 3         : N              
+MDR[9]                       : A17       : output : 3.3-V LVTTL       :         : 3         : N              
+RegB[15]                     : A18       : output : 3.3-V LVTTL       :         : 3         : N              
+RegB[1]                      : A19       : output : 3.3-V LVTTL       :         : 3         : N              
+S[24]                        : A20       : output : 3.3-V LVTTL       :         : 3         : N              
+Inst15a0[10]                 : A21       : output : 3.3-V LVTTL       :         : 3         : N              
+SrcB[25]                     : A22       : output : 3.3-V LVTTL       :         : 3         : N              
 VCCIO3                       : A23       : power  :                   : 3.3V    : 3         :                
-PC[6]                        : A24       : output : 3.3-V LVTTL       :         : 3         : N              
+MDR[10]                      : A24       : output : 3.3-V LVTTL       :         : 3         : N              
 GND                          : A25       : gnd    :                   :         :           :                
-SrcB[13]                     : AA1       : output : 3.3-V LVTTL       :         : 6         : N              
-RegA[19]                     : AA2       : output : 3.3-V LVTTL       :         : 6         : N              
+PC[0]                        : AA1       : output : 3.3-V LVTTL       :         : 6         : N              
+funct[3]                     : AA2       : output : 3.3-V LVTTL       :         : 6         : N              
 GND*                         : AA3       :        :                   :         : 6         :                
-EPC[12]                      : AA4       : output : 3.3-V LVTTL       :         : 6         : N              
+GND*                         : AA4       :        :                   :         : 6         :                
 GND*                         : AA5       :        :                   :         : 6         :                
 GND*                         : AA6       :        :                   :         : 6         :                
 GND                          : AA7       : gnd    :                   :         :           :                
-SrcB[25]                     : AA8       : output : 3.3-V LVTTL       :         : 7         : N              
+EPC[24]                      : AA8       : output : 3.3-V LVTTL       :         : 7         : N              
 GND*                         : AA9       :        :                   :         : 7         :                
 GND*                         : AA10      :        :                   :         : 7         :                
-RegA[18]                     : AA11      : output : 3.3-V LVTTL       :         : 7         : N              
-S[18]                        : AA12      : output : 3.3-V LVTTL       :         : 7         : N              
+SrcA[31]                     : AA11      : output : 3.3-V LVTTL       :         : 7         : N              
+SrcB[28]                     : AA12      : output : 3.3-V LVTTL       :         : 7         : N              
 GND                          : AA13      : gnd    :                   :         :           :                
-PC[31]                       : AA14      : output : 3.3-V LVTTL       :         : 8         : N              
-SrcB[7]                      : AA15      : output : 3.3-V LVTTL       :         : 8         : N              
-RegB[6]                      : AA16      : output : 3.3-V LVTTL       :         : 8         : N              
-ALUOut[6]                    : AA17      : output : 3.3-V LVTTL       :         : 8         : N              
+Inst25a21[0]                 : AA14      : output : 3.3-V LVTTL       :         : 8         : N              
+RegB[3]                      : AA15      : output : 3.3-V LVTTL       :         : 8         : N              
+MDR[13]                      : AA16      : output : 3.3-V LVTTL       :         : 8         : N              
+funct[4]                     : AA17      : output : 3.3-V LVTTL       :         : 8         : N              
 GND*                         : AA18      :        :                   :         : 8         :                
 GND*                         : AA19      :        :                   :         : 8         :                
 nCONFIG                      : AA20      :        :                   :         : 8         :                
@@ -122,24 +122,24 @@ GND*                         : AA22      :        :                   :         
 GND*                         : AA23      :        :                   :         : 1         :                
 GND*                         : AA24      :        :                   :         : 1         :                
 GND*                         : AA25      :        :                   :         : 1         :                
-RegA[16]                     : AA26      : output : 3.3-V LVTTL       :         : 1         : N              
-EPC[6]                       : AB1       : output : 3.3-V LVTTL       :         : 6         : N              
-opcode[5]                    : AB2       : output : 3.3-V LVTTL       :         : 6         : N              
+GND*                         : AA26      :        :                   :         : 1         :                
+GND*                         : AB1       :        :                   :         : 6         :                
+opcode[4]                    : AB2       : output : 3.3-V LVTTL       :         : 6         : N              
 GND*                         : AB3       :        :                   :         : 6         :                
-ALUOut[20]                   : AB4       : output : 3.3-V LVTTL       :         : 6         : N              
+GND*                         : AB4       :        :                   :         : 6         :                
 nCEO                         : AB5       :        :                   :         : 7         :                
 PLL_ENA                      : AB6       :        :                   :         : 7         :                
 GND*                         : AB7       :        :                   :         : 7         :                
 GND*                         : AB8       :        :                   :         : 7         :                
 GND*                         : AB9       :        :                   :         : 7         :                
 GND*                         : AB10      :        :                   :         : 7         :                
-GND*                         : AB11      :        :                   :         : 7         :                
-S[24]                        : AB12      : output : 3.3-V LVTTL       :         : 7         : N              
-Inst15a0[13]                 : AB13      : output : 3.3-V LVTTL       :         : 7         : N              
-SrcB[11]                     : AB14      : output : 3.3-V LVTTL       :         : 8         : N              
-MDR[18]                      : AB15      : output : 3.3-V LVTTL       :         : 8         : N              
-SrcB[23]                     : AB16      : output : 3.3-V LVTTL       :         : 8         : N              
-ALUOut[8]                    : AB17      : output : 3.3-V LVTTL       :         : 8         : N              
+opcode[0]                    : AB11      : output : 3.3-V LVTTL       :         : 7         : N              
+PC[18]                       : AB12      : output : 3.3-V LVTTL       :         : 7         : N              
+RegA[0]                      : AB13      : output : 3.3-V LVTTL       :         : 7         : N              
+MDR[12]                      : AB14      : output : 3.3-V LVTTL       :         : 8         : N              
+SrcA[3]                      : AB15      : output : 3.3-V LVTTL       :         : 8         : N              
+RegA[4]                      : AB16      : output : 3.3-V LVTTL       :         : 8         : N              
+Inst15a0[13]                 : AB17      : output : 3.3-V LVTTL       :         : 8         : N              
 GND*                         : AB18      :        :                   :         : 8         :                
 GND*                         : AB19      :        :                   :         : 8         :                
 GND*                         : AB20      :        :                   :         : 8         :                
@@ -155,19 +155,19 @@ GND*                         : AC3       :        :                   :         
 GND*                         : AC4       :        :                   :         : 7         :                
 VREFB7                       : AC5       : power  :                   :         : 7         :                
 GND*                         : AC6       :        :                   :         : 7         :                
-SrcB[21]                     : AC7       : output : 3.3-V LVTTL       :         : 7         : N              
-SrcA[1]                      : AC8       : output : 3.3-V LVTTL       :         : 7         : N              
-PC[21]                       : AC9       : output : 3.3-V LVTTL       :         : 7         : N              
-SrcA[20]                     : AC10      : output : 3.3-V LVTTL       :         : 7         : N              
+GND*                         : AC7       :        :                   :         : 7         :                
+SrcA[22]                     : AC8       : output : 3.3-V LVTTL       :         : 7         : N              
+EPC[8]                       : AC9       : output : 3.3-V LVTTL       :         : 7         : N              
+S[31]                        : AC10      : output : 3.3-V LVTTL       :         : 7         : N              
 VREFB7                       : AC11      : power  :                   :         : 7         :                
-funct[0]                     : AC12      : output : 3.3-V LVTTL       :         : 10        : N              
-PC[28]                       : AC13      : output : 3.3-V LVTTL       :         : 7         : N              
-SrcA[22]                     : AC14      : output : 3.3-V LVTTL       :         : 8         : N              
-ALUOut[7]                    : AC15      : output : 3.3-V LVTTL       :         : 8         : N              
+S[17]                        : AC12      : output : 3.3-V LVTTL       :         : 10        : N              
+MDR[28]                      : AC13      : output : 3.3-V LVTTL       :         : 7         : N              
+S[7]                         : AC14      : output : 3.3-V LVTTL       :         : 8         : N              
+RegA[2]                      : AC15      : output : 3.3-V LVTTL       :         : 8         : N              
 VREFB8                       : AC16      : power  :                   :         : 8         :                
-MDR[3]                       : AC17      : output : 3.3-V LVTTL       :         : 8         : N              
-PC[26]                       : AC18      : output : 3.3-V LVTTL       :         : 8         : N              
-PC[27]                       : AC19      : output : 3.3-V LVTTL       :         : 8         : N              
+ALUOut[7]                    : AC17      : output : 3.3-V LVTTL       :         : 8         : N              
+GND*                         : AC18      :        :                   :         : 8         :                
+GND*                         : AC19      :        :                   :         : 8         :                
 GND*                         : AC20      :        :                   :         : 8         :                
 GND*                         : AC21      :        :                   :         : 8         :                
 VREFB8                       : AC22      : power  :                   :         : 8         :                
@@ -178,25 +178,25 @@ VCCIO1                       : AC26      : power  :                   : 3.3V    
 GND*                         : AD1       :        :                   :         : 6         :                
 GND*                         : AD2       :        :                   :         : 6         :                
 GND*                         : AD3       :        :                   :         : 7         :                
-SrcA[21]                     : AD4       : output : 3.3-V LVTTL       :         : 7         : N              
+GND*                         : AD4       :        :                   :         : 7         :                
 GND*                         : AD5       :        :                   :         : 7         :                
-PC[20]                       : AD6       : output : 3.3-V LVTTL       :         : 7         : N              
-SrcA[25]                     : AD7       : output : 3.3-V LVTTL       :         : 7         : N              
-RegB[4]                      : AD8       : output : 3.3-V LVTTL       :         : 7         : N              
-Inst25a21[0]                 : AD9       : output : 3.3-V LVTTL       :         : 7         : N              
-S[21]                        : AD10      : output : 3.3-V LVTTL       :         : 7         : N              
-ALUOut[21]                   : AD11      : output : 3.3-V LVTTL       :         : 7         : N              
-EPC[20]                      : AD12      : output : 3.3-V LVTTL       :         : 10        : N              
-SrcA[10]                     : AD13      : output : 3.3-V LVTTL       :         : 10        : N              
-EPC[15]                      : AD14      : output : 3.3-V LVTTL       :         : 7         : N              
-opcode[3]                    : AD15      : output : 3.3-V LVTTL       :         : 8         : N              
-MDR[30]                      : AD16      : output : 3.3-V LVTTL       :         : 8         : N              
-SrcB[9]                      : AD17      : output : 3.3-V LVTTL       :         : 8         : N              
-MDR[0]                       : AD18      : output : 3.3-V LVTTL       :         : 8         : N              
-state[1]                     : AD19      : output : 3.3-V LVTTL       :         : 8         : N              
-Inst15a0[0]                  : AD20      : output : 3.3-V LVTTL       :         : 8         : N              
-SrcA[27]                     : AD21      : output : 3.3-V LVTTL       :         : 8         : N              
-GND*                         : AD22      :        :                   :         : 8         :                
+GND*                         : AD6       :        :                   :         : 7         :                
+GND*                         : AD7       :        :                   :         : 7         :                
+EPC[26]                      : AD8       : output : 3.3-V LVTTL       :         : 7         : N              
+S[10]                        : AD9       : output : 3.3-V LVTTL       :         : 7         : N              
+RegA[13]                     : AD10      : output : 3.3-V LVTTL       :         : 7         : N              
+S[23]                        : AD11      : output : 3.3-V LVTTL       :         : 7         : N              
+SrcB[11]                     : AD12      : output : 3.3-V LVTTL       :         : 10        : N              
+PC[7]                        : AD13      : output : 3.3-V LVTTL       :         : 10        : N              
+RegB[25]                     : AD14      : output : 3.3-V LVTTL       :         : 7         : N              
+MDR[1]                       : AD15      : output : 3.3-V LVTTL       :         : 8         : N              
+ALUOut[1]                    : AD16      : output : 3.3-V LVTTL       :         : 8         : N              
+ALUOut[31]                   : AD17      : output : 3.3-V LVTTL       :         : 8         : N              
+MDR[3]                       : AD18      : output : 3.3-V LVTTL       :         : 8         : N              
+funct[2]                     : AD19      : output : 3.3-V LVTTL       :         : 8         : N              
+MDR[0]                       : AD20      : output : 3.3-V LVTTL       :         : 8         : N              
+Inst15a0[4]                  : AD21      : output : 3.3-V LVTTL       :         : 8         : N              
+PC[5]                        : AD22      : output : 3.3-V LVTTL       :         : 8         : N              
 GND*                         : AD23      :        :                   :         : 8         :                
 TMS                          : AD24      : input  :                   :         : 8         :                
 GND*                         : AD25      :        :                   :         : 1         :                
@@ -206,25 +206,25 @@ nIO_PULLUP                   : AE2       :        :                   :         
 GND*                         : AE3       :        :                   :         : 7         :                
 GND*                         : AE4       :        :                   :         : 7         :                
 GND*                         : AE5       :        :                   :         : 7         :                
-state[4]                     : AE6       : output : 3.3-V LVTTL       :         : 7         : N              
-S[13]                        : AE7       : output : 3.3-V LVTTL       :         : 7         : N              
-EPC[16]                      : AE8       : output : 3.3-V LVTTL       :         : 7         : N              
-SrcA[29]                     : AE9       : output : 3.3-V LVTTL       :         : 7         : N              
-S[14]                        : AE10      : output : 3.3-V LVTTL       :         : 7         : N              
-S[4]                         : AE11      : output : 3.3-V LVTTL       :         : 7         : N              
-SrcA[30]                     : AE12      : output : 3.3-V LVTTL       :         : 10        : N              
-S[15]                        : AE13      : output : 3.3-V LVTTL       :         : 10        : N              
-Inst15a0[12]                 : AE14      : output : 3.3-V LVTTL       :         : 7         : N              
-RegA[11]                     : AE15      : output : 3.3-V LVTTL       :         : 8         : N              
-MDR[26]                      : AE16      : output : 3.3-V LVTTL       :         : 8         : N              
-PC[17]                       : AE17      : output : 3.3-V LVTTL       :         : 8         : N              
-RegB[3]                      : AE18      : output : 3.3-V LVTTL       :         : 8         : N              
-EPC[30]                      : AE19      : output : 3.3-V LVTTL       :         : 8         : N              
-PC[10]                       : AE20      : output : 3.3-V LVTTL       :         : 8         : N              
+GND*                         : AE6       :        :                   :         : 7         :                
+GND*                         : AE7       :        :                   :         : 7         :                
+EPC[15]                      : AE8       : output : 3.3-V LVTTL       :         : 7         : N              
+EPC[14]                      : AE9       : output : 3.3-V LVTTL       :         : 7         : N              
+SrcA[19]                     : AE10      : output : 3.3-V LVTTL       :         : 7         : N              
+EPC[16]                      : AE11      : output : 3.3-V LVTTL       :         : 7         : N              
+ALUOut[8]                    : AE12      : output : 3.3-V LVTTL       :         : 10        : N              
+RegA[18]                     : AE13      : output : 3.3-V LVTTL       :         : 10        : N              
+RegA[9]                      : AE14      : output : 3.3-V LVTTL       :         : 7         : N              
+Inst15a0[9]                  : AE15      : output : 3.3-V LVTTL       :         : 8         : N              
+ALUOut[10]                   : AE16      : output : 3.3-V LVTTL       :         : 8         : N              
+PC[2]                        : AE17      : output : 3.3-V LVTTL       :         : 8         : N              
+SrcA[16]                     : AE18      : output : 3.3-V LVTTL       :         : 8         : N              
+GND*                         : AE19      :        :                   :         : 8         :                
+SrcB[22]                     : AE20      : output : 3.3-V LVTTL       :         : 8         : N              
 GND*                         : AE21      :        :                   :         : 8         :                
 GND*                         : AE22      :        :                   :         : 8         :                
 GND*                         : AE23      :        :                   :         : 8         :                
-MDR[28]                      : AE24      : output : 3.3-V LVTTL       :         : 8         : N              
+GND*                         : AE24      :        :                   :         : 8         :                
 TDI                          : AE25      : input  :                   :         : 8         :                
 GND                          : AE26      : gnd    :                   :         :           :                
 GND                          : AF2       : gnd    :                   :         :           :                
@@ -232,122 +232,122 @@ GND*                         : AF3       :        :                   :         
 VCCIO7                       : AF4       : power  :                   : 3.3V    : 7         :                
 GND*                         : AF5       :        :                   :         : 7         :                
 GND*                         : AF6       :        :                   :         : 7         :                
-GND*                         : AF7       :        :                   :         : 7         :                
-RegA[24]                     : AF8       : output : 3.3-V LVTTL       :         : 7         : N              
-SrcB[17]                     : AF9       : output : 3.3-V LVTTL       :         : 7         : N              
-RegB[24]                     : AF10      : output : 3.3-V LVTTL       :         : 7         : N              
+RegA[5]                      : AF7       : output : 3.3-V LVTTL       :         : 7         : N              
+ALUOut[22]                   : AF8       : output : 3.3-V LVTTL       :         : 7         : N              
+PC[26]                       : AF9       : output : 3.3-V LVTTL       :         : 7         : N              
+Inst15a0[12]                 : AF10      : output : 3.3-V LVTTL       :         : 7         : N              
 VCCIO7                       : AF11      : power  :                   : 3.3V    : 7         :                
-SrcB[8]                      : AF12      : output : 3.3-V LVTTL       :         : 10        : N              
+state[1]                     : AF12      : output : 3.3-V LVTTL       :         : 10        : N              
 GND                          : AF13      : gnd    :                   :         :           :                
 GND                          : AF14      : gnd    :                   :         :           :                
-ALUOut[5]                    : AF15      : output : 3.3-V LVTTL       :         : 8         : N              
+MDR[17]                      : AF15      : output : 3.3-V LVTTL       :         : 8         : N              
 VCCIO8                       : AF16      : power  :                   : 3.3V    : 8         :                
-PC[3]                        : AF17      : output : 3.3-V LVTTL       :         : 8         : N              
-MDR[4]                       : AF18      : output : 3.3-V LVTTL       :         : 8         : N              
-Inst15a0[6]                  : AF19      : output : 3.3-V LVTTL       :         : 8         : N              
-Inst15a0[4]                  : AF20      : output : 3.3-V LVTTL       :         : 8         : N              
-SrcA[15]                     : AF21      : output : 3.3-V LVTTL       :         : 8         : N              
+SrcB[20]                     : AF17      : output : 3.3-V LVTTL       :         : 8         : N              
+MDR[24]                      : AF18      : output : 3.3-V LVTTL       :         : 8         : N              
+MDR[16]                      : AF19      : output : 3.3-V LVTTL       :         : 8         : N              
+SrcB[31]                     : AF20      : output : 3.3-V LVTTL       :         : 8         : N              
+GND*                         : AF21      :        :                   :         : 8         :                
 GND*                         : AF22      :        :                   :         : 8         :                
 VCCIO8                       : AF23      : power  :                   : 3.3V    : 8         :                
-GND*                         : AF24      :        :                   :         : 8         :                
+MDR[31]                      : AF24      : output : 3.3-V LVTTL       :         : 8         : N              
 GND                          : AF25      : gnd    :                   :         :           :                
 GND                          : B1        : gnd    :                   :         :           :                
 MSEL1                        : B2        :        :                   :         : 4         :                
 GND*                         : B3        :        :                   :         : 4         :                
-SrcB[12]                     : B4        : output : 3.3-V LVTTL       :         : 4         : N              
-GND*                         : B5        :        :                   :         : 4         :                
-ALUOut[29]                   : B6        : output : 3.3-V LVTTL       :         : 4         : N              
-RegB[23]                     : B7        : output : 3.3-V LVTTL       :         : 4         : N              
-RegB[21]                     : B8        : output : 3.3-V LVTTL       :         : 4         : N              
-EPC[21]                      : B9        : output : 3.3-V LVTTL       :         : 4         : N              
-RegB[26]                     : B10       : output : 3.3-V LVTTL       :         : 4         : N              
-Inst20a16[0]                 : B11       : output : 3.3-V LVTTL       :         : 4         : N              
-SrcB[0]                      : B12       : output : 3.3-V LVTTL       :         : 9         : N              
-RegB[18]                     : B13       : output : 3.3-V LVTTL       :         : 4         : N              
-SrcB[28]                     : B14       : output : 3.3-V LVTTL       :         : 4         : N              
-SrcA[13]                     : B15       : output : 3.3-V LVTTL       :         : 3         : N              
-AluOutWritel                 : B16       : output : 3.3-V LVTTL       :         : 3         : N              
-EPC[28]                      : B17       : output : 3.3-V LVTTL       :         : 3         : N              
-RegA[0]                      : B18       : output : 3.3-V LVTTL       :         : 3         : N              
-MDR[23]                      : B19       : output : 3.3-V LVTTL       :         : 3         : N              
-funct[5]                     : B20       : output : 3.3-V LVTTL       :         : 3         : N              
-SrcB[14]                     : B21       : output : 3.3-V LVTTL       :         : 3         : N              
-GND*                         : B22       :        :                   :         : 3         :                
-GND*                         : B23       :        :                   :         : 3         :                
-GND*                         : B24       :        :                   :         : 3         :                
+GND*                         : B4        :        :                   :         : 4         :                
+S[28]                        : B5        : output : 3.3-V LVTTL       :         : 4         : N              
+S[11]                        : B6        : output : 3.3-V LVTTL       :         : 4         : N              
+S[12]                        : B7        : output : 3.3-V LVTTL       :         : 4         : N              
+PC[31]                       : B8        : output : 3.3-V LVTTL       :         : 4         : N              
+RegB[24]                     : B9        : output : 3.3-V LVTTL       :         : 4         : N              
+PC[28]                       : B10       : output : 3.3-V LVTTL       :         : 4         : N              
+SrcB[29]                     : B11       : output : 3.3-V LVTTL       :         : 4         : N              
+RegB[20]                     : B12       : output : 3.3-V LVTTL       :         : 9         : N              
+EPC[1]                       : B13       : output : 3.3-V LVTTL       :         : 4         : N              
+RegA[17]                     : B14       : output : 3.3-V LVTTL       :         : 4         : N              
+ALUOut[0]                    : B15       : output : 3.3-V LVTTL       :         : 3         : N              
+S[1]                         : B16       : output : 3.3-V LVTTL       :         : 3         : N              
+Inst15a0[6]                  : B17       : output : 3.3-V LVTTL       :         : 3         : N              
+RegA[6]                      : B18       : output : 3.3-V LVTTL       :         : 3         : N              
+MDR[11]                      : B19       : output : 3.3-V LVTTL       :         : 3         : N              
+Inst15a0[5]                  : B20       : output : 3.3-V LVTTL       :         : 3         : N              
+S[3]                         : B21       : output : 3.3-V LVTTL       :         : 3         : N              
+RegB[4]                      : B22       : output : 3.3-V LVTTL       :         : 3         : N              
+RegB[23]                     : B23       : output : 3.3-V LVTTL       :         : 3         : N              
+SrcB[9]                      : B24       : output : 3.3-V LVTTL       :         : 3         : N              
 CONF_DONE                    : B25       :        :                   :         : 3         :                
 GND                          : B26       : gnd    :                   :         :           :                
 GND*                         : C1        :        :                   :         : 5         :                
-GND*                         : C2        :        :                   :         : 5         :                
-GND*                         : C3        :        :                   :         : 4         :                
+RegA[23]                     : C2        : output : 3.3-V LVTTL       :         : 5         : N              
+funct[1]                     : C3        : output : 3.3-V LVTTL       :         : 4         : N              
 GND*                         : C4        :        :                   :         : 4         :                
-RegA[21]                     : C5        : output : 3.3-V LVTTL       :         : 4         : N              
-S[31]                        : C6        : output : 3.3-V LVTTL       :         : 4         : N              
-EPC[18]                      : C7        : output : 3.3-V LVTTL       :         : 4         : N              
-SrcA[14]                     : C8        : output : 3.3-V LVTTL       :         : 4         : N              
-RegB[30]                     : C9        : output : 3.3-V LVTTL       :         : 4         : N              
-EPC[31]                      : C10       : output : 3.3-V LVTTL       :         : 4         : N              
-S[20]                        : C11       : output : 3.3-V LVTTL       :         : 4         : N              
-ALUOut[22]                   : C12       : output : 3.3-V LVTTL       :         : 9         : N              
-RegA[13]                     : C13       : output : 3.3-V LVTTL       :         : 4         : N              
-SrcA[7]                      : C14       : output : 3.3-V LVTTL       :         : 4         : N              
-PC[2]                        : C15       : output : 3.3-V LVTTL       :         : 3         : N              
-MDR[20]                      : C16       : output : 3.3-V LVTTL       :         : 3         : N              
-S[12]                        : C17       : output : 3.3-V LVTTL       :         : 3         : N              
-Inst15a0[5]                  : C18       : output : 3.3-V LVTTL       :         : 3         : N              
-MDR[15]                      : C19       : output : 3.3-V LVTTL       :         : 3         : N              
-SrcB[3]                      : C20       : output : 3.3-V LVTTL       :         : 3         : N              
-ResetSignal                  : C21       : output : 3.3-V LVTTL       :         : 3         : N              
-state[2]                     : C22       : output : 3.3-V LVTTL       :         : 3         : N              
-GND*                         : C23       :        :                   :         : 3         :                
+EPC[29]                      : C5        : output : 3.3-V LVTTL       :         : 4         : N              
+SrcA[0]                      : C6        : output : 3.3-V LVTTL       :         : 4         : N              
+ALUOut[17]                   : C7        : output : 3.3-V LVTTL       :         : 4         : N              
+PC[11]                       : C8        : output : 3.3-V LVTTL       :         : 4         : N              
+SrcB[1]                      : C9        : output : 3.3-V LVTTL       :         : 4         : N              
+SrcA[21]                     : C10       : output : 3.3-V LVTTL       :         : 4         : N              
+SrcA[10]                     : C11       : output : 3.3-V LVTTL       :         : 4         : N              
+RegA[1]                      : C12       : output : 3.3-V LVTTL       :         : 9         : N              
+RegB[9]                      : C13       : output : 3.3-V LVTTL       :         : 4         : N              
+EPC[0]                       : C14       : output : 3.3-V LVTTL       :         : 4         : N              
+Inst20a16[0]                 : C15       : output : 3.3-V LVTTL       :         : 3         : N              
+RegB[13]                     : C16       : output : 3.3-V LVTTL       :         : 3         : N              
+RegB[19]                     : C17       : output : 3.3-V LVTTL       :         : 3         : N              
+RegA[22]                     : C18       : output : 3.3-V LVTTL       :         : 3         : N              
+MDR[29]                      : C19       : output : 3.3-V LVTTL       :         : 3         : N              
+SrcB[19]                     : C20       : output : 3.3-V LVTTL       :         : 3         : N              
+RegA[28]                     : C21       : output : 3.3-V LVTTL       :         : 3         : N              
+S[0]                         : C22       : output : 3.3-V LVTTL       :         : 3         : N              
+MDR[2]                       : C23       : output : 3.3-V LVTTL       :         : 3         : N              
 DCLK                         : C24       :        :                   :         : 3         :                
 GND*                         : C25       :        :                   :         : 2         :                
-Inst15a0[3]                  : C26       : output : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : C26       :        :                   :         : 2         :                
 VCCIO5                       : D1        : power  :                   : 3.3V    : 5         :                
-EPC[14]                      : D2        : output : 3.3-V LVTTL       :         : 5         : N              
-RegA[20]                     : D3        : output : 3.3-V LVTTL       :         : 5         : N              
+RegB[26]                     : D2        : output : 3.3-V LVTTL       :         : 5         : N              
+S[21]                        : D3        : output : 3.3-V LVTTL       :         : 5         : N              
 GND*                         : D4        :        :                   :         : 4         :                
 VREFB4                       : D5        : power  :                   :         : 4         :                
-ALUOut[16]                   : D6        : output : 3.3-V LVTTL       :         : 4         : N              
-Inst15a0[11]                 : D7        : output : 3.3-V LVTTL       :         : 4         : N              
-RegB[31]                     : D8        : output : 3.3-V LVTTL       :         : 4         : N              
-RegB[27]                     : D9        : output : 3.3-V LVTTL       :         : 4         : N              
-RegB[11]                     : D10       : output : 3.3-V LVTTL       :         : 4         : N              
+Inst15a0[1]                  : D6        : output : 3.3-V LVTTL       :         : 4         : N              
+EPC[23]                      : D7        : output : 3.3-V LVTTL       :         : 4         : N              
+ALUOut[26]                   : D8        : output : 3.3-V LVTTL       :         : 4         : N              
+PC[25]                       : D9        : output : 3.3-V LVTTL       :         : 4         : N              
+SrcA[28]                     : D10       : output : 3.3-V LVTTL       :         : 4         : N              
 VREFB4                       : D11       : power  :                   :         : 4         :                
-Inst20a16[3]                 : D12       : output : 3.3-V LVTTL       :         : 9         : N              
-RegB[22]                     : D13       : output : 3.3-V LVTTL       :         : 9         : N              
-Inst20a16[1]                 : D14       : output : 3.3-V LVTTL       :         : 3         : N              
-S[29]                        : D15       : output : 3.3-V LVTTL       :         : 3         : N              
+state[0]                     : D12       : output : 3.3-V LVTTL       :         : 9         : N              
+Inst15a0[14]                 : D13       : output : 3.3-V LVTTL       :         : 9         : N              
+RegA[7]                      : D14       : output : 3.3-V LVTTL       :         : 3         : N              
+MDR[7]                       : D15       : output : 3.3-V LVTTL       :         : 3         : N              
 VREFB3                       : D16       : power  :                   :         : 3         :                
-MDR[29]                      : D17       : output : 3.3-V LVTTL       :         : 3         : N              
-MDR[19]                      : D18       : output : 3.3-V LVTTL       :         : 3         : N              
-GND*                         : D19       :        :                   :         : 3         :                
-GND*                         : D20       :        :                   :         : 3         :                
-GND*                         : D21       :        :                   :         : 3         :                
+SrcB[2]                      : D17       : output : 3.3-V LVTTL       :         : 3         : N              
+MDR[14]                      : D18       : output : 3.3-V LVTTL       :         : 3         : N              
+EPC[10]                      : D19       : output : 3.3-V LVTTL       :         : 3         : N              
+MDR[25]                      : D20       : output : 3.3-V LVTTL       :         : 3         : N              
+RegA[15]                     : D21       : output : 3.3-V LVTTL       :         : 3         : N              
 VREFB3                       : D22       : power  :                   :         : 3         :                
-GND*                         : D23       :        :                   :         : 3         :                
+RegA[21]                     : D23       : output : 3.3-V LVTTL       :         : 3         : N              
 GND*                         : D24       :        :                   :         : 2         :                
 GND*                         : D25       :        :                   :         : 2         :                
 VCCIO2                       : D26       : power  :                   : 3.3V    : 2         :                
-RegB[13]                     : E1        : output : 3.3-V LVTTL       :         : 5         : N              
-GND*                         : E2        :        :                   :         : 5         :                
-EPC[24]                      : E3        : output : 3.3-V LVTTL       :         : 5         : N              
-GND*                         : E4        :        :                   :         : 5         :                
+S[19]                        : E1        : output : 3.3-V LVTTL       :         : 5         : N              
+PC[8]                        : E2        : output : 3.3-V LVTTL       :         : 5         : N              
+EPC[25]                      : E3        : output : 3.3-V LVTTL       :         : 5         : N              
+PC[19]                       : E4        : output : 3.3-V LVTTL       :         : 5         : N              
 TEMPDIODEp                   : E5        :        :                   :         :           :                
 MSEL2                        : E6        :        :                   :         : 4         :                
 GND*                         : E7        :        :                   :         : 4         :                
 GND*                         : E8        :        :                   :         : 4         :                
-GND*                         : E9        :        :                   :         : 4         :                
-ALUOut[19]                   : E10       : output : 3.3-V LVTTL       :         : 4         : N              
-SrcA[24]                     : E11       : output : 3.3-V LVTTL       :         : 4         : N              
-SrcA[23]                     : E12       : output : 3.3-V LVTTL       :         : 4         : N              
-SrcA[28]                     : E13       : output : 3.3-V LVTTL       :         : 9         : N              
-RegB[9]                      : E14       : output : 3.3-V LVTTL       :         : 3         : N              
-EPC[7]                       : E15       : output : 3.3-V LVTTL       :         : 3         : N              
+EPC[20]                      : E9        : output : 3.3-V LVTTL       :         : 4         : N              
+Inst15a0[0]                  : E10       : output : 3.3-V LVTTL       :         : 4         : N              
+ALUOut[5]                    : E11       : output : 3.3-V LVTTL       :         : 4         : N              
+PC[17]                       : E12       : output : 3.3-V LVTTL       :         : 4         : N              
+funct[0]                     : E13       : output : 3.3-V LVTTL       :         : 9         : N              
+RegB[2]                      : E14       : output : 3.3-V LVTTL       :         : 3         : N              
+Inst25a21[4]                 : E15       : output : 3.3-V LVTTL       :         : 3         : N              
 ~DATA0~ / RESERVED_INPUT     : E16       : input  : 3.3-V LVTTL       :         : 3         : N              
-Inst25a21[1]                 : E17       : output : 3.3-V LVTTL       :         : 3         : N              
-EPC[8]                       : E18       : output : 3.3-V LVTTL       :         : 3         : N              
-GND*                         : E19       :        :                   :         : 3         :                
+MDR[23]                      : E17       : output : 3.3-V LVTTL       :         : 3         : N              
+ALUOut[3]                    : E18       : output : 3.3-V LVTTL       :         : 3         : N              
+MDR[20]                      : E19       : output : 3.3-V LVTTL       :         : 3         : N              
 GND*                         : E20       :        :                   :         : 3         :                
 nSTATUS                      : E21       :        :                   :         : 3         :                
 nCE                          : E22       :        :                   :         : 3         :                
@@ -355,145 +355,145 @@ GND*                         : E23       :        :                   :         
 GND*                         : E24       :        :                   :         : 2         :                
 GND*                         : E25       :        :                   :         : 2         :                
 GND*                         : E26       :        :                   :         : 2         :                
-GND*                         : F1        :        :                   :         : 5         :                
-GND*                         : F2        :        :                   :         : 5         :                
-SrcB[30]                     : F3        : output : 3.3-V LVTTL       :         : 5         : N              
-PC[5]                        : F4        : output : 3.3-V LVTTL       :         : 5         : N              
+SrcB[8]                      : F1        : output : 3.3-V LVTTL       :         : 5         : N              
+RegB[11]                     : F2        : output : 3.3-V LVTTL       :         : 5         : N              
+ALUOut[19]                   : F3        : output : 3.3-V LVTTL       :         : 5         : N              
+SrcA[18]                     : F4        : output : 3.3-V LVTTL       :         : 5         : N              
 TEMPDIODEn                   : F5        :        :                   :         :           :                
 TDO                          : F6        : output :                   :         : 4         :                
 MSEL3                        : F7        :        :                   :         : 4         :                
-GND*                         : F8        :        :                   :         : 4         :                
-GND*                         : F9        :        :                   :         : 4         :                
-state[6]                     : F10       : output : 3.3-V LVTTL       :         : 4         : N              
-SrcB[29]                     : F11       : output : 3.3-V LVTTL       :         : 4         : N              
-EPC[19]                      : F12       : output : 3.3-V LVTTL       :         : 4         : N              
-ALUOut[15]                   : F13       : output : 3.3-V LVTTL       :         : 4         : N              
-Inst15a0[7]                  : F14       : output : 3.3-V LVTTL       :         : 3         : N              
-RegA[30]                     : F15       : output : 3.3-V LVTTL       :         : 3         : N              
-Inst15a0[10]                 : F16       : output : 3.3-V LVTTL       :         : 3         : N              
-MDR[7]                       : F17       : output : 3.3-V LVTTL       :         : 3         : N              
-GND*                         : F18       :        :                   :         : 3         :                
+SrcB[26]                     : F8        : output : 3.3-V LVTTL       :         : 4         : N              
+S[22]                        : F9        : output : 3.3-V LVTTL       :         : 4         : N              
+SrcB[30]                     : F10       : output : 3.3-V LVTTL       :         : 4         : N              
+EPC[19]                      : F11       : output : 3.3-V LVTTL       :         : 4         : N              
+AluOutWritel                 : F12       : output : 3.3-V LVTTL       :         : 4         : N              
+SrcB[10]                     : F13       : output : 3.3-V LVTTL       :         : 4         : N              
+state[2]                     : F14       : output : 3.3-V LVTTL       :         : 3         : N              
+Inst20a16[4]                 : F15       : output : 3.3-V LVTTL       :         : 3         : N              
+Inst25a21[1]                 : F16       : output : 3.3-V LVTTL       :         : 3         : N              
+Inst15a0[7]                  : F17       : output : 3.3-V LVTTL       :         : 3         : N              
+RegA[24]                     : F18       : output : 3.3-V LVTTL       :         : 3         : N              
 GND*                         : F19       :        :                   :         : 3         :                
-RegA[17]                     : F20       : output : 3.3-V LVTTL       :         : 3         : N              
+RegA[16]                     : F20       : output : 3.3-V LVTTL       :         : 3         : N              
 GND*                         : F21       :        :                   :         : 2         :                
-funct[3]                     : F22       : output : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : F22       :        :                   :         : 2         :                
 GND*                         : F23       :        :                   :         : 2         :                
 GND*                         : F24       :        :                   :         : 2         :                
 GND*                         : F25       :        :                   :         : 2         :                
-EPC[2]                       : F26       : output : 3.3-V LVTTL       :         : 2         : N              
-SrcA[19]                     : G1        : output : 3.3-V LVTTL       :         : 5         : N              
-SrcA[8]                      : G2        : output : 3.3-V LVTTL       :         : 5         : N              
-RegB[25]                     : G3        : output : 3.3-V LVTTL       :         : 5         : N              
-SrcA[3]                      : G4        : output : 3.3-V LVTTL       :         : 5         : N              
+GND*                         : F26       :        :                   :         : 2         :                
+RegB[12]                     : G1        : output : 3.3-V LVTTL       :         : 5         : N              
+EPC[18]                      : G2        : output : 3.3-V LVTTL       :         : 5         : N              
+SrcB[0]                      : G3        : output : 3.3-V LVTTL       :         : 5         : N              
+PC[27]                       : G4        : output : 3.3-V LVTTL       :         : 5         : N              
 VREFB5                       : G5        : power  :                   :         : 5         :                
-GND*                         : G6        :        :                   :         : 5         :                
-SrcA[31]                     : G7        : output : 3.3-V LVTTL       :         : 5         : N              
+EPC[21]                      : G6        : output : 3.3-V LVTTL       :         : 5         : N              
+S[14]                        : G7        : output : 3.3-V LVTTL       :         : 5         : N              
 MSEL0                        : G8        :        :                   :         : 4         :                
-EPC[13]                      : G9        : output : 3.3-V LVTTL       :         : 4         : N              
-SrcB[27]                     : G10       : output : 3.3-V LVTTL       :         : 4         : N              
-Inst15a0[8]                  : G11       : output : 3.3-V LVTTL       :         : 4         : N              
+GND*                         : G9        :        :                   :         : 4         :                
+SrcA[4]                      : G10       : output : 3.3-V LVTTL       :         : 4         : N              
+S[25]                        : G11       : output : 3.3-V LVTTL       :         : 4         : N              
 VCCA_PLL5                    : G12       : power  :                   : 1.2V    :           :                
 GND                          : G13       : gnd    :                   :         :           :                
-MDR[12]                      : G14       : output : 3.3-V LVTTL       :         : 3         : N              
-state[0]                     : G15       : output : 3.3-V LVTTL       :         : 3         : N              
-SrcA[6]                      : G16       : output : 3.3-V LVTTL       :         : 3         : N              
-MDR[5]                       : G17       : output : 3.3-V LVTTL       :         : 3         : N              
+SrcB[13]                     : G14       : output : 3.3-V LVTTL       :         : 3         : N              
+RegA[8]                      : G15       : output : 3.3-V LVTTL       :         : 3         : N              
+ALUOut[9]                    : G16       : output : 3.3-V LVTTL       :         : 3         : N              
+MDR[22]                      : G17       : output : 3.3-V LVTTL       :         : 3         : N              
 GND*                         : G18       :        :                   :         : 3         :                
 GND*                         : G19       :        :                   :         : 3         :                
 GND*                         : G20       :        :                   :         : 2         :                
 GND*                         : G21       :        :                   :         : 2         :                
 VREFB2                       : G22       : power  :                   :         : 2         :                
-GND*                         : G23       :        :                   :         : 2         :                
-GND*                         : G24       :        :                   :         : 2         :                
-GND*                         : G25       :        :                   :         : 2         :                
-RegB[20]                     : G26       : output : 3.3-V LVTTL       :         : 2         : N              
-S[1]                         : H1        : output : 3.3-V LVTTL       :         : 5         : N              
-Inst20a16[2]                 : H2        : output : 3.3-V LVTTL       :         : 5         : N              
-RegB[17]                     : H3        : output : 3.3-V LVTTL       :         : 5         : N              
-MDR[14]                      : H4        : output : 3.3-V LVTTL       :         : 5         : N              
-GND*                         : H5        :        :                   :         : 5         :                
-GND*                         : H6        :        :                   :         : 5         :                
-SrcB[1]                      : H7        : output : 3.3-V LVTTL       :         : 5         : N              
-SrcB[19]                     : H8        : output : 3.3-V LVTTL       :         : 5         : N              
-SrcA[18]                     : H9        : output : 3.3-V LVTTL       :         : 4         : N              
-GND*                         : H10       :        :                   :         : 4         :                
-SrcB[5]                      : H11       : output : 3.3-V LVTTL       :         : 4         : N              
+EPC[5]                       : G23       : output : 3.3-V LVTTL       :         : 2         : N              
+S[20]                        : G24       : output : 3.3-V LVTTL       :         : 2         : N              
+PC[21]                       : G25       : output : 3.3-V LVTTL       :         : 2         : N              
+PC[16]                       : G26       : output : 3.3-V LVTTL       :         : 2         : N              
+RegA[29]                     : H1        : output : 3.3-V LVTTL       :         : 5         : N              
+SrcA[29]                     : H2        : output : 3.3-V LVTTL       :         : 5         : N              
+ALUOut[25]                   : H3        : output : 3.3-V LVTTL       :         : 5         : N              
+Inst20a16[2]                 : H4        : output : 3.3-V LVTTL       :         : 5         : N              
+S[9]                         : H5        : output : 3.3-V LVTTL       :         : 5         : N              
+SrcB[7]                      : H6        : output : 3.3-V LVTTL       :         : 5         : N              
+SrcA[1]                      : H7        : output : 3.3-V LVTTL       :         : 5         : N              
+ALUOut[18]                   : H8        : output : 3.3-V LVTTL       :         : 5         : N              
+RegA[11]                     : H9        : output : 3.3-V LVTTL       :         : 4         : N              
+RegA[14]                     : H10       : output : 3.3-V LVTTL       :         : 4         : N              
+SrcB[16]                     : H11       : output : 3.3-V LVTTL       :         : 4         : N              
 VCC_PLL5_OUT                 : H12       : power  :                   : 3.3V    : 9         :                
 GNDA_PLL5                    : H13       : gnd    :                   :         :           :                
 VCCD_PLL5                    : H14       : power  :                   : 1.2V    :           :                
-Inst25a21[3]                 : H15       : output : 3.3-V LVTTL       :         : 3         : N              
-PC[8]                        : H16       : output : 3.3-V LVTTL       :         : 3         : N              
-GND*                         : H17       :        :                   :         : 3         :                
-MDR[17]                      : H18       : output : 3.3-V LVTTL       :         : 3         : N              
+Inst20a16[3]                 : H15       : output : 3.3-V LVTTL       :         : 3         : N              
+EPC[3]                       : H16       : output : 3.3-V LVTTL       :         : 3         : N              
+RegB[8]                      : H17       : output : 3.3-V LVTTL       :         : 3         : N              
+GND*                         : H18       :        :                   :         : 3         :                
 GND*                         : H19       :        :                   :         : 2         :                
 GND*                         : H20       :        :                   :         : 2         :                
 GND*                         : H21       :        :                   :         : 2         :                
 GND*                         : H22       :        :                   :         : 2         :                
-GND*                         : H23       :        :                   :         : 2         :                
-GND*                         : H24       :        :                   :         : 2         :                
-ALUOut[24]                   : H25       : output : 3.3-V LVTTL       :         : 2         : N              
-RegB[5]                      : H26       : output : 3.3-V LVTTL       :         : 2         : N              
-MDR[16]                      : J1        : output : 3.3-V LVTTL       :         : 5         : N              
-RegA[23]                     : J2        : output : 3.3-V LVTTL       :         : 5         : N              
-ALUOut[23]                   : J3        : output : 3.3-V LVTTL       :         : 5         : N              
-SrcB[31]                     : J4        : output : 3.3-V LVTTL       :         : 5         : N              
-SrcB[18]                     : J5        : output : 3.3-V LVTTL       :         : 5         : N              
-EPC[17]                      : J6        : output : 3.3-V LVTTL       :         : 5         : N              
-GND*                         : J7        :        :                   :         : 5         :                
-GND*                         : J8        :        :                   :         : 5         :                
-GND*                         : J9        :        :                   :         : 4         :                
-RegA[8]                      : J10       : output : 3.3-V LVTTL       :         : 4         : N              
-S[25]                        : J11       : output : 3.3-V LVTTL       :         : 4         : N              
+SrcA[24]                     : H23       : output : 3.3-V LVTTL       :         : 2         : N              
+RegB[10]                     : H24       : output : 3.3-V LVTTL       :         : 2         : N              
+SrcA[7]                      : H25       : output : 3.3-V LVTTL       :         : 2         : N              
+PC[14]                       : H26       : output : 3.3-V LVTTL       :         : 2         : N              
+PC_Write                     : J1        : output : 3.3-V LVTTL       :         : 5         : N              
+SrcA[14]                     : J2        : output : 3.3-V LVTTL       :         : 5         : N              
+RegB[0]                      : J3        : output : 3.3-V LVTTL       :         : 5         : N              
+Inst25a21[2]                 : J4        : output : 3.3-V LVTTL       :         : 5         : N              
+RegA[10]                     : J5        : output : 3.3-V LVTTL       :         : 5         : N              
+RegB[16]                     : J6        : output : 3.3-V LVTTL       :         : 5         : N              
+ALUOut[20]                   : J7        : output : 3.3-V LVTTL       :         : 5         : N              
+SrcA[30]                     : J8        : output : 3.3-V LVTTL       :         : 5         : N              
+SrcB[4]                      : J9        : output : 3.3-V LVTTL       :         : 4         : N              
+S[4]                         : J10       : output : 3.3-V LVTTL       :         : 4         : N              
+SrcB[6]                      : J11       : output : 3.3-V LVTTL       :         : 4         : N              
 VCCPD4                       : J12       : power  :                   : 3.3V    : 4         :                
 GNDA_PLL5                    : J13       : gnd    :                   :         :           :                
-RegA[6]                      : J14       : output : 3.3-V LVTTL       :         : 3         : N              
-Inst15a0[14]                 : J15       : output : 3.3-V LVTTL       :         : 3         : N              
+Inst15a0[11]                 : J14       : output : 3.3-V LVTTL       :         : 3         : N              
+ALUOut[23]                   : J15       : output : 3.3-V LVTTL       :         : 3         : N              
 VCCPD3                       : J16       : power  :                   : 3.3V    : 3         :                
-MDR[25]                      : J17       : output : 3.3-V LVTTL       :         : 3         : N              
+RegB[22]                     : J17       : output : 3.3-V LVTTL       :         : 3         : N              
 GND*                         : J18       :        :                   :         : 3         :                
 GND*                         : J19       :        :                   :         : 2         :                
 GND*                         : J20       :        :                   :         : 2         :                
-SrcB[16]                     : J21       : output : 3.3-V LVTTL       :         : 2         : N              
+SrcB[15]                     : J21       : output : 3.3-V LVTTL       :         : 2         : N              
 GND*                         : J22       :        :                   :         : 2         :                
-GND*                         : J23       :        :                   :         : 2         :                
-GND*                         : J24       :        :                   :         : 2         :                
-ALUOut[1]                    : J25       : output : 3.3-V LVTTL       :         : 2         : N              
-ALUOut[13]                   : J26       : output : 3.3-V LVTTL       :         : 2         : N              
-RegA[29]                     : K1        : output : 3.3-V LVTTL       :         : 5         : N              
-ALUOut[10]                   : K2        : output : 3.3-V LVTTL       :         : 5         : N              
-S[0]                         : K3        : output : 3.3-V LVTTL       :         : 5         : N              
-Inst25a21[4]                 : K4        : output : 3.3-V LVTTL       :         : 5         : N              
+PC[29]                       : J23       : output : 3.3-V LVTTL       :         : 2         : N              
+PC[15]                       : J24       : output : 3.3-V LVTTL       :         : 2         : N              
+SrcB[3]                      : J25       : output : 3.3-V LVTTL       :         : 2         : N              
+ALUOut[6]                    : J26       : output : 3.3-V LVTTL       :         : 2         : N              
+state[4]                     : K1        : output : 3.3-V LVTTL       :         : 5         : N              
+RegA[27]                     : K2        : output : 3.3-V LVTTL       :         : 5         : N              
+PC[13]                       : K3        : output : 3.3-V LVTTL       :         : 5         : N              
+SrcB[23]                     : K4        : output : 3.3-V LVTTL       :         : 5         : N              
 VREFB5                       : K5        : power  :                   :         : 5         :                
-SrcA[16]                     : K6        : output : 3.3-V LVTTL       :         : 5         : N              
-RegA[27]                     : K7        : output : 3.3-V LVTTL       :         : 5         : N              
-SrcB[20]                     : K8        : output : 3.3-V LVTTL       :         : 5         : N              
-EPC[5]                       : K9        : output : 3.3-V LVTTL       :         : 5         : N              
-S[30]                        : K10       : output : 3.3-V LVTTL       :         : 4         : N              
-MDR[22]                      : K11       : output : 3.3-V LVTTL       :         : 4         : N              
+SrcB[14]                     : K6        : output : 3.3-V LVTTL       :         : 5         : N              
+RegB[21]                     : K7        : output : 3.3-V LVTTL       :         : 5         : N              
+ALUOut[27]                   : K8        : output : 3.3-V LVTTL       :         : 5         : N              
+EPC[6]                       : K9        : output : 3.3-V LVTTL       :         : 5         : N              
+EPC[13]                      : K10       : output : 3.3-V LVTTL       :         : 4         : N              
+SrcA[23]                     : K11       : output : 3.3-V LVTTL       :         : 4         : N              
 GND                          : K12       : gnd    :                   :         :           :                
 VCCIO4                       : K13       : power  :                   : 3.3V    : 4         :                
 GND                          : K14       : gnd    :                   :         :           :                
 VCCIO3                       : K15       : power  :                   : 3.3V    : 3         :                
-MDR[27]                      : K16       : output : 3.3-V LVTTL       :         : 3         : N              
-RegA[1]                      : K17       : output : 3.3-V LVTTL       :         : 3         : N              
-GND*                         : K18       :        :                   :         : 3         :                
-GND*                         : K19       :        :                   :         : 2         :                
-GND*                         : K20       :        :                   :         : 2         :                
+RegB[27]                     : K16       : output : 3.3-V LVTTL       :         : 3         : N              
+RegB[30]                     : K17       : output : 3.3-V LVTTL       :         : 3         : N              
+funct[5]                     : K18       : output : 3.3-V LVTTL       :         : 3         : N              
+EPC[30]                      : K19       : output : 3.3-V LVTTL       :         : 2         : N              
+SrcB[5]                      : K20       : output : 3.3-V LVTTL       :         : 2         : N              
 GND*                         : K21       :        :                   :         : 2         :                
-GND*                         : K22       :        :                   :         : 2         :                
-Inst15a0[2]                  : K23       : output : 3.3-V LVTTL       :         : 2         : N              
-GND*                         : K24       :        :                   :         : 2         :                
-RegA[10]                     : K25       : output : 3.3-V LVTTL       :         : 2         : N              
-SrcA[12]                     : K26       : output : 3.3-V LVTTL       :         : 2         : N              
+ALUOut[15]                   : K22       : output : 3.3-V LVTTL       :         : 2         : N              
+RegB[28]                     : K23       : output : 3.3-V LVTTL       :         : 2         : N              
+RegB[31]                     : K24       : output : 3.3-V LVTTL       :         : 2         : N              
+RegB[18]                     : K25       : output : 3.3-V LVTTL       :         : 2         : N              
+RegA[19]                     : K26       : output : 3.3-V LVTTL       :         : 2         : N              
 VCCIO5                       : L1        : power  :                   : 3.3V    : 5         :                
-RegB[7]                      : L2        : output : 3.3-V LVTTL       :         : 5         : N              
-MDR[6]                       : L3        : output : 3.3-V LVTTL       :         : 5         : N              
-SrcB[24]                     : L4        : output : 3.3-V LVTTL       :         : 5         : N              
-SrcB[26]                     : L5        : output : 3.3-V LVTTL       :         : 5         : N              
-MDR[21]                      : L6        : output : 3.3-V LVTTL       :         : 5         : N              
-PC[13]                       : L7        : output : 3.3-V LVTTL       :         : 5         : N              
-RegB[15]                     : L8        : output : 3.3-V LVTTL       :         : 5         : N              
-RegB[14]                     : L9        : output : 3.3-V LVTTL       :         : 5         : N              
+EPC[27]                      : L2        : output : 3.3-V LVTTL       :         : 5         : N              
+S[13]                        : L3        : output : 3.3-V LVTTL       :         : 5         : N              
+S[27]                        : L4        : output : 3.3-V LVTTL       :         : 5         : N              
+ALUOut[29]                   : L5        : output : 3.3-V LVTTL       :         : 5         : N              
+SrcB[17]                     : L6        : output : 3.3-V LVTTL       :         : 5         : N              
+Inst15a0[15]                 : L7        : output : 3.3-V LVTTL       :         : 5         : N              
+EPC[28]                      : L8        : output : 3.3-V LVTTL       :         : 5         : N              
+S[26]                        : L9        : output : 3.3-V LVTTL       :         : 5         : N              
 VCCINT                       : L10       : power  :                   : 1.2V    :           :                
 GND                          : L11       : gnd    :                   :         :           :                
 VCCINT                       : L12       : power  :                   : 1.2V    :           :                
@@ -502,23 +502,23 @@ VCCINT                       : L14       : power  :                   : 1.2V    
 GND                          : L15       : gnd    :                   :         :           :                
 VCCINT                       : L16       : power  :                   : 1.2V    :           :                
 GND                          : L17       : gnd    :                   :         :           :                
-RegA[15]                     : L18       : output : 3.3-V LVTTL       :         : 2         : N              
-RegB[10]                     : L19       : output : 3.3-V LVTTL       :         : 2         : N              
-GND*                         : L20       :        :                   :         : 2         :                
-EPC[4]                       : L21       : output : 3.3-V LVTTL       :         : 2         : N              
-funct[2]                     : L22       : output : 3.3-V LVTTL       :         : 2         : N              
-RegA[25]                     : L23       : output : 3.3-V LVTTL       :         : 2         : N              
-MDR[10]                      : L24       : output : 3.3-V LVTTL       :         : 2         : N              
-SrcA[2]                      : L25       : output : 3.3-V LVTTL       :         : 2         : N              
+ALUOut[24]                   : L18       : output : 3.3-V LVTTL       :         : 2         : N              
+SrcB[18]                     : L19       : output : 3.3-V LVTTL       :         : 2         : N              
+Inst20a16[1]                 : L20       : output : 3.3-V LVTTL       :         : 2         : N              
+RegB[29]                     : L21       : output : 3.3-V LVTTL       :         : 2         : N              
+RegA[25]                     : L22       : output : 3.3-V LVTTL       :         : 2         : N              
+SrcA[11]                     : L23       : output : 3.3-V LVTTL       :         : 2         : N              
+SrcA[17]                     : L24       : output : 3.3-V LVTTL       :         : 2         : N              
+RegA[12]                     : L25       : output : 3.3-V LVTTL       :         : 2         : N              
 VCCIO2                       : L26       : power  :                   : 3.3V    : 2         :                
-S[3]                         : M1        : output : 3.3-V LVTTL       :         : 5         : N              
-EPC[1]                       : M2        : output : 3.3-V LVTTL       :         : 5         : N              
-RegA[2]                      : M3        : output : 3.3-V LVTTL       :         : 5         : N              
-SrcA[4]                      : M4        : output : 3.3-V LVTTL       :         : 5         : N              
-EPC[26]                      : M5        : output : 3.3-V LVTTL       :         : 5         : N              
-RegA[22]                     : M6        : output : 3.3-V LVTTL       :         : 5         : N              
-SrcA[0]                      : M7        : output : 3.3-V LVTTL       :         : 5         : N              
-S[19]                        : M8        : output : 3.3-V LVTTL       :         : 5         : N              
+EPC[12]                      : M1        : output : 3.3-V LVTTL       :         : 5         : N              
+state[3]                     : M2        : output : 3.3-V LVTTL       :         : 5         : N              
+SrcB[12]                     : M3        : output : 3.3-V LVTTL       :         : 5         : N              
+SrcA[27]                     : M4        : output : 3.3-V LVTTL       :         : 5         : N              
+Inst25a21[3]                 : M5        : output : 3.3-V LVTTL       :         : 5         : N              
+RegB[5]                      : M6        : output : 3.3-V LVTTL       :         : 5         : N              
+SrcA[25]                     : M7        : output : 3.3-V LVTTL       :         : 5         : N              
+PC[22]                       : M8        : output : 3.3-V LVTTL       :         : 5         : N              
 VCCPD5                       : M9        : power  :                   : 3.3V    : 5         :                
 GND                          : M10       : gnd    :                   :         :           :                
 VCCINT                       : M11       : power  :                   : 1.2V    :           :                
@@ -529,21 +529,21 @@ VCCINT                       : M15       : power  :                   : 1.2V    
 GND                          : M16       : gnd    :                   :         :           :                
 VCCIO2                       : M17       : power  :                   : 3.3V    : 2         :                
 VCCPD2                       : M18       : power  :                   : 3.3V    : 2         :                
-PC[12]                       : M19       : output : 3.3-V LVTTL       :         : 2         : N              
-PC[7]                        : M20       : output : 3.3-V LVTTL       :         : 2         : N              
-ALUOut[27]                   : M21       : output : 3.3-V LVTTL       :         : 2         : N              
-RegA[31]                     : M22       : output : 3.3-V LVTTL       :         : 2         : N              
-Inst20a16[4]                 : M23       : output : 3.3-V LVTTL       :         : 2         : N              
-Inst15a0[15]                 : M24       : output : 3.3-V LVTTL       :         : 2         : N              
-EPC[23]                      : M25       : output : 3.3-V LVTTL       :         : 2         : N              
-PC[16]                       : M26       : output : 3.3-V LVTTL       :         : 2         : N              
+ALUOut[13]                   : M19       : output : 3.3-V LVTTL       :         : 2         : N              
+PC[12]                       : M20       : output : 3.3-V LVTTL       :         : 2         : N              
+SrcA[12]                     : M21       : output : 3.3-V LVTTL       :         : 2         : N              
+RegA[20]                     : M22       : output : 3.3-V LVTTL       :         : 2         : N              
+SrcB[27]                     : M23       : output : 3.3-V LVTTL       :         : 2         : N              
+SrcA[8]                      : M24       : output : 3.3-V LVTTL       :         : 2         : N              
+SrcA[6]                      : M25       : output : 3.3-V LVTTL       :         : 2         : N              
+RegA[26]                     : M26       : output : 3.3-V LVTTL       :         : 2         : N              
 GND                          : N1        : gnd    :                   :         :           :                
 GND+                         : N2        :        :                   :         : 5         :                
 GND+                         : N3        :        :                   :         : 5         :                
-RegA[26]                     : N4        : output : 3.3-V LVTTL       :         : 5         : N              
-state[3]                     : N5        : output : 3.3-V LVTTL       :         : 5         : N              
-S[2]                         : N6        : output : 3.3-V LVTTL       :         : 5         : N              
-PC[23]                       : N7        : output : 3.3-V LVTTL       :         : 5         : N              
+SrcB[24]                     : N4        : output : 3.3-V LVTTL       :         : 5         : N              
+EPC[7]                       : N5        : output : 3.3-V LVTTL       :         : 5         : N              
+MDR[27]                      : N6        : output : 3.3-V LVTTL       :         : 5         : N              
+ALUOut[30]                   : N7        : output : 3.3-V LVTTL       :         : 5         : N              
 GNDA_PLL4                    : N8        : gnd    :                   :         :           :                
 GNDA_PLL4                    : N9        : gnd    :                   :         :           :                
 VCCIO5                       : N10       : power  :                   : 3.3V    : 5         :                
@@ -555,19 +555,19 @@ GND                          : N15       : gnd    :                   :         
 VCCINT                       : N16       : power  :                   : 1.2V    :           :                
 GND                          : N17       : gnd    :                   :         :           :                
 GNDA_PLL1                    : N18       : gnd    :                   :         :           :                
-MDR[11]                      : N19       : output : 3.3-V LVTTL       :         : 2         : N              
-S[10]                        : N20       : output : 3.3-V LVTTL       :         : 2         : N              
-RegB[19]                     : N21       : output : 3.3-V LVTTL       :         : 2         : N              
-SrcB[4]                      : N22       : output : 3.3-V LVTTL       :         : 2         : N              
+opcode[1]                    : N19       : output : 3.3-V LVTTL       :         : 2         : N              
+opcode[5]                    : N20       : output : 3.3-V LVTTL       :         : 2         : N              
+SrcA[26]                     : N21       : output : 3.3-V LVTTL       :         : 2         : N              
+PC[9]                        : N22       : output : 3.3-V LVTTL       :         : 2         : N              
 VREFB2                       : N23       : power  :                   :         : 2         :                
 GND+                         : N24       :        :                   :         : 2         :                
 GND+                         : N25       :        :                   :         : 2         :                
 GND                          : N26       : gnd    :                   :         :           :                
 GND                          : P1        : gnd    :                   :         :           :                
-EPC[29]                      : P2        : output : 3.3-V LVTTL       :         : 5         : N              
-SrcA[26]                     : P3        : output : 3.3-V LVTTL       :         : 5         : N              
-EPC[3]                       : P4        : output : 3.3-V LVTTL       :         : 5         : N              
-ALUOut[2]                    : P5        : output : 3.3-V LVTTL       :         : 5         : N              
+ALUOut[21]                   : P2        : output : 3.3-V LVTTL       :         : 5         : N              
+PC[3]                        : P3        : output : 3.3-V LVTTL       :         : 5         : N              
+RegB[6]                      : P4        : output : 3.3-V LVTTL       :         : 5         : N              
+ALUOut[4]                    : P5        : output : 3.3-V LVTTL       :         : 5         : N              
 GND                          : P6        : gnd    :                   :         :           :                
 VCCD_PLL3                    : P7        : power  :                   : 1.2V    :           :                
 VCCA_PLL4                    : P8        : power  :                   : 1.2V    :           :                
@@ -586,11 +586,11 @@ VCCD_PLL2                    : P20       : power  :                   : 1.2V    
 VCCA_PLL1                    : P21       : power  :                   : 1.2V    :           :                
 GND+                         : P22       :        :                   :         : 1         :                
 clk                          : P23       : input  : 3.3-V LVTTL       :         : 1         : N              
-EPC[27]                      : P24       : output : 3.3-V LVTTL       :         : 2         : N              
-SrcA[17]                     : P25       : output : 3.3-V LVTTL       :         : 2         : N              
+PC[4]                        : P24       : output : 3.3-V LVTTL       :         : 2         : N              
+ALUOut[12]                   : P25       : output : 3.3-V LVTTL       :         : 2         : N              
 GND                          : P26       : gnd    :                   :         :           :                
-PC[4]                        : R1        : output : 3.3-V LVTTL       :         : 6         : N              
-PC[19]                       : R2        : output : 3.3-V LVTTL       :         : 6         : N              
+MDR[5]                       : R1        : output : 3.3-V LVTTL       :         : 6         : N              
+S[15]                        : R2        : output : 3.3-V LVTTL       :         : 6         : N              
 GND+                         : R3        :        :                   :         : 6         :                
 GND+                         : R4        :        :                   :         : 6         :                
 VREFB6                       : R5        : power  :                   :         : 6         :                
@@ -611,19 +611,19 @@ GNDA_PLL2                    : R19       : gnd    :                   :         
 GNDA_PLL2                    : R20       : gnd    :                   :         :           :                
 VCCA_PLL2                    : R21       : power  :                   : 1.2V    :           :                
 GND                          : R22       : gnd    :                   :         :           :                
-SrcA[9]                      : R23       : output : 3.3-V LVTTL       :         : 1         : N              
-SrcB[6]                      : R24       : output : 3.3-V LVTTL       :         : 1         : N              
-PC[29]                       : R25       : output : 3.3-V LVTTL       :         : 1         : N              
-ALUOut[11]                   : R26       : output : 3.3-V LVTTL       :         : 1         : N              
+RegA[3]                      : R23       : output : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : R24       :        :                   :         : 1         :                
+MDR[19]                      : R25       : output : 3.3-V LVTTL       :         : 1         : N              
+MDR[8]                       : R26       : output : 3.3-V LVTTL       :         : 1         : N              
 VCCIO6                       : T1        : power  :                   : 3.3V    : 6         :                
-ALUOut[31]                   : T2        : output : 3.3-V LVTTL       :         : 6         : N              
-S[27]                        : T3        : output : 3.3-V LVTTL       :         : 6         : N              
-S[22]                        : T4        : output : 3.3-V LVTTL       :         : 6         : N              
-S[8]                         : T5        : output : 3.3-V LVTTL       :         : 6         : N              
-S[7]                         : T6        : output : 3.3-V LVTTL       :         : 6         : N              
-SrcA[5]                      : T7        : output : 3.3-V LVTTL       :         : 6         : N              
-EPC[11]                      : T8        : output : 3.3-V LVTTL       :         : 6         : N              
-S[5]                         : T9        : output : 3.3-V LVTTL       :         : 6         : N              
+Inst15a0[8]                  : T2        : output : 3.3-V LVTTL       :         : 6         : N              
+S[2]                         : T3        : output : 3.3-V LVTTL       :         : 6         : N              
+ALUOut[11]                   : T4        : output : 3.3-V LVTTL       :         : 6         : N              
+SrcA[9]                      : T5        : output : 3.3-V LVTTL       :         : 6         : N              
+PC[23]                       : T6        : output : 3.3-V LVTTL       :         : 6         : N              
+ALUOut[2]                    : T7        : output : 3.3-V LVTTL       :         : 6         : N              
+RegB[17]                     : T8        : output : 3.3-V LVTTL       :         : 6         : N              
+EPC[4]                       : T9        : output : 3.3-V LVTTL       :         : 6         : N              
 GND                          : T10       : gnd    :                   :         :           :                
 VCCINT                       : T11       : power  :                   : 1.2V    :           :                
 GND                          : T12       : gnd    :                   :         :           :                
@@ -633,22 +633,22 @@ VCCINT                       : T15       : power  :                   : 1.2V    
 GND                          : T16       : gnd    :                   :         :           :                
 VCCINT                       : T17       : power  :                   : 1.2V    :           :                
 GND                          : T18       : gnd    :                   :         :           :                
-RegB[29]                     : T19       : output : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : T19       :        :                   :         : 1         :                
 GND*                         : T20       :        :                   :         : 1         :                
 GND*                         : T21       :        :                   :         : 1         :                
-MDR[9]                       : T22       : output : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : T22       :        :                   :         : 1         :                
 VREFB1                       : T23       : power  :                   :         : 1         :                
-ALUOut[14]                   : T24       : output : 3.3-V LVTTL       :         : 1         : N              
-RegB[0]                      : T25       : output : 3.3-V LVTTL       :         : 1         : N              
+opcode[3]                    : T24       : output : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : T25       :        :                   :         : 1         :                
 VCCIO1                       : T26       : power  :                   : 3.3V    : 1         :                
-RegA[7]                      : U1        : output : 3.3-V LVTTL       :         : 6         : N              
-ALUOut[28]                   : U2        : output : 3.3-V LVTTL       :         : 6         : N              
-opcode[0]                    : U3        : output : 3.3-V LVTTL       :         : 6         : N              
-ALUOut[17]                   : U4        : output : 3.3-V LVTTL       :         : 6         : N              
-Inst15a0[9]                  : U5        : output : 3.3-V LVTTL       :         : 6         : N              
-ALUOut[30]                   : U6        : output : 3.3-V LVTTL       :         : 6         : N              
-S[17]                        : U7        : output : 3.3-V LVTTL       :         : 6         : N              
-S[16]                        : U8        : output : 3.3-V LVTTL       :         : 6         : N              
+SrcA[15]                     : U1        : output : 3.3-V LVTTL       :         : 6         : N              
+S[6]                         : U2        : output : 3.3-V LVTTL       :         : 6         : N              
+MDR[6]                       : U3        : output : 3.3-V LVTTL       :         : 6         : N              
+S[5]                         : U4        : output : 3.3-V LVTTL       :         : 6         : N              
+S[18]                        : U5        : output : 3.3-V LVTTL       :         : 6         : N              
+EPC[2]                       : U6        : output : 3.3-V LVTTL       :         : 6         : N              
+S[16]                        : U7        : output : 3.3-V LVTTL       :         : 6         : N              
+EPC[31]                      : U8        : output : 3.3-V LVTTL       :         : 6         : N              
 GND                          : U9        : gnd    :                   :         :           :                
 VCCINT                       : U10       : power  :                   : 1.2V    :           :                
 GND                          : U11       : gnd    :                   :         :           :                
@@ -660,82 +660,82 @@ VCCINT                       : U16       : power  :                   : 1.2V    
 GND                          : U17       : gnd    :                   :         :           :                
 VCCINT                       : U18       : power  :                   : 1.2V    :           :                
 GND*                         : U19       :        :                   :         : 1         :                
-GND*                         : U20       :        :                   :         : 1         :                
-opcode[2]                    : U21       : output : 3.3-V LVTTL       :         : 1         : N              
-S[28]                        : U22       : output : 3.3-V LVTTL       :         : 1         : N              
-funct[1]                     : U23       : output : 3.3-V LVTTL       :         : 1         : N              
-ALUOut[12]                   : U24       : output : 3.3-V LVTTL       :         : 1         : N              
-RegA[12]                     : U25       : output : 3.3-V LVTTL       :         : 1         : N              
-S[23]                        : U26       : output : 3.3-V LVTTL       :         : 1         : N              
-S[26]                        : V1        : output : 3.3-V LVTTL       :         : 6         : N              
-ALUOut[26]                   : V2        : output : 3.3-V LVTTL       :         : 6         : N              
-EPC[10]                      : V3        : output : 3.3-V LVTTL       :         : 6         : N              
-ALUOut[9]                    : V4        : output : 3.3-V LVTTL       :         : 6         : N              
-PC[30]                       : V5        : output : 3.3-V LVTTL       :         : 6         : N              
-SrcB[10]                     : V6        : output : 3.3-V LVTTL       :         : 6         : N              
+state[6]                     : U20       : output : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : U21       :        :                   :         : 1         :                
+GND*                         : U22       :        :                   :         : 1         :                
+GND*                         : U23       :        :                   :         : 1         :                
+GND*                         : U24       :        :                   :         : 1         :                
+RegA[30]                     : U25       : output : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : U26       :        :                   :         : 1         :                
+SrcA[20]                     : V1        : output : 3.3-V LVTTL       :         : 6         : N              
+RegB[14]                     : V2        : output : 3.3-V LVTTL       :         : 6         : N              
+MDR[21]                      : V3        : output : 3.3-V LVTTL       :         : 6         : N              
+SrcA[2]                      : V4        : output : 3.3-V LVTTL       :         : 6         : N              
+ALUOut[16]                   : V5        : output : 3.3-V LVTTL       :         : 6         : N              
+opcode[2]                    : V6        : output : 3.3-V LVTTL       :         : 6         : N              
 GND*                         : V7        :        :                   :         : 6         :                
-ALUOut[0]                    : V8        : output : 3.3-V LVTTL       :         : 6         : N              
+GND*                         : V8        :        :                   :         : 6         :                
 VCCINT                       : V9        : power  :                   : 1.2V    :           :                
-EPC[25]                      : V10       : output : 3.3-V LVTTL       :         : 7         : N              
+PC[24]                       : V10       : output : 3.3-V LVTTL       :         : 7         : N              
 VCCPD7                       : V11       : power  :                   : 3.3V    : 7         :                
-PC[24]                       : V12       : output : 3.3-V LVTTL       :         : 7         : N              
+S[30]                        : V12       : output : 3.3-V LVTTL       :         : 7         : N              
 VCC_PLL6_OUT                 : V13       : power  :                   : 3.3V    : 10        :                
-RegB[12]                     : V14       : output : 3.3-V LVTTL       :         : 8         : N              
+MDR[15]                      : V14       : output : 3.3-V LVTTL       :         : 8         : N              
 VCCPD8                       : V15       : power  :                   : 3.3V    : 8         :                
-MDR[31]                      : V16       : output : 3.3-V LVTTL       :         : 8         : N              
-S[9]                         : V17       : output : 3.3-V LVTTL       :         : 8         : N              
+PC[6]                        : V16       : output : 3.3-V LVTTL       :         : 8         : N              
+GND*                         : V17       :        :                   :         : 8         :                
 GND*                         : V18       :        :                   :         : 8         :                
 GND*                         : V19       :        :                   :         : 1         :                
 GND*                         : V20       :        :                   :         : 1         :                
-opcode[1]                    : V21       : output : 3.3-V LVTTL       :         : 1         : N              
-S[11]                        : V22       : output : 3.3-V LVTTL       :         : 1         : N              
-PC[11]                       : V23       : output : 3.3-V LVTTL       :         : 1         : N              
-PC[15]                       : V24       : output : 3.3-V LVTTL       :         : 1         : N              
-MDR[1]                       : V25       : output : 3.3-V LVTTL       :         : 1         : N              
-PC[9]                        : V26       : output : 3.3-V LVTTL       :         : 1         : N              
-opcode[4]                    : W1        : output : 3.3-V LVTTL       :         : 6         : N              
-SrcB[2]                      : W2        : output : 3.3-V LVTTL       :         : 6         : N              
-PC[18]                       : W3        : output : 3.3-V LVTTL       :         : 6         : N              
-ALUOut[3]                    : W4        : output : 3.3-V LVTTL       :         : 6         : N              
-RegB[1]                      : W5        : output : 3.3-V LVTTL       :         : 6         : N              
+GND*                         : V21       :        :                   :         : 1         :                
+GND*                         : V22       :        :                   :         : 1         :                
+GND*                         : V23       :        :                   :         : 1         :                
+GND*                         : V24       :        :                   :         : 1         :                
+GND*                         : V25       :        :                   :         : 1         :                
+PC[1]                        : V26       : output : 3.3-V LVTTL       :         : 1         : N              
+MDR[26]                      : W1        : output : 3.3-V LVTTL       :         : 6         : N              
+MDR[4]                       : W2        : output : 3.3-V LVTTL       :         : 6         : N              
+Inst15a0[3]                  : W3        : output : 3.3-V LVTTL       :         : 6         : N              
+EPC[9]                       : W4        : output : 3.3-V LVTTL       :         : 6         : N              
+state[5]                     : W5        : output : 3.3-V LVTTL       :         : 6         : N              
 GND*                         : W6        :        :                   :         : 6         :                
 GND*                         : W7        :        :                   :         : 6         :                
-EPC[9]                       : W8        : output : 3.3-V LVTTL       :         : 6         : N              
+GND*                         : W8        :        :                   :         : 6         :                
 GND*                         : W9        :        :                   :         : 7         :                
 GND*                         : W10       :        :                   :         : 7         :                
-MDR[13]                      : W11       : output : 3.3-V LVTTL       :         : 7         : N              
-ALUOut[4]                    : W12       : output : 3.3-V LVTTL       :         : 7         : N              
+PC[10]                       : W11       : output : 3.3-V LVTTL       :         : 7         : N              
+SrcB[21]                     : W12       : output : 3.3-V LVTTL       :         : 7         : N              
 GNDA_PLL6                    : W13       : gnd    :                   :         :           :                
 GNDA_PLL6                    : W14       : gnd    :                   :         :           :                
-Inst25a21[2]                 : W15       : output : 3.3-V LVTTL       :         : 8         : N              
-RegA[4]                      : W16       : output : 3.3-V LVTTL       :         : 8         : N              
+RegA[31]                     : W15       : output : 3.3-V LVTTL       :         : 8         : N              
+Inst15a0[2]                  : W16       : output : 3.3-V LVTTL       :         : 8         : N              
 GND*                         : W17       :        :                   :         : 8         :                
 GND*                         : W18       :        :                   :         : 8         :                
 GND*                         : W19       :        :                   :         : 1         :                
 GND*                         : W20       :        :                   :         : 1         :                
-EPC[22]                      : W21       : output : 3.3-V LVTTL       :         : 1         : N              
-MDR[8]                       : W22       : output : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : W21       :        :                   :         : 1         :                
+GND*                         : W22       :        :                   :         : 1         :                
 GND*                         : W23       :        :                   :         : 1         :                
 GND*                         : W24       :        :                   :         : 1         :                
-PC[22]                       : W25       : output : 3.3-V LVTTL       :         : 1         : N              
-Inst15a0[1]                  : W26       : output : 3.3-V LVTTL       :         : 1         : N              
-PC[14]                       : Y1        : output : 3.3-V LVTTL       :         : 6         : N              
-S[6]                         : Y2        : output : 3.3-V LVTTL       :         : 6         : N              
-SrcA[11]                     : Y3        : output : 3.3-V LVTTL       :         : 6         : N              
+GND*                         : W25       :        :                   :         : 1         :                
+GND*                         : W26       :        :                   :         : 1         :                
+ALUOut[28]                   : Y1        : output : 3.3-V LVTTL       :         : 6         : N              
+ALUOut[14]                   : Y2        : output : 3.3-V LVTTL       :         : 6         : N              
+MDR[18]                      : Y3        : output : 3.3-V LVTTL       :         : 6         : N              
 GND*                         : Y4        :        :                   :         : 6         :                
 VREFB6                       : Y5        : power  :                   :         : 6         :                
-state[5]                     : Y6        : output : 3.3-V LVTTL       :         : 6         : N              
+GND*                         : Y6        :        :                   :         : 6         :                
 GND*                         : Y7        :        :                   :         : 6         :                
 PORSEL                       : Y8        :        :                   :         : 7         :                
 GND*                         : Y9        :        :                   :         : 7         :                
 GND*                         : Y10       :        :                   :         : 7         :                
-ALUOut[18]                   : Y11       : output : 3.3-V LVTTL       :         : 7         : N              
-RegA[9]                      : Y12       : output : 3.3-V LVTTL       :         : 7         : N              
+SrcA[13]                     : Y11       : output : 3.3-V LVTTL       :         : 7         : N              
+EPC[17]                      : Y12       : output : 3.3-V LVTTL       :         : 7         : N              
 VCCA_PLL6                    : Y13       : power  :                   : 1.2V    :           :                
 VCCD_PLL6                    : Y14       : power  :                   : 1.2V    :           :                
-RegA[5]                      : Y15       : output : 3.3-V LVTTL       :         : 8         : N              
-funct[4]                     : Y16       : output : 3.3-V LVTTL       :         : 8         : N              
-PC[0]                        : Y17       : output : 3.3-V LVTTL       :         : 8         : N              
+MDR[30]                      : Y15       : output : 3.3-V LVTTL       :         : 8         : N              
+ResetSignal                  : Y16       : output : 3.3-V LVTTL       :         : 8         : N              
+GND*                         : Y17       :        :                   :         : 8         :                
 GND*                         : Y18       :        :                   :         : 8         :                
 VCCSEL                       : Y19       :        :                   :         : 8         :                
 GND*                         : Y20       :        :                   :         : 1         :                
@@ -743,5 +743,5 @@ GND*                         : Y21       :        :                   :         
 VREFB1                       : Y22       : power  :                   :         : 1         :                
 GND*                         : Y23       :        :                   :         : 1         :                
 GND*                         : Y24       :        :                   :         : 1         :                
-RegA[3]                      : Y25       : output : 3.3-V LVTTL       :         : 1         : N              
-PC[1]                        : Y26       : output : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : Y25       :        :                   :         : 1         :                
+GND*                         : Y26       :        :                   :         : 1         :                
