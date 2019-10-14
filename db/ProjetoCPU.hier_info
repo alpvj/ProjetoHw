@@ -349,7 +349,6 @@ state[3] <= Controle:inst4.estado[3]
 state[4] <= Controle:inst4.estado[4]
 state[5] <= Controle:inst4.estado[5]
 state[6] <= Controle:inst4.estado[6]
-reset => ~NO_FANOUT~
 
 
 |Hardware|Controle:inst4

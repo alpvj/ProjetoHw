@@ -272,8 +272,23 @@ applicable agreement for further details.
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
+		"Sub2"
+		"0001001"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"And2"
+		"0001010"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
 		"AddSubAnd"
 		"0001011"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"AddSubAnd2"
+		"0001100"
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter

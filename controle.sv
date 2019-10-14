@@ -68,8 +68,10 @@ parameter EsperaDecode = 7'd5;
 parameter Decode2 = 7'd6;
 parameter Instrucao = 7'd7;
 parameter Add2 = 7'd8;
+parameter Sub2 = 7'd9;
+parameter And2 = 7'd10;
 parameter AddSubAnd = 7'd11;
-//parameter AddSubAnd2 = 7'd12;
+parameter AddSubAnd2 = 7'd12;
 
 //Func do Tipo R
 parameter ADD = 6'b100000;
@@ -331,7 +333,7 @@ always @(posedge clk) begin
 							ALUControl = 3'b010;
 							ShiftControl = 3'b000;
 							DataSrc = 4'b0000;
-							estado = AddSubAnd;
+							estado = Sub2;
 						end
 						AND: begin
 							PCWrite = 1'b0;
@@ -358,13 +360,67 @@ always @(posedge clk) begin
 							ALUControl = 3'b011;
 							ShiftControl = 3'b000;
 							DataSrc = 4'b0000;
-							estado = AddSubAnd;
+							estado = And2;
 						end
 					endcase
 				end
 			endcase
 		end
 		Add2: begin
+			PCWrite = 1'b0;
+			MemCtrl = 1'b0;
+			IRWrite = 1'b0;
+			A_Control = 1'b0;
+			B_Control = 1'b0;
+			RegControl = 1'b0;
+			ALUOutControl = 1'b1;
+			EPCWrite = 1'b0;
+			MDControl = 1'b0;
+			HI_Control = 1'b0;
+			LO_Control = 1'b0;
+			IorD = 2'b00;
+			ALUSrcA = 2'b01;
+			ALUSrcB = 2'b00;
+			ExcpCtrl = 2'b00;
+			ShiftSrc = 2'b00;
+			ShiftAmt = 2'b00;
+			SSControl = 2'b00;
+			LSControl = 2'b00;
+			RegDst = 3'b001;
+			PCSource = 3'b000;
+			ALUControl = 3'b010;
+			ShiftControl = 3'b000;
+			DataSrc = 4'b0000;
+			estado = 7'd11;//AddSubAnd
+		end
+		Sub2: begin
+			PCWrite = 1'b0;
+			MemCtrl = 1'b0;
+			IRWrite = 1'b0;
+			A_Control = 1'b0;
+			B_Control = 1'b0;
+			RegControl = 1'b0;
+			ALUOutControl = 1'b1;
+			EPCWrite = 1'b0;
+			MDControl = 1'b0;
+			HI_Control = 1'b0;
+			LO_Control = 1'b0;
+			IorD = 2'b00;
+			ALUSrcA = 2'b01;
+			ALUSrcB = 2'b00;
+			ExcpCtrl = 2'b00;
+			ShiftSrc = 2'b00;
+			ShiftAmt = 2'b00;
+			SSControl = 2'b00;
+			LSControl = 2'b00;
+			RegDst = 3'b001;
+			PCSource = 3'b000;
+			ALUControl = 3'b011;
+			ShiftControl = 3'b000;
+			DataSrc = 4'b0000;
+			estado = 7'd11;//AddSubAnd
+		end
+		And2: begin
 			PCWrite = 1'b0;
 			MemCtrl = 1'b0;
 			IRWrite = 1'b0;
@@ -416,9 +472,9 @@ always @(posedge clk) begin
 			ALUControl = 3'b000;
 			ShiftControl = 3'b000;
 			DataSrc = 4'b0000;
-			estado = 7'd12;//AddSubAnd2
+			estado = AddSubAnd2;//AddSubAnd2 12
 		end
-		7'd12: begin//AddSubAnd2
+		AddSubAnd2: begin//AddSubAnd2
 			PCWrite = 1'b0;
 			MemCtrl = 1'b0;
 			IRWrite = 1'b0;
