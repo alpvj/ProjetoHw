@@ -893,26 +893,6 @@ a36c8ec425c8a2589af98b2d4daabc3
 
 # end
 # entity
-Hardware
-# storage
-db|ProjetoCPU.(0).cnf
-db|ProjetoCPU.(0).cnf
-# case_insensitive
-# source_file
-hardware.bdf
-d7a6c79955aa38cf3b8422e1f0e98f
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-|
-}
-# macro_sequence
-
-# end
-# entity
 IorD
 # storage
 db|ProjetoCPU.(8).cnf
@@ -1129,6 +1109,131 @@ ALUSrcB:inst6
 
 # end
 # entity
+RegDesloc
+# storage
+db|ProjetoCPU.(19).cnf
+db|ProjetoCPU.(19).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+regdesloc.vhd
+71b6e34bf1c79c645cf497581bd388e
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+RegDesloc:ShiftControl
+}
+# lmf
+|programfiles|quartus|altera|91sp2|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+ShiftSource
+# storage
+db|ProjetoCPU.(20).cnf
+db|ProjetoCPU.(20).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+shiftsource.v
+7b38409e1892c88bc266f2e7cab1bdd
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+ShiftSource:ShiftSrc
+}
+# macro_sequence
+
+# end
+# entity
+ShiftAmount
+# storage
+db|ProjetoCPU.(21).cnf
+db|ProjetoCPU.(21).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+shiftamount.v
+9134b9b53a65846aba7e9c59c697f77
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+ShiftAmount:ShiftAmt
+}
+# macro_sequence
+
+# end
+# entity
+Hardware
+# storage
+db|ProjetoCPU.(0).cnf
+db|ProjetoCPU.(0).cnf
+# case_insensitive
+# source_file
+hardware.bdf
+7ccd7b0b939561613da5a7e6f82f767
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
 Controle
 # storage
 db|ProjetoCPU.(1).cnf
@@ -1140,7 +1245,7 @@ ON
 # case_sensitive
 # source_file
 controle.sv
-67819c248e2e96cfa2cde27ee01e5
+d05858e4305fd62eb8fb5535eb8693
 9
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -1235,6 +1340,22 @@ Rte2
 0010010
 PARAMETER_UNSIGNED_BIN
 USR
+Sll2
+0010011
+PARAMETER_UNSIGNED_BIN
+USR
+Sll3
+0010100
+PARAMETER_UNSIGNED_BIN
+USR
+Sll4
+0010101
+PARAMETER_UNSIGNED_BIN
+USR
+Sllv2
+0010110
+PARAMETER_UNSIGNED_BIN
+DEF
 ADD
 100000
 PARAMETER_UNSIGNED_BIN
@@ -1253,6 +1374,30 @@ PARAMETER_UNSIGNED_BIN
 USR
 RTE
 010011
+PARAMETER_UNSIGNED_BIN
+USR
+SLL
+000000
+PARAMETER_UNSIGNED_BIN
+USR
+SLLV
+000100
+PARAMETER_UNSIGNED_BIN
+USR
+SRA
+000011
+PARAMETER_UNSIGNED_BIN
+USR
+SRAV
+000111
+PARAMETER_UNSIGNED_BIN
+USR
+SRL
+000010
+PARAMETER_UNSIGNED_BIN
+USR
+SLT
+101010
 PARAMETER_UNSIGNED_BIN
 USR
 ARIT
@@ -1369,7 +1514,7 @@ address_a0
 }
 # memory_file {
 instrucoes.mif
-aa782de69d34cdab3b8575e2a534e6
+954beeb615b7c6d76679e0f3a714c7dd
 }
 # hierarchies {
 Memoria:MemCtrl|lpm_ram_dq:MEM|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated
