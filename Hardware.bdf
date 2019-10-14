@@ -1606,6 +1606,11 @@ applicable agreement for further details.
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
+		"Rte2"
+		"0010010"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
 		"ADD"
 		"100000"
 		""
@@ -1623,6 +1628,11 @@ applicable agreement for further details.
 	(parameter
 		"BREAK"
 		"001101"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"RTE"
+		"010011"
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
@@ -1644,7 +1654,7 @@ applicable agreement for further details.
 		(rectangle (rect 16 16 464 192)(line_width 1))
 	)
 	(flipx_rotate90)
-	(annotation_block (parameter)(rect 1472 -1136 1680 -776))
+	(annotation_block (parameter)(rect 1488 -1104 1696 -696))
 )
 (connector
 	(pt 4360 -1488)
