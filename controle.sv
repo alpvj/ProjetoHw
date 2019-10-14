@@ -244,8 +244,8 @@ always @(posedge clk) begin
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
 				IorD = 2'b00;
-				ALUSrcA = 2'b00;
-				ALUSrcB = 2'b11;
+				ALUSrcA = 2'b01;
+				ALUSrcB = 2'b00;
 				ExcpCtrl = 2'b00;
 				ShiftSrc = 2'b00;
 				ShiftAmt = 2'b00;
@@ -253,7 +253,7 @@ always @(posedge clk) begin
 				LSControl = 2'b00;
 				RegDst = 3'b000;
 				PCSource = 3'b000;
-				ALUControl = 3'b001;
+				ALUControl = 3'b000;
 				ShiftControl = 3'b000;
 				DataSrc = 4'b0000;
 				estado = Instrucao;
@@ -269,7 +269,7 @@ always @(posedge clk) begin
 								A_Control = 1'b0;
 								B_Control = 1'b0;
 								RegControl = 1'b0;
-								ALUOutControl = 1'b0;//mudar
+								ALUOutControl = 1'b1;//mudar
 								EPCWrite = 1'b0;
 								MDControl = 1'b0;
 								HI_Control = 1'b0;
@@ -296,7 +296,7 @@ always @(posedge clk) begin
 								A_Control = 1'b0;
 								B_Control = 1'b0;
 								RegControl = 1'b0;
-								ALUOutControl = 1'b0;//mudar
+								ALUOutControl = 1'b1;//mudar
 								EPCWrite = 1'b0;
 								MDControl = 1'b0;
 								HI_Control = 1'b0;
@@ -323,7 +323,7 @@ always @(posedge clk) begin
 								A_Control = 1'b0;
 								B_Control = 1'b0;
 								RegControl = 1'b0;
-								ALUOutControl = 1'b0;//mudar
+								ALUOutControl = 1'b1;//mudar
 								EPCWrite = 1'b0;
 								MDControl = 1'b0;
 								HI_Control = 1'b0;
@@ -354,7 +354,7 @@ always @(posedge clk) begin
 				A_Control = 1'b0;
 				B_Control = 1'b0;
 				RegControl = 1'b0;
-				ALUOutControl = 1'b1;
+				ALUOutControl = 1'b0;
 				EPCWrite = 1'b0;
 				MDControl = 1'b0;
 				HI_Control = 1'b0;
@@ -381,7 +381,7 @@ always @(posedge clk) begin
 				A_Control = 1'b0;
 				B_Control = 1'b0;
 				RegControl = 1'b0;
-				ALUOutControl = 1'b1;
+				ALUOutControl = 1'b0;
 				EPCWrite = 1'b0;
 				MDControl = 1'b0;
 				HI_Control = 1'b0;
@@ -408,7 +408,7 @@ always @(posedge clk) begin
 				A_Control = 1'b0;
 				B_Control = 1'b0;
 				RegControl = 1'b0;
-				ALUOutControl = 1'b1;
+				ALUOutControl = 1'b0;
 				EPCWrite = 1'b0;
 				MDControl = 1'b0;
 				HI_Control = 1'b0;
@@ -428,7 +428,7 @@ always @(posedge clk) begin
 				DataSrc = 4'b0000;
 				estado = AddSubAnd;
 			end
-			AddSubAnd: begin//AddSubAnd
+			AddSubAnd: begin
 				PCWrite = 1'b0;
 				MemCtrl = 1'b0;
 				IRWrite = 1'b0;
@@ -453,9 +453,9 @@ always @(posedge clk) begin
 				ALUControl = 3'b000;
 				ShiftControl = 3'b000;
 				DataSrc = 4'b0000;
-				estado = AddSubAnd2;//AddSubAnd2 12
+				estado = AddSubAnd2;
 			end
-			AddSubAnd2: begin//AddSubAnd2
+			AddSubAnd2: begin
 				PCWrite = 1'b0;
 				MemCtrl = 1'b0;
 				IRWrite = 1'b0;

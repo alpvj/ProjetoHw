@@ -1670,16 +1670,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 2424 -344)
-	(pt 2472 -344)
-	(bus)
-)
-(connector
-	(pt 2424 -464)
-	(pt 2472 -464)
-	(bus)
-)
-(connector
 	(pt 3360 -208)
 	(pt 3224 -208)
 	(bus)
@@ -1909,16 +1899,8 @@ applicable agreement for further details.
 	(pt 2104 -376)
 )
 (connector
-	(pt 2400 -480)
-	(pt 2472 -480)
-)
-(connector
 	(pt 2400 -1232)
 	(pt 2400 -480)
-)
-(connector
-	(pt 2376 -328)
-	(pt 2472 -328)
 )
 (connector
 	(pt 2376 -1216)
@@ -2688,44 +2670,12 @@ applicable agreement for further details.
 	(pt 1008 -1112)
 )
 (connector
-	(pt 88 -464)
-	(pt 56 -464)
-)
-(connector
 	(pt 104 -1096)
 	(pt 104 -1112)
 )
 (connector
-	(pt 56 -1112)
-	(pt 104 -1112)
-)
-(connector
-	(pt 104 -1112)
-	(pt 1008 -1112)
-)
-(connector
-	(pt 1112 -360)
-	(pt 1104 -360)
-)
-(connector
-	(pt 56 -1112)
-	(pt 56 -464)
-)
-(connector
 	(pt 1104 8)
 	(pt 1104 -360)
-)
-(connector
-	(pt 1104 8)
-	(pt 56 8)
-)
-(connector
-	(pt 56 -464)
-	(pt 56 8)
-)
-(connector
-	(pt 56 8)
-	(pt 56 1360)
 )
 (connector
 	(pt 2104 -392)
@@ -2734,10 +2684,6 @@ applicable agreement for further details.
 (connector
 	(pt 2040 -392)
 	(pt 2040 -128)
-)
-(connector
-	(pt 2152 1360)
-	(pt 56 1360)
 )
 (connector
 	(pt 256 1264)
@@ -2776,23 +2722,69 @@ applicable agreement for further details.
 	(pt 2448 -128)
 )
 (connector
-	(pt 3728 -560)
+	(pt 2400 -480)
+	(pt 2472 -480)
+)
+(connector
+	(pt 2376 -328)
+	(pt 2472 -328)
+)
+(connector
+	(pt 2424 -464)
+	(pt 2472 -464)
+	(bus)
+)
+(connector
+	(pt 2424 -344)
+	(pt 2472 -344)
+	(bus)
+)
+(connector
 	(pt 3688 -560)
+	(pt 3728 -560)
+)
+(connector
+	(pt 3728 -296)
+	(pt 3688 -296)
+)
+(connector
+	(pt 3688 -560)
+	(pt 3688 -296)
 )
 (connector
 	(pt 3688 -296)
-	(pt 3728 -296)
+	(pt 3688 1360)
 )
 (connector
-	(pt 3688 1360)
+	(pt 1112 -360)
+	(pt 1104 -360)
+)
+(connector
+	(pt 24 -1112)
+	(pt 104 -1112)
+)
+(connector
+	(pt 104 -1112)
+	(pt 1008 -1112)
+)
+(connector
+	(pt 24 8)
+	(pt 1104 8)
+)
+(connector
+	(pt 24 -1112)
+	(pt 24 8)
+)
+(connector
+	(pt 24 8)
+	(pt 24 1360)
+)
+(connector
+	(pt 24 1360)
 	(pt 2152 1360)
 )
 (connector
-	(pt 3688 -560)
-	(pt 3688 -296)
-)
-(connector
-	(pt 3688 -296)
+	(pt 2152 1360)
 	(pt 3688 1360)
 )
 (junction (pt 3648 -440))
@@ -2834,9 +2826,8 @@ applicable agreement for further details.
 (junction (pt 1072 1264))
 (junction (pt 1072 -376))
 (junction (pt 104 -1112))
-(junction (pt 56 -464))
-(junction (pt 56 8))
 (junction (pt 2152 1360))
 (junction (pt 2448 -312))
 (junction (pt 2152 -128))
 (junction (pt 3688 -296))
+(junction (pt 24 8))

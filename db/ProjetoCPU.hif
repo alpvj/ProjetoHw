@@ -860,43 +860,6 @@ IorD:inst1
 
 # end
 # entity
-Registrador
-# storage
-db|ProjetoCPU.(9).cnf
-db|ProjetoCPU.(9).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-registrador.vhd
-9c2fa77c717e3583f352d6d9d43cb93
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# hierarchies {
-Registrador:PCWrite
-Registrador:A_Control
-Registrador:ALUOutControl
-Registrador:B_Control
-Registrador:EPCWrite
-}
-# lmf
-|programfiles|quartus|altera|91sp2|quartus|lmf|maxplus2.lmf
-a36c8ec425c8a2589af98b2d4daabc3
-# macro_sequence
-
-# end
-# entity
 PCSource
 # storage
 db|ProjetoCPU.(10).cnf
@@ -1215,6 +1178,26 @@ ShiftLeft2de32pra32:inst
 
 # end
 # entity
+Hardware
+# storage
+db|ProjetoCPU.(0).cnf
+db|ProjetoCPU.(0).cnf
+# case_insensitive
+# source_file
+hardware.bdf
+fdef7199fa2efa3aa8ad7b4aafecb81
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
 Controle
 # storage
 db|ProjetoCPU.(1).cnf
@@ -1226,7 +1209,7 @@ ON
 # case_sensitive
 # source_file
 controle.sv
-9e54cd3a9f8972e126c7beb8542e8b7
+30254d2f97b9424d7b1251a38ea1957
 9
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -1329,22 +1312,39 @@ Controle:inst4
 
 # end
 # entity
-Hardware
+Registrador
 # storage
-db|ProjetoCPU.(0).cnf
-db|ProjetoCPU.(0).cnf
+db|ProjetoCPU.(9).cnf
+db|ProjetoCPU.(9).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
 # case_insensitive
 # source_file
-hardware.bdf
-8a53865efbfd7e9ec1cb793045a7d274
-26
+registrador.vhd
+9c2fa77c717e3583f352d6d9d43cb93
+5
 # internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
 }
 # hierarchies {
-|
+Registrador:PCWrite
+Registrador:A_Control
+Registrador:ALUOutControl
+Registrador:B_Control
+Registrador:EPCWrite
 }
+# lmf
+|programfiles|quartus|altera|91sp2|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
 # macro_sequence
 
 # end
