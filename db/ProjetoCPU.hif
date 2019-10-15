@@ -1221,7 +1221,7 @@ db|ProjetoCPU.(0).cnf
 # case_insensitive
 # source_file
 hardware.bdf
-7ccd7b0b939561613da5a7e6f82f767
+35eab0e7faede356188a95f9b23a3443
 26
 # internal_option {
 BLOCK_DESIGN_NAMING
@@ -1245,7 +1245,7 @@ ON
 # case_sensitive
 # source_file
 controle.sv
-d05858e4305fd62eb8fb5535eb8693
+12e5c76dc2ad697b5fc9a0f9a26b3aac
 9
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -1355,7 +1355,23 @@ USR
 Sllv2
 0010110
 PARAMETER_UNSIGNED_BIN
-DEF
+USR
+Sllv3
+0010111
+PARAMETER_UNSIGNED_BIN
+USR
+Srl2
+0011000
+PARAMETER_UNSIGNED_BIN
+USR
+Srl3
+0011001
+PARAMETER_UNSIGNED_BIN
+USR
+Srl4
+0011010
+PARAMETER_UNSIGNED_BIN
+USR
 ADD
 100000
 PARAMETER_UNSIGNED_BIN
@@ -1514,7 +1530,7 @@ address_a0
 }
 # memory_file {
 instrucoes.mif
-954beeb615b7c6d76679e0f3a714c7dd
+41e7a658628316f12462cc2c679b19fd
 }
 # hierarchies {
 Memoria:MemCtrl|lpm_ram_dq:MEM|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated

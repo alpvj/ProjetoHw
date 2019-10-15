@@ -1642,6 +1642,21 @@ applicable agreement for further details.
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
+		"Srl2"
+		"0011000"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Srl3"
+		"0011001"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Srl4"
+		"0011010"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
 		"ADD"
 		"100000"
 		""
