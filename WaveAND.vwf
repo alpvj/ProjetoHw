@@ -5948,7 +5948,9 @@ TRANSITION_LIST("MDR[26]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 170.0;
+		LEVEL 0 FOR 810.0;
 	}
 }
 
@@ -6326,7 +6328,9 @@ TRANSITION_LIST("opcode[0]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 220.0;
+		LEVEL 0 FOR 750.0;
 	}
 }
 
@@ -8451,7 +8455,13 @@ TRANSITION_LIST("state[4]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 310.0;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 90.0;
+			LEVEL 1 FOR 20.0;
+		}
+		LEVEL 0 FOR 90.0;
 		NODE
 		{
 			REPEAT = 2;
@@ -8529,20 +8539,16 @@ TRANSITION_LIST("state[1]")
 	{
 		REPEAT = 1;
 		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
 		NODE
 		{
 			REPEAT = 2;
 			LEVEL 1 FOR 20.0;
-			LEVEL 0 FOR 10.0;
-			NODE
-			{
-				REPEAT = 2;
-				LEVEL 1 FOR 20.0;
-				LEVEL 0 FOR 20.0;
-			}
+			LEVEL 0 FOR 20.0;
+			LEVEL 1 FOR 50.0;
+			LEVEL 0 FOR 20.0;
 		}
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
 		LEVEL 1 FOR 30.0;
 		LEVEL 0 FOR 40.0;
 		LEVEL 1 FOR 20.0;
@@ -8584,26 +8590,32 @@ TRANSITION_LIST("state[0]")
 		LEVEL 0 FOR 20.0;
 		NODE
 		{
-			REPEAT = 3;
+			REPEAT = 4;
 			LEVEL 1 FOR 10.0;
-			LEVEL 0 FOR 10.0;
-		}
-		NODE
-		{
-			REPEAT = 2;
-			LEVEL 1 FOR 20.0;
-			NODE
-			{
-				REPEAT = 4;
-				LEVEL 0 FOR 10.0;
-				LEVEL 1 FOR 10.0;
-			}
 			LEVEL 0 FOR 10.0;
 		}
 		LEVEL 1 FOR 20.0;
 		NODE
 		{
-			REPEAT = 5;
+			REPEAT = 4;
+			LEVEL 0 FOR 10.0;
+			LEVEL 1 FOR 10.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 10.0;
+			LEVEL 1 FOR 20.0;
+			NODE
+			{
+				REPEAT = 3;
+				LEVEL 0 FOR 10.0;
+				LEVEL 1 FOR 10.0;
+			}
+		}
+		NODE
+		{
+			REPEAT = 2;
 			LEVEL 0 FOR 10.0;
 			LEVEL 1 FOR 10.0;
 		}
