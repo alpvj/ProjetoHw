@@ -357,8 +357,23 @@ applicable agreement for further details.
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
-		"Srl4"
+		"Sra2"
 		"0011010"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Sra3"
+		"0011011"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Srav2"
+		"0011100"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Srav3"
+		"0011101"
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter

@@ -1221,7 +1221,7 @@ db|ProjetoCPU.(0).cnf
 # case_insensitive
 # source_file
 hardware.bdf
-35eab0e7faede356188a95f9b23a3443
+f0271262c76843c9ffe4b1427d7d15e
 26
 # internal_option {
 BLOCK_DESIGN_NAMING
@@ -1229,6 +1229,112 @@ AUTO
 }
 # hierarchies {
 |
+}
+# macro_sequence
+
+# end
+# entity
+altsyncram_g2a1
+# storage
+db|ProjetoCPU.(7).cnf
+db|ProjetoCPU.(7).cnf
+# case_insensitive
+# source_file
+db|altsyncram_g2a1.tdf
+155748b9a21c1b6347c1c3ef96c273c0
+7
+# used_port {
+wren_a
+-1
+3
+q_a7
+-1
+3
+q_a6
+-1
+3
+q_a5
+-1
+3
+q_a4
+-1
+3
+q_a3
+-1
+3
+q_a2
+-1
+3
+q_a1
+-1
+3
+q_a0
+-1
+3
+data_a7
+-1
+3
+data_a6
+-1
+3
+data_a5
+-1
+3
+data_a4
+-1
+3
+data_a3
+-1
+3
+data_a2
+-1
+3
+data_a1
+-1
+3
+data_a0
+-1
+3
+clock1
+-1
+3
+clock0
+-1
+3
+address_a7
+-1
+3
+address_a6
+-1
+3
+address_a5
+-1
+3
+address_a4
+-1
+3
+address_a3
+-1
+3
+address_a2
+-1
+3
+address_a1
+-1
+3
+address_a0
+-1
+3
+}
+# memory_file {
+instrucoes.mif
+a6fb439be475bc37a1368c9f14f607a
+}
+# hierarchies {
+Memoria:MemCtrl|lpm_ram_dq:MEM|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated
+Memoria:MemCtrl|lpm_ram_dq:MEM_plus_One|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated
+Memoria:MemCtrl|lpm_ram_dq:MEM_plus_Two|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated
+Memoria:MemCtrl|lpm_ram_dq:MEM_plus_Three|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated
 }
 # macro_sequence
 
@@ -1245,7 +1351,7 @@ ON
 # case_sensitive
 # source_file
 controle.sv
-12e5c76dc2ad697b5fc9a0f9a26b3aac
+5ccc39c7454f36e638fe43c21fc3ed3
 9
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -1368,8 +1474,20 @@ Srl3
 0011001
 PARAMETER_UNSIGNED_BIN
 USR
-Srl4
+Sra2
 0011010
+PARAMETER_UNSIGNED_BIN
+USR
+Sra3
+0011011
+PARAMETER_UNSIGNED_BIN
+USR
+Srav2
+0011100
+PARAMETER_UNSIGNED_BIN
+USR
+Srav3
+0011101
 PARAMETER_UNSIGNED_BIN
 USR
 ADD
@@ -1431,112 +1549,6 @@ USR
 }
 # hierarchies {
 Controle:inst4
-}
-# macro_sequence
-
-# end
-# entity
-altsyncram_g2a1
-# storage
-db|ProjetoCPU.(7).cnf
-db|ProjetoCPU.(7).cnf
-# case_insensitive
-# source_file
-db|altsyncram_g2a1.tdf
-155748b9a21c1b6347c1c3ef96c273c0
-7
-# used_port {
-wren_a
--1
-3
-q_a7
--1
-3
-q_a6
--1
-3
-q_a5
--1
-3
-q_a4
--1
-3
-q_a3
--1
-3
-q_a2
--1
-3
-q_a1
--1
-3
-q_a0
--1
-3
-data_a7
--1
-3
-data_a6
--1
-3
-data_a5
--1
-3
-data_a4
--1
-3
-data_a3
--1
-3
-data_a2
--1
-3
-data_a1
--1
-3
-data_a0
--1
-3
-clock1
--1
-3
-clock0
--1
-3
-address_a7
--1
-3
-address_a6
--1
-3
-address_a5
--1
-3
-address_a4
--1
-3
-address_a3
--1
-3
-address_a2
--1
-3
-address_a1
--1
-3
-address_a0
--1
-3
-}
-# memory_file {
-instrucoes.mif
-41e7a658628316f12462cc2c679b19fd
-}
-# hierarchies {
-Memoria:MemCtrl|lpm_ram_dq:MEM|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated
-Memoria:MemCtrl|lpm_ram_dq:MEM_plus_One|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated
-Memoria:MemCtrl|lpm_ram_dq:MEM_plus_Two|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated
-Memoria:MemCtrl|lpm_ram_dq:MEM_plus_Three|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated
 }
 # macro_sequence
 
