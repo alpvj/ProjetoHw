@@ -412,7 +412,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 2488 -896 2666 -880)
+	(rect 2488 -896 2664 -880)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "Instconcat[25..0]" (rect 90 0 173 12)(font "Arial" ))
 	(pt 0 8)
@@ -1908,6 +1908,11 @@ applicable agreement for further details.
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
+		"jal2"
+		"0100111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
 		"ADD"
 		"100000"
 		""
@@ -1990,6 +1995,11 @@ applicable agreement for further details.
 	(parameter
 		"J"
 		"000010"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"JAL"
+		"000011"
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(drawing

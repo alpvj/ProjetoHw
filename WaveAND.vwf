@@ -6152,6 +6152,666 @@ SIGNAL("Shiftleftado[0]")
 	PARENT = "Shiftleftado";
 }
 
+SIGNAL("Banco_reg:Reg_Control|Reg29")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = BUS;
+	WIDTH = 32;
+	LSB_INDEX = 0;
+	DIRECTION = BURIED;
+	PARENT = "";
+}
+
+SIGNAL("Banco_reg:Reg_Control|Reg29[31]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Banco_reg:Reg_Control|Reg29";
+}
+
+SIGNAL("Banco_reg:Reg_Control|Reg29[30]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Banco_reg:Reg_Control|Reg29";
+}
+
+SIGNAL("Banco_reg:Reg_Control|Reg29[29]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Banco_reg:Reg_Control|Reg29";
+}
+
+SIGNAL("Banco_reg:Reg_Control|Reg29[28]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Banco_reg:Reg_Control|Reg29";
+}
+
+SIGNAL("Banco_reg:Reg_Control|Reg29[27]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Banco_reg:Reg_Control|Reg29";
+}
+
+SIGNAL("Banco_reg:Reg_Control|Reg29[26]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Banco_reg:Reg_Control|Reg29";
+}
+
+SIGNAL("Banco_reg:Reg_Control|Reg29[25]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Banco_reg:Reg_Control|Reg29";
+}
+
+SIGNAL("Banco_reg:Reg_Control|Reg29[24]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Banco_reg:Reg_Control|Reg29";
+}
+
+SIGNAL("Banco_reg:Reg_Control|Reg29[23]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Banco_reg:Reg_Control|Reg29";
+}
+
+SIGNAL("Banco_reg:Reg_Control|Reg29[22]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Banco_reg:Reg_Control|Reg29";
+}
+
+SIGNAL("Banco_reg:Reg_Control|Reg29[21]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Banco_reg:Reg_Control|Reg29";
+}
+
+SIGNAL("Banco_reg:Reg_Control|Reg29[20]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Banco_reg:Reg_Control|Reg29";
+}
+
+SIGNAL("Banco_reg:Reg_Control|Reg29[19]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Banco_reg:Reg_Control|Reg29";
+}
+
+SIGNAL("Banco_reg:Reg_Control|Reg29[18]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Banco_reg:Reg_Control|Reg29";
+}
+
+SIGNAL("Banco_reg:Reg_Control|Reg29[17]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Banco_reg:Reg_Control|Reg29";
+}
+
+SIGNAL("Banco_reg:Reg_Control|Reg29[16]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Banco_reg:Reg_Control|Reg29";
+}
+
+SIGNAL("Banco_reg:Reg_Control|Reg29[15]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Banco_reg:Reg_Control|Reg29";
+}
+
+SIGNAL("Banco_reg:Reg_Control|Reg29[14]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Banco_reg:Reg_Control|Reg29";
+}
+
+SIGNAL("Banco_reg:Reg_Control|Reg29[13]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Banco_reg:Reg_Control|Reg29";
+}
+
+SIGNAL("Banco_reg:Reg_Control|Reg29[12]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Banco_reg:Reg_Control|Reg29";
+}
+
+SIGNAL("Banco_reg:Reg_Control|Reg29[11]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Banco_reg:Reg_Control|Reg29";
+}
+
+SIGNAL("Banco_reg:Reg_Control|Reg29[10]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Banco_reg:Reg_Control|Reg29";
+}
+
+SIGNAL("Banco_reg:Reg_Control|Reg29[9]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Banco_reg:Reg_Control|Reg29";
+}
+
+SIGNAL("Banco_reg:Reg_Control|Reg29[8]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Banco_reg:Reg_Control|Reg29";
+}
+
+SIGNAL("Banco_reg:Reg_Control|Reg29[7]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Banco_reg:Reg_Control|Reg29";
+}
+
+SIGNAL("Banco_reg:Reg_Control|Reg29[6]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Banco_reg:Reg_Control|Reg29";
+}
+
+SIGNAL("Banco_reg:Reg_Control|Reg29[5]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Banco_reg:Reg_Control|Reg29";
+}
+
+SIGNAL("Banco_reg:Reg_Control|Reg29[4]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Banco_reg:Reg_Control|Reg29";
+}
+
+SIGNAL("Banco_reg:Reg_Control|Reg29[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Banco_reg:Reg_Control|Reg29";
+}
+
+SIGNAL("Banco_reg:Reg_Control|Reg29[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Banco_reg:Reg_Control|Reg29";
+}
+
+SIGNAL("Banco_reg:Reg_Control|Reg29[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Banco_reg:Reg_Control|Reg29";
+}
+
+SIGNAL("Banco_reg:Reg_Control|Reg29[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Banco_reg:Reg_Control|Reg29";
+}
+
+SIGNAL("Banco_reg:Reg_Control|Reg31")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = BUS;
+	WIDTH = 32;
+	LSB_INDEX = 0;
+	DIRECTION = BURIED;
+	PARENT = "";
+}
+
+SIGNAL("Banco_reg:Reg_Control|Reg31[31]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Banco_reg:Reg_Control|Reg31";
+}
+
+SIGNAL("Banco_reg:Reg_Control|Reg31[30]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Banco_reg:Reg_Control|Reg31";
+}
+
+SIGNAL("Banco_reg:Reg_Control|Reg31[29]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Banco_reg:Reg_Control|Reg31";
+}
+
+SIGNAL("Banco_reg:Reg_Control|Reg31[28]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Banco_reg:Reg_Control|Reg31";
+}
+
+SIGNAL("Banco_reg:Reg_Control|Reg31[27]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Banco_reg:Reg_Control|Reg31";
+}
+
+SIGNAL("Banco_reg:Reg_Control|Reg31[26]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Banco_reg:Reg_Control|Reg31";
+}
+
+SIGNAL("Banco_reg:Reg_Control|Reg31[25]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Banco_reg:Reg_Control|Reg31";
+}
+
+SIGNAL("Banco_reg:Reg_Control|Reg31[24]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Banco_reg:Reg_Control|Reg31";
+}
+
+SIGNAL("Banco_reg:Reg_Control|Reg31[23]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Banco_reg:Reg_Control|Reg31";
+}
+
+SIGNAL("Banco_reg:Reg_Control|Reg31[22]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Banco_reg:Reg_Control|Reg31";
+}
+
+SIGNAL("Banco_reg:Reg_Control|Reg31[21]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Banco_reg:Reg_Control|Reg31";
+}
+
+SIGNAL("Banco_reg:Reg_Control|Reg31[20]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Banco_reg:Reg_Control|Reg31";
+}
+
+SIGNAL("Banco_reg:Reg_Control|Reg31[19]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Banco_reg:Reg_Control|Reg31";
+}
+
+SIGNAL("Banco_reg:Reg_Control|Reg31[18]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Banco_reg:Reg_Control|Reg31";
+}
+
+SIGNAL("Banco_reg:Reg_Control|Reg31[17]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Banco_reg:Reg_Control|Reg31";
+}
+
+SIGNAL("Banco_reg:Reg_Control|Reg31[16]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Banco_reg:Reg_Control|Reg31";
+}
+
+SIGNAL("Banco_reg:Reg_Control|Reg31[15]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Banco_reg:Reg_Control|Reg31";
+}
+
+SIGNAL("Banco_reg:Reg_Control|Reg31[14]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Banco_reg:Reg_Control|Reg31";
+}
+
+SIGNAL("Banco_reg:Reg_Control|Reg31[13]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Banco_reg:Reg_Control|Reg31";
+}
+
+SIGNAL("Banco_reg:Reg_Control|Reg31[12]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Banco_reg:Reg_Control|Reg31";
+}
+
+SIGNAL("Banco_reg:Reg_Control|Reg31[11]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Banco_reg:Reg_Control|Reg31";
+}
+
+SIGNAL("Banco_reg:Reg_Control|Reg31[10]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Banco_reg:Reg_Control|Reg31";
+}
+
+SIGNAL("Banco_reg:Reg_Control|Reg31[9]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Banco_reg:Reg_Control|Reg31";
+}
+
+SIGNAL("Banco_reg:Reg_Control|Reg31[8]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Banco_reg:Reg_Control|Reg31";
+}
+
+SIGNAL("Banco_reg:Reg_Control|Reg31[7]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Banco_reg:Reg_Control|Reg31";
+}
+
+SIGNAL("Banco_reg:Reg_Control|Reg31[6]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Banco_reg:Reg_Control|Reg31";
+}
+
+SIGNAL("Banco_reg:Reg_Control|Reg31[5]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Banco_reg:Reg_Control|Reg31";
+}
+
+SIGNAL("Banco_reg:Reg_Control|Reg31[4]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Banco_reg:Reg_Control|Reg31";
+}
+
+SIGNAL("Banco_reg:Reg_Control|Reg31[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Banco_reg:Reg_Control|Reg31";
+}
+
+SIGNAL("Banco_reg:Reg_Control|Reg31[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Banco_reg:Reg_Control|Reg31";
+}
+
+SIGNAL("Banco_reg:Reg_Control|Reg31[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Banco_reg:Reg_Control|Reg31";
+}
+
+SIGNAL("Banco_reg:Reg_Control|Reg31[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "Banco_reg:Reg_Control|Reg31";
+}
+
 TRANSITION_LIST("clk")
 {
 	NODE
@@ -6844,14 +7504,14 @@ TRANSITION_LIST("MDR[26]")
 	{
 		REPEAT = 1;
 		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 60.0;
+		LEVEL 1 FOR 170.0;
 		NODE
 		{
 			REPEAT = 4;
-			LEVEL 0 FOR 150.0;
-			LEVEL 1 FOR 50.0;
+			LEVEL 0 FOR 40.0;
+			LEVEL 1 FOR 160.0;
 		}
-		LEVEL 0 FOR 120.0;
+		LEVEL 0 FOR 10.0;
 	}
 }
 
@@ -7229,14 +7889,15 @@ TRANSITION_LIST("opcode[0]")
 	{
 		REPEAT = 1;
 		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 110.0;
+		LEVEL 1 FOR 200.0;
 		NODE
 		{
-			REPEAT = 4;
-			LEVEL 0 FOR 100.0;
-			LEVEL 1 FOR 100.0;
+			REPEAT = 3;
+			LEVEL 0 FOR 10.0;
+			LEVEL 1 FOR 190.0;
 		}
-		LEVEL 0 FOR 60.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 160.0;
 	}
 }
 
@@ -9016,24 +9677,6 @@ TRANSITION_LIST("state[0]")
 	NODE
 	{
 		REPEAT = 1;
-		NODE
-		{
-			REPEAT = 4;
-			LEVEL 0 FOR 20.0;
-			NODE
-			{
-				REPEAT = 4;
-				LEVEL 1 FOR 10.0;
-				LEVEL 0 FOR 10.0;
-			}
-			LEVEL 1 FOR 20.0;
-			NODE
-			{
-				REPEAT = 4;
-				LEVEL 0 FOR 10.0;
-				LEVEL 1 FOR 10.0;
-			}
-		}
 		LEVEL 0 FOR 20.0;
 		NODE
 		{
@@ -9041,6 +9684,52 @@ TRANSITION_LIST("state[0]")
 			LEVEL 1 FOR 10.0;
 			LEVEL 0 FOR 10.0;
 		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 20.0;
+			NODE
+			{
+				REPEAT = 3;
+				LEVEL 0 FOR 10.0;
+				LEVEL 1 FOR 10.0;
+			}
+			LEVEL 0 FOR 10.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 10.0;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 0 FOR 10.0;
+				LEVEL 1 FOR 20.0;
+				NODE
+				{
+					REPEAT = 3;
+					LEVEL 0 FOR 10.0;
+					LEVEL 1 FOR 10.0;
+				}
+			}
+			LEVEL 0 FOR 10.0;
+		}
+		LEVEL 1 FOR 10.0;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 10.0;
+			LEVEL 1 FOR 20.0;
+			NODE
+			{
+				REPEAT = 3;
+				LEVEL 0 FOR 10.0;
+				LEVEL 1 FOR 10.0;
+			}
+		}
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
 		LEVEL 1 FOR 20.0;
 		NODE
 		{
@@ -9681,7 +10370,9 @@ TRANSITION_LIST("AluOutWritel")
 			LEVEL 1 FOR 10.0;
 			LEVEL 0 FOR 70.0;
 			LEVEL 1 FOR 10.0;
-			LEVEL 0 FOR 80.0;
+			LEVEL 0 FOR 10.0;
+			LEVEL 1 FOR 10.0;
+			LEVEL 0 FOR 60.0;
 		}
 		LEVEL 1 FOR 10.0;
 		LEVEL 0 FOR 20.0;
@@ -12224,6 +12915,583 @@ TRANSITION_LIST("Shiftleftado[1]")
 }
 
 TRANSITION_LIST("Shiftleftado[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("Banco_reg:Reg_Control|Reg29[31]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("Banco_reg:Reg_Control|Reg29[30]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("Banco_reg:Reg_Control|Reg29[29]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("Banco_reg:Reg_Control|Reg29[28]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("Banco_reg:Reg_Control|Reg29[27]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("Banco_reg:Reg_Control|Reg29[26]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("Banco_reg:Reg_Control|Reg29[25]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("Banco_reg:Reg_Control|Reg29[24]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("Banco_reg:Reg_Control|Reg29[23]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("Banco_reg:Reg_Control|Reg29[22]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("Banco_reg:Reg_Control|Reg29[21]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("Banco_reg:Reg_Control|Reg29[20]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("Banco_reg:Reg_Control|Reg29[19]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("Banco_reg:Reg_Control|Reg29[18]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("Banco_reg:Reg_Control|Reg29[17]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("Banco_reg:Reg_Control|Reg29[16]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("Banco_reg:Reg_Control|Reg29[15]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("Banco_reg:Reg_Control|Reg29[14]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("Banco_reg:Reg_Control|Reg29[13]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("Banco_reg:Reg_Control|Reg29[12]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("Banco_reg:Reg_Control|Reg29[11]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("Banco_reg:Reg_Control|Reg29[10]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("Banco_reg:Reg_Control|Reg29[9]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("Banco_reg:Reg_Control|Reg29[8]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("Banco_reg:Reg_Control|Reg29[7]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("Banco_reg:Reg_Control|Reg29[6]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("Banco_reg:Reg_Control|Reg29[5]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("Banco_reg:Reg_Control|Reg29[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("Banco_reg:Reg_Control|Reg29[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("Banco_reg:Reg_Control|Reg29[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("Banco_reg:Reg_Control|Reg29[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("Banco_reg:Reg_Control|Reg29[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("Banco_reg:Reg_Control|Reg31[31]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("Banco_reg:Reg_Control|Reg31[30]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("Banco_reg:Reg_Control|Reg31[29]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("Banco_reg:Reg_Control|Reg31[28]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("Banco_reg:Reg_Control|Reg31[27]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("Banco_reg:Reg_Control|Reg31[26]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("Banco_reg:Reg_Control|Reg31[25]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("Banco_reg:Reg_Control|Reg31[24]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("Banco_reg:Reg_Control|Reg31[23]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("Banco_reg:Reg_Control|Reg31[22]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("Banco_reg:Reg_Control|Reg31[21]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("Banco_reg:Reg_Control|Reg31[20]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("Banco_reg:Reg_Control|Reg31[19]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("Banco_reg:Reg_Control|Reg31[18]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("Banco_reg:Reg_Control|Reg31[17]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("Banco_reg:Reg_Control|Reg31[16]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("Banco_reg:Reg_Control|Reg31[15]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("Banco_reg:Reg_Control|Reg31[14]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("Banco_reg:Reg_Control|Reg31[13]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("Banco_reg:Reg_Control|Reg31[12]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("Banco_reg:Reg_Control|Reg31[11]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("Banco_reg:Reg_Control|Reg31[10]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("Banco_reg:Reg_Control|Reg31[9]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("Banco_reg:Reg_Control|Reg31[8]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("Banco_reg:Reg_Control|Reg31[7]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("Banco_reg:Reg_Control|Reg31[6]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("Banco_reg:Reg_Control|Reg31[5]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("Banco_reg:Reg_Control|Reg31[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("Banco_reg:Reg_Control|Reg31[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 210.0;
+		LEVEL 1 FOR 790.0;
+	}
+}
+
+TRANSITION_LIST("Banco_reg:Reg_Control|Reg31[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("Banco_reg:Reg_Control|Reg31[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("Banco_reg:Reg_Control|Reg31[0]")
 {
 	NODE
 	{
@@ -18346,6 +19614,666 @@ DISPLAY_LINE
 	TREE_INDEX = 611;
 	TREE_LEVEL = 1;
 	PARENT = 583;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Banco_reg:Reg_Control|Reg29";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 612;
+	TREE_LEVEL = 0;
+	CHILDREN = 613, 614, 615, 616, 617, 618, 619, 620, 621, 622, 623, 624, 625, 626, 627, 628, 629, 630, 631, 632, 633, 634, 635, 636, 637, 638, 639, 640, 641, 642, 643, 644;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Banco_reg:Reg_Control|Reg29[31]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 613;
+	TREE_LEVEL = 1;
+	PARENT = 612;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Banco_reg:Reg_Control|Reg29[30]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 614;
+	TREE_LEVEL = 1;
+	PARENT = 612;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Banco_reg:Reg_Control|Reg29[29]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 615;
+	TREE_LEVEL = 1;
+	PARENT = 612;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Banco_reg:Reg_Control|Reg29[28]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 616;
+	TREE_LEVEL = 1;
+	PARENT = 612;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Banco_reg:Reg_Control|Reg29[27]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 617;
+	TREE_LEVEL = 1;
+	PARENT = 612;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Banco_reg:Reg_Control|Reg29[26]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 618;
+	TREE_LEVEL = 1;
+	PARENT = 612;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Banco_reg:Reg_Control|Reg29[25]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 619;
+	TREE_LEVEL = 1;
+	PARENT = 612;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Banco_reg:Reg_Control|Reg29[24]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 620;
+	TREE_LEVEL = 1;
+	PARENT = 612;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Banco_reg:Reg_Control|Reg29[23]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 621;
+	TREE_LEVEL = 1;
+	PARENT = 612;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Banco_reg:Reg_Control|Reg29[22]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 622;
+	TREE_LEVEL = 1;
+	PARENT = 612;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Banco_reg:Reg_Control|Reg29[21]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 623;
+	TREE_LEVEL = 1;
+	PARENT = 612;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Banco_reg:Reg_Control|Reg29[20]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 624;
+	TREE_LEVEL = 1;
+	PARENT = 612;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Banco_reg:Reg_Control|Reg29[19]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 625;
+	TREE_LEVEL = 1;
+	PARENT = 612;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Banco_reg:Reg_Control|Reg29[18]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 626;
+	TREE_LEVEL = 1;
+	PARENT = 612;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Banco_reg:Reg_Control|Reg29[17]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 627;
+	TREE_LEVEL = 1;
+	PARENT = 612;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Banco_reg:Reg_Control|Reg29[16]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 628;
+	TREE_LEVEL = 1;
+	PARENT = 612;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Banco_reg:Reg_Control|Reg29[15]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 629;
+	TREE_LEVEL = 1;
+	PARENT = 612;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Banco_reg:Reg_Control|Reg29[14]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 630;
+	TREE_LEVEL = 1;
+	PARENT = 612;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Banco_reg:Reg_Control|Reg29[13]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 631;
+	TREE_LEVEL = 1;
+	PARENT = 612;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Banco_reg:Reg_Control|Reg29[12]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 632;
+	TREE_LEVEL = 1;
+	PARENT = 612;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Banco_reg:Reg_Control|Reg29[11]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 633;
+	TREE_LEVEL = 1;
+	PARENT = 612;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Banco_reg:Reg_Control|Reg29[10]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 634;
+	TREE_LEVEL = 1;
+	PARENT = 612;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Banco_reg:Reg_Control|Reg29[9]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 635;
+	TREE_LEVEL = 1;
+	PARENT = 612;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Banco_reg:Reg_Control|Reg29[8]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 636;
+	TREE_LEVEL = 1;
+	PARENT = 612;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Banco_reg:Reg_Control|Reg29[7]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 637;
+	TREE_LEVEL = 1;
+	PARENT = 612;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Banco_reg:Reg_Control|Reg29[6]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 638;
+	TREE_LEVEL = 1;
+	PARENT = 612;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Banco_reg:Reg_Control|Reg29[5]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 639;
+	TREE_LEVEL = 1;
+	PARENT = 612;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Banco_reg:Reg_Control|Reg29[4]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 640;
+	TREE_LEVEL = 1;
+	PARENT = 612;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Banco_reg:Reg_Control|Reg29[3]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 641;
+	TREE_LEVEL = 1;
+	PARENT = 612;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Banco_reg:Reg_Control|Reg29[2]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 642;
+	TREE_LEVEL = 1;
+	PARENT = 612;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Banco_reg:Reg_Control|Reg29[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 643;
+	TREE_LEVEL = 1;
+	PARENT = 612;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Banco_reg:Reg_Control|Reg29[0]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 644;
+	TREE_LEVEL = 1;
+	PARENT = 612;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Banco_reg:Reg_Control|Reg31";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 645;
+	TREE_LEVEL = 0;
+	CHILDREN = 646, 647, 648, 649, 650, 651, 652, 653, 654, 655, 656, 657, 658, 659, 660, 661, 662, 663, 664, 665, 666, 667, 668, 669, 670, 671, 672, 673, 674, 675, 676, 677;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Banco_reg:Reg_Control|Reg31[31]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 646;
+	TREE_LEVEL = 1;
+	PARENT = 645;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Banco_reg:Reg_Control|Reg31[30]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 647;
+	TREE_LEVEL = 1;
+	PARENT = 645;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Banco_reg:Reg_Control|Reg31[29]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 648;
+	TREE_LEVEL = 1;
+	PARENT = 645;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Banco_reg:Reg_Control|Reg31[28]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 649;
+	TREE_LEVEL = 1;
+	PARENT = 645;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Banco_reg:Reg_Control|Reg31[27]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 650;
+	TREE_LEVEL = 1;
+	PARENT = 645;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Banco_reg:Reg_Control|Reg31[26]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 651;
+	TREE_LEVEL = 1;
+	PARENT = 645;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Banco_reg:Reg_Control|Reg31[25]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 652;
+	TREE_LEVEL = 1;
+	PARENT = 645;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Banco_reg:Reg_Control|Reg31[24]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 653;
+	TREE_LEVEL = 1;
+	PARENT = 645;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Banco_reg:Reg_Control|Reg31[23]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 654;
+	TREE_LEVEL = 1;
+	PARENT = 645;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Banco_reg:Reg_Control|Reg31[22]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 655;
+	TREE_LEVEL = 1;
+	PARENT = 645;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Banco_reg:Reg_Control|Reg31[21]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 656;
+	TREE_LEVEL = 1;
+	PARENT = 645;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Banco_reg:Reg_Control|Reg31[20]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 657;
+	TREE_LEVEL = 1;
+	PARENT = 645;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Banco_reg:Reg_Control|Reg31[19]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 658;
+	TREE_LEVEL = 1;
+	PARENT = 645;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Banco_reg:Reg_Control|Reg31[18]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 659;
+	TREE_LEVEL = 1;
+	PARENT = 645;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Banco_reg:Reg_Control|Reg31[17]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 660;
+	TREE_LEVEL = 1;
+	PARENT = 645;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Banco_reg:Reg_Control|Reg31[16]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 661;
+	TREE_LEVEL = 1;
+	PARENT = 645;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Banco_reg:Reg_Control|Reg31[15]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 662;
+	TREE_LEVEL = 1;
+	PARENT = 645;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Banco_reg:Reg_Control|Reg31[14]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 663;
+	TREE_LEVEL = 1;
+	PARENT = 645;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Banco_reg:Reg_Control|Reg31[13]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 664;
+	TREE_LEVEL = 1;
+	PARENT = 645;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Banco_reg:Reg_Control|Reg31[12]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 665;
+	TREE_LEVEL = 1;
+	PARENT = 645;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Banco_reg:Reg_Control|Reg31[11]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 666;
+	TREE_LEVEL = 1;
+	PARENT = 645;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Banco_reg:Reg_Control|Reg31[10]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 667;
+	TREE_LEVEL = 1;
+	PARENT = 645;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Banco_reg:Reg_Control|Reg31[9]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 668;
+	TREE_LEVEL = 1;
+	PARENT = 645;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Banco_reg:Reg_Control|Reg31[8]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 669;
+	TREE_LEVEL = 1;
+	PARENT = 645;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Banco_reg:Reg_Control|Reg31[7]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 670;
+	TREE_LEVEL = 1;
+	PARENT = 645;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Banco_reg:Reg_Control|Reg31[6]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 671;
+	TREE_LEVEL = 1;
+	PARENT = 645;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Banco_reg:Reg_Control|Reg31[5]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 672;
+	TREE_LEVEL = 1;
+	PARENT = 645;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Banco_reg:Reg_Control|Reg31[4]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 673;
+	TREE_LEVEL = 1;
+	PARENT = 645;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Banco_reg:Reg_Control|Reg31[3]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 674;
+	TREE_LEVEL = 1;
+	PARENT = 645;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Banco_reg:Reg_Control|Reg31[2]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 675;
+	TREE_LEVEL = 1;
+	PARENT = 645;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Banco_reg:Reg_Control|Reg31[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 676;
+	TREE_LEVEL = 1;
+	PARENT = 645;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Banco_reg:Reg_Control|Reg31[0]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 677;
+	TREE_LEVEL = 1;
+	PARENT = 645;
 }
 
 TIME_BAR

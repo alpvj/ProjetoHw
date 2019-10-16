@@ -74,6 +74,8 @@ parameter jr2 = 7'd34;
 parameter xchg2 = 7'd35;
 parameter xchg3 = 7'd36;
 parameter xchg4 = 7'd37;
+parameter j2 = 7'd38;
+parameter jal2 = 7'd38;
 
 //Func do Tipo R
 parameter ADD = 6'b100000;//done
@@ -98,6 +100,7 @@ parameter ADDI = 6'b001000;//done
 parameter ADDIU = 6'b001001;
 //Func do Tipo J
 parameter J = 6'b000010;
+parameter JAL = 6'b000011;
 
 initial begin
 	estado = Fetch1;
@@ -736,6 +739,33 @@ always @(posedge clk) begin
 						ShiftControl = 3'b000;
 						DataSrc = 4'b0000;
 						estado = j2;
+					end
+					JAL: begin
+						PCWrite = 1'b1;
+						MemCtrl = 1'b0;
+						IRWrite = 1'b0;
+						A_Control = 1'b0;
+						B_Control = 1'b0;
+						RegControl = 1'b1;
+						ALUOutControl = 1'b1;
+						EPCWrite = 1'b0;
+						MDControl = 1'b0;
+						HI_Control = 1'b0;
+						LO_Control = 1'b0;
+						IorD = 2'b00;
+						ALUSrcA = 2'b00;
+						ALUSrcB = 2'b00;
+						ExcpCtrl = 2'b00;
+						ShiftSrc = 2'b00;
+						ShiftAmt = 2'b00;
+						SSControl = 2'b00;
+						LSControl = 2'b00;
+						RegDst = 3'b011;
+						PCSource = 3'b100;
+						ALUControl = 3'b000;
+						ShiftControl = 3'b000;
+						DataSrc = 4'b0000;
+						estado = jal2;
 					end
 				endcase
 			end
@@ -1570,6 +1600,33 @@ always @(posedge clk) begin
 				SSControl = 2'b00;
 				LSControl = 2'b00;
 				RegDst = 3'b000;
+				PCSource = 3'b100;
+				ALUControl = 3'b000;
+				ShiftControl = 3'b000;
+				DataSrc = 4'b0000;
+				estado = Fetch1;
+			end
+			jal2: begin
+				PCWrite = 1'b0;
+				MemCtrl = 1'b0;
+				IRWrite = 1'b0;
+				A_Control = 1'b0;
+				B_Control = 1'b0;
+				RegControl = 1'b0;
+				ALUOutControl = 1'b0;
+				EPCWrite = 1'b0;
+				MDControl = 1'b0;
+				HI_Control = 1'b0;
+				LO_Control = 1'b0;
+				IorD = 2'b00;
+				ALUSrcA = 2'b00;
+				ALUSrcB = 2'b00;
+				ExcpCtrl = 2'b00;
+				ShiftSrc = 2'b00;
+				ShiftAmt = 2'b00;
+				SSControl = 2'b00;
+				LSControl = 2'b00;
+				RegDst = 3'b011;
 				PCSource = 3'b100;
 				ALUControl = 3'b000;
 				ShiftControl = 3'b000;
