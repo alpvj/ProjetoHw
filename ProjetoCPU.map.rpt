@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ProjetoCPU
-Wed Oct 16 15:50:04 2019
+Wed Oct 16 16:07:12 2019
 Quartus II 64-Bit Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
 
 
@@ -53,13 +53,13 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +-------------------------------+-----------------------------------------------+
-; Analysis & Synthesis Status   ; Successful - Wed Oct 16 15:50:04 2019         ;
+; Analysis & Synthesis Status   ; Successful - Wed Oct 16 16:07:12 2019         ;
 ; Quartus II 64-Bit Version     ; 9.1 Build 350 03/24/2010 SP 2 SJ Full Version ;
 ; Revision Name                 ; ProjetoCPU                                    ;
 ; Top-level Entity Name         ; Hardware                                      ;
 ; Family                        ; Stratix II                                    ;
 ; Logic utilization             ; N/A                                           ;
-;     Combinational ALUTs       ; 1,558                                         ;
+;     Combinational ALUTs       ; 1,582                                         ;
 ;     Dedicated logic registers ; 1,297                                         ;
 ; Total registers               ; 1297                                          ;
 ; Total pins                    ; 492                                           ;
@@ -208,38 +208,38 @@ applicable agreement for further details.
 +-----------------------------------------------+-------+
 ; Resource                                      ; Usage ;
 +-----------------------------------------------+-------+
-; Estimated ALUTs Used                          ; 1558  ;
+; Estimated ALUTs Used                          ; 1582  ;
 ; Dedicated logic registers                     ; 1297  ;
 ;                                               ;       ;
-; Estimated ALUTs Unavailable                   ; 200   ;
+; Estimated ALUTs Unavailable                   ; 198   ;
 ;                                               ;       ;
-; Total combinational functions                 ; 1558  ;
+; Total combinational functions                 ; 1582  ;
 ; Combinational ALUT usage by number of inputs  ;       ;
-;     -- 7 input functions                      ; 22    ;
-;     -- 6 input functions                      ; 893   ;
-;     -- 5 input functions                      ; 297   ;
-;     -- 4 input functions                      ; 62    ;
-;     -- <=3 input functions                    ; 284   ;
+;     -- 7 input functions                      ; 19    ;
+;     -- 6 input functions                      ; 894   ;
+;     -- 5 input functions                      ; 306   ;
+;     -- 4 input functions                      ; 69    ;
+;     -- <=3 input functions                    ; 294   ;
 ;                                               ;       ;
 ; Combinational ALUTs by mode                   ;       ;
-;     -- normal mode                            ; 1513  ;
-;     -- extended LUT mode                      ; 22    ;
+;     -- normal mode                            ; 1540  ;
+;     -- extended LUT mode                      ; 19    ;
 ;     -- arithmetic mode                        ; 23    ;
 ;     -- shared arithmetic mode                 ; 0     ;
 ;                                               ;       ;
-; Estimated ALUT/register pairs used            ; 2673  ;
+; Estimated ALUT/register pairs used            ; 2684  ;
 ;                                               ;       ;
 ; Total registers                               ; 1297  ;
 ;     -- Dedicated logic registers              ; 1297  ;
 ;     -- I/O registers                          ; 0     ;
 ;                                               ;       ;
-; Estimated ALMs:  partially or completely used ; 1,337 ;
+; Estimated ALMs:  partially or completely used ; 1,342 ;
 ;                                               ;       ;
 ; I/O pins                                      ; 492   ;
 ; Total block memory bits                       ; 8192  ;
 ; Maximum fan-out node                          ; clk   ;
 ; Maximum fan-out                               ; 1329  ;
-; Total fan-out                                 ; 14030 ;
+; Total fan-out                                 ; 14112 ;
 ; Average fan-out                               ; 4.15  ;
 +-----------------------------------------------+-------+
 
@@ -249,18 +249,18 @@ applicable agreement for further details.
 +-------------------------------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                      ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                 ; Library Name ;
 +-------------------------------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------+--------------+
-; |Hardware                                       ; 1558 (1)          ; 1297 (0)     ; 8192              ; 0            ; 0       ; 0         ; 0         ; 492  ; 0            ; |Hardware                                                                                                           ; work         ;
+; |Hardware                                       ; 1582 (1)          ; 1297 (0)     ; 8192              ; 0            ; 0       ; 0         ; 0         ; 492  ; 0            ; |Hardware                                                                                                           ; work         ;
 ;    |ALUSrcA:inst5|                              ; 32 (32)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|ALUSrcA:inst5                                                                                             ; work         ;
 ;    |ALUSrcB:inst6|                              ; 32 (32)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|ALUSrcB:inst6                                                                                             ; work         ;
 ;    |Banco_reg:Reg_Control|                      ; 736 (736)         ; 1024 (1024)  ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Banco_reg:Reg_Control                                                                                     ; work         ;
-;    |Controle:inst4|                             ; 111 (111)         ; 33 (33)      ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Controle:inst4                                                                                            ;              ;
+;    |Controle:inst4|                             ; 132 (132)         ; 33 (33)      ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Controle:inst4                                                                                            ;              ;
 ;    |DataSrc:inst3|                              ; 67 (67)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|DataSrc:inst3                                                                                             ; work         ;
 ;    |Instr_Reg:IRWrite|                          ; 0 (0)             ; 32 (32)      ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Instr_Reg:IRWrite                                                                                         ; work         ;
-;    |Memoria:MemCtrl|                            ; 23 (23)           ; 0 (0)        ; 8192              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Memoria:MemCtrl                                                                                           ;              ;
+;    |Memoria:MemCtrl|                            ; 23 (23)           ; 0 (0)        ; 8192              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Memoria:MemCtrl                                                                                           ; work         ;
 ;       |lpm_ram_dq:MEM_plus_One|                 ; 0 (0)             ; 0 (0)        ; 2048              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Memoria:MemCtrl|lpm_ram_dq:MEM_plus_One                                                                   ; work         ;
-;          |altram:sram|                          ; 0 (0)             ; 0 (0)        ; 2048              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Memoria:MemCtrl|lpm_ram_dq:MEM_plus_One|altram:sram                                                       ; work         ;
+;          |altram:sram|                          ; 0 (0)             ; 0 (0)        ; 2048              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Memoria:MemCtrl|lpm_ram_dq:MEM_plus_One|altram:sram                                                       ;              ;
 ;             |altsyncram:ram_block|              ; 0 (0)             ; 0 (0)        ; 2048              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Memoria:MemCtrl|lpm_ram_dq:MEM_plus_One|altram:sram|altsyncram:ram_block                                  ;              ;
-;                |altsyncram_g2a1:auto_generated| ; 0 (0)             ; 0 (0)        ; 2048              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Memoria:MemCtrl|lpm_ram_dq:MEM_plus_One|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated   ;              ;
+;                |altsyncram_g2a1:auto_generated| ; 0 (0)             ; 0 (0)        ; 2048              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Memoria:MemCtrl|lpm_ram_dq:MEM_plus_One|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated   ; work         ;
 ;       |lpm_ram_dq:MEM_plus_Three|               ; 0 (0)             ; 0 (0)        ; 2048              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Memoria:MemCtrl|lpm_ram_dq:MEM_plus_Three                                                                 ; work         ;
 ;          |altram:sram|                          ; 0 (0)             ; 0 (0)        ; 2048              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Memoria:MemCtrl|lpm_ram_dq:MEM_plus_Three|altram:sram                                                     ; work         ;
 ;             |altsyncram:ram_block|              ; 0 (0)             ; 0 (0)        ; 2048              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Memoria:MemCtrl|lpm_ram_dq:MEM_plus_Three|altram:sram|altsyncram:ram_block                                ; work         ;
@@ -284,7 +284,7 @@ applicable agreement for further details.
 ;    |ShiftAmount:ShiftAmt|                       ; 7 (7)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|ShiftAmount:ShiftAmt                                                                                      ; work         ;
 ;    |ShiftLeft2de32pra32:inst|                   ; 0 (0)             ; 16 (16)      ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|ShiftLeft2de32pra32:inst                                                                                  ; work         ;
 ;    |ShiftSource:ShiftSrc|                       ; 32 (32)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|ShiftSource:ShiftSrc                                                                                      ; work         ;
-;    |Ula32:ALUControl|                           ; 145 (145)         ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Ula32:ALUControl                                                                                          ; work         ;
+;    |Ula32:ALUControl|                           ; 148 (148)         ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Ula32:ALUControl                                                                                          ; work         ;
 +-------------------------------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -327,8 +327,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
 ; Total registers                              ; 1297  ;
-; Number of registers using Synchronous Clear  ; 62    ;
-; Number of registers using Synchronous Load   ; 21    ;
+; Number of registers using Synchronous Clear  ; 61    ;
+; Number of registers using Synchronous Load   ; 19    ;
 ; Number of registers using Asynchronous Clear ; 1216  ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 1270  ;
@@ -341,7 +341,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------+---------+
 ; Inverted Register                      ; Fan out ;
 +----------------------------------------+---------+
-; Controle:inst4|reset                   ; 1221    ;
+; Controle:inst4|reset                   ; 1223    ;
 ; Total number of inverted registers = 1 ;         ;
 +----------------------------------------+---------+
 
@@ -358,9 +358,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 7:1                ; 26 bits   ; 104 ALUTs     ; 52 ALUTs             ; 52 ALUTs               ; Yes        ; |Hardware|Registrador:PCWrite|Saida[26]   ;
 ; 13:1               ; 13 bits   ; 104 ALUTs     ; 52 ALUTs             ; 52 ALUTs               ; Yes        ; |Hardware|RegDesloc:ShiftControl|temp[5]  ;
 ; 13:1               ; 13 bits   ; 104 ALUTs     ; 78 ALUTs             ; 26 ALUTs               ; Yes        ; |Hardware|RegDesloc:ShiftControl|temp[17] ;
-; 192:1              ; 13 bits   ; 1664 ALUTs    ; 338 ALUTs            ; 1326 ALUTs             ; Yes        ; |Hardware|Controle:inst4|ShiftControl[0]  ;
-; 254:1              ; 6 bits    ; 1014 ALUTs    ; 480 ALUTs            ; 534 ALUTs              ; Yes        ; |Hardware|Controle:inst4|estado[4]        ;
-; 254:1              ; 13 bits   ; 2197 ALUTs    ; 442 ALUTs            ; 1755 ALUTs             ; Yes        ; |Hardware|Controle:inst4|RegDst[2]        ;
+; 192:1              ; 13 bits   ; 1664 ALUTs    ; 364 ALUTs            ; 1300 ALUTs             ; Yes        ; |Hardware|Controle:inst4|ShiftControl[0]  ;
+; 254:1              ; 6 bits    ; 1014 ALUTs    ; 492 ALUTs            ; 522 ALUTs              ; Yes        ; |Hardware|Controle:inst4|estado[4]        ;
+; 254:1              ; 13 bits   ; 2197 ALUTs    ; 468 ALUTs            ; 1729 ALUTs             ; Yes        ; |Hardware|Controle:inst4|RegDst[2]        ;
 ; 3:1                ; 28 bits   ; 56 ALUTs      ; 56 ALUTs             ; 0 ALUTs                ; No         ; |Hardware|ALUSrcA:inst5|Mux21             ;
 ; 3:1                ; 15 bits   ; 30 ALUTs      ; 30 ALUTs             ; 0 ALUTs                ; No         ; |Hardware|ALUSrcB:inst6|Mux12             ;
 ; 4:1                ; 2 bits    ; 4 ALUTs       ; 4 ALUTs              ; 0 ALUTs                ; No         ; |Hardware|ALUSrcB:inst6|Mux31             ;
@@ -462,6 +462,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; lui2           ; 0101000 ; Unsigned Binary                  ;
 ; lui3           ; 0101001 ; Unsigned Binary                  ;
 ; lui4           ; 0101010 ; Unsigned Binary                  ;
+; slti2          ; 0101011 ; Unsigned Binary                  ;
+; slti3          ; 0101100 ; Unsigned Binary                  ;
 ; ADD            ; 100000  ; Unsigned Binary                  ;
 ; SUB            ; 100010  ; Unsigned Binary                  ;
 ; AND            ; 100100  ; Unsigned Binary                  ;
@@ -584,7 +586,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
-    Info: Processing started: Wed Oct 16 15:49:52 2019
+    Info: Processing started: Wed Oct 16 16:06:59 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ProjetoCPU -c ProjetoCPU
 Info: Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info: Found 2 design units, including 1 entities, in source file banco_reg.vhd
@@ -664,7 +666,7 @@ Info: Elaborated megafunction instantiation "Memoria:MemCtrl|LPM_RAM_DQ:MEM|altr
 Info: Found 1 design units, including 1 entities, in source file db/altsyncram_g2a1.tdf
     Info: Found entity 1: altsyncram_g2a1
 Info: Elaborating entity "altsyncram_g2a1" for hierarchy "Memoria:MemCtrl|LPM_RAM_DQ:MEM|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated"
-Critical Warning: Memory depth (256) in the design file differs from memory depth (4) in the Memory Initialization File "instrucoes.mif" -- setting initial value for remaining addresses to 0
+Critical Warning: Memory depth (256) in the design file differs from memory depth (8) in the Memory Initialization File "instrucoes.mif" -- setting initial value for remaining addresses to 0
 Info: Elaborating entity "IorD" for hierarchy "IorD:inst1"
 Info: Elaborating entity "Registrador" for hierarchy "Registrador:PCWrite"
 Info: Elaborating entity "PCSource" for hierarchy "PCSource:PCSource"
@@ -689,15 +691,15 @@ Warning: Output pins are stuck at VCC or GND
     Warning (13410): Pin "Jconcat[0]" is stuck at GND
     Warning (13410): Pin "Shiftleftado[1]" is stuck at GND
     Warning (13410): Pin "Shiftleftado[0]" is stuck at GND
-Info: Implemented 3219 device resources after synthesis - the final resource count might be different
+Info: Implemented 3243 device resources after synthesis - the final resource count might be different
     Info: Implemented 1 input pins
     Info: Implemented 491 output pins
-    Info: Implemented 2695 logic cells
+    Info: Implemented 2719 logic cells
     Info: Implemented 32 RAM segments
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 8 warnings
     Info: Peak virtual memory: 4533 megabytes
-    Info: Processing ended: Wed Oct 16 15:50:04 2019
-    Info: Elapsed time: 00:00:12
+    Info: Processing ended: Wed Oct 16 16:07:12 2019
+    Info: Elapsed time: 00:00:13
     Info: Total CPU time (on all processors): 00:00:13
 
 

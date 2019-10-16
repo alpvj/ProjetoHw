@@ -1,4 +1,4 @@
-Fitter Status : Successful - Wed Oct 16 15:50:17 2019
+Fitter Status : Successful - Wed Oct 16 16:07:25 2019
 Quartus II 64-Bit Version : 9.1 Build 350 03/24/2010 SP 2 SJ Full Version
 Revision Name : ProjetoCPU
 Top-level Entity Name : Hardware
@@ -6,9 +6,9 @@ Family : Stratix II
 Device : EP2S60F1020C3
 Timing Models : Final
 Logic utilization : 5 %
-    Combinational ALUTs : 1,571 / 48,352 ( 3 % )
-    Dedicated logic registers : 1,307 / 48,352 ( 3 % )
-Total registers : 1307
+    Combinational ALUTs : 1,590 / 48,352 ( 3 % )
+    Dedicated logic registers : 1,308 / 48,352 ( 3 % )
+Total registers : 1308
 Total pins : 492 / 719 ( 68 % )
 Total virtual pins : 0
 Total block memory bits : 8,192 / 2,544,192 ( < 1 % )

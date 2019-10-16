@@ -79,6 +79,8 @@ parameter jal2 = 7'd39;
 parameter lui2 = 7'd40;
 parameter lui3 = 7'd41;
 parameter lui4 = 7'd42;
+parameter slti2 = 7'd43;
+parameter slti3 = 7'd44;
 
 //Func do Tipo R
 parameter ADD = 6'b100000;//done
@@ -101,8 +103,8 @@ parameter ARIT = 6'b000000;
 //Tipo I
 parameter ADDI = 6'b001000;
 parameter ADDIU = 6'b001001;//done
-parameter LUI = 6'b001111;
-parameter SLTI = 6'b001010;
+parameter LUI = 6'b001111;//done
+parameter SLTI = 6'b001010;//
 //Func do Tipo J
 parameter J = 6'b000010;//done
 parameter JAL = 6'b000011;//done
@@ -798,6 +800,33 @@ always @(posedge clk) begin
 						ShiftControl = 3'b000;
 						DataSrc = 4'b0000;
 						estado = lui2;
+					end
+					SLTI: begin
+						PCWrite = 1'b0;
+						MemCtrl = 1'b0;
+						IRWrite = 1'b0;
+						A_Control = 1'b0;
+						B_Control = 1'b0;
+						RegControl = 1'b0;
+						ALUOutControl = 1'b0;
+						EPCWrite = 1'b0;
+						MDControl = 1'b0;
+						HI_Control = 1'b0;
+						LO_Control = 1'b0;
+						IorD = 2'b00;
+						ALUSrcA = 2'b01;
+						ALUSrcB = 2'b10;
+						ExcpCtrl = 2'b00;
+						ShiftSrc = 2'b00;
+						ShiftAmt = 2'b00;
+						SSControl = 2'b00;
+						LSControl = 2'b00;
+						RegDst = 3'b000;
+						PCSource = 3'b000;
+						ALUControl = 3'b111;
+						ShiftControl = 3'b000;
+						DataSrc = 4'b0100;
+						estado = slti2;
 					end
 				endcase
 			end
@@ -1744,6 +1773,60 @@ always @(posedge clk) begin
 				ALUControl = 3'b000;
 				ShiftControl = 3'b000;
 				DataSrc = 4'b0101;
+				estado = Fetch1;
+			end
+			slti2: begin
+				PCWrite = 1'b0;
+				MemCtrl = 1'b0;
+				IRWrite = 1'b0;
+				A_Control = 1'b0;
+				B_Control = 1'b0;
+				RegControl = 1'b1;
+				ALUOutControl = 1'b0;
+				EPCWrite = 1'b0;
+				MDControl = 1'b0;
+				HI_Control = 1'b0;
+				LO_Control = 1'b0;
+				IorD = 2'b00;
+				ALUSrcA = 2'b01;
+				ALUSrcB = 2'b10;
+				ExcpCtrl = 2'b00;
+				ShiftSrc = 2'b00;
+				ShiftAmt = 2'b00;
+				SSControl = 2'b00;
+				LSControl = 2'b00;
+				RegDst = 3'b000;
+				PCSource = 3'b000;
+				ALUControl = 3'b111;
+				ShiftControl = 3'b000;
+				DataSrc = 4'b0100;
+				estado = slti3;
+			end
+			slti3: begin
+				PCWrite = 1'b0;
+				MemCtrl = 1'b0;
+				IRWrite = 1'b0;
+				A_Control = 1'b0;
+				B_Control = 1'b0;
+				RegControl = 1'b0;
+				ALUOutControl = 1'b0;
+				EPCWrite = 1'b0;
+				MDControl = 1'b0;
+				HI_Control = 1'b0;
+				LO_Control = 1'b0;
+				IorD = 2'b00;
+				ALUSrcA = 2'b01;
+				ALUSrcB = 2'b10;
+				ExcpCtrl = 2'b00;
+				ShiftSrc = 2'b00;
+				ShiftAmt = 2'b00;
+				SSControl = 2'b00;
+				LSControl = 2'b00;
+				RegDst = 3'b000;
+				PCSource = 3'b000;
+				ALUControl = 3'b111;
+				ShiftControl = 3'b000;
+				DataSrc = 4'b0100;
 				estado = Fetch1;
 			end
 		endcase
