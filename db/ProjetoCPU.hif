@@ -1247,10 +1247,10 @@ ON
 }
 # hierarchies {
 Registrador:PCWrite
-Registrador:A_Control
 Registrador:ALUOutControl
-Registrador:B_Control
 Registrador:EPCWrite
+Registrador:A_Control
+Registrador:B_Control
 }
 # lmf
 |programfiles|quartus|altera|91sp2|quartus|lmf|maxplus2.lmf
@@ -1365,7 +1365,7 @@ db|ProjetoCPU.(0).cnf
 # case_insensitive
 # source_file
 hardware.bdf
-12c1fdacd6bb6da6d76d7414feae69ad
+e9be538c3cabdccda33e3acc9e593f
 26
 # internal_option {
 BLOCK_DESIGN_NAMING
@@ -1389,7 +1389,7 @@ ON
 # case_sensitive
 # source_file
 controle.sv
-ea4399a0effddb601f3679d1f118ac7b
+24802f64df1325d1856205f3de0d
 9
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -1588,6 +1588,18 @@ slti3
 0101100
 PARAMETER_UNSIGNED_BIN
 USR
+beq2
+0101101
+PARAMETER_UNSIGNED_BIN
+USR
+beq3
+0101110
+PARAMETER_UNSIGNED_BIN
+USR
+beq4
+0101111
+PARAMETER_UNSIGNED_BIN
+USR
 ADD
 100000
 PARAMETER_UNSIGNED_BIN
@@ -1658,6 +1670,22 @@ PARAMETER_UNSIGNED_BIN
 USR
 SLTI
 001010
+PARAMETER_UNSIGNED_BIN
+USR
+BEQ
+000100
+PARAMETER_UNSIGNED_BIN
+USR
+BNE
+000101
+PARAMETER_UNSIGNED_BIN
+USR
+BLE
+000110
+PARAMETER_UNSIGNED_BIN
+USR
+BGT
+000111
 PARAMETER_UNSIGNED_BIN
 USR
 J
@@ -1770,7 +1798,7 @@ address_a0
 }
 # memory_file {
 instrucoes.mif
-5244689fe88e28c892faea51d645
+97b753b48e3e6d6d26ce65a78c73dc59
 }
 # hierarchies {
 Memoria:MemCtrl|lpm_ram_dq:MEM|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated
