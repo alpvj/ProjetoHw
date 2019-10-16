@@ -1,5 +1,5 @@
 Flow report for ProjetoCPU
-Wed Oct 16 15:27:21 2019
+Wed Oct 16 15:50:25 2019
 Quartus II 64-Bit Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
 
 
@@ -38,16 +38,16 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +-------------------------------+-----------------------------------------------+
-; Flow Status                   ; Successful - Wed Oct 16 15:27:21 2019         ;
+; Flow Status                   ; Successful - Wed Oct 16 15:50:25 2019         ;
 ; Quartus II 64-Bit Version     ; 9.1 Build 350 03/24/2010 SP 2 SJ Full Version ;
 ; Revision Name                 ; ProjetoCPU                                    ;
 ; Top-level Entity Name         ; Hardware                                      ;
 ; Family                        ; Stratix II                                    ;
 ; Met timing requirements       ; Yes                                           ;
 ; Logic utilization             ; 5 %                                           ;
-;     Combinational ALUTs       ; 1,526 / 48,352 ( 3 % )                        ;
-;     Dedicated logic registers ; 1,301 / 48,352 ( 3 % )                        ;
-; Total registers               ; 1301                                          ;
+;     Combinational ALUTs       ; 1,571 / 48,352 ( 3 % )                        ;
+;     Dedicated logic registers ; 1,307 / 48,352 ( 3 % )                        ;
+; Total registers               ; 1307                                          ;
 ; Total pins                    ; 492 / 719 ( 68 % )                            ;
 ; Total virtual pins            ; 0                                             ;
 ; Total block memory bits       ; 8,192 / 2,544,192 ( < 1 % )                   ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/16/2019 15:26:41 ;
+; Start date & time ; 10/16/2019 15:49:52 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; ProjetoCPU          ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +------------------------------------+---------------------------------+---------------+-------------+----------------+
 ; Assignment Name                    ; Value                           ; Default Value ; Entity Name ; Section Id     ;
 +------------------------------------+---------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID              ; 229335799398796.157125040010108 ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID              ; 229335799398796.157125179213768 ; --            ; --          ; --             ;
 ; PARTITION_COLOR                    ; 16764057                        ; --            ; Hardware    ; Top            ;
 ; PARTITION_NETLIST_TYPE             ; SOURCE                          ; --            ; Hardware    ; Top            ;
 ; TOP_LEVEL_ENTITY                   ; Hardware                        ; ProjetoCPU    ; --          ; --             ;
@@ -88,11 +88,11 @@ applicable agreement for further details.
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name             ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis    ; 00:00:14     ; 1.0                     ; 4532 MB             ; 00:00:12                           ;
-; Fitter                  ; 00:00:15     ; 1.7                     ; 4708 MB             ; 00:00:15                           ;
-; Assembler               ; 00:00:05     ; 1.0                     ; 4567 MB             ; 00:00:04                           ;
+; Analysis & Synthesis    ; 00:00:13     ; 1.0                     ; 4533 MB             ; 00:00:13                           ;
+; Fitter                  ; 00:00:12     ; 2.7                     ; 4711 MB             ; 00:00:16                           ;
+; Assembler               ; 00:00:04     ; 1.0                     ; 4568 MB             ; 00:00:04                           ;
 ; Classic Timing Analyzer ; 00:00:01     ; 1.0                     ; 4384 MB             ; 00:00:01                           ;
-; Total                   ; 00:00:35     ; --                      ; --                  ; 00:00:32                           ;
+; Total                   ; 00:00:30     ; --                      ; --                  ; 00:00:34                           ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

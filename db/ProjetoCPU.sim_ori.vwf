@@ -7504,14 +7504,14 @@ TRANSITION_LIST("MDR[26]")
 	{
 		REPEAT = 1;
 		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 60.0;
+		LEVEL 1 FOR 170.0;
 		NODE
 		{
 			REPEAT = 4;
-			LEVEL 0 FOR 150.0;
-			LEVEL 1 FOR 50.0;
+			LEVEL 0 FOR 40.0;
+			LEVEL 1 FOR 160.0;
 		}
-		LEVEL 0 FOR 120.0;
+		LEVEL 0 FOR 10.0;
 	}
 }
 
@@ -7889,14 +7889,15 @@ TRANSITION_LIST("opcode[0]")
 	{
 		REPEAT = 1;
 		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 110.0;
+		LEVEL 1 FOR 200.0;
 		NODE
 		{
-			REPEAT = 4;
-			LEVEL 0 FOR 100.0;
-			LEVEL 1 FOR 100.0;
+			REPEAT = 3;
+			LEVEL 0 FOR 10.0;
+			LEVEL 1 FOR 190.0;
 		}
-		LEVEL 0 FOR 60.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 160.0;
 	}
 }
 
@@ -9676,24 +9677,6 @@ TRANSITION_LIST("state[0]")
 	NODE
 	{
 		REPEAT = 1;
-		NODE
-		{
-			REPEAT = 4;
-			LEVEL 0 FOR 20.0;
-			NODE
-			{
-				REPEAT = 4;
-				LEVEL 1 FOR 10.0;
-				LEVEL 0 FOR 10.0;
-			}
-			LEVEL 1 FOR 20.0;
-			NODE
-			{
-				REPEAT = 4;
-				LEVEL 0 FOR 10.0;
-				LEVEL 1 FOR 10.0;
-			}
-		}
 		LEVEL 0 FOR 20.0;
 		NODE
 		{
@@ -9701,6 +9684,52 @@ TRANSITION_LIST("state[0]")
 			LEVEL 1 FOR 10.0;
 			LEVEL 0 FOR 10.0;
 		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 20.0;
+			NODE
+			{
+				REPEAT = 3;
+				LEVEL 0 FOR 10.0;
+				LEVEL 1 FOR 10.0;
+			}
+			LEVEL 0 FOR 10.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 10.0;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 0 FOR 10.0;
+				LEVEL 1 FOR 20.0;
+				NODE
+				{
+					REPEAT = 3;
+					LEVEL 0 FOR 10.0;
+					LEVEL 1 FOR 10.0;
+				}
+			}
+			LEVEL 0 FOR 10.0;
+		}
+		LEVEL 1 FOR 10.0;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 10.0;
+			LEVEL 1 FOR 20.0;
+			NODE
+			{
+				REPEAT = 3;
+				LEVEL 0 FOR 10.0;
+				LEVEL 1 FOR 10.0;
+			}
+		}
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
 		LEVEL 1 FOR 20.0;
 		NODE
 		{
@@ -10341,7 +10370,9 @@ TRANSITION_LIST("AluOutWritel")
 			LEVEL 1 FOR 10.0;
 			LEVEL 0 FOR 70.0;
 			LEVEL 1 FOR 10.0;
-			LEVEL 0 FOR 80.0;
+			LEVEL 0 FOR 10.0;
+			LEVEL 1 FOR 10.0;
+			LEVEL 0 FOR 60.0;
 		}
 		LEVEL 1 FOR 10.0;
 		LEVEL 0 FOR 20.0;
@@ -13122,8 +13153,7 @@ TRANSITION_LIST("Banco_reg:Reg_Control|Reg29[6]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 640.0;
-		LEVEL 1 FOR 360.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -13132,14 +13162,7 @@ TRANSITION_LIST("Banco_reg:Reg_Control|Reg29[5]")
 	NODE
 	{
 		REPEAT = 1;
-		NODE
-		{
-			REPEAT = 1;
-			LEVEL 0 FOR 320.0;
-			LEVEL 1 FOR 320.0;
-		}
-		LEVEL 0 FOR 320.0;
-		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -13148,13 +13171,7 @@ TRANSITION_LIST("Banco_reg:Reg_Control|Reg29[4]")
 	NODE
 	{
 		REPEAT = 1;
-		NODE
-		{
-			REPEAT = 3;
-			LEVEL 0 FOR 160.0;
-			LEVEL 1 FOR 160.0;
-		}
-		LEVEL 0 FOR 40.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -13163,13 +13180,7 @@ TRANSITION_LIST("Banco_reg:Reg_Control|Reg29[3]")
 	NODE
 	{
 		REPEAT = 1;
-		NODE
-		{
-			REPEAT = 6;
-			LEVEL 0 FOR 80.0;
-			LEVEL 1 FOR 80.0;
-		}
-		LEVEL 0 FOR 40.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -13178,13 +13189,7 @@ TRANSITION_LIST("Banco_reg:Reg_Control|Reg29[2]")
 	NODE
 	{
 		REPEAT = 1;
-		NODE
-		{
-			REPEAT = 12;
-			LEVEL 0 FOR 40.0;
-			LEVEL 1 FOR 40.0;
-		}
-		LEVEL 0 FOR 40.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -13193,12 +13198,7 @@ TRANSITION_LIST("Banco_reg:Reg_Control|Reg29[1]")
 	NODE
 	{
 		REPEAT = 1;
-		NODE
-		{
-			REPEAT = 25;
-			LEVEL 0 FOR 20.0;
-			LEVEL 1 FOR 20.0;
-		}
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -13207,12 +13207,7 @@ TRANSITION_LIST("Banco_reg:Reg_Control|Reg29[0]")
 	NODE
 	{
 		REPEAT = 1;
-		NODE
-		{
-			REPEAT = 50;
-			LEVEL 0 FOR 10.0;
-			LEVEL 1 FOR 10.0;
-		}
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -13446,8 +13441,7 @@ TRANSITION_LIST("Banco_reg:Reg_Control|Reg31[6]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 640.0;
-		LEVEL 1 FOR 360.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -13456,14 +13450,7 @@ TRANSITION_LIST("Banco_reg:Reg_Control|Reg31[5]")
 	NODE
 	{
 		REPEAT = 1;
-		NODE
-		{
-			REPEAT = 1;
-			LEVEL 0 FOR 320.0;
-			LEVEL 1 FOR 320.0;
-		}
-		LEVEL 0 FOR 320.0;
-		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -13472,13 +13459,7 @@ TRANSITION_LIST("Banco_reg:Reg_Control|Reg31[4]")
 	NODE
 	{
 		REPEAT = 1;
-		NODE
-		{
-			REPEAT = 3;
-			LEVEL 0 FOR 160.0;
-			LEVEL 1 FOR 160.0;
-		}
-		LEVEL 0 FOR 40.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -13487,13 +13468,8 @@ TRANSITION_LIST("Banco_reg:Reg_Control|Reg31[3]")
 	NODE
 	{
 		REPEAT = 1;
-		NODE
-		{
-			REPEAT = 6;
-			LEVEL 0 FOR 80.0;
-			LEVEL 1 FOR 80.0;
-		}
-		LEVEL 0 FOR 40.0;
+		LEVEL 0 FOR 210.0;
+		LEVEL 1 FOR 790.0;
 	}
 }
 
@@ -13502,13 +13478,7 @@ TRANSITION_LIST("Banco_reg:Reg_Control|Reg31[2]")
 	NODE
 	{
 		REPEAT = 1;
-		NODE
-		{
-			REPEAT = 12;
-			LEVEL 0 FOR 40.0;
-			LEVEL 1 FOR 40.0;
-		}
-		LEVEL 0 FOR 40.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -13517,12 +13487,7 @@ TRANSITION_LIST("Banco_reg:Reg_Control|Reg31[1]")
 	NODE
 	{
 		REPEAT = 1;
-		NODE
-		{
-			REPEAT = 25;
-			LEVEL 0 FOR 20.0;
-			LEVEL 1 FOR 20.0;
-		}
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -13531,12 +13496,7 @@ TRANSITION_LIST("Banco_reg:Reg_Control|Reg31[0]")
 	NODE
 	{
 		REPEAT = 1;
-		NODE
-		{
-			REPEAT = 50;
-			LEVEL 0 FOR 10.0;
-			LEVEL 1 FOR 10.0;
-		}
+		LEVEL 0 FOR 1000.0;
 	}
 }
 

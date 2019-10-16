@@ -1913,6 +1913,21 @@ applicable agreement for further details.
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
+		"lui2"
+		"0101000"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"lui3"
+		"0101001"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"lui4"
+		"0101010"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
 		"ADD"
 		"100000"
 		""
@@ -1990,6 +2005,16 @@ applicable agreement for further details.
 	(parameter
 		"ADDIU"
 		"001001"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"LUI"
+		"001111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"SLTI"
+		"001010"
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
