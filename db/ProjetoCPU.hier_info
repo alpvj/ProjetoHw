@@ -45,7 +45,6 @@ RegB[30] <= Registrador:B_Control.Saida[30]
 RegB[31] <= Registrador:B_Control.Saida[31]
 ResetSignal <= Controle:inst4.reset
 PC_Write <= Controle:inst4.PCWrite
-EhMenor <= Ula32:ALUControl.Menor
 ALUOut[0] <= Registrador:ALUOutControl.Saida[0]
 ALUOut[1] <= Registrador:ALUOutControl.Saida[1]
 ALUOut[2] <= Registrador:ALUOutControl.Saida[2]

@@ -5262,16 +5262,6 @@ SIGNAL("ShiftSrcc[0]")
 	PARENT = "ShiftSrcc";
 }
 
-SIGNAL("EhMenor")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "";
-}
-
 TRANSITION_LIST("clk")
 {
 	NODE
@@ -8234,8 +8224,7 @@ TRANSITION_LIST("state[6]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 640.0;
-		LEVEL 1 FOR 360.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -8244,14 +8233,11 @@ TRANSITION_LIST("state[5]")
 	NODE
 	{
 		REPEAT = 1;
-		NODE
-		{
-			REPEAT = 1;
-			LEVEL 0 FOR 320.0;
-			LEVEL 1 FOR 320.0;
-		}
-		LEVEL 0 FOR 320.0;
-		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 310.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 300.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 350.0;
 	}
 }
 
@@ -8262,11 +8248,23 @@ TRANSITION_LIST("state[4]")
 		REPEAT = 1;
 		NODE
 		{
-			REPEAT = 3;
-			LEVEL 0 FOR 160.0;
-			LEVEL 1 FOR 160.0;
+			REPEAT = 2;
+			LEVEL 0 FOR 90.0;
+			LEVEL 1 FOR 20.0;
 		}
-		LEVEL 0 FOR 40.0;
+		LEVEL 0 FOR 190.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 90.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 190.0;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 30.0;
+			LEVEL 0 FOR 80.0;
+		}
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 20.0;
 	}
 }
 
@@ -8275,13 +8273,15 @@ TRANSITION_LIST("state[3]")
 	NODE
 	{
 		REPEAT = 1;
-		NODE
-		{
-			REPEAT = 6;
-			LEVEL 0 FOR 80.0;
-			LEVEL 1 FOR 80.0;
-		}
-		LEVEL 0 FOR 40.0;
+		LEVEL 0 FOR 90.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 180.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 450.0;
 	}
 }
 
@@ -8290,13 +8290,31 @@ TRANSITION_LIST("state[2]")
 	NODE
 	{
 		REPEAT = 1;
+		LEVEL 0 FOR 50.0;
 		NODE
 		{
-			REPEAT = 12;
-			LEVEL 0 FOR 40.0;
+			REPEAT = 2;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 70.0;
+				LEVEL 0 FOR 40.0;
+			}
 			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 60.0;
 		}
-		LEVEL 0 FOR 40.0;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 40.0;
+			LEVEL 0 FOR 10.0;
+			LEVEL 1 FOR 20.0;
+			LEVEL 0 FOR 40.0;
+		}
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
 	}
 }
 
@@ -8305,11 +8323,30 @@ TRANSITION_LIST("state[1]")
 	NODE
 	{
 		REPEAT = 1;
+		LEVEL 0 FOR 30.0;
 		NODE
 		{
-			REPEAT = 25;
+			REPEAT = 2;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 20.0;
+				LEVEL 0 FOR 20.0;
+				LEVEL 1 FOR 50.0;
+				LEVEL 0 FOR 20.0;
+			}
+			LEVEL 1 FOR 20.0;
 			LEVEL 0 FOR 20.0;
 			LEVEL 1 FOR 20.0;
+			LEVEL 0 FOR 40.0;
+		}
+		NODE
+		{
+			REPEAT = 3;
+			LEVEL 1 FOR 20.0;
+			LEVEL 0 FOR 20.0;
+			LEVEL 1 FOR 30.0;
+			LEVEL 0 FOR 40.0;
 		}
 	}
 }
@@ -8319,9 +8356,65 @@ TRANSITION_LIST("state[0]")
 	NODE
 	{
 		REPEAT = 1;
+		LEVEL 0 FOR 20.0;
 		NODE
 		{
-			REPEAT = 50;
+			REPEAT = 4;
+			LEVEL 1 FOR 10.0;
+			LEVEL 0 FOR 10.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 20.0;
+			NODE
+			{
+				REPEAT = 4;
+				LEVEL 0 FOR 10.0;
+				LEVEL 1 FOR 10.0;
+			}
+			LEVEL 0 FOR 10.0;
+		}
+		NODE
+		{
+			REPEAT = 5;
+			LEVEL 1 FOR 10.0;
+			LEVEL 0 FOR 10.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 20.0;
+			NODE
+			{
+				REPEAT = 4;
+				LEVEL 0 FOR 10.0;
+				LEVEL 1 FOR 10.0;
+			}
+			LEVEL 0 FOR 10.0;
+		}
+		NODE
+		{
+			REPEAT = 4;
+			LEVEL 1 FOR 10.0;
+			LEVEL 0 FOR 10.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 20.0;
+			NODE
+			{
+				REPEAT = 4;
+				LEVEL 0 FOR 10.0;
+				LEVEL 1 FOR 10.0;
+			}
+			LEVEL 0 FOR 10.0;
+		}
+		LEVEL 1 FOR 20.0;
+		NODE
+		{
+			REPEAT = 2;
 			LEVEL 0 FOR 10.0;
 			LEVEL 1 FOR 10.0;
 		}
@@ -10616,36 +10709,6 @@ TRANSITION_LIST("ShiftSrcc[0]")
 		LEVEL 0 FOR 220.0;
 		LEVEL 1 FOR 100.0;
 		LEVEL 0 FOR 270.0;
-	}
-}
-
-TRANSITION_LIST("EhMenor")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 60.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 80.0;
-		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 60.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 100.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 80.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 200.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 100.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 50.0;
 	}
 }
 
@@ -15873,15 +15936,6 @@ DISPLAY_LINE
 	TREE_INDEX = 522;
 	TREE_LEVEL = 1;
 	PARENT = 490;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "EhMenor";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 523;
-	TREE_LEVEL = 0;
 }
 
 TIME_BAR

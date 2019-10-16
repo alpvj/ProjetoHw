@@ -70,6 +70,7 @@ parameter Addiu2 = 7'd30;
 parameter Addiu3 = 7'd31;
 parameter Slt2 = 7'd32;
 parameter Slt3 = 7'd33;
+parameter jr2 = 7'd34;
 
 //Func do Tipo R
 parameter ADD = 6'b100000;//done
@@ -83,6 +84,7 @@ parameter SRA = 6'b000011;//done
 parameter SRAV = 6'b000111;//done
 parameter SRL = 6'b000010;//done
 parameter SLT = 6'b101010;//done
+parameter JR = 6'b001000;
 
 //Opcodes
 parameter ARIT = 6'b000000;
@@ -589,6 +591,33 @@ always @(posedge clk) begin
 								ShiftControl = 3'b000;
 								DataSrc = 4'b0000;
 								estado = Slt2;
+							end
+							JR: begin
+								PCWrite = 1'b1;
+								MemCtrl = 1'b0;
+								IRWrite = 1'b0;
+								A_Control = 1'b0;
+								B_Control = 1'b0;
+								RegControl = 1'b0;
+								ALUOutControl = 1'b0;
+								EPCWrite = 1'b0;
+								MDControl = 1'b0;
+								HI_Control = 1'b0;
+								LO_Control = 1'b0;
+								IorD = 2'b00;
+								ALUSrcA = 2'b01;
+								ALUSrcB = 2'b00;
+								ExcpCtrl = 2'b00;
+								ShiftSrc = 2'b00;
+								ShiftAmt = 2'b00;
+								SSControl = 2'b00;
+								LSControl = 2'b00;
+								RegDst = 3'b000;
+								PCSource = 3'b000;
+								ALUControl = 3'b000;
+								ShiftControl = 3'b000;
+								DataSrc = 4'b0000;
+								estado = jr2;
 							end
 						endcase
 					end
@@ -1348,6 +1377,33 @@ always @(posedge clk) begin
 				ALUControl = 3'b111;
 				ShiftControl = 3'b000;
 				DataSrc = 4'b0100;
+				estado = Fetch1;
+			end
+			jr2: begin
+				PCWrite = 1'b0;
+				MemCtrl = 1'b0;
+				IRWrite = 1'b0;
+				A_Control = 1'b0;
+				B_Control = 1'b0;
+				RegControl = 1'b0;
+				ALUOutControl = 1'b0;
+				EPCWrite = 1'b0;
+				MDControl = 1'b0;
+				HI_Control = 1'b0;
+				LO_Control = 1'b0;
+				IorD = 2'b00;
+				ALUSrcA = 2'b01;
+				ALUSrcB = 2'b00;
+				ExcpCtrl = 2'b00;
+				ShiftSrc = 2'b00;
+				ShiftAmt = 2'b00;
+				SSControl = 2'b00;
+				LSControl = 2'b00;
+				RegDst = 3'b000;
+				PCSource = 3'b000;
+				ALUControl = 3'b000;
+				ShiftControl = 3'b000;
+				DataSrc = 4'b0000;
 				estado = Fetch1;
 			end
 		endcase
