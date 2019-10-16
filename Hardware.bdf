@@ -378,6 +378,54 @@ applicable agreement for further details.
 		(line (pt 78 12)(pt 82 8)(line_width 1))
 	)
 )
+(pin
+	(output)
+	(rect 2720 -872 2896 -856)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "Shiftleftado[27..0]" (rect 90 0 179 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8)(line_width 1))
+		(line (pt 52 4)(pt 78 4)(line_width 1))
+		(line (pt 52 12)(pt 78 12)(line_width 1))
+		(line (pt 52 12)(pt 52 4)(line_width 1))
+		(line (pt 78 4)(pt 82 8)(line_width 1))
+		(line (pt 82 8)(pt 78 12)(line_width 1))
+		(line (pt 78 12)(pt 82 8)(line_width 1))
+	)
+)
+(pin
+	(output)
+	(rect 3184 -872 3360 -856)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "Jconcat[31..0]" (rect 90 0 160 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8)(line_width 1))
+		(line (pt 52 4)(pt 78 4)(line_width 1))
+		(line (pt 52 12)(pt 78 12)(line_width 1))
+		(line (pt 52 12)(pt 52 4)(line_width 1))
+		(line (pt 78 4)(pt 82 8)(line_width 1))
+		(line (pt 82 8)(pt 78 12)(line_width 1))
+		(line (pt 78 12)(pt 82 8)(line_width 1))
+	)
+)
+(pin
+	(output)
+	(rect 2488 -896 2666 -880)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "Instconcat[25..0]" (rect 90 0 173 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8)(line_width 1))
+		(line (pt 52 4)(pt 78 4)(line_width 1))
+		(line (pt 52 12)(pt 78 12)(line_width 1))
+		(line (pt 52 12)(pt 52 4)(line_width 1))
+		(line (pt 78 4)(pt 82 8)(line_width 1))
+		(line (pt 82 8)(pt 78 12)(line_width 1))
+		(line (pt 78 12)(pt 82 8)(line_width 1))
+	)
+)
 (symbol
 	(rect 824 -360 1016 -232)
 	(text "Memoria" (rect 5 0 46 12)(font "Arial" ))
@@ -1855,6 +1903,11 @@ applicable agreement for further details.
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
+		"j2"
+		"0100110"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
 		"ADD"
 		"100000"
 		""
@@ -1934,11 +1987,16 @@ applicable agreement for further details.
 		"001001"
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"J"
+		"000010"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
 	(drawing
 		(rectangle (rect 16 16 464 192)(line_width 1))
 	)
 	(flipx_rotate90)
-	(annotation_block (parameter)(rect 2072 -1200 2272 -488))
+	(annotation_block (parameter)(rect 4616 -1248 4816 816))
 )
 (symbol
 	(rect 3280 464 3448 560)
@@ -1963,14 +2021,96 @@ applicable agreement for further details.
 	)
 	(flipy)
 )
+(symbol
+	(rect 2456 -824 2656 -728)
+	(text "ShiftLeft2de26pra28" (rect 5 0 105 12)(font "Arial" ))
+	(text "Ins_PC" (rect 8 80 44 92)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "inputSL[25..0]" (rect 0 0 68 12)(font "Arial" ))
+		(text "inputSL[25..0]" (rect 21 27 89 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 200 32)
+		(output)
+		(text "outputSL[27..0]" (rect 0 0 75 12)(font "Arial" ))
+		(text "outputSL[27..0]" (rect 104 27 179 39)(font "Arial" ))
+		(line (pt 200 32)(pt 184 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 184 80)(line_width 1))
+	)
+)
+(symbol
+	(rect 2120 -824 2336 -728)
+	(text "ConcatInst" (rect 5 0 59 12)(font "Arial" ))
+	(text "inst9" (rect 8 80 31 92)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Inst15a0[15..0]" (rect 0 0 74 12)(font "Arial" ))
+		(text "Inst15a0[15..0]" (rect 21 27 95 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Inst20a16[20..16]" (rect 0 0 86 12)(font "Arial" ))
+		(text "Inst20a16[20..16]" (rect 21 43 107 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Inst25a21[25..21]" (rect 0 0 86 12)(font "Arial" ))
+		(text "Inst25a21[25..21]" (rect 21 59 107 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 216 32)
+		(output)
+		(text "Inst25a0[25..0]" (rect 0 0 74 12)(font "Arial" ))
+		(text "Inst25a0[25..0]" (rect 121 27 195 39)(font "Arial" ))
+		(line (pt 216 32)(pt 200 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 200 80)(line_width 1))
+	)
+)
+(symbol
+	(rect 3032 -824 3192 -728)
+	(text "ConcatJump" (rect 5 0 67 12)(font "Arial" ))
+	(text "inst10" (rect 8 80 37 92)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Inst[27..0]" (rect 0 0 50 12)(font "Arial" ))
+		(text "Inst[27..0]" (rect 21 27 71 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "PC[31..28]" (rect 0 0 53 12)(font "Arial" ))
+		(text "PC[31..28]" (rect 21 43 74 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 160 32)
+		(output)
+		(text "jump[31..0]" (rect 0 0 55 12)(font "Arial" ))
+		(text "jump[31..0]" (rect 84 27 139 39)(font "Arial" ))
+		(line (pt 160 32)(pt 144 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 144 80)(line_width 1))
+	)
+)
 (connector
 	(pt 4360 -1488)
 	(pt -24 -1488)
-	(bus)
-)
-(connector
-	(pt 2928 -648)
-	(pt 472 -648)
 	(bus)
 )
 (connector
@@ -1984,10 +2124,6 @@ applicable agreement for further details.
 (connector
 	(pt 72 -528)
 	(pt 312 -528)
-)
-(connector
-	(pt 2064 -768)
-	(pt 1408 -768)
 )
 (connector
 	(pt 3168 -576)
@@ -2430,10 +2566,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 1408 -768)
-	(pt 1408 -888)
-)
-(connector
 	(pt 1376 -824)
 	(pt 1392 -824)
 	(bus)
@@ -2511,16 +2643,8 @@ applicable agreement for further details.
 	(pt 2352 -296)
 )
 (connector
-	(pt 2064 -768)
-	(pt 2064 -512)
-)
-(connector
 	(pt 2064 -512)
 	(pt 2064 -408)
-)
-(connector
-	(pt 2064 -512)
-	(pt 2352 -512)
 )
 (connector
 	(pt 2352 -512)
@@ -2531,18 +2655,8 @@ applicable agreement for further details.
 	(pt 4048 1264)
 )
 (connector
-	(pt 1400 -552)
-	(pt 1400 -360)
-	(bus)
-)
-(connector
 	(pt 1312 -360)
 	(pt 1400 -360)
-	(bus)
-)
-(connector
-	(pt 1424 -536)
-	(pt 1424 -344)
 	(bus)
 )
 (connector
@@ -2553,11 +2667,6 @@ applicable agreement for further details.
 (connector
 	(pt 1360 -816)
 	(pt 1360 -328)
-	(bus)
-)
-(connector
-	(pt 1448 -520)
-	(pt 1448 -328)
 	(bus)
 )
 (connector
@@ -2805,11 +2914,6 @@ applicable agreement for further details.
 (connector
 	(pt 2968 -1344)
 	(pt 2968 -528)
-	(bus)
-)
-(connector
-	(pt 2928 -648)
-	(pt 2928 -512)
 	(bus)
 )
 (connector
@@ -3448,6 +3552,164 @@ applicable agreement for further details.
 	(pt 2104 -360)
 	(bus)
 )
+(connector
+	(pt 1408 -888)
+	(pt 1408 -512)
+)
+(connector
+	(pt 1408 -512)
+	(pt 2064 -512)
+)
+(connector
+	(pt 2064 -512)
+	(pt 2352 -512)
+)
+(connector
+	(pt 1400 -760)
+	(pt 2120 -760)
+	(bus)
+)
+(connector
+	(pt 1400 -760)
+	(pt 1400 -552)
+	(bus)
+)
+(connector
+	(pt 1400 -552)
+	(pt 1400 -360)
+	(bus)
+)
+(connector
+	(pt 1424 -776)
+	(pt 2120 -776)
+	(bus)
+)
+(connector
+	(pt 1424 -776)
+	(pt 1424 -536)
+	(bus)
+)
+(connector
+	(pt 1424 -536)
+	(pt 1424 -344)
+	(bus)
+)
+(connector
+	(pt 1448 -792)
+	(pt 1448 -520)
+	(bus)
+)
+(connector
+	(pt 1448 -520)
+	(pt 1448 -328)
+	(bus)
+)
+(connector
+	(pt 1448 -792)
+	(pt 2120 -792)
+	(bus)
+)
+(connector
+	(pt 3216 -768)
+	(pt 3216 -792)
+	(bus)
+)
+(connector
+	(pt 3216 -792)
+	(pt 3192 -792)
+	(bus)
+)
+(connector
+	(pt 2720 -864)
+	(pt 2704 -864)
+	(bus)
+)
+(connector
+	(pt 2704 -792)
+	(pt 2704 -864)
+	(bus)
+)
+(connector
+	(pt 3032 -792)
+	(pt 2704 -792)
+	(bus)
+)
+(connector
+	(pt 2704 -792)
+	(pt 2656 -792)
+	(bus)
+)
+(connector
+	(pt 2488 -888)
+	(pt 2424 -888)
+	(bus)
+)
+(connector
+	(pt 2424 -888)
+	(pt 2424 -792)
+	(bus)
+)
+(connector
+	(pt 2336 -792)
+	(pt 2424 -792)
+	(bus)
+)
+(connector
+	(pt 2424 -792)
+	(pt 2456 -792)
+	(bus)
+)
+(connector
+	(pt 3184 -864)
+	(pt 3168 -864)
+	(bus)
+)
+(connector
+	(pt 3168 -864)
+	(pt 3168 -840)
+	(bus)
+)
+(connector
+	(pt 3168 -840)
+	(pt 3256 -840)
+	(bus)
+)
+(connector
+	(pt 3256 -840)
+	(pt 3256 -768)
+	(bus)
+)
+(connector
+	(pt 4064 -768)
+	(pt 3256 -768)
+	(bus)
+)
+(connector
+	(pt 3256 -768)
+	(pt 3216 -768)
+	(bus)
+)
+(connector
+	(pt 472 -648)
+	(pt 2928 -648)
+	(bus)
+)
+(connector
+	(pt 2928 -776)
+	(pt 2928 -648)
+	(bus)
+)
+(connector
+	(pt 2928 -648)
+	(pt 2928 -512)
+	(bus)
+)
+(connector
+	(text "PC[31..28]" (rect 2938 -792 2991 -780)(font "Arial" ))
+	(pt 2928 -776)
+	(pt 3032 -776)
+	(bus)
+)
 (junction (pt 3712 -424))
 (junction (pt 808 -424))
 (junction (pt 1360 -816))
@@ -3498,3 +3760,10 @@ applicable agreement for further details.
 (junction (pt 2736 456))
 (junction (pt 2696 480))
 (junction (pt 1656 -360))
+(junction (pt 1400 -552))
+(junction (pt 1424 -536))
+(junction (pt 1448 -520))
+(junction (pt 2704 -792))
+(junction (pt 2424 -792))
+(junction (pt 3256 -768))
+(junction (pt 2928 -648))

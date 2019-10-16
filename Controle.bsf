@@ -417,6 +417,11 @@ applicable agreement for further details.
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
+		"j2"
+		"0100110"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
 		"ADD"
 		"100000"
 		""
@@ -494,6 +499,11 @@ applicable agreement for further details.
 	(parameter
 		"ADDIU"
 		"001001"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"J"
+		"000010"
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(drawing

@@ -5,9 +5,9 @@ Timing Analyzer Summary
 Type           : Worst-case tco
 Slack          : N/A
 Required Time  : None
-Actual Time    : 15.096 ns
-From           : Instr_Reg:IRWrite|Instr15_0[3]
-To             : S[27]
+Actual Time    : 17.859 ns
+From           : Instr_Reg:IRWrite|Instr15_0[4]
+To             : S[30]
 From Clock     : clk
 To Clock       : --
 Failed Paths   : 0
@@ -15,9 +15,9 @@ Failed Paths   : 0
 Type           : Clock Setup: 'clk'
 Slack          : N/A
 Required Time  : None
-Actual Time    : 108.50 MHz ( period = 9.217 ns )
-From           : Instr_Reg:IRWrite|Instr15_0[3]
-To             : Banco_reg:Reg_Control|Reg4[0]
+Actual Time    : 98.19 MHz ( period = 10.184 ns )
+From           : Instr_Reg:IRWrite|Instr15_0[4]
+To             : Banco_reg:Reg_Control|Reg31[0]
 From Clock     : clk
 To Clock       : clk
 Failed Paths   : 0
