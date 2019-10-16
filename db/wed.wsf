@@ -11325,8 +11325,8 @@ VECTOR("C:/Users/Rodolpho/Desktop/Andre/Projeto/ProjetoHw/WaveAND.vwf")
 VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 {
 	ZOOM{
-		ZBEGIN = 477100;
-		ZEND = 545450;
+		ZBEGIN = 618100;
+		ZEND = 686450;
 		NUMERATOR = 20;
 		DENOMINATOR = 1000;
 		TOP_INDEX = 0;
@@ -15518,6 +15518,14 @@ VECTOR("E:/Users/alpvj/Desktop/pasta/ProjetoHw/WaveAND.vwf")
 	LINE{
 		SIGNAL = "ShiftResult[0]";
 		INDEX = 522;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "EhMenor";
+		INDEX = 523;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;

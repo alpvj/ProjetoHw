@@ -45,6 +45,7 @@ RegB[30] <= Registrador:B_Control.Saida[30]
 RegB[31] <= Registrador:B_Control.Saida[31]
 ResetSignal <= Controle:inst4.reset
 PC_Write <= Controle:inst4.PCWrite
+EhMenor <= Ula32:ALUControl.Menor
 ALUOut[0] <= Registrador:ALUOutControl.Saida[0]
 ALUOut[1] <= Registrador:ALUOutControl.Saida[1]
 ALUOut[2] <= Registrador:ALUOutControl.Saida[2]
@@ -14023,6 +14024,42 @@ Saida[28] <= Saida[28]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Saida[29] <= Saida[29]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Saida[30] <= Saida[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Saida[31] <= Saida[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Hardware|SignExtend1to32bits:inst7
+inputSE => outputSE[0].DATAIN
+outputSE[0] <= inputSE.DB_MAX_OUTPUT_PORT_TYPE
+outputSE[1] <= <GND>
+outputSE[2] <= <GND>
+outputSE[3] <= <GND>
+outputSE[4] <= <GND>
+outputSE[5] <= <GND>
+outputSE[6] <= <GND>
+outputSE[7] <= <GND>
+outputSE[8] <= <GND>
+outputSE[9] <= <GND>
+outputSE[10] <= <GND>
+outputSE[11] <= <GND>
+outputSE[12] <= <GND>
+outputSE[13] <= <GND>
+outputSE[14] <= <GND>
+outputSE[15] <= <GND>
+outputSE[16] <= <GND>
+outputSE[17] <= <GND>
+outputSE[18] <= <GND>
+outputSE[19] <= <GND>
+outputSE[20] <= <GND>
+outputSE[21] <= <GND>
+outputSE[22] <= <GND>
+outputSE[23] <= <GND>
+outputSE[24] <= <GND>
+outputSE[25] <= <GND>
+outputSE[26] <= <GND>
+outputSE[27] <= <GND>
+outputSE[28] <= <GND>
+outputSE[29] <= <GND>
+outputSE[30] <= <GND>
+outputSE[31] <= <GND>
 
 
 |Hardware|RegDesloc:ShiftControl

@@ -1221,7 +1221,7 @@ db|ProjetoCPU.(0).cnf
 # case_insensitive
 # source_file
 hardware.bdf
-43618e4e7c69d4348eb88c9354403f26
+9dfc742c6b915c305a858ccbf4cfbeff
 26
 # internal_option {
 BLOCK_DESIGN_NAMING
@@ -1245,7 +1245,7 @@ ON
 # case_sensitive
 # source_file
 controle.sv
-bccb316b59b178ce8a83b674d28624
+cc8abf4f34e9ff2137e39575a0358b
 9
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -1390,6 +1390,14 @@ PARAMETER_UNSIGNED_BIN
 USR
 Addiu3
 0011111
+PARAMETER_UNSIGNED_BIN
+USR
+Slt2
+0100000
+PARAMETER_UNSIGNED_BIN
+USR
+Slt3
+0100001
 PARAMETER_UNSIGNED_BIN
 USR
 ADD
@@ -1550,13 +1558,49 @@ address_a0
 }
 # memory_file {
 instrucoes.mif
-83fcdb69602bd430a14be5418e9efe3f
+c29f2a2261b310754620d875aa6b3789
 }
 # hierarchies {
 Memoria:MemCtrl|lpm_ram_dq:MEM|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated
 Memoria:MemCtrl|lpm_ram_dq:MEM_plus_One|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated
 Memoria:MemCtrl|lpm_ram_dq:MEM_plus_Two|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated
 Memoria:MemCtrl|lpm_ram_dq:MEM_plus_Three|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated
+}
+# macro_sequence
+
+# end
+# entity
+SignExtend1to32bits
+# storage
+db|ProjetoCPU.(22).cnf
+db|ProjetoCPU.(22).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+signextend1to32bits.v
+a3337790a7891aaffcbd32a93596d92
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+SignExtend1to32bits:inst7
 }
 # macro_sequence
 
