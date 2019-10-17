@@ -1431,6 +1431,26 @@ LS:inst14
 
 # end
 # entity
+Hardware
+# storage
+db|ProjetoCPU.(0).cnf
+db|ProjetoCPU.(0).cnf
+# case_insensitive
+# source_file
+hardware.bdf
+1a19fa61223641287c17222a2c928661
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
 Controle
 # storage
 db|ProjetoCPU.(1).cnf
@@ -1442,7 +1462,7 @@ ON
 # case_sensitive
 # source_file
 controle.sv
-a92cb65870c58f3e2c8155d2e8f29286
+2f2cc5d5f72650ccd1d993fb773b6b
 9
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -1697,6 +1717,26 @@ sbWait2
 0111010
 PARAMETER_UNSIGNED_BIN
 USR
+lb2
+0111011
+PARAMETER_UNSIGNED_BIN
+USR
+lb3
+0111100
+PARAMETER_UNSIGNED_BIN
+USR
+lbWait
+0111101
+PARAMETER_UNSIGNED_BIN
+USR
+lbWait2
+0111110
+PARAMETER_UNSIGNED_BIN
+USR
+lbWait3
+0111111
+PARAMETER_UNSIGNED_BIN
+USR
 ADD
 100000
 PARAMETER_UNSIGNED_BIN
@@ -1919,33 +1959,13 @@ address_a0
 }
 # memory_file {
 instrucoes.mif
-b480db2f9d6813ab63edb57fdefa5b15
+5e4d2f392fb784c1ec8848eade1c8a4
 }
 # hierarchies {
 Memoria:MemCtrl|lpm_ram_dq:MEM|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated
 Memoria:MemCtrl|lpm_ram_dq:MEM_plus_One|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated
 Memoria:MemCtrl|lpm_ram_dq:MEM_plus_Two|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated
 Memoria:MemCtrl|lpm_ram_dq:MEM_plus_Three|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated
-}
-# macro_sequence
-
-# end
-# entity
-Hardware
-# storage
-db|ProjetoCPU.(0).cnf
-db|ProjetoCPU.(0).cnf
-# case_insensitive
-# source_file
-hardware.bdf
-dc9bbe3884e279279dd2b7d970796fc8
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-|
 }
 # macro_sequence
 
