@@ -1,5 +1,5 @@
 Flow report for ProjetoCPU
-Wed Oct 16 16:46:30 2019
+Thu Oct 17 09:11:33 2019
 Quartus II 64-Bit Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
 
 
@@ -38,16 +38,16 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +-------------------------------+-----------------------------------------------+
-; Flow Status                   ; Successful - Wed Oct 16 16:46:30 2019         ;
+; Flow Status                   ; Successful - Thu Oct 17 09:11:33 2019         ;
 ; Quartus II 64-Bit Version     ; 9.1 Build 350 03/24/2010 SP 2 SJ Full Version ;
 ; Revision Name                 ; ProjetoCPU                                    ;
 ; Top-level Entity Name         ; Hardware                                      ;
 ; Family                        ; Stratix II                                    ;
 ; Met timing requirements       ; Yes                                           ;
 ; Logic utilization             ; 5 %                                           ;
-;     Combinational ALUTs       ; 1,612 / 48,352 ( 3 % )                        ;
-;     Dedicated logic registers ; 1,305 / 48,352 ( 3 % )                        ;
-; Total registers               ; 1305                                          ;
+;     Combinational ALUTs       ; 1,605 / 48,352 ( 3 % )                        ;
+;     Dedicated logic registers ; 1,304 / 48,352 ( 3 % )                        ;
+; Total registers               ; 1304                                          ;
 ; Total pins                    ; 492 / 719 ( 68 % )                            ;
 ; Total virtual pins            ; 0                                             ;
 ; Total block memory bits       ; 8,192 / 2,544,192 ( < 1 % )                   ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/16/2019 16:45:56 ;
+; Start date & time ; 10/17/2019 09:10:52 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; ProjetoCPU          ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +------------------------------------+---------------------------------+---------------+-------------+----------------+
 ; Assignment Name                    ; Value                           ; Default Value ; Entity Name ; Section Id     ;
 +------------------------------------+---------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID              ; 229335799398796.157125515515252 ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID              ; 229335799397963.157131425108172 ; --            ; --          ; --             ;
 ; PARTITION_COLOR                    ; 16764057                        ; --            ; Hardware    ; Top            ;
 ; PARTITION_NETLIST_TYPE             ; SOURCE                          ; --            ; Hardware    ; Top            ;
 ; TOP_LEVEL_ENTITY                   ; Hardware                        ; ProjetoCPU    ; --          ; --             ;
@@ -88,11 +88,11 @@ applicable agreement for further details.
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name             ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis    ; 00:00:14     ; 1.0                     ; 4533 MB             ; 00:00:14                           ;
-; Fitter                  ; 00:00:12     ; 2.8                     ; 4708 MB             ; 00:00:16                           ;
+; Analysis & Synthesis    ; 00:00:16     ; 1.0                     ; 4534 MB             ; 00:00:13                           ;
+; Fitter                  ; 00:00:15     ; 2.8                     ; 4708 MB             ; 00:00:16                           ;
 ; Assembler               ; 00:00:04     ; 1.0                     ; 4568 MB             ; 00:00:04                           ;
 ; Classic Timing Analyzer ; 00:00:01     ; 1.0                     ; 4385 MB             ; 00:00:01                           ;
-; Total                   ; 00:00:31     ; --                      ; --                  ; 00:00:35                           ;
+; Total                   ; 00:00:36     ; --                      ; --                  ; 00:00:34                           ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -101,10 +101,10 @@ applicable agreement for further details.
 +-------------------------+------------------+---------------+------------+----------------+
 ; Module Name             ; Machine Hostname ; OS Name       ; OS Version ; Processor type ;
 +-------------------------+------------------+---------------+------------+----------------+
-; Analysis & Synthesis    ; G3C04            ; Windows Vista ; 6.2        ; x86_64         ;
-; Fitter                  ; G3C04            ; Windows Vista ; 6.2        ; x86_64         ;
-; Assembler               ; G3C04            ; Windows Vista ; 6.2        ; x86_64         ;
-; Classic Timing Analyzer ; G3C04            ; Windows Vista ; 6.2        ; x86_64         ;
+; Analysis & Synthesis    ; G3C32            ; Windows Vista ; 6.2        ; x86_64         ;
+; Fitter                  ; G3C32            ; Windows Vista ; 6.2        ; x86_64         ;
+; Assembler               ; G3C32            ; Windows Vista ; 6.2        ; x86_64         ;
+; Classic Timing Analyzer ; G3C32            ; Windows Vista ; 6.2        ; x86_64         ;
 +-------------------------+------------------+---------------+------------+----------------+
 
 

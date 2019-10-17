@@ -2077,6 +2077,36 @@ applicable agreement for further details.
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
+		"bne2"
+		"0110000"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"bne3"
+		"0110001"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"ble2"
+		"0110010"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"ble3"
+		"0110011"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"bgt2"
+		"0110100"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"bgt3"
+		"0110101"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
 		"ADD"
 		"100000"
 		""
@@ -2200,7 +2230,7 @@ applicable agreement for further details.
 		(rectangle (rect 16 16 464 192)(line_width 1))
 	)
 	(flipx_rotate90)
-	(annotation_block (parameter)(rect 4616 -1248 4816 816))
+	(annotation_block (parameter)(rect 4616 -1248 4824 -264))
 )
 (connector
 	(pt 4360 -1488)

@@ -456,16 +456,11 @@
 		<CBX_INST_ENTRY INSTANCE_NAME="|Hardware|Banco_reg:Reg_Control|lpm_mux:Mux1038" CBX_FILE_NAME="mux_kpc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|Hardware|Banco_reg:Reg_Control|lpm_mux:Mux174" CBX_FILE_NAME="mux_kpc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|Hardware|Banco_reg:Reg_Control|lpm_mux:Mux336" CBX_FILE_NAME="mux_kpc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|Hardware|ALUSrcB:inst6|lpm_mux:Mux29" CBX_FILE_NAME="mux_0oc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|Hardware|Banco_reg:Reg_Control|lpm_mux:Mux1039" CBX_FILE_NAME="mux_kpc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|Hardware|Banco_reg:Reg_Control|lpm_mux:Mux175" CBX_FILE_NAME="mux_kpc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|Hardware|Banco_reg:Reg_Control|lpm_mux:Mux256" CBX_FILE_NAME="mux_kpc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|Hardware|Banco_reg:Reg_Control|lpm_mux:Mux337" CBX_FILE_NAME="mux_kpc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|Hardware|Banco_reg:Reg_Control|lpm_mux:Mux418" CBX_FILE_NAME="mux_kpc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|Hardware|Banco_reg:Reg_Control|lpm_mux:Mux176" CBX_FILE_NAME="mux_kpc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|Hardware|Banco_reg:Reg_Control|lpm_mux:Mux257" CBX_FILE_NAME="mux_kpc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|Hardware|Banco_reg:Reg_Control|lpm_mux:Mux338" CBX_FILE_NAME="mux_kpc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|Hardware|Banco_reg:Reg_Control|lpm_mux:Mux419" CBX_FILE_NAME="mux_kpc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|Hardware|Banco_reg:Reg_Control|lpm_mux:Mux177" CBX_FILE_NAME="mux_kpc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|Hardware|Banco_reg:Reg_Control|lpm_mux:Mux258" CBX_FILE_NAME="mux_kpc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|Hardware|Banco_reg:Reg_Control|lpm_mux:Mux339" CBX_FILE_NAME="mux_kpc.tdf"/>
@@ -530,37 +525,44 @@
 		<CBX_INST_ENTRY INSTANCE_NAME="|Hardware|Banco_reg:Reg_Control|lpm_mux:Mux424" CBX_FILE_NAME="mux_kpc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|Hardware|Banco_reg:Reg_Control|lpm_mux:Mux505" CBX_FILE_NAME="mux_kpc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|Hardware|Banco_reg:Reg_Control|lpm_mux:Mux899" CBX_FILE_NAME="mux_kpc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Hardware|Controle:inst4|lpm_mux:Mux0" CBX_FILE_NAME="mux_crc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|Hardware|Banco_reg:Reg_Control|lpm_mux:Mux1046" CBX_FILE_NAME="mux_kpc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|Hardware|Banco_reg:Reg_Control|lpm_mux:Mux182" CBX_FILE_NAME="mux_kpc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|Hardware|Banco_reg:Reg_Control|lpm_mux:Mux263" CBX_FILE_NAME="mux_kpc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|Hardware|Banco_reg:Reg_Control|lpm_mux:Mux344" CBX_FILE_NAME="mux_kpc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|Hardware|Banco_reg:Reg_Control|lpm_mux:Mux425" CBX_FILE_NAME="mux_kpc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|Hardware|Banco_reg:Reg_Control|lpm_mux:Mux506" CBX_FILE_NAME="mux_kpc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Hardware|Controle:inst4|lpm_mux:Mux1" CBX_FILE_NAME="mux_crc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|Hardware|Banco_reg:Reg_Control|lpm_mux:Mux1047" CBX_FILE_NAME="mux_kpc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|Hardware|Banco_reg:Reg_Control|lpm_mux:Mux183" CBX_FILE_NAME="mux_kpc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|Hardware|Banco_reg:Reg_Control|lpm_mux:Mux264" CBX_FILE_NAME="mux_kpc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|Hardware|Banco_reg:Reg_Control|lpm_mux:Mux345" CBX_FILE_NAME="mux_kpc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|Hardware|Banco_reg:Reg_Control|lpm_mux:Mux426" CBX_FILE_NAME="mux_kpc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|Hardware|Banco_reg:Reg_Control|lpm_mux:Mux507" CBX_FILE_NAME="mux_kpc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Hardware|Controle:inst4|lpm_mux:Mux2" CBX_FILE_NAME="mux_crc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|Hardware|Banco_reg:Reg_Control|lpm_mux:Mux1048" CBX_FILE_NAME="mux_kpc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|Hardware|Banco_reg:Reg_Control|lpm_mux:Mux184" CBX_FILE_NAME="mux_kpc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|Hardware|Banco_reg:Reg_Control|lpm_mux:Mux265" CBX_FILE_NAME="mux_kpc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|Hardware|Banco_reg:Reg_Control|lpm_mux:Mux346" CBX_FILE_NAME="mux_kpc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|Hardware|Banco_reg:Reg_Control|lpm_mux:Mux427" CBX_FILE_NAME="mux_kpc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|Hardware|Banco_reg:Reg_Control|lpm_mux:Mux508" CBX_FILE_NAME="mux_kpc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Hardware|Controle:inst4|lpm_mux:Mux3" CBX_FILE_NAME="mux_crc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|Hardware|Banco_reg:Reg_Control|lpm_mux:Mux1049" CBX_FILE_NAME="mux_kpc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|Hardware|Banco_reg:Reg_Control|lpm_mux:Mux185" CBX_FILE_NAME="mux_kpc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|Hardware|Banco_reg:Reg_Control|lpm_mux:Mux266" CBX_FILE_NAME="mux_kpc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|Hardware|Banco_reg:Reg_Control|lpm_mux:Mux347" CBX_FILE_NAME="mux_kpc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|Hardware|Banco_reg:Reg_Control|lpm_mux:Mux428" CBX_FILE_NAME="mux_kpc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|Hardware|Banco_reg:Reg_Control|lpm_mux:Mux509" CBX_FILE_NAME="mux_kpc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Hardware|Controle:inst4|lpm_mux:Mux4" CBX_FILE_NAME="mux_crc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|Hardware|Banco_reg:Reg_Control|lpm_mux:Mux186" CBX_FILE_NAME="mux_kpc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|Hardware|Banco_reg:Reg_Control|lpm_mux:Mux267" CBX_FILE_NAME="mux_kpc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|Hardware|Banco_reg:Reg_Control|lpm_mux:Mux348" CBX_FILE_NAME="mux_kpc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|Hardware|Banco_reg:Reg_Control|lpm_mux:Mux429" CBX_FILE_NAME="mux_kpc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Hardware|Controle:inst4|lpm_mux:Mux5" CBX_FILE_NAME="mux_crc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|Hardware|Banco_reg:Reg_Control|lpm_mux:Mux187" CBX_FILE_NAME="mux_kpc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|Hardware|Banco_reg:Reg_Control|lpm_mux:Mux268" CBX_FILE_NAME="mux_kpc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|Hardware|Banco_reg:Reg_Control|lpm_mux:Mux349" CBX_FILE_NAME="mux_kpc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Hardware|Controle:inst4|lpm_mux:Mux6" CBX_FILE_NAME="mux_crc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|Hardware|Banco_reg:Reg_Control|lpm_mux:Mux188" CBX_FILE_NAME="mux_kpc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|Hardware|Banco_reg:Reg_Control|lpm_mux:Mux269" CBX_FILE_NAME="mux_kpc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|Hardware|Banco_reg:Reg_Control|lpm_mux:Mux980" CBX_FILE_NAME="mux_kpc.tdf"/>
@@ -1523,5 +1525,10 @@
 		<CBX_INST_ENTRY INSTANCE_NAME="|Hardware|ALUSrcB:inst6|lpm_mux:Mux28" CBX_FILE_NAME="mux_0oc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|Hardware|Banco_reg:Reg_Control|lpm_mux:Mux255" CBX_FILE_NAME="mux_kpc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|Hardware|Banco_reg:Reg_Control|lpm_mux:Mux417" CBX_FILE_NAME="mux_kpc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Hardware|ALUSrcB:inst6|lpm_mux:Mux29" CBX_FILE_NAME="mux_0oc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Hardware|Banco_reg:Reg_Control|lpm_mux:Mux256" CBX_FILE_NAME="mux_kpc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Hardware|Banco_reg:Reg_Control|lpm_mux:Mux418" CBX_FILE_NAME="mux_kpc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Hardware|Banco_reg:Reg_Control|lpm_mux:Mux257" CBX_FILE_NAME="mux_kpc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Hardware|Banco_reg:Reg_Control|lpm_mux:Mux419" CBX_FILE_NAME="mux_kpc.tdf"/>
 	</PROJECT>
 </LOG_ROOT>
