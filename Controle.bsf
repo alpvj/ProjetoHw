@@ -20,9 +20,23 @@ applicable agreement for further details.
 */
 (header "symbol" (version "1.1"))
 (symbol
-	(rect 16 16 224 496)
+	(rect 64 64 272 544)
 	(text "Controle" (rect 5 0 46 12)(font "Arial" ))
 	(text "inst" (rect 8 464 25 476)(font "Arial" ))
+	(port
+		(pt 120 0)
+		(input)
+		(text "overflow" (rect 0 0 42 12)(font "Arial" ))
+		(text "overflow" (rect 112 24 124 66)(font "Arial" )(vertical))
+		(line (pt 120 0)(pt 120 16)(line_width 1))
+	)
+	(port
+		(pt 104 0)
+		(input)
+		(text "DIV0" (rect 0 0 24 12)(font "Arial" ))
+		(text "DIV0" (rect 96 24 108 48)(font "Arial" )(vertical))
+		(line (pt 104 0)(pt 104 16)(line_width 1))
+	)
 	(port
 		(pt 0 32)
 		(input)
@@ -31,25 +45,25 @@ applicable agreement for further details.
 		(line (pt 0 32)(pt 16 32)(line_width 1))
 	)
 	(port
-		(pt 0 48)
+		(pt 88 0)
 		(input)
 		(text "EQF" (rect 0 0 22 12)(font "Arial" ))
-		(text "EQF" (rect 21 43 43 55)(font "Arial" ))
-		(line (pt 0 48)(pt 16 48)(line_width 1))
+		(text "EQF" (rect 80 24 92 46)(font "Arial" )(vertical))
+		(line (pt 88 0)(pt 88 16)(line_width 1))
 	)
 	(port
-		(pt 0 64)
+		(pt 72 0)
 		(input)
 		(text "GTF" (rect 0 0 21 12)(font "Arial" ))
-		(text "GTF" (rect 21 59 42 71)(font "Arial" ))
-		(line (pt 0 64)(pt 16 64)(line_width 1))
+		(text "GTF" (rect 64 24 76 45)(font "Arial" )(vertical))
+		(line (pt 72 0)(pt 72 16)(line_width 1))
 	)
 	(port
-		(pt 0 80)
+		(pt 0 72)
 		(input)
 		(text "OpCode[5..0]" (rect 0 0 66 12)(font "Arial" ))
-		(text "OpCode[5..0]" (rect 21 75 87 87)(font "Arial" ))
-		(line (pt 0 80)(pt 16 80)(line_width 3))
+		(text "OpCode[5..0]" (rect 21 67 87 79)(font "Arial" ))
+		(line (pt 0 72)(pt 16 72)(line_width 3))
 	)
 	(port
 		(pt 0 96)
@@ -511,6 +525,31 @@ applicable agreement for further details.
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
+		"OVERFLOW"
+		"0110110"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"sb2"
+		"0110111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"sb3"
+		"0111000"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"sbWait"
+		"0111001"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"sbWait2"
+		"0111010"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
 		"ADD"
 		"100000"
 		""
@@ -621,6 +660,36 @@ applicable agreement for further details.
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
+		"LB"
+		"100000"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"LH"
+		"100001"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"LW"
+		"100011"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"SB"
+		"101000"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"SH"
+		"101001"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"SW"
+		"101011"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
 		"J"
 		"000010"
 		""
@@ -633,5 +702,5 @@ applicable agreement for further details.
 	(drawing
 		(rectangle (rect 16 16 192 464)(line_width 1))
 	)
-	(annotation_block (parameter)(rect 224 -64 324 16))
+	(annotation_block (parameter)(rect 224 -1248 432 16))
 )

@@ -1249,8 +1249,9 @@ ON
 Registrador:PCWrite
 Registrador:ALUOutControl
 Registrador:EPCWrite
-Registrador:A_Control
+Registrador:MDRReg
 Registrador:B_Control
+Registrador:A_Control
 }
 # lmf
 |programfiles|quartus|altera|91sp2|quartus|lmf|maxplus2.lmf
@@ -1358,21 +1359,73 @@ a36c8ec425c8a2589af98b2d4daabc3
 
 # end
 # entity
-Hardware
+SS
 # storage
-db|ProjetoCPU.(0).cnf
-db|ProjetoCPU.(0).cnf
-# case_insensitive
+db|ProjetoCPU.(26).cnf
+db|ProjetoCPU.(26).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
 # source_file
-hardware.bdf
-b9e12640cebea113b2e9fb48af1540ff
-26
+ss.v
+8d162b6c31144de4e7da1b76cacf63
+8
 # internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
 }
 # hierarchies {
-|
+SS:inst15
+}
+# macro_sequence
+
+# end
+# entity
+LS
+# storage
+db|ProjetoCPU.(27).cnf
+db|ProjetoCPU.(27).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+ls.v
+3db730fa82abac89886d03d4fe92eb6
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+LS:inst14
 }
 # macro_sequence
 
@@ -1389,7 +1442,7 @@ ON
 # case_sensitive
 # source_file
 controle.sv
-4f8f60525de327edd56cbc9bb6e210b2
+a92cb65870c58f3e2c8155d2e8f29286
 9
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -1617,11 +1670,31 @@ ble3
 PARAMETER_UNSIGNED_BIN
 USR
 bgt2
-0110010
+0110100
 PARAMETER_UNSIGNED_BIN
 USR
 bgt3
-0110011
+0110101
+PARAMETER_UNSIGNED_BIN
+USR
+OVERFLOW
+0110110
+PARAMETER_UNSIGNED_BIN
+USR
+sb2
+0110111
+PARAMETER_UNSIGNED_BIN
+USR
+sb3
+0111000
+PARAMETER_UNSIGNED_BIN
+USR
+sbWait
+0111001
+PARAMETER_UNSIGNED_BIN
+USR
+sbWait2
+0111010
 PARAMETER_UNSIGNED_BIN
 USR
 ADD
@@ -1710,6 +1783,30 @@ PARAMETER_UNSIGNED_BIN
 USR
 BGT
 000111
+PARAMETER_UNSIGNED_BIN
+USR
+LB
+100000
+PARAMETER_UNSIGNED_BIN
+USR
+LH
+100001
+PARAMETER_UNSIGNED_BIN
+USR
+LW
+100011
+PARAMETER_UNSIGNED_BIN
+USR
+SB
+101000
+PARAMETER_UNSIGNED_BIN
+USR
+SH
+101001
+PARAMETER_UNSIGNED_BIN
+USR
+SW
+101011
 PARAMETER_UNSIGNED_BIN
 USR
 J
@@ -1822,13 +1919,33 @@ address_a0
 }
 # memory_file {
 instrucoes.mif
-40ad9fce8d1b18bca9f657605241f18b
+b480db2f9d6813ab63edb57fdefa5b15
 }
 # hierarchies {
 Memoria:MemCtrl|lpm_ram_dq:MEM|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated
 Memoria:MemCtrl|lpm_ram_dq:MEM_plus_One|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated
 Memoria:MemCtrl|lpm_ram_dq:MEM_plus_Two|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated
 Memoria:MemCtrl|lpm_ram_dq:MEM_plus_Three|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated
+}
+# macro_sequence
+
+# end
+# entity
+Hardware
+# storage
+db|ProjetoCPU.(0).cnf
+db|ProjetoCPU.(0).cnf
+# case_insensitive
+# source_file
+hardware.bdf
+dc9bbe3884e279279dd2b7d970796fc8
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
 }
 # macro_sequence
 

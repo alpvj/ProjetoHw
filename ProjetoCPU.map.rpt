@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ProjetoCPU
-Thu Oct 17 09:11:08 2019
+Thu Oct 17 11:44:39 2019
 Quartus II 64-Bit Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
 
 
@@ -28,6 +28,7 @@ Quartus II 64-Bit Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Versio
  20. Parameter Settings for User Entity Instance: Memoria:MemCtrl|LPM_RAM_DQ:MEM_plus_Two
  21. Parameter Settings for User Entity Instance: Memoria:MemCtrl|LPM_RAM_DQ:MEM_plus_Three
  22. Analysis & Synthesis Messages
+ 23. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -53,16 +54,16 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +-------------------------------+-----------------------------------------------+
-; Analysis & Synthesis Status   ; Successful - Thu Oct 17 09:11:07 2019         ;
+; Analysis & Synthesis Status   ; Successful - Thu Oct 17 11:44:39 2019         ;
 ; Quartus II 64-Bit Version     ; 9.1 Build 350 03/24/2010 SP 2 SJ Full Version ;
 ; Revision Name                 ; ProjetoCPU                                    ;
 ; Top-level Entity Name         ; Hardware                                      ;
 ; Family                        ; Stratix II                                    ;
 ; Logic utilization             ; N/A                                           ;
-;     Combinational ALUTs       ; 1,597                                         ;
-;     Dedicated logic registers ; 1,297                                         ;
-; Total registers               ; 1297                                          ;
-; Total pins                    ; 492                                           ;
+;     Combinational ALUTs       ; 1,629                                         ;
+;     Dedicated logic registers ; 1,332                                         ;
+; Total registers               ; 1332                                          ;
+; Total pins                    ; 493                                           ;
 ; Total virtual pins            ; 0                                             ;
 ; Total block memory bits       ; 8,192                                         ;
 ; DSP block 9-bit elements      ; 0                                             ;
@@ -195,6 +196,8 @@ applicable agreement for further details.
 ; ShiftAmount.v                    ; yes             ; User Verilog HDL File                  ; E:/Users/alpvj/Desktop/pasta/ProjetoHw/ShiftAmount.v                                ;
 ; ConcatInst.v                     ; yes             ; User Verilog HDL File                  ; E:/Users/alpvj/Desktop/pasta/ProjetoHw/ConcatInst.v                                 ;
 ; ConcatJump.v                     ; yes             ; User Verilog HDL File                  ; E:/Users/alpvj/Desktop/pasta/ProjetoHw/ConcatJump.v                                 ;
+; LS.v                             ; yes             ; User Verilog HDL File                  ; E:/Users/alpvj/Desktop/pasta/ProjetoHw/LS.v                                         ;
+; SS.v                             ; yes             ; User Verilog HDL File                  ; E:/Users/alpvj/Desktop/pasta/ProjetoHw/SS.v                                         ;
 ; lpm_ram_dq.tdf                   ; yes             ; Megafunction                           ; e:/programfiles/quartus/altera/91sp2/quartus/libraries/megafunctions/lpm_ram_dq.tdf ;
 ; altram.tdf                       ; yes             ; Megafunction                           ; e:/programfiles/quartus/altera/91sp2/quartus/libraries/megafunctions/altram.tdf     ;
 ; altsyncram.tdf                   ; yes             ; Megafunction                           ; e:/programfiles/quartus/altera/91sp2/quartus/libraries/megafunctions/altsyncram.tdf ;
@@ -208,39 +211,39 @@ applicable agreement for further details.
 +-----------------------------------------------+-------+
 ; Resource                                      ; Usage ;
 +-----------------------------------------------+-------+
-; Estimated ALUTs Used                          ; 1597  ;
-; Dedicated logic registers                     ; 1297  ;
+; Estimated ALUTs Used                          ; 1629  ;
+; Dedicated logic registers                     ; 1332  ;
 ;                                               ;       ;
-; Estimated ALUTs Unavailable                   ; 238   ;
+; Estimated ALUTs Unavailable                   ; 226   ;
 ;                                               ;       ;
-; Total combinational functions                 ; 1597  ;
+; Total combinational functions                 ; 1629  ;
 ; Combinational ALUT usage by number of inputs  ;       ;
-;     -- 7 input functions                      ; 22    ;
-;     -- 6 input functions                      ; 931   ;
-;     -- 5 input functions                      ; 316   ;
-;     -- 4 input functions                      ; 72    ;
-;     -- <=3 input functions                    ; 256   ;
+;     -- 7 input functions                      ; 12    ;
+;     -- 6 input functions                      ; 950   ;
+;     -- 5 input functions                      ; 325   ;
+;     -- 4 input functions                      ; 66    ;
+;     -- <=3 input functions                    ; 276   ;
 ;                                               ;       ;
 ; Combinational ALUTs by mode                   ;       ;
-;     -- normal mode                            ; 1552  ;
-;     -- extended LUT mode                      ; 22    ;
+;     -- normal mode                            ; 1594  ;
+;     -- extended LUT mode                      ; 12    ;
 ;     -- arithmetic mode                        ; 23    ;
 ;     -- shared arithmetic mode                 ; 0     ;
 ;                                               ;       ;
-; Estimated ALUT/register pairs used            ; 2744  ;
+; Estimated ALUT/register pairs used            ; 2786  ;
 ;                                               ;       ;
-; Total registers                               ; 1297  ;
-;     -- Dedicated logic registers              ; 1297  ;
+; Total registers                               ; 1332  ;
+;     -- Dedicated logic registers              ; 1332  ;
 ;     -- I/O registers                          ; 0     ;
 ;                                               ;       ;
-; Estimated ALMs:  partially or completely used ; 1,372 ;
+; Estimated ALMs:  partially or completely used ; 1,393 ;
 ;                                               ;       ;
-; I/O pins                                      ; 492   ;
+; I/O pins                                      ; 493   ;
 ; Total block memory bits                       ; 8192  ;
 ; Maximum fan-out node                          ; clk   ;
-; Maximum fan-out                               ; 1329  ;
-; Total fan-out                                 ; 14302 ;
-; Average fan-out                               ; 4.18  ;
+; Maximum fan-out                               ; 1364  ;
+; Total fan-out                                 ; 14603 ;
+; Average fan-out                               ; 4.19  ;
 +-----------------------------------------------+-------+
 
 
@@ -249,42 +252,44 @@ applicable agreement for further details.
 +-------------------------------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                      ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                 ; Library Name ;
 +-------------------------------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------+--------------+
-; |Hardware                                       ; 1597 (1)          ; 1297 (0)     ; 8192              ; 0            ; 0       ; 0         ; 0         ; 492  ; 0            ; |Hardware                                                                                                           ; work         ;
-;    |ALUSrcA:inst5|                              ; 32 (32)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|ALUSrcA:inst5                                                                                             ;              ;
+; |Hardware                                       ; 1629 (1)          ; 1332 (0)     ; 8192              ; 0            ; 0       ; 0         ; 0         ; 493  ; 0            ; |Hardware                                                                                                           ; work         ;
+;    |ALUSrcA:inst5|                              ; 34 (34)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|ALUSrcA:inst5                                                                                             ; work         ;
 ;    |ALUSrcB:inst6|                              ; 32 (32)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|ALUSrcB:inst6                                                                                             ; work         ;
 ;    |Banco_reg:Reg_Control|                      ; 736 (736)         ; 1024 (1024)  ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Banco_reg:Reg_Control                                                                                     ; work         ;
-;    |Controle:inst4|                             ; 128 (128)         ; 33 (33)      ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Controle:inst4                                                                                            ;              ;
+;    |Controle:inst4|                             ; 160 (160)         ; 36 (36)      ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Controle:inst4                                                                                            ;              ;
 ;    |DataSrc:inst3|                              ; 68 (68)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|DataSrc:inst3                                                                                             ; work         ;
 ;    |Instr_Reg:IRWrite|                          ; 0 (0)             ; 32 (32)      ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Instr_Reg:IRWrite                                                                                         ; work         ;
+;    |IorD:inst1|                                 ; 8 (8)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|IorD:inst1                                                                                                ; work         ;
 ;    |Memoria:MemCtrl|                            ; 23 (23)           ; 0 (0)        ; 8192              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Memoria:MemCtrl                                                                                           ; work         ;
 ;       |lpm_ram_dq:MEM_plus_One|                 ; 0 (0)             ; 0 (0)        ; 2048              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Memoria:MemCtrl|lpm_ram_dq:MEM_plus_One                                                                   ; work         ;
-;          |altram:sram|                          ; 0 (0)             ; 0 (0)        ; 2048              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Memoria:MemCtrl|lpm_ram_dq:MEM_plus_One|altram:sram                                                       ; work         ;
+;          |altram:sram|                          ; 0 (0)             ; 0 (0)        ; 2048              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Memoria:MemCtrl|lpm_ram_dq:MEM_plus_One|altram:sram                                                       ;              ;
 ;             |altsyncram:ram_block|              ; 0 (0)             ; 0 (0)        ; 2048              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Memoria:MemCtrl|lpm_ram_dq:MEM_plus_One|altram:sram|altsyncram:ram_block                                  ;              ;
 ;                |altsyncram_g2a1:auto_generated| ; 0 (0)             ; 0 (0)        ; 2048              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Memoria:MemCtrl|lpm_ram_dq:MEM_plus_One|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated   ;              ;
-;       |lpm_ram_dq:MEM_plus_Three|               ; 0 (0)             ; 0 (0)        ; 2048              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Memoria:MemCtrl|lpm_ram_dq:MEM_plus_Three                                                                 ; work         ;
+;       |lpm_ram_dq:MEM_plus_Three|               ; 0 (0)             ; 0 (0)        ; 2048              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Memoria:MemCtrl|lpm_ram_dq:MEM_plus_Three                                                                 ;              ;
 ;          |altram:sram|                          ; 0 (0)             ; 0 (0)        ; 2048              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Memoria:MemCtrl|lpm_ram_dq:MEM_plus_Three|altram:sram                                                     ; work         ;
 ;             |altsyncram:ram_block|              ; 0 (0)             ; 0 (0)        ; 2048              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Memoria:MemCtrl|lpm_ram_dq:MEM_plus_Three|altram:sram|altsyncram:ram_block                                ; work         ;
 ;                |altsyncram_g2a1:auto_generated| ; 0 (0)             ; 0 (0)        ; 2048              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Memoria:MemCtrl|lpm_ram_dq:MEM_plus_Three|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated ; work         ;
-;       |lpm_ram_dq:MEM_plus_Two|                 ; 0 (0)             ; 0 (0)        ; 2048              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Memoria:MemCtrl|lpm_ram_dq:MEM_plus_Two                                                                   ; work         ;
-;          |altram:sram|                          ; 0 (0)             ; 0 (0)        ; 2048              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Memoria:MemCtrl|lpm_ram_dq:MEM_plus_Two|altram:sram                                                       ; work         ;
-;             |altsyncram:ram_block|              ; 0 (0)             ; 0 (0)        ; 2048              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Memoria:MemCtrl|lpm_ram_dq:MEM_plus_Two|altram:sram|altsyncram:ram_block                                  ; work         ;
-;                |altsyncram_g2a1:auto_generated| ; 0 (0)             ; 0 (0)        ; 2048              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Memoria:MemCtrl|lpm_ram_dq:MEM_plus_Two|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated   ; work         ;
+;       |lpm_ram_dq:MEM_plus_Two|                 ; 0 (0)             ; 0 (0)        ; 2048              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Memoria:MemCtrl|lpm_ram_dq:MEM_plus_Two                                                                   ;              ;
+;          |altram:sram|                          ; 0 (0)             ; 0 (0)        ; 2048              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Memoria:MemCtrl|lpm_ram_dq:MEM_plus_Two|altram:sram                                                       ;              ;
+;             |altsyncram:ram_block|              ; 0 (0)             ; 0 (0)        ; 2048              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Memoria:MemCtrl|lpm_ram_dq:MEM_plus_Two|altram:sram|altsyncram:ram_block                                  ;              ;
+;                |altsyncram_g2a1:auto_generated| ; 0 (0)             ; 0 (0)        ; 2048              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Memoria:MemCtrl|lpm_ram_dq:MEM_plus_Two|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated   ;              ;
 ;       |lpm_ram_dq:MEM|                          ; 0 (0)             ; 0 (0)        ; 2048              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Memoria:MemCtrl|lpm_ram_dq:MEM                                                                            ; work         ;
 ;          |altram:sram|                          ; 0 (0)             ; 0 (0)        ; 2048              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Memoria:MemCtrl|lpm_ram_dq:MEM|altram:sram                                                                ; work         ;
 ;             |altsyncram:ram_block|              ; 0 (0)             ; 0 (0)        ; 2048              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Memoria:MemCtrl|lpm_ram_dq:MEM|altram:sram|altsyncram:ram_block                                           ; work         ;
 ;                |altsyncram_g2a1:auto_generated| ; 0 (0)             ; 0 (0)        ; 2048              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Memoria:MemCtrl|lpm_ram_dq:MEM|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated            ; work         ;
-;    |PCSource:PCSource|                          ; 35 (35)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|PCSource:PCSource                                                                                         ; work         ;
-;    |RegDesloc:ShiftControl|                     ; 329 (329)         ; 32 (32)      ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|RegDesloc:ShiftControl                                                                                    ; work         ;
+;    |PCSource:PCSource|                          ; 38 (38)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|PCSource:PCSource                                                                                         ; work         ;
+;    |RegDesloc:ShiftControl|                     ; 324 (324)         ; 32 (32)      ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|RegDesloc:ShiftControl                                                                                    ; work         ;
 ;    |RegDst:inst2|                               ; 5 (5)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|RegDst:inst2                                                                                              ; work         ;
 ;    |Registrador:ALUOutControl|                  ; 0 (0)             ; 32 (32)      ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Registrador:ALUOutControl                                                                                 ; work         ;
 ;    |Registrador:A_Control|                      ; 0 (0)             ; 32 (32)      ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Registrador:A_Control                                                                                     ; work         ;
 ;    |Registrador:B_Control|                      ; 0 (0)             ; 32 (32)      ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Registrador:B_Control                                                                                     ; work         ;
 ;    |Registrador:EPCWrite|                       ; 0 (0)             ; 32 (32)      ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Registrador:EPCWrite                                                                                      ; work         ;
+;    |Registrador:MDRReg|                         ; 0 (0)             ; 32 (32)      ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Registrador:MDRReg                                                                                        ; work         ;
 ;    |Registrador:PCWrite|                        ; 3 (3)             ; 32 (32)      ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Registrador:PCWrite                                                                                       ; work         ;
 ;    |ShiftAmount:ShiftAmt|                       ; 7 (7)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|ShiftAmount:ShiftAmt                                                                                      ; work         ;
 ;    |ShiftLeft2de32pra32:inst|                   ; 0 (0)             ; 16 (16)      ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|ShiftLeft2de32pra32:inst                                                                                  ; work         ;
 ;    |ShiftSource:ShiftSrc|                       ; 32 (32)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|ShiftSource:ShiftSrc                                                                                      ; work         ;
-;    |Ula32:ALUControl|                           ; 166 (166)         ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Ula32:ALUControl                                                                                          ; work         ;
+;    |Ula32:ALUControl|                           ; 158 (158)         ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Ula32:ALUControl                                                                                          ; work         ;
 +-------------------------------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -308,16 +313,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------------------+---------------------------------------------------+
 ; ShiftLeft2de32pra32:inst|outputSL[0..1]   ; Stuck at GND due to stuck port data_in            ;
 ; ShiftLeft2de32pra32:inst|outputSL[18..31] ; Merged with ShiftLeft2de32pra32:inst|outputSL[17] ;
+; Controle:inst4|LSControl[0]               ; Merged with Controle:inst4|DataSrc[3]             ;
 ; Controle:inst4|IorD[0]                    ; Merged with Controle:inst4|DataSrc[3]             ;
+; Controle:inst4|LSControl[1]               ; Merged with Controle:inst4|DataSrc[3]             ;
+; Controle:inst4|SSControl[0..1]            ; Merged with Controle:inst4|DataSrc[3]             ;
 ; Controle:inst4|ALUSrcA[1]                 ; Merged with Controle:inst4|DataSrc[3]             ;
-; Controle:inst4|IorD[1]                    ; Merged with Controle:inst4|DataSrc[3]             ;
-; Controle:inst4|MemCtrl                    ; Merged with Controle:inst4|DataSrc[3]             ;
 ; Controle:inst4|ShiftSrc[0]                ; Merged with Controle:inst4|ShiftAmt[0]            ;
 ; Controle:inst4|ShiftSrc[1]                ; Merged with Controle:inst4|ShiftAmt[1]            ;
 ; Controle:inst4|A_Control                  ; Merged with Controle:inst4|B_Control              ;
 ; Controle:inst4|DataSrc[3]                 ; Stuck at GND due to stuck port data_in            ;
-; Controle:inst4|estado[6]                  ; Stuck at GND due to stuck port data_in            ;
-; Total Number of Removed Registers = 25    ;                                                   ;
+; Total Number of Removed Registers = 26    ;                                                   ;
 +-------------------------------------------+---------------------------------------------------+
 
 
@@ -326,12 +331,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 1297  ;
-; Number of registers using Synchronous Clear  ; 61    ;
+; Total registers                              ; 1332  ;
+; Number of registers using Synchronous Clear  ; 62    ;
 ; Number of registers using Synchronous Load   ; 19    ;
-; Number of registers using Asynchronous Clear ; 1216  ;
+; Number of registers using Asynchronous Clear ; 1248  ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 1270  ;
+; Number of registers using Clock Enable       ; 1269  ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -341,7 +346,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------+---------+
 ; Inverted Register                      ; Fan out ;
 +----------------------------------------+---------+
-; Controle:inst4|reset                   ; 1222    ;
+; Controle:inst4|reset                   ; 1253    ;
 ; Total number of inverted registers = 1 ;         ;
 +----------------------------------------+---------+
 
@@ -353,30 +358,33 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------+
 ; 8:1                ; 2 bits    ; 10 ALUTs      ; 6 ALUTs              ; 4 ALUTs                ; Yes        ; |Hardware|Registrador:PCWrite|Saida[1]    ;
 ; 8:1                ; 4 bits    ; 20 ALUTs      ; 16 ALUTs             ; 4 ALUTs                ; Yes        ; |Hardware|Registrador:PCWrite|Saida[29]   ;
-; 8:1                ; 26 bits   ; 130 ALUTs     ; 52 ALUTs             ; 78 ALUTs               ; Yes        ; |Hardware|Registrador:PCWrite|Saida[19]   ;
-; 32:1               ; 32 bits   ; 672 ALUTs     ; 672 ALUTs            ; 0 ALUTs                ; Yes        ; |Hardware|Registrador:B_Control|Saida[0]  ;
-; 32:1               ; 32 bits   ; 672 ALUTs     ; 672 ALUTs            ; 0 ALUTs                ; Yes        ; |Hardware|Registrador:A_Control|Saida[0]  ;
-; 13:1               ; 13 bits   ; 104 ALUTs     ; 52 ALUTs             ; 52 ALUTs               ; Yes        ; |Hardware|RegDesloc:ShiftControl|temp[4]  ;
-; 13:1               ; 13 bits   ; 104 ALUTs     ; 78 ALUTs             ; 26 ALUTs               ; Yes        ; |Hardware|RegDesloc:ShiftControl|temp[23] ;
-; 192:1              ; 14 bits   ; 1792 ALUTs    ; 420 ALUTs            ; 1372 ALUTs             ; Yes        ; |Hardware|Controle:inst4|ShiftAmt[0]      ;
-; 254:1              ; 6 bits    ; 1014 ALUTs    ; 534 ALUTs            ; 480 ALUTs              ; Yes        ; |Hardware|Controle:inst4|estado[1]        ;
-; 254:1              ; 12 bits   ; 2028 ALUTs    ; 456 ALUTs            ; 1572 ALUTs             ; Yes        ; |Hardware|Controle:inst4|ALUControl[2]    ;
-; 3:1                ; 4 bits    ; 8 ALUTs       ; 8 ALUTs              ; 0 ALUTs                ; No         ; |Hardware|ALUSrcA:inst5|Mux24             ;
-; 4:1                ; 28 bits   ; 56 ALUTs      ; 56 ALUTs             ; 0 ALUTs                ; No         ; |Hardware|ALUSrcA:inst5|Mux0              ;
-; 3:1                ; 15 bits   ; 30 ALUTs      ; 30 ALUTs             ; 0 ALUTs                ; No         ; |Hardware|ALUSrcB:inst6|Mux7              ;
+; 8:1                ; 26 bits   ; 130 ALUTs     ; 52 ALUTs             ; 78 ALUTs               ; Yes        ; |Hardware|Registrador:PCWrite|Saida[16]   ;
+; 32:1               ; 32 bits   ; 672 ALUTs     ; 672 ALUTs            ; 0 ALUTs                ; Yes        ; |Hardware|Registrador:B_Control|Saida[10] ;
+; 32:1               ; 32 bits   ; 672 ALUTs     ; 672 ALUTs            ; 0 ALUTs                ; Yes        ; |Hardware|Registrador:A_Control|Saida[25] ;
+; 13:1               ; 13 bits   ; 104 ALUTs     ; 52 ALUTs             ; 52 ALUTs               ; Yes        ; |Hardware|RegDesloc:ShiftControl|temp[3]  ;
+; 13:1               ; 13 bits   ; 104 ALUTs     ; 78 ALUTs             ; 26 ALUTs               ; Yes        ; |Hardware|RegDesloc:ShiftControl|temp[27] ;
+; 192:1              ; 16 bits   ; 2048 ALUTs    ; 576 ALUTs            ; 1472 ALUTs             ; Yes        ; |Hardware|Controle:inst4|ShiftControl[1]  ;
+; 254:1              ; 6 bits    ; 1014 ALUTs    ; 570 ALUTs            ; 444 ALUTs              ; Yes        ; |Hardware|Controle:inst4|estado[1]        ;
+; 254:1              ; 12 bits   ; 2028 ALUTs    ; 528 ALUTs            ; 1500 ALUTs             ; Yes        ; |Hardware|Controle:inst4|ShiftAmt[1]      ;
+; 3:1                ; 15 bits   ; 30 ALUTs      ; 30 ALUTs             ; 0 ALUTs                ; No         ; |Hardware|ALUSrcB:inst6|Mux1              ;
 ; 4:1                ; 2 bits    ; 4 ALUTs       ; 4 ALUTs              ; 0 ALUTs                ; No         ; |Hardware|ALUSrcB:inst6|Mux31             ;
-; 4:1                ; 13 bits   ; 26 ALUTs      ; 26 ALUTs             ; 0 ALUTs                ; No         ; |Hardware|ALUSrcB:inst6|Mux27             ;
-; 3:1                ; 17 bits   ; 34 ALUTs      ; 34 ALUTs             ; 0 ALUTs                ; No         ; |Hardware|ShiftSource:ShiftSrc|Mux6       ;
-; 3:1                ; 4 bits    ; 8 ALUTs       ; 8 ALUTs              ; 0 ALUTs                ; No         ; |Hardware|ShiftAmount:ShiftAmt|Mux3       ;
+; 4:1                ; 13 bits   ; 26 ALUTs      ; 26 ALUTs             ; 0 ALUTs                ; No         ; |Hardware|ALUSrcB:inst6|Mux17             ;
+; 3:1                ; 7 bits    ; 14 ALUTs      ; 14 ALUTs             ; 0 ALUTs                ; No         ; |Hardware|ALUSrcA:inst5|Mux25             ;
+; 3:1                ; 3 bits    ; 6 ALUTs       ; 6 ALUTs              ; 0 ALUTs                ; No         ; |Hardware|IorD:inst1|Mux27                ;
+; 4:1                ; 25 bits   ; 50 ALUTs      ; 50 ALUTs             ; 0 ALUTs                ; No         ; |Hardware|ALUSrcA:inst5|Mux20             ;
+; 3:1                ; 17 bits   ; 34 ALUTs      ; 34 ALUTs             ; 0 ALUTs                ; No         ; |Hardware|ShiftSource:ShiftSrc|Mux5       ;
+; 3:1                ; 4 bits    ; 8 ALUTs       ; 8 ALUTs              ; 0 ALUTs                ; No         ; |Hardware|ShiftAmount:ShiftAmt|Mux4       ;
 ; 3:1                ; 4 bits    ; 8 ALUTs       ; 8 ALUTs              ; 0 ALUTs                ; No         ; |Hardware|ShiftSource:ShiftSrc|Mux31      ;
-; 4:1                ; 7 bits    ; 14 ALUTs      ; 14 ALUTs             ; 0 ALUTs                ; No         ; |Hardware|ShiftSource:ShiftSrc|Mux27      ;
-; 4:1                ; 2 bits    ; 4 ALUTs       ; 4 ALUTs              ; 0 ALUTs                ; No         ; |Hardware|ALUSrcB:inst6|Mux16             ;
-; 8:1                ; 32 bits   ; 160 ALUTs     ; 64 ALUTs             ; 96 ALUTs               ; No         ; |Hardware|Ula32:ALUControl|Mux45          ;
-; 8:1                ; 32 bits   ; 160 ALUTs     ; 128 ALUTs            ; 32 ALUTs               ; No         ; |Hardware|Ula32:ALUControl|Mux10          ;
+; 4:1                ; 7 bits    ; 14 ALUTs      ; 14 ALUTs             ; 0 ALUTs                ; No         ; |Hardware|ShiftSource:ShiftSrc|Mux21      ;
+; 4:1                ; 2 bits    ; 4 ALUTs       ; 4 ALUTs              ; 0 ALUTs                ; No         ; |Hardware|ALUSrcB:inst6|Mux15             ;
+; 8:1                ; 32 bits   ; 160 ALUTs     ; 64 ALUTs             ; 96 ALUTs               ; No         ; |Hardware|Ula32:ALUControl|Mux56          ;
+; 8:1                ; 32 bits   ; 160 ALUTs     ; 128 ALUTs            ; 32 ALUTs               ; No         ; |Hardware|Ula32:ALUControl|Mux11          ;
+; 4:1                ; 4 bits    ; 8 ALUTs       ; 8 ALUTs              ; 0 ALUTs                ; No         ; |Hardware|IorD:inst1|Mux24                ;
 ; 4:1                ; 4 bits    ; 8 ALUTs       ; 8 ALUTs              ; 0 ALUTs                ; No         ; |Hardware|ShiftSource:ShiftSrc|Mux25      ;
 ; 8:1                ; 5 bits    ; 25 ALUTs      ; 20 ALUTs             ; 5 ALUTs                ; No         ; |Hardware|RegDst:inst2|Mux1               ;
+; 10:1               ; 3 bits    ; 18 ALUTs      ; 18 ALUTs             ; 0 ALUTs                ; No         ; |Hardware|DataSrc:inst3|Mux29             ;
 ; 11:1               ; 4 bits    ; 28 ALUTs      ; 24 ALUTs             ; 4 ALUTs                ; No         ; |Hardware|DataSrc:inst3|Mux30             ;
-; 11:1               ; 27 bits   ; 189 ALUTs     ; 135 ALUTs            ; 54 ALUTs               ; No         ; |Hardware|DataSrc:inst3|Mux6              ;
+; 11:1               ; 24 bits   ; 168 ALUTs     ; 120 ALUTs            ; 48 ALUTs               ; No         ; |Hardware|DataSrc:inst3|Mux12             ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------+
 
 
@@ -473,8 +481,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; bne3           ; 0110001 ; Unsigned Binary                  ;
 ; ble2           ; 0110010 ; Unsigned Binary                  ;
 ; ble3           ; 0110011 ; Unsigned Binary                  ;
-; bgt2           ; 0110010 ; Unsigned Binary                  ;
-; bgt3           ; 0110011 ; Unsigned Binary                  ;
+; bgt2           ; 0110100 ; Unsigned Binary                  ;
+; bgt3           ; 0110101 ; Unsigned Binary                  ;
+; OVERFLOW       ; 0110110 ; Unsigned Binary                  ;
+; sb2            ; 0110111 ; Unsigned Binary                  ;
+; sb3            ; 0111000 ; Unsigned Binary                  ;
+; sbWait         ; 0111001 ; Unsigned Binary                  ;
+; sbWait2        ; 0111010 ; Unsigned Binary                  ;
 ; ADD            ; 100000  ; Unsigned Binary                  ;
 ; SUB            ; 100010  ; Unsigned Binary                  ;
 ; AND            ; 100100  ; Unsigned Binary                  ;
@@ -497,6 +510,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; BNE            ; 000101  ; Unsigned Binary                  ;
 ; BLE            ; 000110  ; Unsigned Binary                  ;
 ; BGT            ; 000111  ; Unsigned Binary                  ;
+; LB             ; 100000  ; Unsigned Binary                  ;
+; LH             ; 100001  ; Unsigned Binary                  ;
+; LW             ; 100011  ; Unsigned Binary                  ;
+; SB             ; 101000  ; Unsigned Binary                  ;
+; SH             ; 101001  ; Unsigned Binary                  ;
+; SW             ; 101011  ; Unsigned Binary                  ;
 ; J              ; 000010  ; Unsigned Binary                  ;
 ; JAL            ; 000011  ; Unsigned Binary                  ;
 +----------------+---------+----------------------------------+
@@ -601,7 +620,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
-    Info: Processing started: Thu Oct 17 09:10:51 2019
+    Info: Processing started: Thu Oct 17 11:44:25 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ProjetoCPU -c ProjetoCPU
 Info: Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info: Found 2 design units, including 1 entities, in source file banco_reg.vhd
@@ -655,10 +674,13 @@ Info: Found 1 design units, including 1 entities, in source file concatinst.v
     Info: Found entity 1: ConcatInst
 Info: Found 1 design units, including 1 entities, in source file concatjump.v
     Info: Found entity 1: ConcatJump
+Info: Found 1 design units, including 1 entities, in source file ls.v
+    Info: Found entity 1: LS
+Info: Found 1 design units, including 1 entities, in source file ss.v
+    Info: Found entity 1: SS
 Info: Elaborating entity "Hardware" for the top level hierarchy
 Info: Elaborating entity "Controle" for hierarchy "Controle:inst4"
-Warning (10272): Verilog HDL Case Statement warning at Controle.sv(2157): case item expression covers a value already covered by a previous case item
-Warning (10272): Verilog HDL Case Statement warning at Controle.sv(2184): case item expression covers a value already covered by a previous case item
+Warning (10272): Verilog HDL Case Statement warning at Controle.sv(965): case item expression covers a value already covered by a previous case item
 Info: Elaborating entity "Ula32" for hierarchy "Ula32:ALUControl"
 Info: Elaborating entity "ALUSrcA" for hierarchy "ALUSrcA:inst5"
 Info: Elaborating entity "Registrador" for hierarchy "Registrador:PCWrite"
@@ -690,10 +712,77 @@ Info: Elaborated megafunction instantiation "Memoria:MemCtrl|LPM_RAM_DQ:MEM|altr
 Info: Found 1 design units, including 1 entities, in source file db/altsyncram_g2a1.tdf
     Info: Found entity 1: altsyncram_g2a1
 Info: Elaborating entity "altsyncram_g2a1" for hierarchy "Memoria:MemCtrl|LPM_RAM_DQ:MEM|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated"
-Critical Warning: Memory depth (256) in the design file differs from memory depth (36) in the Memory Initialization File "instrucoes.mif" -- setting initial value for remaining addresses to 0
 Info: Elaborating entity "IorD" for hierarchy "IorD:inst1"
+Info: Elaborating entity "SS" for hierarchy "SS:inst15"
+Warning (10240): Verilog HDL Always Construct warning at SS.v(9): inferring latch(es) for variable "toWriteData", which holds its previous value in one or more paths through the always construct
+Info (10041): Inferred latch for "toWriteData[0]" at SS.v(9)
+Info (10041): Inferred latch for "toWriteData[1]" at SS.v(9)
+Info (10041): Inferred latch for "toWriteData[2]" at SS.v(9)
+Info (10041): Inferred latch for "toWriteData[3]" at SS.v(9)
+Info (10041): Inferred latch for "toWriteData[4]" at SS.v(9)
+Info (10041): Inferred latch for "toWriteData[5]" at SS.v(9)
+Info (10041): Inferred latch for "toWriteData[6]" at SS.v(9)
+Info (10041): Inferred latch for "toWriteData[7]" at SS.v(9)
+Info (10041): Inferred latch for "toWriteData[8]" at SS.v(9)
+Info (10041): Inferred latch for "toWriteData[9]" at SS.v(9)
+Info (10041): Inferred latch for "toWriteData[10]" at SS.v(9)
+Info (10041): Inferred latch for "toWriteData[11]" at SS.v(9)
+Info (10041): Inferred latch for "toWriteData[12]" at SS.v(9)
+Info (10041): Inferred latch for "toWriteData[13]" at SS.v(9)
+Info (10041): Inferred latch for "toWriteData[14]" at SS.v(9)
+Info (10041): Inferred latch for "toWriteData[15]" at SS.v(9)
+Info (10041): Inferred latch for "toWriteData[16]" at SS.v(9)
+Info (10041): Inferred latch for "toWriteData[17]" at SS.v(9)
+Info (10041): Inferred latch for "toWriteData[18]" at SS.v(9)
+Info (10041): Inferred latch for "toWriteData[19]" at SS.v(9)
+Info (10041): Inferred latch for "toWriteData[20]" at SS.v(9)
+Info (10041): Inferred latch for "toWriteData[21]" at SS.v(9)
+Info (10041): Inferred latch for "toWriteData[22]" at SS.v(9)
+Info (10041): Inferred latch for "toWriteData[23]" at SS.v(9)
+Info (10041): Inferred latch for "toWriteData[24]" at SS.v(9)
+Info (10041): Inferred latch for "toWriteData[25]" at SS.v(9)
+Info (10041): Inferred latch for "toWriteData[26]" at SS.v(9)
+Info (10041): Inferred latch for "toWriteData[27]" at SS.v(9)
+Info (10041): Inferred latch for "toWriteData[28]" at SS.v(9)
+Info (10041): Inferred latch for "toWriteData[29]" at SS.v(9)
+Info (10041): Inferred latch for "toWriteData[30]" at SS.v(9)
+Info (10041): Inferred latch for "toWriteData[31]" at SS.v(9)
 Info: Elaborating entity "Banco_reg" for hierarchy "Banco_reg:Reg_Control"
 Info: Elaborating entity "DataSrc" for hierarchy "DataSrc:inst3"
+Info: Elaborating entity "LS" for hierarchy "LS:inst14"
+Warning (10240): Verilog HDL Always Construct warning at LS.v(8): inferring latch(es) for variable "LSOut", which holds its previous value in one or more paths through the always construct
+Info (10041): Inferred latch for "LSOut[0]" at LS.v(8)
+Info (10041): Inferred latch for "LSOut[1]" at LS.v(8)
+Info (10041): Inferred latch for "LSOut[2]" at LS.v(8)
+Info (10041): Inferred latch for "LSOut[3]" at LS.v(8)
+Info (10041): Inferred latch for "LSOut[4]" at LS.v(8)
+Info (10041): Inferred latch for "LSOut[5]" at LS.v(8)
+Info (10041): Inferred latch for "LSOut[6]" at LS.v(8)
+Info (10041): Inferred latch for "LSOut[7]" at LS.v(8)
+Info (10041): Inferred latch for "LSOut[8]" at LS.v(8)
+Info (10041): Inferred latch for "LSOut[9]" at LS.v(8)
+Info (10041): Inferred latch for "LSOut[10]" at LS.v(8)
+Info (10041): Inferred latch for "LSOut[11]" at LS.v(8)
+Info (10041): Inferred latch for "LSOut[12]" at LS.v(8)
+Info (10041): Inferred latch for "LSOut[13]" at LS.v(8)
+Info (10041): Inferred latch for "LSOut[14]" at LS.v(8)
+Info (10041): Inferred latch for "LSOut[15]" at LS.v(8)
+Info (10041): Inferred latch for "LSOut[16]" at LS.v(8)
+Info (10041): Inferred latch for "LSOut[17]" at LS.v(8)
+Info (10041): Inferred latch for "LSOut[18]" at LS.v(8)
+Info (10041): Inferred latch for "LSOut[19]" at LS.v(8)
+Info (10041): Inferred latch for "LSOut[20]" at LS.v(8)
+Info (10041): Inferred latch for "LSOut[21]" at LS.v(8)
+Info (10041): Inferred latch for "LSOut[22]" at LS.v(8)
+Info (10041): Inferred latch for "LSOut[23]" at LS.v(8)
+Info (10041): Inferred latch for "LSOut[24]" at LS.v(8)
+Info (10041): Inferred latch for "LSOut[25]" at LS.v(8)
+Info (10041): Inferred latch for "LSOut[26]" at LS.v(8)
+Info (10041): Inferred latch for "LSOut[27]" at LS.v(8)
+Info (10041): Inferred latch for "LSOut[28]" at LS.v(8)
+Info (10041): Inferred latch for "LSOut[29]" at LS.v(8)
+Info (10041): Inferred latch for "LSOut[30]" at LS.v(8)
+Info (10041): Inferred latch for "LSOut[31]" at LS.v(8)
 Info: Elaborating entity "SignExtend1to32bits" for hierarchy "SignExtend1to32bits:inst7"
 Info: Elaborating entity "RegDesloc" for hierarchy "RegDesloc:ShiftControl"
 Warning (10492): VHDL Process Statement warning at RegDesloc.vhd(1072): signal "temp" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
@@ -703,21 +792,75 @@ Info: Elaborating entity "ShiftAmount" for hierarchy "ShiftAmount:ShiftAmt"
 Info: Elaborating entity "RegDst" for hierarchy "RegDst:inst2"
 Info: Elaborating entity "ALUSrcB" for hierarchy "ALUSrcB:inst6"
 Info: Elaborating entity "ShiftLeft2de32pra32" for hierarchy "ShiftLeft2de32pra32:inst"
+Warning: LATCH primitive "LS:inst14|LSOut[0]" is permanently disabled
+Warning: LATCH primitive "LS:inst14|LSOut[1]" is permanently disabled
+Warning: LATCH primitive "LS:inst14|LSOut[2]" is permanently disabled
+Warning: LATCH primitive "LS:inst14|LSOut[3]" is permanently disabled
+Warning: LATCH primitive "LS:inst14|LSOut[4]" is permanently disabled
+Warning: LATCH primitive "LS:inst14|LSOut[5]" is permanently disabled
+Warning: LATCH primitive "LS:inst14|LSOut[6]" is permanently disabled
+Warning: LATCH primitive "LS:inst14|LSOut[7]" is permanently disabled
+Warning: LATCH primitive "LS:inst14|LSOut[0]" is permanently disabled
+Warning: LATCH primitive "LS:inst14|LSOut[1]" is permanently disabled
+Warning: LATCH primitive "LS:inst14|LSOut[2]" is permanently disabled
+Warning: LATCH primitive "LS:inst14|LSOut[3]" is permanently disabled
+Warning: LATCH primitive "LS:inst14|LSOut[4]" is permanently disabled
+Warning: LATCH primitive "LS:inst14|LSOut[5]" is permanently disabled
+Warning: LATCH primitive "LS:inst14|LSOut[6]" is permanently disabled
+Warning: LATCH primitive "LS:inst14|LSOut[7]" is permanently disabled
+Warning: LATCH primitive "SS:inst15|toWriteData[15]" is permanently enabled
+Warning: LATCH primitive "SS:inst15|toWriteData[14]" is permanently enabled
+Warning: LATCH primitive "SS:inst15|toWriteData[12]" is permanently enabled
+Warning: LATCH primitive "SS:inst15|toWriteData[10]" is permanently enabled
+Warning: LATCH primitive "SS:inst15|toWriteData[8]" is permanently enabled
+Warning: LATCH primitive "SS:inst15|toWriteData[6]" is permanently enabled
+Warning: LATCH primitive "SS:inst15|toWriteData[4]" is permanently enabled
+Warning: LATCH primitive "SS:inst15|toWriteData[2]" is permanently enabled
+Warning: LATCH primitive "SS:inst15|toWriteData[0]" is permanently enabled
+Warning: LATCH primitive "SS:inst15|toWriteData[1]" is permanently enabled
+Warning: LATCH primitive "SS:inst15|toWriteData[3]" is permanently enabled
+Warning: LATCH primitive "SS:inst15|toWriteData[5]" is permanently enabled
+Warning: LATCH primitive "SS:inst15|toWriteData[7]" is permanently enabled
+Warning: LATCH primitive "SS:inst15|toWriteData[9]" is permanently enabled
+Warning: LATCH primitive "SS:inst15|toWriteData[11]" is permanently enabled
+Warning: LATCH primitive "SS:inst15|toWriteData[13]" is permanently enabled
+Warning: LATCH primitive "SS:inst15|toWriteData[16]" is permanently enabled
+Warning: LATCH primitive "SS:inst15|toWriteData[17]" is permanently enabled
+Warning: LATCH primitive "SS:inst15|toWriteData[18]" is permanently enabled
+Warning: LATCH primitive "SS:inst15|toWriteData[19]" is permanently enabled
+Warning: LATCH primitive "SS:inst15|toWriteData[20]" is permanently enabled
+Warning: LATCH primitive "SS:inst15|toWriteData[21]" is permanently enabled
+Warning: LATCH primitive "SS:inst15|toWriteData[22]" is permanently enabled
+Warning: LATCH primitive "SS:inst15|toWriteData[23]" is permanently enabled
+Warning: LATCH primitive "SS:inst15|toWriteData[24]" is permanently enabled
+Warning: LATCH primitive "SS:inst15|toWriteData[25]" is permanently enabled
+Warning: LATCH primitive "SS:inst15|toWriteData[26]" is permanently enabled
+Warning: LATCH primitive "SS:inst15|toWriteData[27]" is permanently enabled
+Warning: LATCH primitive "SS:inst15|toWriteData[28]" is permanently enabled
+Warning: LATCH primitive "SS:inst15|toWriteData[29]" is permanently enabled
+Warning: LATCH primitive "SS:inst15|toWriteData[30]" is permanently enabled
+Warning: LATCH primitive "SS:inst15|toWriteData[31]" is permanently enabled
 Warning: Output pins are stuck at VCC or GND
     Warning (13410): Pin "Jconcat[1]" is stuck at GND
     Warning (13410): Pin "Jconcat[0]" is stuck at GND
     Warning (13410): Pin "Shiftleftado[1]" is stuck at GND
     Warning (13410): Pin "Shiftleftado[0]" is stuck at GND
-    Warning (13410): Pin "state[6]" is stuck at GND
-Info: Implemented 3259 device resources after synthesis - the final resource count might be different
+Info: Generated suppressed messages file E:/Users/alpvj/Desktop/pasta/ProjetoHw/ProjetoCPU.map.smsg
+Info: Implemented 3324 device resources after synthesis - the final resource count might be different
     Info: Implemented 1 input pins
-    Info: Implemented 491 output pins
-    Info: Implemented 2735 logic cells
+    Info: Implemented 492 output pins
+    Info: Implemented 2799 logic cells
     Info: Implemented 32 RAM segments
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 11 warnings
-    Info: Peak virtual memory: 4534 megabytes
-    Info: Processing ended: Thu Oct 17 09:11:08 2019
-    Info: Elapsed time: 00:00:17
-    Info: Total CPU time (on all processors): 00:00:13
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 58 warnings
+    Info: Peak virtual memory: 4531 megabytes
+    Info: Processing ended: Thu Oct 17 11:44:39 2019
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:15
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in E:/Users/alpvj/Desktop/pasta/ProjetoHw/ProjetoCPU.map.smsg.
 
 
