@@ -127,6 +127,11 @@ parameter overflow2 = 7'd86;
 parameter overflow3 = 7'd87;
 parameter overflow4 = 7'd88;
 parameter overflow5 = 7'd89;
+parameter INEXISTENTE = 7'd90;
+parameter inexistente2 = 7'd91;
+parameter inexistente3 = 7'd92;
+parameter inexistente4 = 7'd93;
+parameter inexistente5 = 7'd94;
 
 
 //Func do Tipo R
@@ -1184,6 +1189,33 @@ always @(posedge clk) begin
 						ShiftControl = 3'b000;
 						DataSrc = 4'b0000;
 						estado = blm2;
+					end
+					default: begin
+						PCWrite = 1'b0;
+						MemCtrl = 1'b0;
+						IRWrite = 1'b0;
+						A_Control = 1'b0;
+						B_Control = 1'b0;
+						RegControl = 1'b0;
+						ALUOutControl = 1'b0;
+						EPCWrite = 1'b0;
+						MDControl = 1'b0;
+						HI_Control = 1'b0;
+						LO_Control = 1'b0;
+						IorD = 2'b00;
+						ALUSrcA = 2'b00;
+						ALUSrcB = 2'b00;
+						ExcpCtrl = 2'b00;
+						ShiftSrc = 2'b00;
+						ShiftAmt = 2'b00;
+						SSControl = 2'b00;
+						LSControl = 2'b00;
+						RegDst = 3'b000;
+						PCSource = 3'b000;
+						ALUControl = 3'b000;
+						ShiftControl = 3'b000;
+						DataSrc = 4'b0000;
+						estado = INEXISTENTE;
 					end
 				endcase
 			end
@@ -3464,6 +3496,141 @@ always @(posedge clk) begin
 				RegDst = 3'b000;
 				PCSource = 3'b001;
 				ALUControl = 3'b111;
+				ShiftControl = 3'b000;
+				DataSrc = 4'b0000;
+				estado = Fetch1;
+			end
+			INEXISTENTE: begin
+				PCWrite = 1'b0;
+				MemCtrl = 1'b0;
+				IRWrite = 1'b0;
+				A_Control = 1'b0;
+				B_Control = 1'b0;
+				RegControl = 1'b0;
+				ALUOutControl = 1'b0;
+				EPCWrite = 1'b0;
+				MDControl = 1'b0;
+				HI_Control = 1'b0;
+				LO_Control = 1'b0;
+				IorD = 2'b10;
+				ALUSrcA = 2'b00;
+				ALUSrcB = 2'b00;
+				ExcpCtrl = 2'b00;
+				ShiftSrc = 2'b00;
+				ShiftAmt = 2'b00;
+				SSControl = 2'b00;
+				LSControl = 2'b00;
+				RegDst = 3'b000;
+				PCSource = 3'b000;
+				ALUControl = 3'b000;
+				ShiftControl = 3'b000;
+				DataSrc = 4'b0000;
+				estado = inexistente2;
+			end
+			inexistente2: begin
+				PCWrite = 1'b0;
+				MemCtrl = 1'b0;
+				IRWrite = 1'b0;
+				A_Control = 1'b0;
+				B_Control = 1'b0;
+				RegControl = 1'b0;
+				ALUOutControl = 1'b0;
+				EPCWrite = 1'b0;
+				MDControl = 1'b0;
+				HI_Control = 1'b0;
+				LO_Control = 1'b0;
+				IorD = 2'b10;
+				ALUSrcA = 2'b00;
+				ALUSrcB = 2'b00;
+				ExcpCtrl = 2'b00;
+				ShiftSrc = 2'b00;
+				ShiftAmt = 2'b00;
+				SSControl = 2'b00;
+				LSControl = 2'b00;
+				RegDst = 3'b000;
+				PCSource = 3'b000;
+				ALUControl = 3'b000;
+				ShiftControl = 3'b000;
+				DataSrc = 4'b0000;
+				estado = inexistente3;
+			end
+			inexistente3: begin
+				PCWrite = 1'b0;
+				MemCtrl = 1'b0;
+				IRWrite = 1'b0;
+				A_Control = 1'b0;
+				B_Control = 1'b0;
+				RegControl = 1'b0;
+				ALUOutControl = 1'b0;
+				EPCWrite = 1'b0;
+				MDControl = 1'b0;
+				HI_Control = 1'b0;
+				LO_Control = 1'b0;
+				IorD = 2'b10;
+				ALUSrcA = 2'b00;
+				ALUSrcB = 2'b00;
+				ExcpCtrl = 2'b00;
+				ShiftSrc = 2'b00;
+				ShiftAmt = 2'b00;
+				SSControl = 2'b00;
+				LSControl = 2'b00;
+				RegDst = 3'b000;
+				PCSource = 3'b011;
+				ALUControl = 3'b000;
+				ShiftControl = 3'b000;
+				DataSrc = 4'b0000;
+				estado = inexistente4;
+			end
+			inexistente4: begin
+				PCWrite = 1'b1;
+				MemCtrl = 1'b0;
+				IRWrite = 1'b0;
+				A_Control = 1'b0;
+				B_Control = 1'b0;
+				RegControl = 1'b0;
+				ALUOutControl = 1'b0;
+				EPCWrite = 1'b1;
+				MDControl = 1'b0;
+				HI_Control = 1'b0;
+				LO_Control = 1'b0;
+				IorD = 2'b10;
+				ALUSrcA = 2'b00;
+				ALUSrcB = 2'b01;
+				ExcpCtrl = 2'b00;
+				ShiftSrc = 2'b00;
+				ShiftAmt = 2'b00;
+				SSControl = 2'b00;
+				LSControl = 2'b00;
+				RegDst = 3'b000;
+				PCSource = 3'b011;
+				ALUControl = 3'b010;
+				ShiftControl = 3'b000;
+				DataSrc = 4'b0000;
+				estado = inexistente5;
+			end
+			inexistente5: begin
+				PCWrite = 1'b0;
+				MemCtrl = 1'b0;
+				IRWrite = 1'b0;
+				A_Control = 1'b0;
+				B_Control = 1'b0;
+				RegControl = 1'b0;
+				ALUOutControl = 1'b0;
+				EPCWrite = 1'b0;
+				MDControl = 1'b0;
+				HI_Control = 1'b0;
+				LO_Control = 1'b0;
+				IorD = 2'b10;
+				ALUSrcA = 2'b00;
+				ALUSrcB = 2'b01;
+				ExcpCtrl = 2'b00;
+				ShiftSrc = 2'b00;
+				ShiftAmt = 2'b00;
+				SSControl = 2'b00;
+				LSControl = 2'b00;
+				RegDst = 3'b000;
+				PCSource = 3'b000;
+				ALUControl = 3'b000;
 				ShiftControl = 3'b000;
 				DataSrc = 4'b0000;
 				estado = Fetch1;
