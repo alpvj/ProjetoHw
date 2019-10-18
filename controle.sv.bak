@@ -99,7 +99,7 @@ parameter lb2 = 7'd59;
 parameter lb3 = 7'd60;
 parameter lbWait = 7'd61;
 parameter lbWait2 = 7'd62;
-parameter lbWait2 = 7'd63;
+parameter lbWait3 = 7'd63;
 
 
 //Func do Tipo R
@@ -2507,7 +2507,7 @@ always @(posedge clk) begin
 				PCSource = 3'b000;
 				ALUControl = 3'b001;
 				ShiftControl = 3'b000;
-				DataSrc = 4'b0000;
+				DataSrc = 4'b0001;
 				estado = lbWait2;
 			end
 			lbWait2: begin
@@ -2534,7 +2534,7 @@ always @(posedge clk) begin
 				PCSource = 3'b000;
 				ALUControl = 3'b001;
 				ShiftControl = 3'b000;
-				DataSrc = 4'b0000;
+				DataSrc = 4'b0001;
 				estado = lbWait3;
 			end
 			lbWait3: begin

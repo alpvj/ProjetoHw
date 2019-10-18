@@ -2507,7 +2507,7 @@ always @(posedge clk) begin
 				PCSource = 3'b000;
 				ALUControl = 3'b001;
 				ShiftControl = 3'b000;
-				DataSrc = 4'b0000;
+				DataSrc = 4'b0001;
 				estado = lbWait2;
 			end
 			lbWait2: begin
@@ -2516,7 +2516,7 @@ always @(posedge clk) begin
 				IRWrite = 1'b0;
 				A_Control = 1'b0;
 				B_Control = 1'b0;
-				RegControl = 1'b0;
+				RegControl = 1'b1;
 				ALUOutControl = 1'b0;
 				EPCWrite = 1'b0;
 				MDControl = 1'b0;
@@ -2534,7 +2534,7 @@ always @(posedge clk) begin
 				PCSource = 3'b000;
 				ALUControl = 3'b001;
 				ShiftControl = 3'b000;
-				DataSrc = 4'b0000;
+				DataSrc = 4'b0001;
 				estado = lbWait3;
 			end
 			lbWait3: begin
@@ -2543,7 +2543,7 @@ always @(posedge clk) begin
 				IRWrite = 1'b0;
 				A_Control = 1'b0;
 				B_Control = 1'b0;
-				RegControl = 1'b1;
+				RegControl = 1'b0;
 				ALUOutControl = 1'b0;
 				EPCWrite = 1'b0;
 				MDControl = 1'b0;
