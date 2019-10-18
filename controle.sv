@@ -4,7 +4,7 @@ output logic [1:0] IorD, ALUSrcA, ALUSrcB, ExcpCtrl, ShiftSrc, ShiftAmt, SSContr
 output logic [2:0] RegDst, PCSource, ALUControl, ShiftControl,
 output logic [3:0] DataSrc,
 output logic [6:0] estado,
-output logic reset);//11 + 8 + 4 + 1 = 24 sinais de controle
+output logic reset, DControl, MDMux);//11 + 8 + 4 + 1 = 24 sinais de controle
 
 /*
 PCWrite = 1'b0;
@@ -15,7 +15,7 @@ B_Control = 1'b0;
 RegControl = 1'b0;
 ALUOutControl = 1'b0;
 EPCWrite = 1'b0;
-MDControl = 1'b0;
+MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 HI_Control = 1'b0;
 LO_Control = 1'b0;
 IorD = 2'b00;
@@ -194,7 +194,7 @@ always @(posedge clk) begin
 				RegControl = 1'b0;
 				ALUOutControl = 1'b0;
 				EPCWrite = 1'b0;
-				MDControl = 1'b0;
+				MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
 				IorD = 2'b00;
@@ -221,7 +221,7 @@ always @(posedge clk) begin
 				RegControl = 1'b0;
 				ALUOutControl = 1'b0;
 				EPCWrite = 1'b0;
-				MDControl = 1'b0;
+				MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
 				IorD = 2'b00;
@@ -248,7 +248,7 @@ always @(posedge clk) begin
 				RegControl = 1'b0;
 				ALUOutControl = 1'b0;
 				EPCWrite = 1'b0;
-				MDControl = 1'b0;
+				MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
 				IorD = 2'b00;
@@ -275,7 +275,7 @@ always @(posedge clk) begin
 				RegControl = 1'b0;
 				ALUOutControl = 1'b0;
 				EPCWrite = 1'b1;
-				MDControl = 1'b0;
+				MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
 				IorD = 2'b00;
@@ -302,7 +302,7 @@ always @(posedge clk) begin
 				RegControl = 1'b0;
 				ALUOutControl = 1'b0;
 				EPCWrite = 1'b0;
-				MDControl = 1'b0;
+				MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
 				IorD = 2'b00;
@@ -329,7 +329,7 @@ always @(posedge clk) begin
 				RegControl = 1'b0;
 				ALUOutControl = 1'b1;
 				EPCWrite = 1'b0;
-				MDControl = 1'b0;
+				MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
 				IorD = 2'b00;
@@ -356,7 +356,7 @@ always @(posedge clk) begin
 				RegControl = 1'b0;
 				ALUOutControl = 1'b0;
 				EPCWrite = 1'b0;
-				MDControl = 1'b0;
+				MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
 				IorD = 2'b00;
@@ -387,7 +387,7 @@ always @(posedge clk) begin
 								RegControl = 1'b0;
 								ALUOutControl = 1'b0;
 								EPCWrite = 1'b0;
-								MDControl = 1'b0;
+								MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 								HI_Control = 1'b0;
 								LO_Control = 1'b0;
 								IorD = 2'b00;
@@ -414,7 +414,7 @@ always @(posedge clk) begin
 								RegControl = 1'b0;
 								ALUOutControl = 1'b0;
 								EPCWrite = 1'b0;
-								MDControl = 1'b0;
+								MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 								HI_Control = 1'b0;
 								LO_Control = 1'b0;
 								IorD = 2'b00;
@@ -441,7 +441,7 @@ always @(posedge clk) begin
 								RegControl = 1'b0;
 								ALUOutControl = 1'b0;
 								EPCWrite = 1'b0;
-								MDControl = 1'b0;
+								MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 								HI_Control = 1'b0;
 								LO_Control = 1'b0;
 								IorD = 2'b00;
@@ -468,7 +468,7 @@ always @(posedge clk) begin
 								RegControl = 1'b0;
 								ALUOutControl = 1'b0;
 								EPCWrite = 1'b0;
-								MDControl = 1'b0;
+								MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 								HI_Control = 1'b0;
 								LO_Control = 1'b0;
 								IorD = 2'b00;
@@ -495,7 +495,7 @@ always @(posedge clk) begin
 								RegControl = 1'b0;
 								ALUOutControl = 1'b0;
 								EPCWrite = 1'b0;
-								MDControl = 1'b0;
+								MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 								HI_Control = 1'b0;
 								LO_Control = 1'b0;
 								IorD = 2'b00;
@@ -522,7 +522,7 @@ always @(posedge clk) begin
 								RegControl = 1'b0;
 								ALUOutControl = 1'b0;
 								EPCWrite = 1'b0;
-								MDControl = 1'b0;
+								MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 								HI_Control = 1'b0;
 								LO_Control = 1'b0;
 								IorD = 2'b00;
@@ -549,7 +549,7 @@ always @(posedge clk) begin
 								RegControl = 1'b0;
 								ALUOutControl = 1'b0;
 								EPCWrite = 1'b0;
-								MDControl = 1'b0;
+								MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 								HI_Control = 1'b0;
 								LO_Control = 1'b0;
 								IorD = 2'b00;
@@ -576,7 +576,7 @@ always @(posedge clk) begin
 								RegControl = 1'b0;
 								ALUOutControl = 1'b0;
 								EPCWrite = 1'b0;
-								MDControl = 1'b0;
+								MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 								HI_Control = 1'b0;
 								LO_Control = 1'b0;
 								IorD = 2'b00;
@@ -603,7 +603,7 @@ always @(posedge clk) begin
 								RegControl = 1'b0;
 								ALUOutControl = 1'b0;
 								EPCWrite = 1'b0;
-								MDControl = 1'b0;
+								MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 								HI_Control = 1'b0;
 								LO_Control = 1'b0;
 								IorD = 2'b00;
@@ -630,7 +630,7 @@ always @(posedge clk) begin
 								RegControl = 1'b0;
 								ALUOutControl = 1'b0;
 								EPCWrite = 1'b0;
-								MDControl = 1'b0;
+								MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 								HI_Control = 1'b0;
 								LO_Control = 1'b0;
 								IorD = 2'b00;
@@ -657,7 +657,7 @@ always @(posedge clk) begin
 								RegControl = 1'b0;
 								ALUOutControl = 1'b0;
 								EPCWrite = 1'b0;
-								MDControl = 1'b0;
+								MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 								HI_Control = 1'b0;
 								LO_Control = 1'b0;
 								IorD = 2'b00;
@@ -684,7 +684,7 @@ always @(posedge clk) begin
 								RegControl = 1'b0;
 								ALUOutControl = 1'b0;
 								EPCWrite = 1'b0;
-								MDControl = 1'b0;
+								MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 								HI_Control = 1'b0;
 								LO_Control = 1'b0;
 								IorD = 2'b00;
@@ -711,7 +711,7 @@ always @(posedge clk) begin
 								RegControl = 1'b1;
 								ALUOutControl = 1'b0;
 								EPCWrite = 1'b0;
-								MDControl = 1'b0;
+								MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 								HI_Control = 1'b0;
 								LO_Control = 1'b0;
 								IorD = 2'b00;
@@ -740,7 +740,7 @@ always @(posedge clk) begin
 						RegControl = 1'b0;
 						ALUOutControl = 1'b0;
 						EPCWrite = 1'b0;
-						MDControl = 1'b0;
+						MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 						HI_Control = 1'b0;
 						LO_Control = 1'b0;
 						IorD = 2'b00;
@@ -767,7 +767,7 @@ always @(posedge clk) begin
 						RegControl = 1'b0;
 						ALUOutControl = 1'b0;
 						EPCWrite = 1'b0;
-						MDControl = 1'b0;
+						MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 						HI_Control = 1'b0;
 						LO_Control = 1'b0;
 						IorD = 2'b00;
@@ -794,7 +794,7 @@ always @(posedge clk) begin
 						RegControl = 1'b0;
 						ALUOutControl = 1'b0;
 						EPCWrite = 1'b0;
-						MDControl = 1'b0;
+						MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 						HI_Control = 1'b0;
 						LO_Control = 1'b0;
 						IorD = 2'b00;
@@ -821,7 +821,7 @@ always @(posedge clk) begin
 						RegControl = 1'b1;
 						ALUOutControl = 1'b1;
 						EPCWrite = 1'b0;
-						MDControl = 1'b0;
+						MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 						HI_Control = 1'b0;
 						LO_Control = 1'b0;
 						IorD = 2'b00;
@@ -848,7 +848,7 @@ always @(posedge clk) begin
 						RegControl = 1'b0;
 						ALUOutControl = 1'b0;
 						EPCWrite = 1'b0;
-						MDControl = 1'b0;
+						MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 						HI_Control = 1'b0;
 						LO_Control = 1'b0;
 						IorD = 2'b00;
@@ -875,7 +875,7 @@ always @(posedge clk) begin
 						RegControl = 1'b0;
 						ALUOutControl = 1'b0;
 						EPCWrite = 1'b0;
-						MDControl = 1'b0;
+						MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 						HI_Control = 1'b0;
 						LO_Control = 1'b0;
 						IorD = 2'b00;
@@ -902,7 +902,7 @@ always @(posedge clk) begin
 						RegControl = 1'b0;
 						ALUOutControl = 1'b0;
 						EPCWrite = 1'b0;
-						MDControl = 1'b0;
+						MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 						HI_Control = 1'b0;
 						LO_Control = 1'b0;
 						IorD = 2'b00;
@@ -929,7 +929,7 @@ always @(posedge clk) begin
 						RegControl = 1'b0;
 						ALUOutControl = 1'b0;
 						EPCWrite = 1'b0;
-						MDControl = 1'b0;
+						MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 						HI_Control = 1'b0;
 						LO_Control = 1'b0;
 						IorD = 2'b00;
@@ -956,7 +956,7 @@ always @(posedge clk) begin
 						RegControl = 1'b0;
 						ALUOutControl = 1'b0;
 						EPCWrite = 1'b0;
-						MDControl = 1'b0;
+						MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 						HI_Control = 1'b0;
 						LO_Control = 1'b0;
 						IorD = 2'b00;
@@ -983,7 +983,7 @@ always @(posedge clk) begin
 						RegControl = 1'b0;
 						ALUOutControl = 1'b0;
 						EPCWrite = 1'b0;
-						MDControl = 1'b0;
+						MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 						HI_Control = 1'b0;
 						LO_Control = 1'b0;
 						IorD = 2'b00;
@@ -1010,7 +1010,7 @@ always @(posedge clk) begin
 						RegControl = 1'b0;
 						ALUOutControl = 1'b1;
 						EPCWrite = 1'b0;
-						MDControl = 1'b0;
+						MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 						HI_Control = 1'b0;
 						LO_Control = 1'b0;
 						IorD = 2'b10;
@@ -1037,7 +1037,7 @@ always @(posedge clk) begin
 						RegControl = 1'b0;
 						ALUOutControl = 1'b1;
 						EPCWrite = 1'b0;
-						MDControl = 1'b0;
+						MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 						HI_Control = 1'b0;
 						LO_Control = 1'b0;
 						IorD = 2'b01;
@@ -1064,7 +1064,7 @@ always @(posedge clk) begin
 						RegControl = 1'b0;
 						ALUOutControl = 1'b1;
 						EPCWrite = 1'b0;
-						MDControl = 1'b0;
+						MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 						HI_Control = 1'b0;
 						LO_Control = 1'b0;
 						IorD = 2'b01;
@@ -1091,7 +1091,7 @@ always @(posedge clk) begin
 						RegControl = 1'b0;
 						ALUOutControl = 1'b1;
 						EPCWrite = 1'b0;
-						MDControl = 1'b0;
+						MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 						HI_Control = 1'b0;
 						LO_Control = 1'b0;
 						IorD = 2'b01;
@@ -1118,7 +1118,7 @@ always @(posedge clk) begin
 						RegControl = 1'b0;
 						ALUOutControl = 1'b1;
 						EPCWrite = 1'b0;
-						MDControl = 1'b0;
+						MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 						HI_Control = 1'b0;
 						LO_Control = 1'b0;
 						IorD = 2'b10;
@@ -1145,7 +1145,7 @@ always @(posedge clk) begin
 						RegControl = 1'b0;
 						ALUOutControl = 1'b1;
 						EPCWrite = 1'b0;
-						MDControl = 1'b0;
+						MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 						HI_Control = 1'b0;
 						LO_Control = 1'b0;
 						IorD = 2'b10;
@@ -1172,7 +1172,7 @@ always @(posedge clk) begin
 						RegControl = 1'b0;
 						ALUOutControl = 1'b0;
 						EPCWrite = 1'b0;
-						MDControl = 1'b0;
+						MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 						HI_Control = 1'b0;
 						LO_Control = 1'b0;
 						IorD = 2'b01;
@@ -1199,7 +1199,7 @@ always @(posedge clk) begin
 						RegControl = 1'b0;
 						ALUOutControl = 1'b0;
 						EPCWrite = 1'b0;
-						MDControl = 1'b0;
+						MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 						HI_Control = 1'b0;
 						LO_Control = 1'b0;
 						IorD = 2'b00;
@@ -1232,7 +1232,7 @@ always @(posedge clk) begin
 					RegControl = 1'b0;
 					ALUOutControl = 1'b1;
 					EPCWrite = 1'b0;
-					MDControl = 1'b0;
+					MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 					HI_Control = 1'b0;
 					LO_Control = 1'b0;
 					IorD = 2'b00;
@@ -1264,7 +1264,7 @@ always @(posedge clk) begin
 					RegControl = 1'b0;
 					ALUOutControl = 1'b1;
 					EPCWrite = 1'b0;
-					MDControl = 1'b0;
+					MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 					HI_Control = 1'b0;
 					LO_Control = 1'b0;
 					IorD = 2'b00;
@@ -1292,7 +1292,7 @@ always @(posedge clk) begin
 				RegControl = 1'b0;
 				ALUOutControl = 1'b1;
 				EPCWrite = 1'b0;
-				MDControl = 1'b0;
+				MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
 				IorD = 2'b00;
@@ -1319,7 +1319,7 @@ always @(posedge clk) begin
 				RegControl = 1'b0;
 				ALUOutControl = 1'b0;
 				EPCWrite = 1'b0;
-				MDControl = 1'b0;
+				MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
 				IorD = 2'b00;
@@ -1346,7 +1346,7 @@ always @(posedge clk) begin
 				RegControl = 1'b1;
 				ALUOutControl = 1'b0;
 				EPCWrite = 1'b0;
-				MDControl = 1'b0;
+				MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
 				IorD = 2'b00;
@@ -1377,7 +1377,7 @@ always @(posedge clk) begin
 					RegControl = 1'b0;
 					ALUOutControl = 1'b1;
 					EPCWrite = 1'b0;
-					MDControl = 1'b0;
+					MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 					HI_Control = 1'b0;
 					LO_Control = 1'b0;
 					IorD = 2'b00;
@@ -1405,7 +1405,7 @@ always @(posedge clk) begin
 				RegControl = 1'b0;
 				ALUOutControl = 1'b0;
 				EPCWrite = 1'b0;
-				MDControl = 1'b0;
+				MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
 				IorD = 2'b00;
@@ -1432,7 +1432,7 @@ always @(posedge clk) begin
 				RegControl = 1'b1;
 				ALUOutControl = 1'b0;
 				EPCWrite = 1'b0;
-				MDControl = 1'b0;
+				MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
 				IorD = 2'b00;
@@ -1459,7 +1459,7 @@ always @(posedge clk) begin
 				RegControl = 1'b0;
 				ALUOutControl = 1'b0;
 				EPCWrite = 1'b0;
-				MDControl = 1'b0;
+				MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
 				IorD = 2'b00;
@@ -1486,7 +1486,7 @@ always @(posedge clk) begin
 				RegControl = 1'b0;
 				ALUOutControl = 1'b0;
 				EPCWrite = 1'b0;
-				MDControl = 1'b0;
+				MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
 				IorD = 2'b00;
@@ -1513,7 +1513,7 @@ always @(posedge clk) begin
 				RegControl = 1'b0;
 				ALUOutControl = 1'b0;
 				EPCWrite = 1'b0;
-				MDControl = 1'b0;
+				MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
 				IorD = 2'b00;
@@ -1540,7 +1540,7 @@ always @(posedge clk) begin
 				RegControl = 1'b0;
 				ALUOutControl = 1'b0;
 				EPCWrite = 1'b0;
-				MDControl = 1'b0;
+				MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
 				IorD = 2'b00;
@@ -1567,7 +1567,7 @@ always @(posedge clk) begin
 				RegControl = 1'b0;
 				ALUOutControl = 1'b0;
 				EPCWrite = 1'b0;
-				MDControl = 1'b0;
+				MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
 				IorD = 2'b00;
@@ -1594,7 +1594,7 @@ always @(posedge clk) begin
 				RegControl = 1'b0;
 				ALUOutControl = 1'b0;
 				EPCWrite = 1'b0;
-				MDControl = 1'b0;
+				MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
 				IorD = 2'b00;
@@ -1621,7 +1621,7 @@ always @(posedge clk) begin
 				RegControl = 1'b0;
 				ALUOutControl = 1'b0;
 				EPCWrite = 1'b0;
-				MDControl = 1'b0;
+				MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
 				IorD = 2'b00;
@@ -1648,7 +1648,7 @@ always @(posedge clk) begin
 				RegControl = 1'b1;
 				ALUOutControl = 1'b0;
 				EPCWrite = 1'b0;
-				MDControl = 1'b0;
+				MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
 				IorD = 2'b00;
@@ -1675,7 +1675,7 @@ always @(posedge clk) begin
 				RegControl = 1'b0;
 				ALUOutControl = 1'b0;
 				EPCWrite = 1'b0;
-				MDControl = 1'b0;
+				MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
 				IorD = 2'b00;
@@ -1702,7 +1702,7 @@ always @(posedge clk) begin
 				RegControl = 1'b0;
 				ALUOutControl = 1'b0;
 				EPCWrite = 1'b0;
-				MDControl = 1'b0;
+				MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
 				IorD = 2'b00;
@@ -1729,7 +1729,7 @@ always @(posedge clk) begin
 				RegControl = 1'b0;
 				ALUOutControl = 1'b0;
 				EPCWrite = 1'b0;
-				MDControl = 1'b0;
+				MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
 				IorD = 2'b00;
@@ -1756,7 +1756,7 @@ always @(posedge clk) begin
 				RegControl = 1'b0;
 				ALUOutControl = 1'b0;
 				EPCWrite = 1'b0;
-				MDControl = 1'b0;
+				MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
 				IorD = 2'b00;
@@ -1783,7 +1783,7 @@ always @(posedge clk) begin
 				RegControl = 1'b0;
 				ALUOutControl = 1'b0;
 				EPCWrite = 1'b0;
-				MDControl = 1'b0;
+				MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
 				IorD = 2'b00;
@@ -1810,7 +1810,7 @@ always @(posedge clk) begin
 				RegControl = 1'b0;
 				ALUOutControl = 1'b0;
 				EPCWrite = 1'b0;
-				MDControl = 1'b0;
+				MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
 				IorD = 2'b00;
@@ -1837,7 +1837,7 @@ always @(posedge clk) begin
 				RegControl = 1'b0;
 				ALUOutControl = 1'b1;
 				EPCWrite = 1'b0;
-				MDControl = 1'b0;
+				MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
 				IorD = 2'b00;
@@ -1864,7 +1864,7 @@ always @(posedge clk) begin
 				RegControl = 1'b0;
 				ALUOutControl = 1'b0;
 				EPCWrite = 1'b0;
-				MDControl = 1'b0;
+				MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
 				IorD = 2'b00;
@@ -1891,7 +1891,7 @@ always @(posedge clk) begin
 				RegControl = 1'b1;
 				ALUOutControl = 1'b0;
 				EPCWrite = 1'b0;
-				MDControl = 1'b0;
+				MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
 				IorD = 2'b00;
@@ -1918,7 +1918,7 @@ always @(posedge clk) begin
 				RegControl = 1'b0;
 				ALUOutControl = 1'b0;
 				EPCWrite = 1'b0;
-				MDControl = 1'b0;
+				MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
 				IorD = 2'b00;
@@ -1945,7 +1945,7 @@ always @(posedge clk) begin
 				RegControl = 1'b0;
 				ALUOutControl = 1'b0;
 				EPCWrite = 1'b0;
-				MDControl = 1'b0;
+				MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
 				IorD = 2'b00;
@@ -1972,7 +1972,7 @@ always @(posedge clk) begin
 				RegControl = 1'b0;
 				ALUOutControl = 1'b0;
 				EPCWrite = 1'b0;
-				MDControl = 1'b0;
+				MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
 				IorD = 2'b00;
@@ -1999,7 +1999,7 @@ always @(posedge clk) begin
 				RegControl = 1'b1;
 				ALUOutControl = 1'b0;
 				EPCWrite = 1'b0;
-				MDControl = 1'b0;
+				MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
 				IorD = 2'b00;
@@ -2026,7 +2026,7 @@ always @(posedge clk) begin
 				RegControl = 1'b0;
 				ALUOutControl = 1'b0;
 				EPCWrite = 1'b0;
-				MDControl = 1'b0;
+				MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
 				IorD = 2'b00;
@@ -2053,7 +2053,7 @@ always @(posedge clk) begin
 				RegControl = 1'b0;
 				ALUOutControl = 1'b0;
 				EPCWrite = 1'b0;
-				MDControl = 1'b0;
+				MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
 				IorD = 2'b00;
@@ -2080,7 +2080,7 @@ always @(posedge clk) begin
 				RegControl = 1'b0;
 				ALUOutControl = 1'b0;
 				EPCWrite = 1'b0;
-				MDControl = 1'b0;
+				MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
 				IorD = 2'b00;
@@ -2107,7 +2107,7 @@ always @(posedge clk) begin
 				RegControl = 1'b0;
 				ALUOutControl = 1'b0;
 				EPCWrite = 1'b0;
-				MDControl = 1'b0;
+				MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
 				IorD = 2'b00;
@@ -2134,7 +2134,7 @@ always @(posedge clk) begin
 				RegControl = 1'b0;
 				ALUOutControl = 1'b0;
 				EPCWrite = 1'b0;
-				MDControl = 1'b0;
+				MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
 				IorD = 2'b00;
@@ -2161,7 +2161,7 @@ always @(posedge clk) begin
 				RegControl = 1'b1;
 				ALUOutControl = 1'b0;
 				EPCWrite = 1'b0;
-				MDControl = 1'b0;
+				MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
 				IorD = 2'b00;
@@ -2188,7 +2188,7 @@ always @(posedge clk) begin
 				RegControl = 1'b1;
 				ALUOutControl = 1'b0;
 				EPCWrite = 1'b0;
-				MDControl = 1'b0;
+				MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
 				IorD = 2'b00;
@@ -2215,7 +2215,7 @@ always @(posedge clk) begin
 				RegControl = 1'b0;
 				ALUOutControl = 1'b0;
 				EPCWrite = 1'b0;
-				MDControl = 1'b0;
+				MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
 				IorD = 2'b00;
@@ -2242,7 +2242,7 @@ always @(posedge clk) begin
 				RegControl = 1'b0;
 				ALUOutControl = 1'b0;
 				EPCWrite = 1'b0;
-				MDControl = 1'b0;
+				MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
 				IorD = 2'b00;
@@ -2274,7 +2274,7 @@ always @(posedge clk) begin
 				RegControl = 1'b0;
 				ALUOutControl = 1'b0;
 				EPCWrite = 1'b0;
-				MDControl = 1'b0;
+				MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
 				IorD = 2'b00;
@@ -2301,7 +2301,7 @@ always @(posedge clk) begin
 				RegControl = 1'b0;
 				ALUOutControl = 1'b0;
 				EPCWrite = 1'b0;
-				MDControl = 1'b0;
+				MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
 				IorD = 2'b00;
@@ -2328,7 +2328,7 @@ always @(posedge clk) begin
 				RegControl = 1'b0;
 				ALUOutControl = 1'b0;
 				EPCWrite = 1'b0;
-				MDControl = 1'b0;
+				MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
 				IorD = 2'b00;
@@ -2360,7 +2360,7 @@ always @(posedge clk) begin
 				RegControl = 1'b0;
 				ALUOutControl = 1'b0;
 				EPCWrite = 1'b0;
-				MDControl = 1'b0;
+				MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
 				IorD = 2'b00;
@@ -2387,7 +2387,7 @@ always @(posedge clk) begin
 				RegControl = 1'b0;
 				ALUOutControl = 1'b0;
 				EPCWrite = 1'b0;
-				MDControl = 1'b0;
+				MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
 				IorD = 2'b00;
@@ -2419,7 +2419,7 @@ always @(posedge clk) begin
 				RegControl = 1'b0;
 				ALUOutControl = 1'b0;
 				EPCWrite = 1'b0;
-				MDControl = 1'b0;
+				MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
 				IorD = 2'b00;
@@ -2446,7 +2446,7 @@ always @(posedge clk) begin
 				RegControl = 1'b0;
 				ALUOutControl = 1'b0;
 				EPCWrite = 1'b0;
-				MDControl = 1'b0;
+				MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
 				IorD = 2'b00;
@@ -2478,7 +2478,7 @@ always @(posedge clk) begin
 				RegControl = 1'b0;
 				ALUOutControl = 1'b0;
 				EPCWrite = 1'b0;
-				MDControl = 1'b0;
+				MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
 				IorD = 2'b00;
@@ -2505,7 +2505,7 @@ always @(posedge clk) begin
 				RegControl = 1'b0;
 				ALUOutControl = 1'b0;
 				EPCWrite = 1'b0;
-				MDControl = 1'b0;
+				MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
 				IorD = 2'b11;
@@ -2532,7 +2532,7 @@ always @(posedge clk) begin
 				RegControl = 1'b0;
 				ALUOutControl = 1'b0;
 				EPCWrite = 1'b0;
-				MDControl = 1'b0;
+				MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
 				IorD = 2'b11;
@@ -2559,7 +2559,7 @@ always @(posedge clk) begin
 				RegControl = 1'b0;
 				ALUOutControl = 1'b0;
 				EPCWrite = 1'b0;
-				MDControl = 1'b0;
+				MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
 				IorD = 2'b11;
@@ -2586,7 +2586,7 @@ always @(posedge clk) begin
 				RegControl = 1'b0;
 				ALUOutControl = 1'b0;
 				EPCWrite = 1'b1;
-				MDControl = 1'b0;
+				MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
 				IorD = 2'b11;
@@ -2613,7 +2613,7 @@ always @(posedge clk) begin
 				RegControl = 1'b0;
 				ALUOutControl = 1'b0;
 				EPCWrite = 1'b0;
-				MDControl = 1'b0;
+				MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
 				IorD = 2'b11;
@@ -2640,7 +2640,7 @@ always @(posedge clk) begin
 				RegControl = 1'b0;
 				ALUOutControl = 1'b0;
 				EPCWrite = 1'b0;
-				MDControl = 1'b0;
+				MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
 				IorD = 2'b10;
@@ -2667,7 +2667,7 @@ always @(posedge clk) begin
 				RegControl = 1'b0;
 				ALUOutControl = 1'b0;
 				EPCWrite = 1'b0;
-				MDControl = 1'b0;
+				MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
 				IorD = 2'b10;
@@ -2694,7 +2694,7 @@ always @(posedge clk) begin
 				RegControl = 1'b0;
 				ALUOutControl = 1'b0;
 				EPCWrite = 1'b0;
-				MDControl = 1'b0;
+				MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
 				IorD = 2'b10;
@@ -2721,7 +2721,7 @@ always @(posedge clk) begin
 				RegControl = 1'b0;
 				ALUOutControl = 1'b0;
 				EPCWrite = 1'b0;
-				MDControl = 1'b0;
+				MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
 				IorD = 2'b10;
@@ -2748,7 +2748,7 @@ always @(posedge clk) begin
 				RegControl = 1'b0;
 				ALUOutControl = 1'b0;
 				EPCWrite = 1'b0;
-				MDControl = 1'b0;
+				MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
 				IorD = 2'b01;
@@ -2775,7 +2775,7 @@ always @(posedge clk) begin
 				RegControl = 1'b0;
 				ALUOutControl = 1'b0;
 				EPCWrite = 1'b0;
-				MDControl = 1'b0;
+				MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
 				IorD = 2'b01;
@@ -2802,7 +2802,7 @@ always @(posedge clk) begin
 				RegControl = 1'b1;
 				ALUOutControl = 1'b0;
 				EPCWrite = 1'b0;
-				MDControl = 1'b0;
+				MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
 				IorD = 2'b01;
@@ -2829,7 +2829,7 @@ always @(posedge clk) begin
 				RegControl = 1'b0;
 				ALUOutControl = 1'b0;
 				EPCWrite = 1'b0;
-				MDControl = 1'b0;
+				MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
 				IorD = 2'b01;
@@ -2856,7 +2856,7 @@ always @(posedge clk) begin
 				RegControl = 1'b0;
 				ALUOutControl = 1'b0;
 				EPCWrite = 1'b0;
-				MDControl = 1'b0;
+				MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
 				IorD = 2'b01;
@@ -2883,7 +2883,7 @@ always @(posedge clk) begin
 				RegControl = 1'b0;
 				ALUOutControl = 1'b0;
 				EPCWrite = 1'b0;
-				MDControl = 1'b0;
+				MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
 				IorD = 2'b01;
@@ -2910,7 +2910,7 @@ always @(posedge clk) begin
 				RegControl = 1'b0;
 				ALUOutControl = 1'b0;
 				EPCWrite = 1'b0;
-				MDControl = 1'b0;
+				MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
 				IorD = 2'b01;
@@ -2937,7 +2937,7 @@ always @(posedge clk) begin
 				RegControl = 1'b1;
 				ALUOutControl = 1'b0;
 				EPCWrite = 1'b0;
-				MDControl = 1'b0;
+				MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
 				IorD = 2'b01;
@@ -2964,7 +2964,7 @@ always @(posedge clk) begin
 				RegControl = 1'b0;
 				ALUOutControl = 1'b0;
 				EPCWrite = 1'b0;
-				MDControl = 1'b0;
+				MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
 				IorD = 2'b01;
@@ -2991,7 +2991,7 @@ always @(posedge clk) begin
 				RegControl = 1'b0;
 				ALUOutControl = 1'b0;
 				EPCWrite = 1'b0;
-				MDControl = 1'b0;
+				MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
 				IorD = 2'b01;
@@ -3018,7 +3018,7 @@ always @(posedge clk) begin
 				RegControl = 1'b0;
 				ALUOutControl = 1'b0;
 				EPCWrite = 1'b0;
-				MDControl = 1'b0;
+				MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
 				IorD = 2'b01;
@@ -3045,7 +3045,7 @@ always @(posedge clk) begin
 				RegControl = 1'b0;
 				ALUOutControl = 1'b0;
 				EPCWrite = 1'b0;
-				MDControl = 1'b0;
+				MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
 				IorD = 2'b01;
@@ -3072,7 +3072,7 @@ always @(posedge clk) begin
 				RegControl = 1'b1;
 				ALUOutControl = 1'b0;
 				EPCWrite = 1'b0;
-				MDControl = 1'b0;
+				MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
 				IorD = 2'b01;
@@ -3099,7 +3099,7 @@ always @(posedge clk) begin
 				RegControl = 1'b0;
 				ALUOutControl = 1'b0;
 				EPCWrite = 1'b0;
-				MDControl = 1'b0;
+				MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
 				IorD = 2'b01;
@@ -3126,7 +3126,7 @@ always @(posedge clk) begin
 				RegControl = 1'b0;
 				ALUOutControl = 1'b0;
 				EPCWrite = 1'b0;
-				MDControl = 1'b0;
+				MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
 				IorD = 2'b01;
@@ -3153,7 +3153,7 @@ always @(posedge clk) begin
 				RegControl = 1'b0;
 				ALUOutControl = 1'b0;
 				EPCWrite = 1'b0;
-				MDControl = 1'b0;
+				MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
 				IorD = 2'b10;
@@ -3180,7 +3180,7 @@ always @(posedge clk) begin
 				RegControl = 1'b0;
 				ALUOutControl = 1'b0;
 				EPCWrite = 1'b0;
-				MDControl = 1'b0;
+				MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
 				IorD = 2'b10;
@@ -3207,7 +3207,7 @@ always @(posedge clk) begin
 				RegControl = 1'b0;
 				ALUOutControl = 1'b0;
 				EPCWrite = 1'b0;
-				MDControl = 1'b0;
+				MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
 				IorD = 2'b10;
@@ -3234,7 +3234,7 @@ always @(posedge clk) begin
 				RegControl = 1'b0;
 				ALUOutControl = 1'b0;
 				EPCWrite = 1'b0;
-				MDControl = 1'b0;
+				MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
 				IorD = 2'b10;
@@ -3261,7 +3261,7 @@ always @(posedge clk) begin
 				RegControl = 1'b0;
 				ALUOutControl = 1'b0;
 				EPCWrite = 1'b0;
-				MDControl = 1'b0;
+				MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
 				IorD = 2'b10;
@@ -3288,7 +3288,7 @@ always @(posedge clk) begin
 				RegControl = 1'b0;
 				ALUOutControl = 1'b0;
 				EPCWrite = 1'b0;
-				MDControl = 1'b0;
+				MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
 				IorD = 2'b10;
@@ -3315,7 +3315,7 @@ always @(posedge clk) begin
 				RegControl = 1'b0;
 				ALUOutControl = 1'b0;
 				EPCWrite = 1'b0;
-				MDControl = 1'b0;
+				MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
 				IorD = 2'b10;
@@ -3342,7 +3342,7 @@ always @(posedge clk) begin
 				RegControl = 1'b0;
 				ALUOutControl = 1'b0;
 				EPCWrite = 1'b0;
-				MDControl = 1'b0;
+				MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
 				IorD = 2'b10;
@@ -3369,7 +3369,7 @@ always @(posedge clk) begin
 				RegControl = 1'b0;
 				ALUOutControl = 1'b0;
 				EPCWrite = 1'b0;
-				MDControl = 1'b0;
+				MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
 				IorD = 2'b01;
@@ -3396,7 +3396,7 @@ always @(posedge clk) begin
 				RegControl = 1'b0;
 				ALUOutControl = 1'b0;
 				EPCWrite = 1'b0;
-				MDControl = 1'b0;
+				MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
 				IorD = 2'b01;
@@ -3423,7 +3423,7 @@ always @(posedge clk) begin
 				RegControl = 1'b0;
 				ALUOutControl = 1'b0;
 				EPCWrite = 1'b0;
-				MDControl = 1'b0;
+				MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
 				IorD = 2'b01;
@@ -3455,7 +3455,7 @@ always @(posedge clk) begin
 				RegControl = 1'b0;
 				ALUOutControl = 1'b0;
 				EPCWrite = 1'b0;
-				MDControl = 1'b0;
+				MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
 				IorD = 2'b01;
@@ -3482,7 +3482,7 @@ always @(posedge clk) begin
 				RegControl = 1'b0;
 				ALUOutControl = 1'b0;
 				EPCWrite = 1'b0;
-				MDControl = 1'b0;
+				MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
 				IorD = 2'b01;
@@ -3509,7 +3509,7 @@ always @(posedge clk) begin
 				RegControl = 1'b0;
 				ALUOutControl = 1'b0;
 				EPCWrite = 1'b0;
-				MDControl = 1'b0;
+				MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
 				IorD = 2'b11;
@@ -3536,7 +3536,7 @@ always @(posedge clk) begin
 				RegControl = 1'b0;
 				ALUOutControl = 1'b0;
 				EPCWrite = 1'b0;
-				MDControl = 1'b0;
+				MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
 				IorD = 2'b11;
@@ -3563,7 +3563,7 @@ always @(posedge clk) begin
 				RegControl = 1'b0;
 				ALUOutControl = 1'b0;
 				EPCWrite = 1'b0;
-				MDControl = 1'b0;
+				MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
 				IorD = 2'b11;
@@ -3590,7 +3590,7 @@ always @(posedge clk) begin
 				RegControl = 1'b0;
 				ALUOutControl = 1'b0;
 				EPCWrite = 1'b1;
-				MDControl = 1'b0;
+				MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
 				IorD = 2'b11;
@@ -3617,7 +3617,7 @@ always @(posedge clk) begin
 				RegControl = 1'b0;
 				ALUOutControl = 1'b0;
 				EPCWrite = 1'b0;
-				MDControl = 1'b0;
+				MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
 				IorD = 2'b11;

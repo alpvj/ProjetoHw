@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ProjetoCPU
-Fri Oct 18 17:58:04 2019
+Fri Oct 18 19:34:29 2019
 Quartus II 64-Bit Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
 
 
@@ -16,20 +16,21 @@ Quartus II 64-Bit Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Versio
   8. Analysis & Synthesis RAM Summary
   9. User-Specified and Inferred Latches
  10. Registers Removed During Synthesis
- 11. General Register Statistics
- 12. Inverted Register Statistics
- 13. Multiplexer Restructuring Statistics (Restructuring Performed)
- 14. Source assignments for Memoria:MemCtrl|LPM_RAM_DQ:MEM|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated
- 15. Source assignments for Memoria:MemCtrl|LPM_RAM_DQ:MEM_plus_One|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated
- 16. Source assignments for Memoria:MemCtrl|LPM_RAM_DQ:MEM_plus_Two|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated
- 17. Source assignments for Memoria:MemCtrl|LPM_RAM_DQ:MEM_plus_Three|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated
- 18. Parameter Settings for User Entity Instance: Controle:inst4
- 19. Parameter Settings for User Entity Instance: Memoria:MemCtrl|LPM_RAM_DQ:MEM
- 20. Parameter Settings for User Entity Instance: Memoria:MemCtrl|LPM_RAM_DQ:MEM_plus_One
- 21. Parameter Settings for User Entity Instance: Memoria:MemCtrl|LPM_RAM_DQ:MEM_plus_Two
- 22. Parameter Settings for User Entity Instance: Memoria:MemCtrl|LPM_RAM_DQ:MEM_plus_Three
- 23. Analysis & Synthesis Messages
- 24. Analysis & Synthesis Suppressed Messages
+ 11. Removed Registers Triggering Further Register Optimizations
+ 12. General Register Statistics
+ 13. Inverted Register Statistics
+ 14. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 15. Source assignments for Memoria:MemCtrl|LPM_RAM_DQ:MEM|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated
+ 16. Source assignments for Memoria:MemCtrl|LPM_RAM_DQ:MEM_plus_One|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated
+ 17. Source assignments for Memoria:MemCtrl|LPM_RAM_DQ:MEM_plus_Two|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated
+ 18. Source assignments for Memoria:MemCtrl|LPM_RAM_DQ:MEM_plus_Three|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated
+ 19. Parameter Settings for User Entity Instance: Controle:inst4
+ 20. Parameter Settings for User Entity Instance: Memoria:MemCtrl|LPM_RAM_DQ:MEM
+ 21. Parameter Settings for User Entity Instance: Memoria:MemCtrl|LPM_RAM_DQ:MEM_plus_One
+ 22. Parameter Settings for User Entity Instance: Memoria:MemCtrl|LPM_RAM_DQ:MEM_plus_Two
+ 23. Parameter Settings for User Entity Instance: Memoria:MemCtrl|LPM_RAM_DQ:MEM_plus_Three
+ 24. Analysis & Synthesis Messages
+ 25. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -55,16 +56,16 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +-------------------------------+-----------------------------------------------+
-; Analysis & Synthesis Status   ; Successful - Fri Oct 18 17:58:04 2019         ;
+; Analysis & Synthesis Status   ; Successful - Fri Oct 18 19:34:29 2019         ;
 ; Quartus II 64-Bit Version     ; 9.1 Build 350 03/24/2010 SP 2 SJ Full Version ;
 ; Revision Name                 ; ProjetoCPU                                    ;
 ; Top-level Entity Name         ; Hardware                                      ;
 ; Family                        ; Stratix II                                    ;
 ; Logic utilization             ; N/A                                           ;
-;     Combinational ALUTs       ; 1,841                                         ;
+;     Combinational ALUTs       ; 1,808                                         ;
 ;     Dedicated logic registers ; 1,339                                         ;
 ; Total registers               ; 1339                                          ;
-; Total pins                    ; 307                                           ;
+; Total pins                    ; 374                                           ;
 ; Total virtual pins            ; 0                                             ;
 ; Total block memory bits       ; 8,192                                         ;
 ; DSP block 9-bit elements      ; 0                                             ;
@@ -200,6 +201,8 @@ applicable agreement for further details.
 ; LS.v                             ; yes             ; User Verilog HDL File                  ; E:/Users/alpvj/Desktop/pasta/ProjetoHw/LS.v                                         ;
 ; SS.v                             ; yes             ; User Verilog HDL File                  ; E:/Users/alpvj/Desktop/pasta/ProjetoHw/SS.v                                         ;
 ; ExcpMux.v                        ; yes             ; User Verilog HDL File                  ; E:/Users/alpvj/Desktop/pasta/ProjetoHw/ExcpMux.v                                    ;
+; MorD.v                           ; yes             ; User Verilog HDL File                  ; E:/Users/alpvj/Desktop/pasta/ProjetoHw/MorD.v                                       ;
+; mult.v                           ; yes             ; User Verilog HDL File                  ; E:/Users/alpvj/Desktop/pasta/ProjetoHw/mult.v                                       ;
 ; lpm_ram_dq.tdf                   ; yes             ; Megafunction                           ; e:/programfiles/quartus/altera/91sp2/quartus/libraries/megafunctions/lpm_ram_dq.tdf ;
 ; altram.tdf                       ; yes             ; Megafunction                           ; e:/programfiles/quartus/altera/91sp2/quartus/libraries/megafunctions/altram.tdf     ;
 ; altsyncram.tdf                   ; yes             ; Megafunction                           ; e:/programfiles/quartus/altera/91sp2/quartus/libraries/megafunctions/altsyncram.tdf ;
@@ -213,39 +216,39 @@ applicable agreement for further details.
 +-----------------------------------------------+-------+
 ; Resource                                      ; Usage ;
 +-----------------------------------------------+-------+
-; Estimated ALUTs Used                          ; 1841  ;
+; Estimated ALUTs Used                          ; 1808  ;
 ; Dedicated logic registers                     ; 1339  ;
 ;                                               ;       ;
-; Estimated ALUTs Unavailable                   ; 238   ;
+; Estimated ALUTs Unavailable                   ; 269   ;
 ;                                               ;       ;
-; Total combinational functions                 ; 1841  ;
+; Total combinational functions                 ; 1808  ;
 ; Combinational ALUT usage by number of inputs  ;       ;
-;     -- 7 input functions                      ; 10    ;
-;     -- 6 input functions                      ; 964   ;
+;     -- 7 input functions                      ; 11    ;
+;     -- 6 input functions                      ; 994   ;
 ;     -- 5 input functions                      ; 349   ;
-;     -- 4 input functions                      ; 199   ;
-;     -- <=3 input functions                    ; 319   ;
+;     -- 4 input functions                      ; 136   ;
+;     -- <=3 input functions                    ; 318   ;
 ;                                               ;       ;
 ; Combinational ALUTs by mode                   ;       ;
-;     -- normal mode                            ; 1808  ;
-;     -- extended LUT mode                      ; 10    ;
+;     -- normal mode                            ; 1774  ;
+;     -- extended LUT mode                      ; 11    ;
 ;     -- arithmetic mode                        ; 23    ;
 ;     -- shared arithmetic mode                 ; 0     ;
 ;                                               ;       ;
-; Estimated ALUT/register pairs used            ; 2938  ;
+; Estimated ALUT/register pairs used            ; 2936  ;
 ;                                               ;       ;
 ; Total registers                               ; 1339  ;
 ;     -- Dedicated logic registers              ; 1339  ;
 ;     -- I/O registers                          ; 0     ;
 ;                                               ;       ;
-; Estimated ALMs:  partially or completely used ; 1,469 ;
+; Estimated ALMs:  partially or completely used ; 1,468 ;
 ;                                               ;       ;
-; I/O pins                                      ; 307   ;
+; I/O pins                                      ; 374   ;
 ; Total block memory bits                       ; 8192  ;
 ; Maximum fan-out node                          ; clk   ;
 ; Maximum fan-out                               ; 1371  ;
-; Total fan-out                                 ; 15292 ;
-; Average fan-out                               ; 4.35  ;
+; Total fan-out                                 ; 15225 ;
+; Average fan-out                               ; 4.29  ;
 +-----------------------------------------------+-------+
 
 
@@ -254,12 +257,12 @@ applicable agreement for further details.
 +-------------------------------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                      ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                 ; Library Name ;
 +-------------------------------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------+--------------+
-; |Hardware                                       ; 1841 (1)          ; 1339 (0)     ; 8192              ; 0            ; 0       ; 0         ; 0         ; 307  ; 0            ; |Hardware                                                                                                           ; work         ;
+; |Hardware                                       ; 1808 (1)          ; 1339 (0)     ; 8192              ; 0            ; 0       ; 0         ; 0         ; 374  ; 0            ; |Hardware                                                                                                           ; work         ;
 ;    |ALUSrcA:inst5|                              ; 34 (34)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|ALUSrcA:inst5                                                                                             ; work         ;
-;    |ALUSrcB:inst6|                              ; 34 (34)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|ALUSrcB:inst6                                                                                             ; work         ;
+;    |ALUSrcB:inst6|                              ; 32 (32)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|ALUSrcB:inst6                                                                                             ; work         ;
 ;    |Banco_reg:Reg_Control|                      ; 736 (736)         ; 1024 (1024)  ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Banco_reg:Reg_Control                                                                                     ; work         ;
 ;    |Controle:inst4|                             ; 225 (225)         ; 43 (43)      ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Controle:inst4                                                                                            ;              ;
-;    |DataSrc:inst3|                              ; 100 (100)         ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|DataSrc:inst3                                                                                             ; work         ;
+;    |DataSrc:inst3|                              ; 68 (68)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|DataSrc:inst3                                                                                             ; work         ;
 ;    |Instr_Reg:IRWrite|                          ; 0 (0)             ; 32 (32)      ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Instr_Reg:IRWrite                                                                                         ; work         ;
 ;    |IorD:inst1|                                 ; 9 (9)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|IorD:inst1                                                                                                ; work         ;
 ;    |LS:inst14|                                  ; 57 (57)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|LS:inst14                                                                                                 ; work         ;
@@ -267,15 +270,15 @@ applicable agreement for further details.
 ;       |lpm_ram_dq:MEM_plus_One|                 ; 0 (0)             ; 0 (0)        ; 2048              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Memoria:MemCtrl|lpm_ram_dq:MEM_plus_One                                                                   ; work         ;
 ;          |altram:sram|                          ; 0 (0)             ; 0 (0)        ; 2048              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Memoria:MemCtrl|lpm_ram_dq:MEM_plus_One|altram:sram                                                       ;              ;
 ;             |altsyncram:ram_block|              ; 0 (0)             ; 0 (0)        ; 2048              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Memoria:MemCtrl|lpm_ram_dq:MEM_plus_One|altram:sram|altsyncram:ram_block                                  ;              ;
-;                |altsyncram_g2a1:auto_generated| ; 0 (0)             ; 0 (0)        ; 2048              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Memoria:MemCtrl|lpm_ram_dq:MEM_plus_One|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated   ; work         ;
-;       |lpm_ram_dq:MEM_plus_Three|               ; 0 (0)             ; 0 (0)        ; 2048              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Memoria:MemCtrl|lpm_ram_dq:MEM_plus_Three                                                                 ; work         ;
+;                |altsyncram_g2a1:auto_generated| ; 0 (0)             ; 0 (0)        ; 2048              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Memoria:MemCtrl|lpm_ram_dq:MEM_plus_One|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated   ;              ;
+;       |lpm_ram_dq:MEM_plus_Three|               ; 0 (0)             ; 0 (0)        ; 2048              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Memoria:MemCtrl|lpm_ram_dq:MEM_plus_Three                                                                 ;              ;
 ;          |altram:sram|                          ; 0 (0)             ; 0 (0)        ; 2048              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Memoria:MemCtrl|lpm_ram_dq:MEM_plus_Three|altram:sram                                                     ; work         ;
 ;             |altsyncram:ram_block|              ; 0 (0)             ; 0 (0)        ; 2048              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Memoria:MemCtrl|lpm_ram_dq:MEM_plus_Three|altram:sram|altsyncram:ram_block                                ; work         ;
 ;                |altsyncram_g2a1:auto_generated| ; 0 (0)             ; 0 (0)        ; 2048              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Memoria:MemCtrl|lpm_ram_dq:MEM_plus_Three|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated ; work         ;
-;       |lpm_ram_dq:MEM_plus_Two|                 ; 0 (0)             ; 0 (0)        ; 2048              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Memoria:MemCtrl|lpm_ram_dq:MEM_plus_Two                                                                   ; work         ;
-;          |altram:sram|                          ; 0 (0)             ; 0 (0)        ; 2048              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Memoria:MemCtrl|lpm_ram_dq:MEM_plus_Two|altram:sram                                                       ; work         ;
-;             |altsyncram:ram_block|              ; 0 (0)             ; 0 (0)        ; 2048              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Memoria:MemCtrl|lpm_ram_dq:MEM_plus_Two|altram:sram|altsyncram:ram_block                                  ; work         ;
-;                |altsyncram_g2a1:auto_generated| ; 0 (0)             ; 0 (0)        ; 2048              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Memoria:MemCtrl|lpm_ram_dq:MEM_plus_Two|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated   ; work         ;
+;       |lpm_ram_dq:MEM_plus_Two|                 ; 0 (0)             ; 0 (0)        ; 2048              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Memoria:MemCtrl|lpm_ram_dq:MEM_plus_Two                                                                   ;              ;
+;          |altram:sram|                          ; 0 (0)             ; 0 (0)        ; 2048              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Memoria:MemCtrl|lpm_ram_dq:MEM_plus_Two|altram:sram                                                       ;              ;
+;             |altsyncram:ram_block|              ; 0 (0)             ; 0 (0)        ; 2048              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Memoria:MemCtrl|lpm_ram_dq:MEM_plus_Two|altram:sram|altsyncram:ram_block                                  ;              ;
+;                |altsyncram_g2a1:auto_generated| ; 0 (0)             ; 0 (0)        ; 2048              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Memoria:MemCtrl|lpm_ram_dq:MEM_plus_Two|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated   ;              ;
 ;       |lpm_ram_dq:MEM|                          ; 0 (0)             ; 0 (0)        ; 2048              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Memoria:MemCtrl|lpm_ram_dq:MEM                                                                            ; work         ;
 ;          |altram:sram|                          ; 0 (0)             ; 0 (0)        ; 2048              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Memoria:MemCtrl|lpm_ram_dq:MEM|altram:sram                                                                ; work         ;
 ;             |altsyncram:ram_block|              ; 0 (0)             ; 0 (0)        ; 2048              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Memoria:MemCtrl|lpm_ram_dq:MEM|altram:sram|altsyncram:ram_block                                           ; work         ;
@@ -293,7 +296,7 @@ applicable agreement for further details.
 ;    |ShiftAmount:ShiftAmt|                       ; 10 (10)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|ShiftAmount:ShiftAmt                                                                                      ; work         ;
 ;    |ShiftLeft2de32pra32:inst|                   ; 0 (0)             ; 16 (16)      ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|ShiftLeft2de32pra32:inst                                                                                  ; work         ;
 ;    |ShiftSource:ShiftSrc|                       ; 5 (5)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|ShiftSource:ShiftSrc                                                                                      ; work         ;
-;    |Ula32:ALUControl|                           ; 142 (142)         ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Ula32:ALUControl                                                                                          ; work         ;
+;    |Ula32:ALUControl|                           ; 143 (143)         ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Ula32:ALUControl                                                                                          ; work         ;
 +-------------------------------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -391,13 +394,167 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +-------------------------------------------+---------------------------------------------------+
 ; ShiftLeft2de32pra32:inst|outputSL[0..1]   ; Stuck at GND due to stuck port data_in            ;
 ; ShiftLeft2de32pra32:inst|outputSL[18..31] ; Merged with ShiftLeft2de32pra32:inst|outputSL[17] ;
+; mult:inst8|ANeg[6]                        ; Merged with mult:inst8|ANeg[27]                   ;
+; mult:inst8|AHelp[12]                      ; Merged with mult:inst8|ANeg[27]                   ;
+; mult:inst8|ANeg[22]                       ; Merged with mult:inst8|ANeg[27]                   ;
+; mult:inst8|AHelp[14]                      ; Merged with mult:inst8|ANeg[27]                   ;
+; mult:inst8|ANeg[4,21,25,30]               ; Merged with mult:inst8|ANeg[27]                   ;
+; mult:inst8|AHelp[29]                      ; Merged with mult:inst8|ANeg[27]                   ;
+; mult:inst8|ANeg[2]                        ; Merged with mult:inst8|ANeg[26]                   ;
+; mult:inst8|AHelp[20,22]                   ; Merged with mult:inst8|ANeg[26]                   ;
+; mult:inst8|ANeg[0]                        ; Merged with mult:inst8|ANeg[26]                   ;
+; mult:inst8|AHelp[24,26]                   ; Merged with mult:inst8|ANeg[26]                   ;
+; mult:inst8|ANeg[29]                       ; Merged with mult:inst8|ANeg[26]                   ;
+; mult:inst8|AHelp[28,30]                   ; Merged with mult:inst8|ANeg[26]                   ;
+; mult:inst8|ANeg[31]                       ; Merged with mult:inst8|ANeg[26]                   ;
+; mult:inst8|AHelp[32]                      ; Merged with mult:inst8|ANeg[26]                   ;
+; mult:inst8|ANeg[18,20,24]                 ; Merged with mult:inst8|ANeg[26]                   ;
+; mult:inst8|AHelp[0]                       ; Merged with mult:inst8|ANeg[26]                   ;
+; mult:inst8|ANeg[14]                       ; Merged with mult:inst8|ANeg[26]                   ;
+; mult:inst8|AHelp[2]                       ; Merged with mult:inst8|ANeg[26]                   ;
+; mult:inst8|ANeg[10]                       ; Merged with mult:inst8|ANeg[26]                   ;
+; mult:inst8|AHelp[4]                       ; Merged with mult:inst8|ANeg[26]                   ;
+; mult:inst8|ANeg[16]                       ; Merged with mult:inst8|ANeg[26]                   ;
+; mult:inst8|AHelp[6]                       ; Merged with mult:inst8|ANeg[26]                   ;
+; mult:inst8|ANeg[8]                        ; Merged with mult:inst8|ANeg[26]                   ;
+; mult:inst8|AHelp[8]                       ; Merged with mult:inst8|ANeg[26]                   ;
+; mult:inst8|ANeg[12]                       ; Merged with mult:inst8|ANeg[26]                   ;
+; mult:inst8|AHelp[10]                      ; Merged with mult:inst8|ANeg[26]                   ;
+; mult:inst8|AHelp[13,21]                   ; Merged with mult:inst8|ANeg[23]                   ;
+; mult:inst8|ANeg[15]                       ; Merged with mult:inst8|ANeg[23]                   ;
+; mult:inst8|AHelp[5]                       ; Merged with mult:inst8|ANeg[23]                   ;
+; mult:inst8|ANeg[5]                        ; Merged with mult:inst8|ANeg[23]                   ;
+; mult:inst8|AHelp[17]                      ; Merged with mult:inst8|ANeg[23]                   ;
+; mult:inst8|ANeg[1]                        ; Merged with mult:inst8|ANeg[23]                   ;
+; mult:inst8|AHelp[25]                      ; Merged with mult:inst8|ANeg[23]                   ;
+; mult:inst8|ANeg[17]                       ; Merged with mult:inst8|ANeg[23]                   ;
+; mult:inst8|AHelp[1]                       ; Merged with mult:inst8|ANeg[23]                   ;
+; mult:inst8|ANeg[9]                        ; Merged with mult:inst8|ANeg[23]                   ;
+; mult:inst8|AHelp[9]                       ; Merged with mult:inst8|ANeg[23]                   ;
+; mult:inst8|ANeg[3,11]                     ; Merged with mult:inst8|ANeg[23]                   ;
+; mult:inst8|AHelp[19,23]                   ; Merged with mult:inst8|ANeg[23]                   ;
+; mult:inst8|ANeg[28]                       ; Merged with mult:inst8|ANeg[23]                   ;
+; mult:inst8|AHelp[27,31]                   ; Merged with mult:inst8|ANeg[23]                   ;
+; mult:inst8|ANeg[19,32]                    ; Merged with mult:inst8|ANeg[23]                   ;
+; mult:inst8|AHelp[3]                       ; Merged with mult:inst8|ANeg[23]                   ;
+; mult:inst8|ANeg[13]                       ; Merged with mult:inst8|ANeg[23]                   ;
+; mult:inst8|AHelp[7]                       ; Merged with mult:inst8|ANeg[23]                   ;
+; mult:inst8|ANeg[7]                        ; Merged with mult:inst8|ANeg[23]                   ;
+; mult:inst8|AHelp[11,15..16,18]            ; Merged with mult:inst8|ANeg[23]                   ;
+; mult:inst8|Prod[63]                       ; Merged with mult:inst8|Prod[64]                   ;
+; mult:inst8|resultHi[31]                   ; Merged with mult:inst8|resultHi[30]               ;
+; mult:inst8|ANeg[23,26]                    ; Merged with mult:inst8|ANeg[27]                   ;
+; mult:inst8|ANeg[27]                       ; Stuck at GND due to stuck port data_in            ;
+; mult:inst8|AHelp[33]                      ; Merged with mult:inst8|ANeg[33]                   ;
+; Registrador:HI|Saida[30]                  ; Merged with Registrador:HI|Saida[31]              ;
+; Controle:inst4|MDMux                      ; Merged with Controle:inst4|DataSrc[3]             ;
 ; Controle:inst4|ExcpCtrl[1]                ; Merged with Controle:inst4|DataSrc[3]             ;
+; Controle:inst4|LO_Control                 ; Merged with Controle:inst4|DataSrc[3]             ;
+; Controle:inst4|HI_Control                 ; Merged with Controle:inst4|DataSrc[3]             ;
+; Controle:inst4|MDControl                  ; Merged with Controle:inst4|DataSrc[3]             ;
 ; Controle:inst4|ShiftSrc[0]                ; Merged with Controle:inst4|ShiftAmt[0]            ;
 ; Controle:inst4|ShiftSrc[1]                ; Merged with Controle:inst4|ShiftAmt[1]            ;
 ; Controle:inst4|A_Control                  ; Merged with Controle:inst4|B_Control              ;
+; Registrador:LO|Saida[0..4,6..14]          ; Stuck at GND due to stuck port data_in            ;
+; Registrador:HI|Saida[16]                  ; Stuck at GND due to stuck port data_in            ;
+; Registrador:LO|Saida[5,24,27..31]         ; Stuck at GND due to stuck port data_in            ;
+; Registrador:HI|Saida[0..9]                ; Stuck at GND due to stuck port data_in            ;
+; Registrador:LO|Saida[26]                  ; Stuck at GND due to stuck port data_in            ;
+; Registrador:HI|Saida[10..15]              ; Stuck at GND due to stuck port data_in            ;
+; Registrador:LO|Saida[25]                  ; Stuck at GND due to stuck port data_in            ;
+; Registrador:HI|Saida[17..29,31]           ; Stuck at GND due to stuck port data_in            ;
+; Registrador:LO|Saida[15..23]              ; Stuck at GND due to stuck port data_in            ;
 ; Controle:inst4|DataSrc[3]                 ; Stuck at GND due to stuck port data_in            ;
-; Total Number of Removed Registers = 21    ;                                                   ;
+; mult:inst8|contador[0..31]                ; Lost fanout                                       ;
+; mult:inst8|Prod[0..16,64]                 ; Lost fanout                                       ;
+; mult:inst8|ANeg[61]                       ; Lost fanout                                       ;
+; mult:inst8|Prod[28,33..62]                ; Lost fanout                                       ;
+; mult:inst8|AHelp[64]                      ; Lost fanout                                       ;
+; mult:inst8|ANeg[64]                       ; Lost fanout                                       ;
+; mult:inst8|AHelp[63]                      ; Lost fanout                                       ;
+; mult:inst8|ANeg[63]                       ; Lost fanout                                       ;
+; mult:inst8|AHelp[62]                      ; Lost fanout                                       ;
+; mult:inst8|ANeg[62]                       ; Lost fanout                                       ;
+; mult:inst8|AHelp[60..61]                  ; Lost fanout                                       ;
+; mult:inst8|ANeg[60]                       ; Lost fanout                                       ;
+; mult:inst8|AHelp[59]                      ; Lost fanout                                       ;
+; mult:inst8|ANeg[59]                       ; Lost fanout                                       ;
+; mult:inst8|AHelp[58]                      ; Lost fanout                                       ;
+; mult:inst8|ANeg[58]                       ; Lost fanout                                       ;
+; mult:inst8|AHelp[57]                      ; Lost fanout                                       ;
+; mult:inst8|ANeg[57]                       ; Lost fanout                                       ;
+; mult:inst8|AHelp[56]                      ; Lost fanout                                       ;
+; mult:inst8|ANeg[56]                       ; Lost fanout                                       ;
+; mult:inst8|AHelp[55]                      ; Lost fanout                                       ;
+; mult:inst8|ANeg[55]                       ; Lost fanout                                       ;
+; mult:inst8|AHelp[54]                      ; Lost fanout                                       ;
+; mult:inst8|ANeg[54]                       ; Lost fanout                                       ;
+; mult:inst8|AHelp[53]                      ; Lost fanout                                       ;
+; mult:inst8|ANeg[53]                       ; Lost fanout                                       ;
+; mult:inst8|AHelp[52]                      ; Lost fanout                                       ;
+; mult:inst8|ANeg[52]                       ; Lost fanout                                       ;
+; mult:inst8|AHelp[51]                      ; Lost fanout                                       ;
+; mult:inst8|ANeg[51]                       ; Lost fanout                                       ;
+; mult:inst8|AHelp[50]                      ; Lost fanout                                       ;
+; mult:inst8|ANeg[50]                       ; Lost fanout                                       ;
+; mult:inst8|AHelp[49]                      ; Lost fanout                                       ;
+; mult:inst8|ANeg[49]                       ; Lost fanout                                       ;
+; mult:inst8|AHelp[48]                      ; Lost fanout                                       ;
+; mult:inst8|ANeg[48]                       ; Lost fanout                                       ;
+; mult:inst8|AHelp[47]                      ; Lost fanout                                       ;
+; mult:inst8|ANeg[47]                       ; Lost fanout                                       ;
+; mult:inst8|AHelp[46]                      ; Lost fanout                                       ;
+; mult:inst8|ANeg[46]                       ; Lost fanout                                       ;
+; mult:inst8|AHelp[45]                      ; Lost fanout                                       ;
+; mult:inst8|ANeg[45]                       ; Lost fanout                                       ;
+; mult:inst8|AHelp[44]                      ; Lost fanout                                       ;
+; mult:inst8|ANeg[44]                       ; Lost fanout                                       ;
+; mult:inst8|AHelp[43]                      ; Lost fanout                                       ;
+; mult:inst8|ANeg[43]                       ; Lost fanout                                       ;
+; mult:inst8|AHelp[42]                      ; Lost fanout                                       ;
+; mult:inst8|ANeg[42]                       ; Lost fanout                                       ;
+; mult:inst8|AHelp[41]                      ; Lost fanout                                       ;
+; mult:inst8|ANeg[41]                       ; Lost fanout                                       ;
+; mult:inst8|AHelp[40]                      ; Lost fanout                                       ;
+; mult:inst8|ANeg[40]                       ; Lost fanout                                       ;
+; mult:inst8|AHelp[39]                      ; Lost fanout                                       ;
+; mult:inst8|ANeg[39]                       ; Lost fanout                                       ;
+; mult:inst8|AHelp[38]                      ; Lost fanout                                       ;
+; mult:inst8|ANeg[38]                       ; Lost fanout                                       ;
+; mult:inst8|AHelp[37]                      ; Lost fanout                                       ;
+; mult:inst8|ANeg[37]                       ; Lost fanout                                       ;
+; mult:inst8|AHelp[36]                      ; Lost fanout                                       ;
+; mult:inst8|ANeg[36]                       ; Lost fanout                                       ;
+; mult:inst8|AHelp[35]                      ; Lost fanout                                       ;
+; mult:inst8|ANeg[35]                       ; Lost fanout                                       ;
+; mult:inst8|AHelp[34]                      ; Lost fanout                                       ;
+; mult:inst8|ANeg[33..34]                   ; Lost fanout                                       ;
+; mult:inst8|Prod[17..27,29..32]            ; Lost fanout                                       ;
+; mult:inst8|resultHi[1..10,12..18,29]      ; Lost fanout                                       ;
+; mult:inst8|resultLo[15]                   ; Lost fanout                                       ;
+; mult:inst8|resultHi[19..23,25]            ; Lost fanout                                       ;
+; mult:inst8|resultLo[17]                   ; Lost fanout                                       ;
+; mult:inst8|resultHi[0,11,24,26..28]       ; Lost fanout                                       ;
+; mult:inst8|resultLo[12..14,16,18..31]     ; Lost fanout                                       ;
+; mult:inst8|resultHi[30]                   ; Lost fanout                                       ;
+; mult:inst8|resultLo[0..11]                ; Lost fanout                                       ;
+; Total Number of Removed Registers = 380   ;                                                   ;
 +-------------------------------------------+---------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                           ;
++---------------------------+---------------------------+-----------------------------------------------+
+; Register name             ; Reason for Removal        ; Registers Removed due to This Register        ;
++---------------------------+---------------------------+-----------------------------------------------+
+; mult:inst8|ANeg[27]       ; Stuck at GND              ; mult:inst8|contador[31], mult:inst8|AHelp[64] ;
+;                           ; due to stuck port data_in ;                                               ;
+; Controle:inst4|DataSrc[3] ; Stuck at GND              ; mult:inst8|Prod[33], mult:inst8|ANeg[33]      ;
+;                           ; due to stuck port data_in ;                                               ;
+; mult:inst8|Prod[16]       ; Lost Fanouts              ; mult:inst8|Prod[17]                           ;
+; mult:inst8|Prod[37]       ; Lost Fanouts              ; mult:inst8|Prod[38]                           ;
+; mult:inst8|Prod[28]       ; Lost Fanouts              ; mult:inst8|Prod[29]                           ;
++---------------------------+---------------------------+-----------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -430,35 +587,37 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------+
+; 3:1                ; 63 bits   ; 126 ALUTs     ; 0 ALUTs              ; 126 ALUTs              ; Yes        ; |Hardware|mult:inst8|resultHi[16]         ;
 ; 8:1                ; 2 bits    ; 10 ALUTs      ; 6 ALUTs              ; 4 ALUTs                ; Yes        ; |Hardware|Registrador:PCWrite|Saida[1]    ;
-; 8:1                ; 4 bits    ; 20 ALUTs      ; 16 ALUTs             ; 4 ALUTs                ; Yes        ; |Hardware|Registrador:PCWrite|Saida[28]   ;
-; 8:1                ; 26 bits   ; 130 ALUTs     ; 52 ALUTs             ; 78 ALUTs               ; Yes        ; |Hardware|Registrador:PCWrite|Saida[17]   ;
-; 32:1               ; 32 bits   ; 672 ALUTs     ; 672 ALUTs            ; 0 ALUTs                ; Yes        ; |Hardware|Registrador:B_Control|Saida[26] ;
+; 8:1                ; 4 bits    ; 20 ALUTs      ; 16 ALUTs             ; 4 ALUTs                ; Yes        ; |Hardware|Registrador:PCWrite|Saida[31]   ;
+; 8:1                ; 26 bits   ; 130 ALUTs     ; 52 ALUTs             ; 78 ALUTs               ; Yes        ; |Hardware|Registrador:PCWrite|Saida[23]   ;
+; 32:1               ; 32 bits   ; 672 ALUTs     ; 672 ALUTs            ; 0 ALUTs                ; Yes        ; |Hardware|Registrador:B_Control|Saida[25] ;
 ; 32:1               ; 32 bits   ; 672 ALUTs     ; 672 ALUTs            ; 0 ALUTs                ; Yes        ; |Hardware|Registrador:A_Control|Saida[0]  ;
-; 15:1               ; 13 bits   ; 130 ALUTs     ; 91 ALUTs             ; 39 ALUTs               ; Yes        ; |Hardware|RegDesloc:ShiftControl|temp[19] ;
-; 15:1               ; 3 bits    ; 30 ALUTs      ; 21 ALUTs             ; 9 ALUTs                ; Yes        ; |Hardware|RegDesloc:ShiftControl|temp[1]  ;
-; 16:1               ; 6 bits    ; 60 ALUTs      ; 48 ALUTs             ; 12 ALUTs               ; Yes        ; |Hardware|RegDesloc:ShiftControl|temp[12] ;
-; 129:1              ; 12 bits   ; 1032 ALUTs    ; 552 ALUTs            ; 480 ALUTs              ; Yes        ; |Hardware|Controle:inst4|IRWrite          ;
+; 15:1               ; 13 bits   ; 130 ALUTs     ; 91 ALUTs             ; 39 ALUTs               ; Yes        ; |Hardware|RegDesloc:ShiftControl|temp[22] ;
+; 15:1               ; 3 bits    ; 30 ALUTs      ; 21 ALUTs             ; 9 ALUTs                ; Yes        ; |Hardware|RegDesloc:ShiftControl|temp[3]  ;
+; 16:1               ; 6 bits    ; 60 ALUTs      ; 48 ALUTs             ; 12 ALUTs               ; Yes        ; |Hardware|RegDesloc:ShiftControl|temp[10] ;
+; 129:1              ; 12 bits   ; 1032 ALUTs    ; 552 ALUTs            ; 480 ALUTs              ; Yes        ; |Hardware|Controle:inst4|MemCtrl          ;
 ; 16:1               ; 4 bits    ; 40 ALUTs      ; 32 ALUTs             ; 8 ALUTs                ; Yes        ; |Hardware|RegDesloc:ShiftControl|temp[9]  ;
-; 191:1              ; 6 bits    ; 762 ALUTs     ; 276 ALUTs            ; 486 ALUTs              ; Yes        ; |Hardware|Controle:inst4|RegDst[2]        ;
-; 191:1              ; 9 bits    ; 1143 ALUTs    ; 459 ALUTs            ; 684 ALUTs              ; Yes        ; |Hardware|Controle:inst4|ALUOutControl    ;
-; 193:1              ; 2 bits    ; 256 ALUTs     ; 94 ALUTs             ; 162 ALUTs              ; Yes        ; |Hardware|Controle:inst4|RegDst[0]        ;
-; 253:1              ; 4 bits    ; 672 ALUTs     ; 224 ALUTs            ; 448 ALUTs              ; Yes        ; |Hardware|Controle:inst4|DataSrc[2]       ;
-; 255:1              ; 2 bits    ; 340 ALUTs     ; 104 ALUTs            ; 236 ALUTs              ; Yes        ; |Hardware|Controle:inst4|ALUControl[1]    ;
-; 3:1                ; 15 bits   ; 30 ALUTs      ; 30 ALUTs             ; 0 ALUTs                ; No         ; |Hardware|ALUSrcB:inst6|Mux12             ;
-; 4:1                ; 2 bits    ; 4 ALUTs       ; 4 ALUTs              ; 0 ALUTs                ; No         ; |Hardware|ALUSrcB:inst6|Mux31             ;
-; 4:1                ; 13 bits   ; 26 ALUTs      ; 26 ALUTs             ; 0 ALUTs                ; No         ; |Hardware|ALUSrcB:inst6|Mux17             ;
-; 4:1                ; 32 bits   ; 64 ALUTs      ; 64 ALUTs             ; 0 ALUTs                ; No         ; |Hardware|ALUSrcA:inst5|Mux16             ;
-; 3:1                ; 8 bits    ; 16 ALUTs      ; 8 ALUTs              ; 8 ALUTs                ; No         ; |Hardware|LS:inst14|LSOut[8]              ;
+; 191:1              ; 6 bits    ; 762 ALUTs     ; 276 ALUTs            ; 486 ALUTs              ; Yes        ; |Hardware|Controle:inst4|ShiftAmt[1]      ;
+; 191:1              ; 9 bits    ; 1143 ALUTs    ; 459 ALUTs            ; 684 ALUTs              ; Yes        ; |Hardware|Controle:inst4|SSControl[1]     ;
+; 193:1              ; 2 bits    ; 256 ALUTs     ; 94 ALUTs             ; 162 ALUTs              ; Yes        ; |Hardware|Controle:inst4|ALUSrcB[1]       ;
+; 253:1              ; 4 bits    ; 672 ALUTs     ; 224 ALUTs            ; 448 ALUTs              ; Yes        ; |Hardware|Controle:inst4|RegControl       ;
+; 255:1              ; 2 bits    ; 340 ALUTs     ; 104 ALUTs            ; 236 ALUTs              ; Yes        ; |Hardware|Controle:inst4|ALUControl[0]    ;
+; 3:1                ; 15 bits   ; 30 ALUTs      ; 30 ALUTs             ; 0 ALUTs                ; No         ; |Hardware|ALUSrcB:inst6|Mux7              ;
+; 4:1                ; 2 bits    ; 4 ALUTs       ; 4 ALUTs              ; 0 ALUTs                ; No         ; |Hardware|ALUSrcB:inst6|Mux30             ;
+; 4:1                ; 13 bits   ; 26 ALUTs      ; 26 ALUTs             ; 0 ALUTs                ; No         ; |Hardware|ALUSrcB:inst6|Mux20             ;
+; 4:1                ; 32 bits   ; 64 ALUTs      ; 64 ALUTs             ; 0 ALUTs                ; No         ; |Hardware|ALUSrcA:inst5|Mux17             ;
+; 3:1                ; 8 bits    ; 16 ALUTs      ; 8 ALUTs              ; 8 ALUTs                ; No         ; |Hardware|LS:inst14|LSOut[9]              ;
 ; 4:1                ; 6 bits    ; 12 ALUTs      ; 12 ALUTs             ; 0 ALUTs                ; No         ; |Hardware|IorD:inst1|Mux28                ;
 ; 4:1                ; 2 bits    ; 4 ALUTs       ; 4 ALUTs              ; 0 ALUTs                ; No         ; |Hardware|IorD:inst1|Mux31                ;
-; 3:1                ; 4 bits    ; 8 ALUTs       ; 8 ALUTs              ; 0 ALUTs                ; No         ; |Hardware|ShiftAmount:ShiftAmt|Mux3       ;
-; 3:1                ; 8 bits    ; 16 ALUTs      ; 8 ALUTs              ; 8 ALUTs                ; No         ; |Hardware|SS:inst15|toWriteData[9]        ;
+; 3:1                ; 4 bits    ; 8 ALUTs       ; 8 ALUTs              ; 0 ALUTs                ; No         ; |Hardware|ShiftAmount:ShiftAmt|Mux4       ;
+; 3:1                ; 8 bits    ; 16 ALUTs      ; 8 ALUTs              ; 8 ALUTs                ; No         ; |Hardware|SS:inst15|toWriteData[13]       ;
 ; 4:1                ; 2 bits    ; 4 ALUTs       ; 4 ALUTs              ; 0 ALUTs                ; No         ; |Hardware|ALUSrcB:inst6|Mux16             ;
-; 8:1                ; 32 bits   ; 160 ALUTs     ; 64 ALUTs             ; 96 ALUTs               ; No         ; |Hardware|Ula32:ALUControl|Mux60          ;
-; 8:1                ; 32 bits   ; 160 ALUTs     ; 128 ALUTs            ; 32 ALUTs               ; No         ; |Hardware|Ula32:ALUControl|Mux14          ;
-; 8:1                ; 5 bits    ; 25 ALUTs      ; 20 ALUTs             ; 5 ALUTs                ; No         ; |Hardware|RegDst:inst2|Mux0               ;
-; 16:1               ; 31 bits   ; 310 ALUTs     ; 217 ALUTs            ; 93 ALUTs               ; No         ; |Hardware|DataSrc:inst3|Mux10             ;
+; 8:1                ; 32 bits   ; 160 ALUTs     ; 64 ALUTs             ; 96 ALUTs               ; No         ; |Hardware|Ula32:ALUControl|Mux39          ;
+; 8:1                ; 32 bits   ; 160 ALUTs     ; 128 ALUTs            ; 32 ALUTs               ; No         ; |Hardware|Ula32:ALUControl|Mux12          ;
+; 8:1                ; 5 bits    ; 25 ALUTs      ; 20 ALUTs             ; 5 ALUTs                ; No         ; |Hardware|RegDst:inst2|Mux4               ;
+; 12:1               ; 27 bits   ; 216 ALUTs     ; 162 ALUTs            ; 54 ALUTs               ; No         ; |Hardware|DataSrc:inst3|Mux1              ;
+; 9:1                ; 4 bits    ; 24 ALUTs      ; 24 ALUTs             ; 0 ALUTs                ; No         ; |Hardware|DataSrc:inst3|Mux24             ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------+
 
 
@@ -732,7 +891,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
-    Info: Processing started: Fri Oct 18 17:57:49 2019
+    Info: Processing started: Fri Oct 18 19:34:14 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ProjetoCPU -c ProjetoCPU
 Info: Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info: Found 2 design units, including 1 entities, in source file banco_reg.vhd
@@ -792,9 +951,11 @@ Info: Found 1 design units, including 1 entities, in source file ss.v
     Info: Found entity 1: SS
 Info: Found 1 design units, including 1 entities, in source file excpmux.v
     Info: Found entity 1: ExcpMux
+Info: Found 1 design units, including 1 entities, in source file mord.v
+    Info: Found entity 1: MorD
+Info: Found 1 design units, including 1 entities, in source file mult.v
+    Info: Found entity 1: mult
 Info: Elaborating entity "Hardware" for the top level hierarchy
-Warning: Port "Clk" of type Registrador and instance "inst11" is missing source signal
-Warning: Port "Clk" of type Registrador and instance "inst8" is missing source signal
 Info: Elaborating entity "Controle" for hierarchy "Controle:inst4"
 Warning (10272): Verilog HDL Case Statement warning at Controle.sv(3476): case item expression covers a value already covered by a previous case item
 Info: Elaborating entity "Ula32" for hierarchy "Ula32:ALUControl"
@@ -858,7 +1019,6 @@ Info: Elaborated megafunction instantiation "Memoria:MemCtrl|LPM_RAM_DQ:MEM|altr
 Info: Found 1 design units, including 1 entities, in source file db/altsyncram_g2a1.tdf
     Info: Found entity 1: altsyncram_g2a1
 Info: Elaborating entity "altsyncram_g2a1" for hierarchy "Memoria:MemCtrl|LPM_RAM_DQ:MEM|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated"
-Critical Warning: Memory depth (256) in the design file differs from memory depth (28) in the Memory Initialization File "instrucoes.mif" -- setting initial value for remaining addresses to 0
 Info: Elaborating entity "IorD" for hierarchy "IorD:inst1"
 Info: Elaborating entity "ExcpMux" for hierarchy "ExcpMux:inst13"
 Warning (10270): Verilog HDL Case Statement warning at ExcpMux.v(4): incomplete case statement has no default case item
@@ -932,6 +1092,9 @@ Info (10041): Inferred latch for "toWriteData[31]" at SS.v(9)
 Info: Elaborating entity "Banco_reg" for hierarchy "Banco_reg:Reg_Control"
 Info: Elaborating entity "Instr_Reg" for hierarchy "Instr_Reg:IRWrite"
 Info: Elaborating entity "DataSrc" for hierarchy "DataSrc:inst3"
+Info: Elaborating entity "MorD" for hierarchy "MorD:MUX_HI"
+Info: Elaborating entity "mult" for hierarchy "mult:inst8"
+Info (10264): Verilog HDL Case Statement information at mult.v(22): all case item expressions in this case statement are onehot
 Info: Elaborating entity "SignExtend1to32bits" for hierarchy "SignExtend1to32bits:inst7"
 Info: Elaborating entity "RegDesloc" for hierarchy "RegDesloc:ShiftControl"
 Warning (10492): VHDL Process Statement warning at RegDesloc.vhd(1072): signal "temp" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
@@ -1042,17 +1205,308 @@ Warning: Latch SS:inst15|toWriteData[30] has unsafe behavior
     Warning: Ports D and ENA on the latch are fed by the same signal Controle:inst4|SSControl[1]
 Warning: Latch SS:inst15|toWriteData[31] has unsafe behavior
     Warning: Ports D and ENA on the latch are fed by the same signal Controle:inst4|SSControl[1]
+Warning: Output pins are stuck at VCC or GND
+    Warning (13410): Pin "M_Control" is stuck at GND
+    Warning (13410): Pin "LoWrite" is stuck at GND
+    Warning (13410): Pin "HiWrite" is stuck at GND
+    Warning (13410): Pin "HIi[31]" is stuck at GND
+    Warning (13410): Pin "HIi[30]" is stuck at GND
+    Warning (13410): Pin "HIi[29]" is stuck at GND
+    Warning (13410): Pin "HIi[28]" is stuck at GND
+    Warning (13410): Pin "HIi[27]" is stuck at GND
+    Warning (13410): Pin "HIi[26]" is stuck at GND
+    Warning (13410): Pin "HIi[25]" is stuck at GND
+    Warning (13410): Pin "HIi[24]" is stuck at GND
+    Warning (13410): Pin "HIi[23]" is stuck at GND
+    Warning (13410): Pin "HIi[22]" is stuck at GND
+    Warning (13410): Pin "HIi[21]" is stuck at GND
+    Warning (13410): Pin "HIi[20]" is stuck at GND
+    Warning (13410): Pin "HIi[19]" is stuck at GND
+    Warning (13410): Pin "HIi[18]" is stuck at GND
+    Warning (13410): Pin "HIi[17]" is stuck at GND
+    Warning (13410): Pin "HIi[16]" is stuck at GND
+    Warning (13410): Pin "HIi[15]" is stuck at GND
+    Warning (13410): Pin "HIi[14]" is stuck at GND
+    Warning (13410): Pin "HIi[13]" is stuck at GND
+    Warning (13410): Pin "HIi[12]" is stuck at GND
+    Warning (13410): Pin "HIi[11]" is stuck at GND
+    Warning (13410): Pin "HIi[10]" is stuck at GND
+    Warning (13410): Pin "HIi[9]" is stuck at GND
+    Warning (13410): Pin "HIi[8]" is stuck at GND
+    Warning (13410): Pin "HIi[7]" is stuck at GND
+    Warning (13410): Pin "HIi[6]" is stuck at GND
+    Warning (13410): Pin "HIi[5]" is stuck at GND
+    Warning (13410): Pin "HIi[4]" is stuck at GND
+    Warning (13410): Pin "HIi[3]" is stuck at GND
+    Warning (13410): Pin "HIi[2]" is stuck at GND
+    Warning (13410): Pin "HIi[1]" is stuck at GND
+    Warning (13410): Pin "HIi[0]" is stuck at GND
+    Warning (13410): Pin "LOo14[31]" is stuck at GND
+    Warning (13410): Pin "LOo14[30]" is stuck at GND
+    Warning (13410): Pin "LOo14[29]" is stuck at GND
+    Warning (13410): Pin "LOo14[28]" is stuck at GND
+    Warning (13410): Pin "LOo14[27]" is stuck at GND
+    Warning (13410): Pin "LOo14[26]" is stuck at GND
+    Warning (13410): Pin "LOo14[25]" is stuck at GND
+    Warning (13410): Pin "LOo14[24]" is stuck at GND
+    Warning (13410): Pin "LOo14[23]" is stuck at GND
+    Warning (13410): Pin "LOo14[22]" is stuck at GND
+    Warning (13410): Pin "LOo14[21]" is stuck at GND
+    Warning (13410): Pin "LOo14[20]" is stuck at GND
+    Warning (13410): Pin "LOo14[19]" is stuck at GND
+    Warning (13410): Pin "LOo14[18]" is stuck at GND
+    Warning (13410): Pin "LOo14[17]" is stuck at GND
+    Warning (13410): Pin "LOo14[16]" is stuck at GND
+    Warning (13410): Pin "LOo14[15]" is stuck at GND
+    Warning (13410): Pin "LOo14[14]" is stuck at GND
+    Warning (13410): Pin "LOo14[13]" is stuck at GND
+    Warning (13410): Pin "LOo14[12]" is stuck at GND
+    Warning (13410): Pin "LOo14[11]" is stuck at GND
+    Warning (13410): Pin "LOo14[10]" is stuck at GND
+    Warning (13410): Pin "LOo14[9]" is stuck at GND
+    Warning (13410): Pin "LOo14[8]" is stuck at GND
+    Warning (13410): Pin "LOo14[7]" is stuck at GND
+    Warning (13410): Pin "LOo14[6]" is stuck at GND
+    Warning (13410): Pin "LOo14[5]" is stuck at GND
+    Warning (13410): Pin "LOo14[4]" is stuck at GND
+    Warning (13410): Pin "LOo14[3]" is stuck at GND
+    Warning (13410): Pin "LOo14[2]" is stuck at GND
+    Warning (13410): Pin "LOo14[1]" is stuck at GND
+    Warning (13410): Pin "LOo14[0]" is stuck at GND
+Info: 222 registers lost all their fanouts during netlist optimizations. The first 222 are displayed below.
+    Info: Register "mult:inst8|contador[31]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|contador[0]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|contador[1]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|contador[2]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|contador[3]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|contador[4]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|contador[5]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|contador[6]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|contador[7]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|contador[8]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|contador[9]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|contador[10]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|contador[11]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|contador[12]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|contador[13]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|contador[14]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|contador[15]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|contador[16]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|contador[17]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|contador[18]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|contador[19]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|contador[20]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|contador[21]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|contador[22]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|contador[23]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|contador[24]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|contador[25]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|contador[26]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|contador[27]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|contador[28]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|contador[29]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|contador[30]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|Prod[16]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|Prod[15]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|Prod[14]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|Prod[13]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|Prod[12]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|Prod[11]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|Prod[10]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|Prod[9]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|Prod[8]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|Prod[7]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|Prod[6]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|Prod[5]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|Prod[4]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|Prod[3]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|Prod[2]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|Prod[1]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|Prod[0]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|Prod[64]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|ANeg[61]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|Prod[37]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|Prod[62]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|Prod[61]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|Prod[60]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|Prod[59]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|Prod[58]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|Prod[57]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|Prod[56]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|Prod[55]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|Prod[54]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|Prod[53]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|Prod[52]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|Prod[51]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|Prod[50]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|Prod[49]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|Prod[48]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|Prod[47]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|Prod[46]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|Prod[45]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|Prod[44]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|Prod[43]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|Prod[42]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|Prod[41]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|Prod[40]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|Prod[39]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|Prod[38]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|Prod[28]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|Prod[36]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|Prod[35]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|Prod[34]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|Prod[33]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|AHelp[64]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|ANeg[64]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|AHelp[63]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|ANeg[63]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|AHelp[62]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|ANeg[62]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|AHelp[61]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|AHelp[60]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|ANeg[60]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|AHelp[59]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|ANeg[59]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|AHelp[58]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|ANeg[58]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|AHelp[57]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|ANeg[57]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|AHelp[56]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|ANeg[56]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|AHelp[55]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|ANeg[55]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|AHelp[54]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|ANeg[54]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|AHelp[53]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|ANeg[53]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|AHelp[52]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|ANeg[52]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|AHelp[51]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|ANeg[51]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|AHelp[50]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|ANeg[50]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|AHelp[49]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|ANeg[49]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|AHelp[48]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|ANeg[48]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|AHelp[47]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|ANeg[47]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|AHelp[46]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|ANeg[46]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|AHelp[45]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|ANeg[45]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|AHelp[44]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|ANeg[44]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|AHelp[43]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|ANeg[43]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|AHelp[42]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|ANeg[42]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|AHelp[41]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|ANeg[41]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|AHelp[40]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|ANeg[40]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|AHelp[39]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|ANeg[39]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|AHelp[38]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|ANeg[38]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|AHelp[37]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|ANeg[37]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|AHelp[36]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|ANeg[36]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|AHelp[35]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|ANeg[35]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|AHelp[34]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|ANeg[34]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|ANeg[33]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|Prod[32]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|Prod[31]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|Prod[30]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|Prod[29]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|Prod[27]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|Prod[26]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|Prod[25]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|Prod[24]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|Prod[23]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|Prod[22]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|Prod[21]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|Prod[20]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|Prod[19]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|Prod[18]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|Prod[17]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|resultHi[16]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|resultHi[1]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|resultHi[2]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|resultHi[3]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|resultHi[4]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|resultHi[5]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|resultHi[6]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|resultHi[7]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|resultHi[8]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|resultHi[9]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|resultHi[10]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|resultHi[12]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|resultHi[13]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|resultHi[14]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|resultHi[15]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|resultHi[29]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|resultHi[17]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|resultHi[18]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|resultLo[15]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|resultHi[19]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|resultHi[20]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|resultHi[21]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|resultHi[22]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|resultHi[23]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|resultHi[25]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|resultLo[17]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|resultHi[24]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|resultHi[26]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|resultHi[27]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|resultHi[28]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|resultHi[11]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|resultHi[0]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|resultLo[31]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|resultLo[30]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|resultLo[29]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|resultLo[28]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|resultLo[27]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|resultLo[26]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|resultLo[25]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|resultLo[24]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|resultLo[23]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|resultLo[22]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|resultLo[21]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|resultLo[20]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|resultLo[19]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|resultLo[18]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|resultLo[16]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|resultLo[14]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|resultLo[13]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|resultLo[12]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|resultHi[30]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|resultLo[11]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|resultLo[10]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|resultLo[9]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|resultLo[8]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|resultLo[7]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|resultLo[6]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|resultLo[5]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|resultLo[4]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|resultLo[3]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|resultLo[2]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|resultLo[1]" lost all its fanouts during netlist optimizations.
+    Info: Register "mult:inst8|resultLo[0]" lost all its fanouts during netlist optimizations.
 Info: Generated suppressed messages file E:/Users/alpvj/Desktop/pasta/ProjetoHw/ProjetoCPU.map.smsg
-Info: Implemented 3350 device resources after synthesis - the final resource count might be different
+Info: Implemented 3384 device resources after synthesis - the final resource count might be different
     Info: Implemented 1 input pins
-    Info: Implemented 306 output pins
-    Info: Implemented 3011 logic cells
+    Info: Implemented 373 output pins
+    Info: Implemented 2978 logic cells
     Info: Implemented 32 RAM segments
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 108 warnings
-    Info: Peak virtual memory: 4538 megabytes
-    Info: Processing ended: Fri Oct 18 17:58:04 2019
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 173 warnings
+    Info: Peak virtual memory: 4539 megabytes
+    Info: Processing ended: Fri Oct 18 19:34:29 2019
     Info: Elapsed time: 00:00:15
-    Info: Total CPU time (on all processors): 00:00:26
+    Info: Total CPU time (on all processors): 00:00:17
 
 
 +------------------------------------------+

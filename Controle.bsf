@@ -20,9 +20,9 @@ applicable agreement for further details.
 */
 (header "symbol" (version "1.1"))
 (symbol
-	(rect 16 16 224 496)
+	(rect 16 16 224 528)
 	(text "Controle" (rect 5 0 46 12)(font "Arial" ))
-	(text "inst" (rect 8 464 25 476)(font "Arial" ))
+	(text "inst" (rect 8 496 25 508)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -253,6 +253,20 @@ applicable agreement for further details.
 		(text "reset" (rect 0 0 24 12)(font "Arial" ))
 		(text "reset" (rect 163 427 187 439)(font "Arial" ))
 		(line (pt 208 432)(pt 192 432)(line_width 1))
+	)
+	(port
+		(pt 208 448)
+		(output)
+		(text "DControl" (rect 0 0 43 12)(font "Arial" ))
+		(text "DControl" (rect 144 443 187 455)(font "Arial" ))
+		(line (pt 208 448)(pt 192 448)(line_width 1))
+	)
+	(port
+		(pt 208 464)
+		(output)
+		(text "MDMux" (rect 0 0 36 12)(font "Arial" ))
+		(text "MDMux" (rect 151 459 187 471)(font "Arial" ))
+		(line (pt 208 464)(pt 192 464)(line_width 1))
 	)
 	(parameter
 		"Fetch1"
@@ -890,7 +904,7 @@ applicable agreement for further details.
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(drawing
-		(rectangle (rect 16 16 192 464)(line_width 1))
+		(rectangle (rect 16 16 192 496)(line_width 1))
 	)
 	(annotation_block (parameter)(rect 224 -64 324 16))
 )

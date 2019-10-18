@@ -4,7 +4,7 @@ output logic [1:0] IorD, ALUSrcA, ALUSrcB, ExcpCtrl, ShiftSrc, ShiftAmt, SSContr
 output logic [2:0] RegDst, PCSource, ALUControl, ShiftControl,
 output logic [3:0] DataSrc,
 output logic [6:0] estado,
-output logic reset);//11 + 8 + 4 + 1 = 24 sinais de controle
+output logic reset, );
 
 /*
 PCWrite = 1'b0;
@@ -3512,7 +3512,7 @@ always @(posedge clk) begin
 				MDControl = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
-				IorD = 2'b10;
+				IorD = 2'b11;
 				ALUSrcA = 2'b00;
 				ALUSrcB = 2'b00;
 				ExcpCtrl = 2'b00;
@@ -3539,7 +3539,7 @@ always @(posedge clk) begin
 				MDControl = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
-				IorD = 2'b10;
+				IorD = 2'b11;
 				ALUSrcA = 2'b00;
 				ALUSrcB = 2'b00;
 				ExcpCtrl = 2'b00;
@@ -3566,7 +3566,7 @@ always @(posedge clk) begin
 				MDControl = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
-				IorD = 2'b10;
+				IorD = 2'b11;
 				ALUSrcA = 2'b00;
 				ALUSrcB = 2'b00;
 				ExcpCtrl = 2'b00;
@@ -3593,7 +3593,7 @@ always @(posedge clk) begin
 				MDControl = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
-				IorD = 2'b10;
+				IorD = 2'b11;
 				ALUSrcA = 2'b00;
 				ALUSrcB = 2'b01;
 				ExcpCtrl = 2'b00;
@@ -3620,7 +3620,7 @@ always @(posedge clk) begin
 				MDControl = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
-				IorD = 2'b10;
+				IorD = 2'b11;
 				ALUSrcA = 2'b00;
 				ALUSrcB = 2'b01;
 				ExcpCtrl = 2'b00;
