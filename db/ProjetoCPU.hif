@@ -119,6 +119,8 @@ Registrador:EPCWrite
 Registrador:MDRReg
 Registrador:B_Control
 Registrador:A_Control
+Registrador:inst11
+Registrador:inst8
 }
 # lmf
 |programfiles|quartus|altera|91sp2|quartus|lmf|maxplus2.lmf
@@ -1438,7 +1440,7 @@ db|ProjetoCPU.(0).cnf
 # case_insensitive
 # source_file
 hardware.bdf
-16da3f527a803e6823714a67379ec443
+1255a752756a6a836e46491aed4c9d21
 26
 # internal_option {
 BLOCK_DESIGN_NAMING
@@ -1462,7 +1464,7 @@ ON
 # case_sensitive
 # source_file
 controle.sv
-4f32961e234c1b33d469eff6dff5d19
+c40b37f8a7e1985275598499699a5ce
 9
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -1809,6 +1811,26 @@ swWait2
 1010001
 PARAMETER_UNSIGNED_BIN
 USR
+blm2
+1010010
+PARAMETER_UNSIGNED_BIN
+USR
+blm3
+1010011
+PARAMETER_UNSIGNED_BIN
+USR
+blm4
+1010100
+PARAMETER_UNSIGNED_BIN
+USR
+blm5
+1010101
+PARAMETER_UNSIGNED_BIN
+USR
+blm6
+1010110
+PARAMETER_UNSIGNED_BIN
+USR
 ADD
 100000
 PARAMETER_UNSIGNED_BIN
@@ -1921,6 +1943,10 @@ SW
 101011
 PARAMETER_UNSIGNED_BIN
 USR
+BLM
+000001
+PARAMETER_UNSIGNED_BIN
+USR
 J
 000010
 PARAMETER_UNSIGNED_BIN
@@ -2031,7 +2057,7 @@ address_a0
 }
 # memory_file {
 instrucoes.mif
-3070929cc17c8325b668f5028ec5aee
+4fbd3df35befa886b18b455434e3131e
 }
 # hierarchies {
 Memoria:MemCtrl|lpm_ram_dq:MEM|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated
