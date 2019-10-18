@@ -2508,7 +2508,7 @@ always @(posedge clk) begin
 				MDControl = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
-				IorD = 2'b10;
+				IorD = 2'b11;
 				ALUSrcA = 2'b00;
 				ALUSrcB = 2'b00;
 				ExcpCtrl = 2'b01;
@@ -2535,7 +2535,7 @@ always @(posedge clk) begin
 				MDControl = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
-				IorD = 2'b10;
+				IorD = 2'b11;
 				ALUSrcA = 2'b00;
 				ALUSrcB = 2'b00;
 				ExcpCtrl = 2'b01;
@@ -2562,7 +2562,7 @@ always @(posedge clk) begin
 				MDControl = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
-				IorD = 2'b10;
+				IorD = 2'b11;
 				ALUSrcA = 2'b00;
 				ALUSrcB = 2'b00;
 				ExcpCtrl = 2'b01;
@@ -2589,7 +2589,7 @@ always @(posedge clk) begin
 				MDControl = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
-				IorD = 2'b10;
+				IorD = 2'b11;
 				ALUSrcA = 2'b00;
 				ALUSrcB = 2'b01;
 				ExcpCtrl = 2'b01;
@@ -2616,7 +2616,7 @@ always @(posedge clk) begin
 				MDControl = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
-				IorD = 2'b10;
+				IorD = 2'b11;
 				ALUSrcA = 2'b00;
 				ALUSrcB = 2'b01;
 				ExcpCtrl = 2'b01;
@@ -3512,7 +3512,7 @@ always @(posedge clk) begin
 				MDControl = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
-				IorD = 2'b10;
+				IorD = 2'b11;
 				ALUSrcA = 2'b00;
 				ALUSrcB = 2'b00;
 				ExcpCtrl = 2'b00;
@@ -3539,7 +3539,7 @@ always @(posedge clk) begin
 				MDControl = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
-				IorD = 2'b10;
+				IorD = 2'b11;
 				ALUSrcA = 2'b00;
 				ALUSrcB = 2'b00;
 				ExcpCtrl = 2'b00;
@@ -3566,7 +3566,7 @@ always @(posedge clk) begin
 				MDControl = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
-				IorD = 2'b10;
+				IorD = 2'b11;
 				ALUSrcA = 2'b00;
 				ALUSrcB = 2'b00;
 				ExcpCtrl = 2'b00;
@@ -3593,7 +3593,7 @@ always @(posedge clk) begin
 				MDControl = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
-				IorD = 2'b10;
+				IorD = 2'b11;
 				ALUSrcA = 2'b00;
 				ALUSrcB = 2'b01;
 				ExcpCtrl = 2'b00;
@@ -3620,7 +3620,7 @@ always @(posedge clk) begin
 				MDControl = 1'b0;
 				HI_Control = 1'b0;
 				LO_Control = 1'b0;
-				IorD = 2'b10;
+				IorD = 2'b11;
 				ALUSrcA = 2'b00;
 				ALUSrcB = 2'b01;
 				ExcpCtrl = 2'b00;

@@ -1469,26 +1469,6 @@ ExcpMux:inst13
 
 # end
 # entity
-Hardware
-# storage
-db|ProjetoCPU.(0).cnf
-db|ProjetoCPU.(0).cnf
-# case_insensitive
-# source_file
-hardware.bdf
-d35cb0a137fc93f3f85f4ff9eca456d3
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-|
-}
-# macro_sequence
-
-# end
-# entity
 Controle
 # storage
 db|ProjetoCPU.(1).cnf
@@ -1500,7 +1480,7 @@ ON
 # case_sensitive
 # source_file
 controle.sv
-147809061b44b5a46299aed46e5327
+af31cbfa9e53ea8ea12a865a1ec43eb
 9
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -2035,6 +2015,26 @@ Controle:inst4
 
 # end
 # entity
+Hardware
+# storage
+db|ProjetoCPU.(0).cnf
+db|ProjetoCPU.(0).cnf
+# case_insensitive
+# source_file
+hardware.bdf
+ed87033cb2b9465e7c626954c768fb4
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
 altsyncram_g2a1
 # storage
 db|ProjetoCPU.(14).cnf
@@ -2129,7 +2129,7 @@ address_a0
 }
 # memory_file {
 instrucoes.mif
-ab43d0ba9a651c2b1a811553b4842d64
+fa939ba4ececb99f9297ab744dcd2937
 }
 # hierarchies {
 Memoria:MemCtrl|lpm_ram_dq:MEM|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated

@@ -346,39 +346,6 @@ applicable agreement for further details.
 		(line (pt 78 12)(pt 82 8)(line_width 1))
 	)
 )
-(pin
-	(output)
-	(rect 1456 272 1632 288)
-	(text "OUTPUT" (rect 137 0 175 10)(font "Arial" (font_size 6)))
-	(text "DataSrcc[31..0]" (rect 9 0 86 12)(font "Arial" ))
-	(pt 176 8)
-	(drawing
-		(line (pt 176 8)(pt 124 8)(line_width 1))
-		(line (pt 124 4)(pt 98 4)(line_width 1))
-		(line (pt 124 12)(pt 98 12)(line_width 1))
-		(line (pt 124 12)(pt 124 4)(line_width 1))
-		(line (pt 98 4)(pt 94 8)(line_width 1))
-		(line (pt 94 8)(pt 98 12)(line_width 1))
-		(line (pt 98 12)(pt 94 8)(line_width 1))
-	)
-	(flipy)
-)
-(pin
-	(output)
-	(rect 1392 232 1568 248)
-	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "LSS[1..0]" (rect 90 0 136 12)(font "Arial" ))
-	(pt 0 8)
-	(drawing
-		(line (pt 0 8)(pt 52 8)(line_width 1))
-		(line (pt 52 4)(pt 78 4)(line_width 1))
-		(line (pt 52 12)(pt 78 12)(line_width 1))
-		(line (pt 52 12)(pt 52 4)(line_width 1))
-		(line (pt 78 4)(pt 82 8)(line_width 1))
-		(line (pt 82 8)(pt 78 12)(line_width 1))
-		(line (pt 78 12)(pt 82 8)(line_width 1))
-	)
-)
 (symbol
 	(rect 824 -360 1016 -232)
 	(text "Memoria" (rect 5 0 46 12)(font "Arial" ))
@@ -2719,11 +2686,6 @@ applicable agreement for further details.
 	(pt 864 -1248)
 )
 (connector
-	(pt 736 -328)
-	(pt 824 -328)
-	(bus)
-)
-(connector
 	(pt 3360 -208)
 	(pt 3224 -208)
 	(bus)
@@ -4494,21 +4456,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 1632 280)
-	(pt 1688 280)
-	(bus)
-)
-(connector
-	(pt 1392 240)
-	(pt 1376 240)
-	(bus)
-)
-(connector
-	(pt 1376 240)
-	(pt 1376 160)
-	(bus)
-)
-(connector
 	(pt -552 -1648)
 	(pt -552 -152)
 	(bus)
@@ -4604,16 +4551,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt -424 160)
-	(pt 1376 160)
-	(bus)
-)
-(connector
-	(pt 1376 160)
-	(pt 1464 160)
-	(bus)
-)
-(connector
 	(pt 1688 176)
 	(pt 1856 176)
 	(bus)
@@ -4629,11 +4566,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 1688 176)
-	(pt 1688 280)
-	(bus)
-)
-(connector
 	(pt 4064 -784)
 	(pt 4024 -784)
 	(bus)
@@ -4646,6 +4578,16 @@ applicable agreement for further details.
 (connector
 	(pt 1688 48)
 	(pt 4024 48)
+	(bus)
+)
+(connector
+	(pt -424 160)
+	(pt 1464 160)
+	(bus)
+)
+(connector
+	(pt 736 -328)
+	(pt 824 -328)
 	(bus)
 )
 (junction (pt 3712 -424))
@@ -4709,4 +4651,3 @@ applicable agreement for further details.
 (junction (pt 1536 -1008))
 (junction (pt 1848 -440))
 (junction (pt 1688 176))
-(junction (pt 1376 160))
