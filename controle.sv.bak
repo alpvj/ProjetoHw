@@ -122,6 +122,12 @@ parameter blm2 = 7'd82;
 parameter blm3 = 7'd83;
 parameter blm4 = 7'd84;
 parameter blm5 = 7'd85;
+parameter blm6 = 7'd86;
+parameter overflow2 = 7'd86;
+parameter overflow3 = 7'd87;
+parameter overflow4 = 7'd88;
+parameter overflow5 = 7'd89;
+
 
 //Func do Tipo R
 parameter ADD = 6'b100000;//done
@@ -156,7 +162,7 @@ parameter LW = 6'b100011;//done
 parameter SB = 6'b101000;//done
 parameter SH = 6'b101001;//done
 parameter SW = 6'b101011;//done
-parameter BLM = 6'b000001;//
+parameter BLM = 6'b000001;//done
 //Func do Tipo J
 parameter J = 6'b000010;//done
 parameter JAL = 6'b000011;//done
@@ -1182,64 +1188,68 @@ always @(posedge clk) begin
 				endcase
 			end
 			Add2: begin
-				PCWrite = 1'b0;
-				MemCtrl = 1'b0;
-				IRWrite = 1'b0;
-				A_Control = 1'b0;
-				B_Control = 1'b0;
-				RegControl = 1'b0;
-				ALUOutControl = 1'b1;
-				EPCWrite = 1'b0;
-				MDControl = 1'b0;
-				HI_Control = 1'b0;
-				LO_Control = 1'b0;
-				IorD = 2'b00;
-				ALUSrcA = 2'b01;
-				ALUSrcB = 2'b00;
-				ExcpCtrl = 2'b00;
-				ShiftSrc = 2'b00;
-				ShiftAmt = 2'b00;
-				SSControl = 2'b00;
-				LSControl = 2'b00;
-				RegDst = 3'b001;
-				PCSource = 3'b000;
-				ALUControl = 3'b001;
-				ShiftControl = 3'b000;
-				DataSrc = 4'b0000;
-				estado = AddSubAnd;
-				/*if (overflow) begin
+				if (overflow) begin
 					estado = OVERFLOW;
-				end*/
+				end
+				else begin
+					PCWrite = 1'b0;
+					MemCtrl = 1'b0;
+					IRWrite = 1'b0;
+					A_Control = 1'b0;
+					B_Control = 1'b0;
+					RegControl = 1'b0;
+					ALUOutControl = 1'b1;
+					EPCWrite = 1'b0;
+					MDControl = 1'b0;
+					HI_Control = 1'b0;
+					LO_Control = 1'b0;
+					IorD = 2'b00;
+					ALUSrcA = 2'b01;
+					ALUSrcB = 2'b00;
+					ExcpCtrl = 2'b00;
+					ShiftSrc = 2'b00;
+					ShiftAmt = 2'b00;
+					SSControl = 2'b00;
+					LSControl = 2'b00;
+					RegDst = 3'b001;
+					PCSource = 3'b000;
+					ALUControl = 3'b001;
+					ShiftControl = 3'b000;
+					DataSrc = 4'b0000;
+					estado = AddSubAnd;
+				end
 			end
 			Sub2: begin
-				PCWrite = 1'b0;
-				MemCtrl = 1'b0;
-				IRWrite = 1'b0;
-				A_Control = 1'b0;
-				B_Control = 1'b0;
-				RegControl = 1'b0;
-				ALUOutControl = 1'b1;
-				EPCWrite = 1'b0;
-				MDControl = 1'b0;
-				HI_Control = 1'b0;
-				LO_Control = 1'b0;
-				IorD = 2'b00;
-				ALUSrcA = 2'b01;
-				ALUSrcB = 2'b00;
-				ExcpCtrl = 2'b00;
-				ShiftSrc = 2'b00;
-				ShiftAmt = 2'b00;
-				SSControl = 2'b00;
-				LSControl = 2'b00;
-				RegDst = 3'b001;
-				PCSource = 3'b000;
-				ALUControl = 3'b010;
-				ShiftControl = 3'b000;
-				DataSrc = 4'b0000;
-				estado = AddSubAnd;
-				/*if (overflow) begin
+				if (overflow) begin
 					estado = OVERFLOW;
-				end*/
+				end
+				else begin
+					PCWrite = 1'b0;
+					MemCtrl = 1'b0;
+					IRWrite = 1'b0;
+					A_Control = 1'b0;
+					B_Control = 1'b0;
+					RegControl = 1'b0;
+					ALUOutControl = 1'b1;
+					EPCWrite = 1'b0;
+					MDControl = 1'b0;
+					HI_Control = 1'b0;
+					LO_Control = 1'b0;
+					IorD = 2'b00;
+					ALUSrcA = 2'b01;
+					ALUSrcB = 2'b00;
+					ExcpCtrl = 2'b00;
+					ShiftSrc = 2'b00;
+					ShiftAmt = 2'b00;
+					SSControl = 2'b00;
+					LSControl = 2'b00;
+					RegDst = 3'b001;
+					PCSource = 3'b000;
+					ALUControl = 3'b010;
+					ShiftControl = 3'b000;
+					DataSrc = 4'b0000;
+					estado = AddSubAnd;
+				end
 			end
 			And2: begin
 				PCWrite = 1'b0;
@@ -1323,31 +1333,36 @@ always @(posedge clk) begin
 				estado = Fetch1;
 			end
 			Addi2: begin
-				PCWrite = 1'b0;
-				MemCtrl = 1'b0;
-				IRWrite = 1'b0;
-				A_Control = 1'b0;
-				B_Control = 1'b0;
-				RegControl = 1'b0;
-				ALUOutControl = 1'b1;
-				EPCWrite = 1'b0;
-				MDControl = 1'b0;
-				HI_Control = 1'b0;
-				LO_Control = 1'b0;
-				IorD = 2'b00;
-				ALUSrcA = 2'b01;
-				ALUSrcB = 2'b10;
-				ExcpCtrl = 2'b00;
-				ShiftSrc = 2'b00;
-				ShiftAmt = 2'b00;
-				SSControl = 2'b00;
-				LSControl = 2'b00;
-				RegDst = 3'b000;
-				PCSource = 3'b000;
-				ALUControl = 3'b001;
-				ShiftControl = 3'b000;
-				DataSrc = 4'b0000;
-				estado = Addi3;
+				if (overflow) begin
+					estado = OVERFLOW;
+				end
+				else begin
+					PCWrite = 1'b0;
+					MemCtrl = 1'b0;
+					IRWrite = 1'b0;
+					A_Control = 1'b0;
+					B_Control = 1'b0;
+					RegControl = 1'b0;
+					ALUOutControl = 1'b1;
+					EPCWrite = 1'b0;
+					MDControl = 1'b0;
+					HI_Control = 1'b0;
+					LO_Control = 1'b0;
+					IorD = 2'b00;
+					ALUSrcA = 2'b01;
+					ALUSrcB = 2'b10;
+					ExcpCtrl = 2'b00;
+					ShiftSrc = 2'b00;
+					ShiftAmt = 2'b00;
+					SSControl = 2'b00;
+					LSControl = 2'b00;
+					RegDst = 3'b000;
+					PCSource = 3'b000;
+					ALUControl = 3'b001;
+					ShiftControl = 3'b000;
+					DataSrc = 4'b0000;
+					estado = Addi3;
+				end
 			end
 			Addi3: begin
 				PCWrite = 1'b0;
@@ -1402,9 +1417,6 @@ always @(posedge clk) begin
 				ShiftControl = 3'b000;
 				DataSrc = 4'b0000;
 				estado = Fetch1;
-				/*if (overflow) begin
-					estado = OVERFLOW;
-				end*/
 			end
 			Break2: begin
 				PCWrite = 1'b1;
@@ -2453,6 +2465,7 @@ always @(posedge clk) begin
 				estado = beq4;
 			end
 			OVERFLOW: begin
+				PCWrite = 1'b0;
 				MemCtrl = 1'b0;
 				IRWrite = 1'b0;
 				A_Control = 1'b0;
@@ -2475,7 +2488,115 @@ always @(posedge clk) begin
 				PCSource = 3'b000;
 				ALUControl = 3'b000;
 				ShiftControl = 3'b000;
-				DataSrc = 4'b0100;
+				DataSrc = 4'b0000;
+				estado = Fetch1;
+			end
+			overflow2: begin
+				PCWrite = 1'b0;
+				MemCtrl = 1'b0;
+				IRWrite = 1'b0;
+				A_Control = 1'b0;
+				B_Control = 1'b0;
+				RegControl = 1'b0;
+				ALUOutControl = 1'b0;
+				EPCWrite = 1'b0;
+				MDControl = 1'b0;
+				HI_Control = 1'b0;
+				LO_Control = 1'b0;
+				IorD = 2'b10;
+				ALUSrcA = 2'b00;
+				ALUSrcB = 2'b00;
+				ExcpCtrl = 2'b01;
+				ShiftSrc = 2'b00;
+				ShiftAmt = 2'b00;
+				SSControl = 2'b00;
+				LSControl = 2'b00;
+				RegDst = 3'b000;
+				PCSource = 3'b000;
+				ALUControl = 3'b000;
+				ShiftControl = 3'b000;
+				DataSrc = 4'b0000;
+				estado = overflow3;
+			end
+			overflow3: begin
+				PCWrite = 1'b0;
+				MemCtrl = 1'b0;
+				IRWrite = 1'b0;
+				A_Control = 1'b0;
+				B_Control = 1'b0;
+				RegControl = 1'b0;
+				ALUOutControl = 1'b0;
+				EPCWrite = 1'b0;
+				MDControl = 1'b0;
+				HI_Control = 1'b0;
+				LO_Control = 1'b0;
+				IorD = 2'b10;
+				ALUSrcA = 2'b00;
+				ALUSrcB = 2'b00;
+				ExcpCtrl = 2'b01;
+				ShiftSrc = 2'b00;
+				ShiftAmt = 2'b00;
+				SSControl = 2'b00;
+				LSControl = 2'b00;
+				RegDst = 3'b000;
+				PCSource = 3'b011;
+				ALUControl = 3'b000;
+				ShiftControl = 3'b000;
+				DataSrc = 4'b0000;
+				estado = overflow4;
+			end
+			overflow4: begin
+				PCWrite = 1'b1;
+				MemCtrl = 1'b0;
+				IRWrite = 1'b0;
+				A_Control = 1'b0;
+				B_Control = 1'b0;
+				RegControl = 1'b0;
+				ALUOutControl = 1'b0;
+				EPCWrite = 1'b1;
+				MDControl = 1'b0;
+				HI_Control = 1'b0;
+				LO_Control = 1'b0;
+				IorD = 2'b10;
+				ALUSrcA = 2'b00;
+				ALUSrcB = 2'b01;
+				ExcpCtrl = 2'b01;
+				ShiftSrc = 2'b00;
+				ShiftAmt = 2'b00;
+				SSControl = 2'b00;
+				LSControl = 2'b00;
+				RegDst = 3'b000;
+				PCSource = 3'b011;
+				ALUControl = 3'b010;
+				ShiftControl = 3'b000;
+				DataSrc = 4'b0000;
+				estado = overflow5;
+			end
+			overflow5: begin
+				PCWrite = 1'b0;
+				MemCtrl = 1'b0;
+				IRWrite = 1'b0;
+				A_Control = 1'b0;
+				B_Control = 1'b0;
+				RegControl = 1'b0;
+				ALUOutControl = 1'b0;
+				EPCWrite = 1'b0;
+				MDControl = 1'b0;
+				HI_Control = 1'b0;
+				LO_Control = 1'b0;
+				IorD = 2'b10;
+				ALUSrcA = 2'b00;
+				ALUSrcB = 2'b01;
+				ExcpCtrl = 2'b01;
+				ShiftSrc = 2'b00;
+				ShiftAmt = 2'b00;
+				SSControl = 2'b00;
+				LSControl = 2'b00;
+				RegDst = 3'b000;
+				PCSource = 3'b000;
+				ALUControl = 3'b000;
+				ShiftControl = 3'b000;
+				DataSrc = 4'b0000;
 				estado = Fetch1;
 			end
 			sb2: begin
