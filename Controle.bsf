@@ -749,6 +749,16 @@ applicable agreement for further details.
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
+		"mult2"
+		"1011111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"mult3"
+		"1100000"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
 		"ADD"
 		"100000"
 		""
@@ -811,6 +821,11 @@ applicable agreement for further details.
 	(parameter
 		"XCHG"
 		"000101"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"MULT"
+		"011000"
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter

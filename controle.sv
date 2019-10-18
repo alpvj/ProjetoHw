@@ -132,7 +132,10 @@ parameter inexistente2 = 7'd91;
 parameter inexistente3 = 7'd92;
 parameter inexistente4 = 7'd93;
 parameter inexistente5 = 7'd94;
+parameter mult2 = 7'd95;
+parameter mult3 = 7'd96;
 
+integer contadorMult = 32;
 
 //Func do Tipo R
 parameter ADD = 6'b100000;//done
@@ -148,6 +151,7 @@ parameter SRL = 6'b000010;//done
 parameter SLT = 6'b101010;//done
 parameter JR = 6'b001000;//done
 parameter XCHG = 6'b000101;//done
+parameter MULT = 6'b011000;
 
 
 //Opcodes
@@ -728,6 +732,34 @@ always @(posedge clk) begin
 								ShiftControl = 3'b000;
 								DataSrc = 4'b0111;
 								estado = xchg2;
+							end
+							MULT: begin
+								contadorMult = 32;
+								PCWrite = 1'b0;
+								MemCtrl = 1'b0;
+								IRWrite = 1'b0;
+								A_Control = 1'b0;
+								B_Control = 1'b0;
+								RegControl = 1'b0;
+								ALUOutControl = 1'b0;
+								EPCWrite = 1'b0;
+								MDControl = 1'b1; DControl = 1'b0; MDMux = 1'b0;
+								HI_Control = 1'b0;
+								LO_Control = 1'b0;
+								IorD = 2'b00;
+								ALUSrcA = 2'b00;
+								ALUSrcB = 2'b00;
+								ExcpCtrl = 2'b00;
+								ShiftSrc = 2'b00;
+								ShiftAmt = 2'b00;
+								SSControl = 2'b00;
+								LSControl = 2'b00;
+								RegDst = 3'b000;
+								PCSource = 3'b000;
+								ALUControl = 3'b000;
+								ShiftControl = 3'b000;
+								DataSrc = 4'b0000;
+								estado = mult2;
 							end
 						endcase
 					end
@@ -3623,6 +3655,69 @@ always @(posedge clk) begin
 				IorD = 2'b11;
 				ALUSrcA = 2'b00;
 				ALUSrcB = 2'b01;
+				ExcpCtrl = 2'b00;
+				ShiftSrc = 2'b00;
+				ShiftAmt = 2'b00;
+				SSControl = 2'b00;
+				LSControl = 2'b00;
+				RegDst = 3'b000;
+				PCSource = 3'b000;
+				ALUControl = 3'b000;
+				ShiftControl = 3'b000;
+				DataSrc = 4'b0000;
+				estado = Fetch1;
+			end
+			mult2: begin
+				PCWrite = 1'b0;
+				MemCtrl = 1'b0;
+				IRWrite = 1'b0;
+				A_Control = 1'b0;
+				B_Control = 1'b0;
+				RegControl = 1'b0;
+				ALUOutControl = 1'b0;
+				EPCWrite = 1'b0;
+				MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
+				HI_Control = 1'b0;
+				LO_Control = 1'b0;
+				IorD = 2'b00;
+				ALUSrcA = 2'b00;
+				ALUSrcB = 2'b00;
+				ExcpCtrl = 2'b00;
+				ShiftSrc = 2'b00;
+				ShiftAmt = 2'b00;
+				SSControl = 2'b00;
+				LSControl = 2'b00;
+				RegDst = 3'b000;
+				PCSource = 3'b000;
+				ALUControl = 3'b000;
+				ShiftControl = 3'b000;
+				DataSrc = 4'b0000;
+				estado = mult3;
+				if(contadorMult > 0) begin
+					contadorMult = contadorMult - 1;
+					estado = mult2;
+				end
+				else begin
+					estado = mult3;
+					HI_Control = 1'b1;
+					LO_Control = 1'b1;
+				end
+			end
+			mult3: begin
+				PCWrite = 1'b0;
+				MemCtrl = 1'b0;
+				IRWrite = 1'b0;
+				A_Control = 1'b0;
+				B_Control = 1'b0;
+				RegControl = 1'b0;
+				ALUOutControl = 1'b0;
+				EPCWrite = 1'b0;
+				MDControl = 1'b0; DControl = 1'b0; MDMux = 1'b0;
+				HI_Control = 1'b0;
+				LO_Control = 1'b0;
+				IorD = 2'b01;
+				ALUSrcA = 2'b00;
+				ALUSrcB = 2'b00;
 				ExcpCtrl = 2'b00;
 				ShiftSrc = 2'b00;
 				ShiftAmt = 2'b00;

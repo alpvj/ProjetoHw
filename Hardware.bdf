@@ -364,22 +364,6 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 1424 408 1600 424)
-	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "LOo14[31..0]" (rect 90 0 153 12)(font "Arial" ))
-	(pt 0 8)
-	(drawing
-		(line (pt 0 8)(pt 52 8)(line_width 1))
-		(line (pt 52 4)(pt 78 4)(line_width 1))
-		(line (pt 52 12)(pt 78 12)(line_width 1))
-		(line (pt 52 12)(pt 52 4)(line_width 1))
-		(line (pt 78 4)(pt 82 8)(line_width 1))
-		(line (pt 82 8)(pt 78 12)(line_width 1))
-		(line (pt 78 12)(pt 82 8)(line_width 1))
-	)
-)
-(pin
-	(output)
 	(rect 232 456 408 472)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "M_Control" (rect 90 0 139 12)(font "Arial" ))
@@ -396,7 +380,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 792 640 968 656)
+	(rect 680 448 856 464)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "LoWrite" (rect 90 0 127 12)(font "Arial" ))
 	(pt 0 8)
@@ -412,9 +396,57 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 752 696 928 712)
+	(rect 680 416 856 432)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "HiWrite" (rect 90 0 126 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8)(line_width 1))
+		(line (pt 52 4)(pt 78 4)(line_width 1))
+		(line (pt 52 12)(pt 78 12)(line_width 1))
+		(line (pt 52 12)(pt 52 4)(line_width 1))
+		(line (pt 78 4)(pt 82 8)(line_width 1))
+		(line (pt 82 8)(pt 78 12)(line_width 1))
+		(line (pt 78 12)(pt 82 8)(line_width 1))
+	)
+)
+(pin
+	(output)
+	(rect 1424 408 1600 424)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "LOo[31..0]" (rect 90 0 141 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8)(line_width 1))
+		(line (pt 52 4)(pt 78 4)(line_width 1))
+		(line (pt 52 12)(pt 78 12)(line_width 1))
+		(line (pt 52 12)(pt 52 4)(line_width 1))
+		(line (pt 78 4)(pt 82 8)(line_width 1))
+		(line (pt 82 8)(pt 78 12)(line_width 1))
+		(line (pt 78 12)(pt 82 8)(line_width 1))
+	)
+)
+(pin
+	(output)
+	(rect 864 352 1040 368)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "HImux[31..0]" (rect 90 0 154 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8)(line_width 1))
+		(line (pt 52 4)(pt 78 4)(line_width 1))
+		(line (pt 52 12)(pt 78 12)(line_width 1))
+		(line (pt 52 12)(pt 52 4)(line_width 1))
+		(line (pt 78 4)(pt 82 8)(line_width 1))
+		(line (pt 82 8)(pt 78 12)(line_width 1))
+		(line (pt 78 12)(pt 82 8)(line_width 1))
+	)
+)
+(pin
+	(output)
+	(rect 848 584 1024 600)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "LOmux[31..0]" (rect 90 0 157 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8)(line_width 1))
@@ -2470,6 +2502,16 @@ applicable agreement for further details.
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
+		"mult2"
+		"1011111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"mult3"
+		"1100000"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
 		"ADD"
 		"100000"
 		""
@@ -2532,6 +2574,11 @@ applicable agreement for further details.
 	(parameter
 		"XCHG"
 		"000101"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"MULT"
+		"011000"
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
@@ -4949,17 +4996,7 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 832 512)
-	(pt 832 544)
-	(bus)
-)
-(connector
 	(pt 776 296)
-	(pt 840 296)
-	(bus)
-)
-(connector
-	(pt 840 272)
 	(pt 840 296)
 	(bus)
 )
@@ -5115,38 +5152,6 @@ applicable agreement for further details.
 	(pt 208 368)
 )
 (connector
-	(pt 792 648)
-	(pt 728 648)
-)
-(connector
-	(pt 728 648)
-	(pt 728 496)
-)
-(connector
-	(pt -768 496)
-	(pt 728 496)
-)
-(connector
-	(pt 728 496)
-	(pt 864 496)
-)
-(connector
-	(pt 752 704)
-	(pt 664 704)
-)
-(connector
-	(pt 664 704)
-	(pt 664 256)
-)
-(connector
-	(pt -704 256)
-	(pt 664 256)
-)
-(connector
-	(pt 664 256)
-	(pt 864 256)
-)
-(connector
 	(pt 1400 336)
 	(pt 1400 224)
 	(bus)
@@ -5185,6 +5190,68 @@ applicable agreement for further details.
 	(pt 1368 280)
 	(pt 1728 280)
 	(bus)
+)
+(connector
+	(pt 864 360)
+	(pt 840 360)
+	(bus)
+)
+(connector
+	(pt 840 272)
+	(pt 840 296)
+	(bus)
+)
+(connector
+	(pt 840 296)
+	(pt 840 360)
+	(bus)
+)
+(connector
+	(pt 848 592)
+	(pt 832 592)
+	(bus)
+)
+(connector
+	(pt 832 512)
+	(pt 832 544)
+	(bus)
+)
+(connector
+	(pt 832 544)
+	(pt 832 592)
+	(bus)
+)
+(connector
+	(pt 664 424)
+	(pt 680 424)
+)
+(connector
+	(pt 664 256)
+	(pt 664 424)
+)
+(connector
+	(pt -704 256)
+	(pt 664 256)
+)
+(connector
+	(pt 664 256)
+	(pt 864 256)
+)
+(connector
+	(pt 680 456)
+	(pt 664 456)
+)
+(connector
+	(pt 664 496)
+	(pt 664 456)
+)
+(connector
+	(pt -768 496)
+	(pt 664 496)
+)
+(connector
+	(pt 664 496)
+	(pt 864 496)
 )
 (junction (pt 3712 -424))
 (junction (pt 808 -424))
@@ -5257,7 +5324,9 @@ applicable agreement for further details.
 (junction (pt 560 608))
 (junction (pt 1208 1112))
 (junction (pt 88 368))
-(junction (pt 728 496))
 (junction (pt 664 256))
 (junction (pt 1400 224))
 (junction (pt 1368 280))
+(junction (pt 840 296))
+(junction (pt 832 544))
+(junction (pt 664 496))
