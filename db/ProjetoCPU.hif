@@ -1542,6 +1542,26 @@ mult:inst8
 
 # end
 # entity
+Hardware
+# storage
+db|ProjetoCPU.(0).cnf
+db|ProjetoCPU.(0).cnf
+# case_insensitive
+# source_file
+hardware.bdf
+981bf555723624a6317199894077d03
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
 Controle
 # storage
 db|ProjetoCPU.(1).cnf
@@ -1553,7 +1573,7 @@ ON
 # case_sensitive
 # source_file
 controle.sv
-50815d06ed3220c9c65b253595ed34
+8e66acf0b6cdc95e28db82cd97174f42
 9
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -1964,6 +1984,14 @@ mult3
 1100000
 PARAMETER_UNSIGNED_BIN
 USR
+mfhi2
+1100001
+PARAMETER_UNSIGNED_BIN
+USR
+mflo2
+1100010
+PARAMETER_UNSIGNED_BIN
+USR
 ADD
 100000
 PARAMETER_UNSIGNED_BIN
@@ -2018,6 +2046,14 @@ PARAMETER_UNSIGNED_BIN
 USR
 MULT
 011000
+PARAMETER_UNSIGNED_BIN
+USR
+MFHI
+010000
+PARAMETER_UNSIGNED_BIN
+USR
+MFLO
+010010
 PARAMETER_UNSIGNED_BIN
 USR
 ARIT
@@ -2095,26 +2131,6 @@ USR
 }
 # hierarchies {
 Controle:inst4
-}
-# macro_sequence
-
-# end
-# entity
-Hardware
-# storage
-db|ProjetoCPU.(0).cnf
-db|ProjetoCPU.(0).cnf
-# case_insensitive
-# source_file
-hardware.bdf
-c55b5a871545f8d0cd3f55e1b67599f
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-|
 }
 # macro_sequence
 
@@ -2214,7 +2230,7 @@ address_a0
 }
 # memory_file {
 instrucoes.mif
-c792b7c3d4a4924c3d60b2bb3c107dce
+afa94a4e2e359bb70c4944a65f165af
 }
 # hierarchies {
 Memoria:MemCtrl|lpm_ram_dq:MEM|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated
