@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ProjetoCPU
-Fri Oct 18 20:38:36 2019
+Fri Oct 18 20:55:33 2019
 Quartus II 64-Bit Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
 
 
@@ -55,13 +55,13 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +-------------------------------+-----------------------------------------------+
-; Analysis & Synthesis Status   ; Successful - Fri Oct 18 20:38:35 2019         ;
+; Analysis & Synthesis Status   ; Successful - Fri Oct 18 20:55:33 2019         ;
 ; Quartus II 64-Bit Version     ; 9.1 Build 350 03/24/2010 SP 2 SJ Full Version ;
 ; Revision Name                 ; ProjetoCPU                                    ;
 ; Top-level Entity Name         ; Hardware                                      ;
 ; Family                        ; Stratix II                                    ;
 ; Logic utilization             ; N/A                                           ;
-;     Combinational ALUTs       ; 2,296                                         ;
+;     Combinational ALUTs       ; 2,269                                         ;
 ;     Dedicated logic registers ; 1,658                                         ;
 ; Total registers               ; 1658                                          ;
 ; Total pins                    ; 438                                           ;
@@ -215,39 +215,39 @@ applicable agreement for further details.
 +-----------------------------------------------+-------+
 ; Resource                                      ; Usage ;
 +-----------------------------------------------+-------+
-; Estimated ALUTs Used                          ; 2296  ;
+; Estimated ALUTs Used                          ; 2269  ;
 ; Dedicated logic registers                     ; 1658  ;
 ;                                               ;       ;
 ; Estimated ALUTs Unavailable                   ; 217   ;
 ;                                               ;       ;
-; Total combinational functions                 ; 2296  ;
+; Total combinational functions                 ; 2269  ;
 ; Combinational ALUT usage by number of inputs  ;       ;
 ;     -- 7 input functions                      ; 20    ;
 ;     -- 6 input functions                      ; 1017  ;
-;     -- 5 input functions                      ; 446   ;
-;     -- 4 input functions                      ; 170   ;
-;     -- <=3 input functions                    ; 643   ;
+;     -- 5 input functions                      ; 475   ;
+;     -- 4 input functions                      ; 298   ;
+;     -- <=3 input functions                    ; 459   ;
 ;                                               ;       ;
 ; Combinational ALUTs by mode                   ;       ;
-;     -- normal mode                            ; 2092  ;
+;     -- normal mode                            ; 2098  ;
 ;     -- extended LUT mode                      ; 20    ;
-;     -- arithmetic mode                        ; 184   ;
+;     -- arithmetic mode                        ; 151   ;
 ;     -- shared arithmetic mode                 ; 0     ;
 ;                                               ;       ;
-; Estimated ALUT/register pairs used            ; 3470  ;
+; Estimated ALUT/register pairs used            ; 3443  ;
 ;                                               ;       ;
 ; Total registers                               ; 1658  ;
 ;     -- Dedicated logic registers              ; 1658  ;
 ;     -- I/O registers                          ; 0     ;
 ;                                               ;       ;
-; Estimated ALMs:  partially or completely used ; 1,735 ;
+; Estimated ALMs:  partially or completely used ; 1,722 ;
 ;                                               ;       ;
 ; I/O pins                                      ; 438   ;
 ; Total block memory bits                       ; 8192  ;
 ; Maximum fan-out node                          ; clk   ;
 ; Maximum fan-out                               ; 1690  ;
-; Total fan-out                                 ; 18154 ;
-; Average fan-out                               ; 4.10  ;
+; Total fan-out                                 ; 18293 ;
+; Average fan-out                               ; 4.16  ;
 +-----------------------------------------------+-------+
 
 
@@ -256,9 +256,9 @@ applicable agreement for further details.
 +-------------------------------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                      ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                 ; Library Name ;
 +-------------------------------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------+--------------+
-; |Hardware                                       ; 2296 (1)          ; 1658 (0)     ; 8192              ; 0            ; 0       ; 0         ; 0         ; 438  ; 0            ; |Hardware                                                                                                           ; work         ;
-;    |ALUSrcA:inst5|                              ; 32 (32)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|ALUSrcA:inst5                                                                                             ;              ;
-;    |ALUSrcB:inst6|                              ; 33 (33)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|ALUSrcB:inst6                                                                                             ; work         ;
+; |Hardware                                       ; 2269 (1)          ; 1658 (0)     ; 8192              ; 0            ; 0       ; 0         ; 0         ; 438  ; 0            ; |Hardware                                                                                                           ; work         ;
+;    |ALUSrcA:inst5|                              ; 32 (32)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|ALUSrcA:inst5                                                                                             ; work         ;
+;    |ALUSrcB:inst6|                              ; 32 (32)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|ALUSrcB:inst6                                                                                             ; work         ;
 ;    |Banco_reg:Reg_Control|                      ; 736 (736)         ; 1024 (1024)  ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Banco_reg:Reg_Control                                                                                     ; work         ;
 ;    |Controle:inst4|                             ; 305 (305)         ; 77 (77)      ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Controle:inst4                                                                                            ;              ;
 ;    |DataSrc:inst3|                              ; 95 (95)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|DataSrc:inst3                                                                                             ; work         ;
@@ -267,9 +267,9 @@ applicable agreement for further details.
 ;    |LS:inst14|                                  ; 57 (57)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|LS:inst14                                                                                                 ; work         ;
 ;    |Memoria:MemCtrl|                            ; 23 (23)           ; 0 (0)        ; 8192              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Memoria:MemCtrl                                                                                           ; work         ;
 ;       |lpm_ram_dq:MEM_plus_One|                 ; 0 (0)             ; 0 (0)        ; 2048              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Memoria:MemCtrl|lpm_ram_dq:MEM_plus_One                                                                   ; work         ;
-;          |altram:sram|                          ; 0 (0)             ; 0 (0)        ; 2048              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Memoria:MemCtrl|lpm_ram_dq:MEM_plus_One|altram:sram                                                       ; work         ;
+;          |altram:sram|                          ; 0 (0)             ; 0 (0)        ; 2048              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Memoria:MemCtrl|lpm_ram_dq:MEM_plus_One|altram:sram                                                       ;              ;
 ;             |altsyncram:ram_block|              ; 0 (0)             ; 0 (0)        ; 2048              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Memoria:MemCtrl|lpm_ram_dq:MEM_plus_One|altram:sram|altsyncram:ram_block                                  ;              ;
-;                |altsyncram_g2a1:auto_generated| ; 0 (0)             ; 0 (0)        ; 2048              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Memoria:MemCtrl|lpm_ram_dq:MEM_plus_One|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated   ;              ;
+;                |altsyncram_g2a1:auto_generated| ; 0 (0)             ; 0 (0)        ; 2048              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Memoria:MemCtrl|lpm_ram_dq:MEM_plus_One|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated   ; work         ;
 ;       |lpm_ram_dq:MEM_plus_Three|               ; 0 (0)             ; 0 (0)        ; 2048              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Memoria:MemCtrl|lpm_ram_dq:MEM_plus_Three                                                                 ; work         ;
 ;          |altram:sram|                          ; 0 (0)             ; 0 (0)        ; 2048              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Memoria:MemCtrl|lpm_ram_dq:MEM_plus_Three|altram:sram                                                     ; work         ;
 ;             |altsyncram:ram_block|              ; 0 (0)             ; 0 (0)        ; 2048              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Memoria:MemCtrl|lpm_ram_dq:MEM_plus_Three|altram:sram|altsyncram:ram_block                                ; work         ;
@@ -297,8 +297,8 @@ applicable agreement for further details.
 ;    |ShiftAmount:ShiftAmt|                       ; 10 (10)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|ShiftAmount:ShiftAmt                                                                                      ; work         ;
 ;    |ShiftLeft2de32pra32:inst|                   ; 0 (0)             ; 16 (16)      ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|ShiftLeft2de32pra32:inst                                                                                  ; work         ;
 ;    |ShiftSource:ShiftSrc|                       ; 5 (5)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|ShiftSource:ShiftSrc                                                                                      ; work         ;
-;    |Ula32:ALUControl|                           ; 145 (145)         ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Ula32:ALUControl                                                                                          ; work         ;
-;    |mult:inst8|                                 ; 380 (380)         ; 222 (222)    ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|mult:inst8                                                                                                ; work         ;
+;    |Ula32:ALUControl|                           ; 144 (144)         ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|Ula32:ALUControl                                                                                          ; work         ;
+;    |mult:inst8|                                 ; 355 (355)         ; 222 (222)    ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Hardware|mult:inst8                                                                                                ; work         ;
 +-------------------------------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -396,57 +396,41 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +-------------------------------------------+---------------------------------------------------+
 ; ShiftLeft2de32pra32:inst|outputSL[0..1]   ; Stuck at GND due to stuck port data_in            ;
 ; ShiftLeft2de32pra32:inst|outputSL[18..31] ; Merged with ShiftLeft2de32pra32:inst|outputSL[17] ;
-; mult:inst8|ANeg[6]                        ; Merged with mult:inst8|ANeg[27]                   ;
-; mult:inst8|AHelp[12]                      ; Merged with mult:inst8|ANeg[27]                   ;
-; mult:inst8|ANeg[22]                       ; Merged with mult:inst8|ANeg[27]                   ;
-; mult:inst8|AHelp[14]                      ; Merged with mult:inst8|ANeg[27]                   ;
-; mult:inst8|ANeg[4,21,25,30]               ; Merged with mult:inst8|ANeg[27]                   ;
-; mult:inst8|AHelp[29]                      ; Merged with mult:inst8|ANeg[27]                   ;
-; mult:inst8|ANeg[2]                        ; Merged with mult:inst8|ANeg[26]                   ;
-; mult:inst8|AHelp[20,22]                   ; Merged with mult:inst8|ANeg[26]                   ;
-; mult:inst8|ANeg[0]                        ; Merged with mult:inst8|ANeg[26]                   ;
-; mult:inst8|AHelp[24,26]                   ; Merged with mult:inst8|ANeg[26]                   ;
-; mult:inst8|ANeg[29]                       ; Merged with mult:inst8|ANeg[26]                   ;
-; mult:inst8|AHelp[28,30]                   ; Merged with mult:inst8|ANeg[26]                   ;
-; mult:inst8|ANeg[31]                       ; Merged with mult:inst8|ANeg[26]                   ;
-; mult:inst8|AHelp[32]                      ; Merged with mult:inst8|ANeg[26]                   ;
-; mult:inst8|ANeg[18,20,24]                 ; Merged with mult:inst8|ANeg[26]                   ;
-; mult:inst8|AHelp[0]                       ; Merged with mult:inst8|ANeg[26]                   ;
-; mult:inst8|ANeg[14]                       ; Merged with mult:inst8|ANeg[26]                   ;
-; mult:inst8|AHelp[2]                       ; Merged with mult:inst8|ANeg[26]                   ;
-; mult:inst8|ANeg[10]                       ; Merged with mult:inst8|ANeg[26]                   ;
-; mult:inst8|AHelp[4]                       ; Merged with mult:inst8|ANeg[26]                   ;
-; mult:inst8|ANeg[16]                       ; Merged with mult:inst8|ANeg[26]                   ;
-; mult:inst8|AHelp[6]                       ; Merged with mult:inst8|ANeg[26]                   ;
-; mult:inst8|ANeg[8]                        ; Merged with mult:inst8|ANeg[26]                   ;
-; mult:inst8|AHelp[8]                       ; Merged with mult:inst8|ANeg[26]                   ;
-; mult:inst8|ANeg[12]                       ; Merged with mult:inst8|ANeg[26]                   ;
-; mult:inst8|AHelp[10]                      ; Merged with mult:inst8|ANeg[26]                   ;
-; mult:inst8|AHelp[13,21]                   ; Merged with mult:inst8|ANeg[23]                   ;
-; mult:inst8|ANeg[15]                       ; Merged with mult:inst8|ANeg[23]                   ;
-; mult:inst8|AHelp[5]                       ; Merged with mult:inst8|ANeg[23]                   ;
-; mult:inst8|ANeg[5]                        ; Merged with mult:inst8|ANeg[23]                   ;
-; mult:inst8|AHelp[17]                      ; Merged with mult:inst8|ANeg[23]                   ;
-; mult:inst8|ANeg[1]                        ; Merged with mult:inst8|ANeg[23]                   ;
-; mult:inst8|AHelp[25]                      ; Merged with mult:inst8|ANeg[23]                   ;
-; mult:inst8|ANeg[17]                       ; Merged with mult:inst8|ANeg[23]                   ;
-; mult:inst8|AHelp[1]                       ; Merged with mult:inst8|ANeg[23]                   ;
-; mult:inst8|ANeg[9]                        ; Merged with mult:inst8|ANeg[23]                   ;
-; mult:inst8|AHelp[9]                       ; Merged with mult:inst8|ANeg[23]                   ;
-; mult:inst8|ANeg[3,11]                     ; Merged with mult:inst8|ANeg[23]                   ;
-; mult:inst8|AHelp[19,23]                   ; Merged with mult:inst8|ANeg[23]                   ;
-; mult:inst8|ANeg[28]                       ; Merged with mult:inst8|ANeg[23]                   ;
-; mult:inst8|AHelp[27,31]                   ; Merged with mult:inst8|ANeg[23]                   ;
-; mult:inst8|ANeg[19,32]                    ; Merged with mult:inst8|ANeg[23]                   ;
-; mult:inst8|AHelp[3]                       ; Merged with mult:inst8|ANeg[23]                   ;
-; mult:inst8|ANeg[13]                       ; Merged with mult:inst8|ANeg[23]                   ;
-; mult:inst8|AHelp[7]                       ; Merged with mult:inst8|ANeg[23]                   ;
-; mult:inst8|ANeg[7]                        ; Merged with mult:inst8|ANeg[23]                   ;
-; mult:inst8|AHelp[11,15..16,18]            ; Merged with mult:inst8|ANeg[23]                   ;
+; mult:inst8|AHelp[0..4]                    ; Merged with mult:inst8|ANeg[20]                   ;
+; mult:inst8|ANeg[9]                        ; Merged with mult:inst8|ANeg[20]                   ;
+; mult:inst8|AHelp[5..8]                    ; Merged with mult:inst8|ANeg[20]                   ;
+; mult:inst8|ANeg[3]                        ; Merged with mult:inst8|ANeg[20]                   ;
+; mult:inst8|AHelp[9..10]                   ; Merged with mult:inst8|ANeg[20]                   ;
+; mult:inst8|ANeg[21]                       ; Merged with mult:inst8|ANeg[20]                   ;
+; mult:inst8|AHelp[11..12]                  ; Merged with mult:inst8|ANeg[20]                   ;
+; mult:inst8|ANeg[2,8,15,22]                ; Merged with mult:inst8|ANeg[20]                   ;
+; mult:inst8|AHelp[13..14]                  ; Merged with mult:inst8|ANeg[20]                   ;
+; mult:inst8|ANeg[23]                       ; Merged with mult:inst8|ANeg[20]                   ;
+; mult:inst8|AHelp[15..16]                  ; Merged with mult:inst8|ANeg[20]                   ;
+; mult:inst8|ANeg[1,24]                     ; Merged with mult:inst8|ANeg[20]                   ;
+; mult:inst8|AHelp[17..18]                  ; Merged with mult:inst8|ANeg[20]                   ;
+; mult:inst8|ANeg[25]                       ; Merged with mult:inst8|ANeg[20]                   ;
+; mult:inst8|AHelp[19..20]                  ; Merged with mult:inst8|ANeg[20]                   ;
+; mult:inst8|ANeg[0,7,26]                   ; Merged with mult:inst8|ANeg[20]                   ;
+; mult:inst8|AHelp[21..22]                  ; Merged with mult:inst8|ANeg[20]                   ;
+; mult:inst8|ANeg[27]                       ; Merged with mult:inst8|ANeg[20]                   ;
+; mult:inst8|AHelp[23..24]                  ; Merged with mult:inst8|ANeg[20]                   ;
+; mult:inst8|ANeg[28]                       ; Merged with mult:inst8|ANeg[20]                   ;
+; mult:inst8|AHelp[25..26]                  ; Merged with mult:inst8|ANeg[20]                   ;
+; mult:inst8|ANeg[29]                       ; Merged with mult:inst8|ANeg[20]                   ;
+; mult:inst8|AHelp[27..28]                  ; Merged with mult:inst8|ANeg[20]                   ;
+; mult:inst8|ANeg[6,14,18,30]               ; Merged with mult:inst8|ANeg[20]                   ;
+; mult:inst8|AHelp[29]                      ; Merged with mult:inst8|ANeg[20]                   ;
+; mult:inst8|AHelp[31]                      ; Merged with mult:inst8|ANeg[19]                   ;
+; mult:inst8|ANeg[4,11..12,32]              ; Merged with mult:inst8|ANeg[19]                   ;
+; mult:inst8|AHelp[30]                      ; Merged with mult:inst8|ANeg[19]                   ;
+; mult:inst8|ANeg[31]                       ; Merged with mult:inst8|ANeg[19]                   ;
+; mult:inst8|AHelp[32]                      ; Merged with mult:inst8|ANeg[19]                   ;
+; mult:inst8|ANeg[5,10,13,16..17]           ; Merged with mult:inst8|ANeg[19]                   ;
 ; mult:inst8|Prod[63]                       ; Merged with mult:inst8|Prod[64]                   ;
 ; mult:inst8|resultHi[31]                   ; Merged with mult:inst8|resultHi[30]               ;
-; mult:inst8|ANeg[23,26]                    ; Merged with mult:inst8|ANeg[27]                   ;
-; mult:inst8|ANeg[27]                       ; Stuck at GND due to stuck port data_in            ;
+; mult:inst8|ANeg[19]                       ; Merged with mult:inst8|ANeg[20]                   ;
+; mult:inst8|ANeg[20]                       ; Stuck at GND due to stuck port data_in            ;
 ; mult:inst8|AHelp[33]                      ; Merged with mult:inst8|ANeg[33]                   ;
 ; Registrador:HI|Saida[30]                  ; Merged with Registrador:HI|Saida[31]              ;
 ; Controle:inst4|ExcpCtrl[1]                ; Merged with Controle:inst4|DataSrc[3]             ;
@@ -480,9 +464,9 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------+---------+
 ; Inverted Register                      ; Fan out ;
 +----------------------------------------+---------+
-; Controle:inst4|reset                   ; 1328    ;
+; Controle:inst4|reset                   ; 1459    ;
 ; Controle:inst4|contadorMult[5]         ; 3       ;
-; mult:inst8|contador[5]                 ; 3       ;
+; mult:inst8|contador[5]                 ; 4       ;
 ; Total number of inverted registers = 3 ;         ;
 +----------------------------------------+---------+
 
@@ -492,37 +476,39 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------+
-; 3:1                ; 63 bits   ; 126 ALUTs     ; 0 ALUTs              ; 126 ALUTs              ; Yes        ; |Hardware|mult:inst8|resultHi[5]          ;
+; 3:1                ; 63 bits   ; 126 ALUTs     ; 0 ALUTs              ; 126 ALUTs              ; Yes        ; |Hardware|mult:inst8|resultHi[17]         ;
 ; 8:1                ; 2 bits    ; 10 ALUTs      ; 6 ALUTs              ; 4 ALUTs                ; Yes        ; |Hardware|Registrador:PCWrite|Saida[0]    ;
-; 8:1                ; 4 bits    ; 20 ALUTs      ; 16 ALUTs             ; 4 ALUTs                ; Yes        ; |Hardware|Registrador:PCWrite|Saida[31]   ;
-; 8:1                ; 26 bits   ; 130 ALUTs     ; 52 ALUTs             ; 78 ALUTs               ; Yes        ; |Hardware|Registrador:PCWrite|Saida[17]   ;
-; 32:1               ; 32 bits   ; 672 ALUTs     ; 672 ALUTs            ; 0 ALUTs                ; Yes        ; |Hardware|Registrador:B_Control|Saida[6]  ;
-; 32:1               ; 32 bits   ; 672 ALUTs     ; 672 ALUTs            ; 0 ALUTs                ; Yes        ; |Hardware|Registrador:A_Control|Saida[17] ;
-; 15:1               ; 13 bits   ; 130 ALUTs     ; 91 ALUTs             ; 39 ALUTs               ; Yes        ; |Hardware|RegDesloc:ShiftControl|temp[20] ;
+; 8:1                ; 4 bits    ; 20 ALUTs      ; 16 ALUTs             ; 4 ALUTs                ; Yes        ; |Hardware|Registrador:PCWrite|Saida[28]   ;
+; 8:1                ; 26 bits   ; 130 ALUTs     ; 52 ALUTs             ; 78 ALUTs               ; Yes        ; |Hardware|Registrador:PCWrite|Saida[12]   ;
+; 32:1               ; 32 bits   ; 672 ALUTs     ; 672 ALUTs            ; 0 ALUTs                ; Yes        ; |Hardware|Registrador:B_Control|Saida[12] ;
+; 32:1               ; 32 bits   ; 672 ALUTs     ; 672 ALUTs            ; 0 ALUTs                ; Yes        ; |Hardware|Registrador:A_Control|Saida[8]  ;
+; 15:1               ; 13 bits   ; 130 ALUTs     ; 91 ALUTs             ; 39 ALUTs               ; Yes        ; |Hardware|RegDesloc:ShiftControl|temp[22] ;
 ; 15:1               ; 3 bits    ; 30 ALUTs      ; 21 ALUTs             ; 9 ALUTs                ; Yes        ; |Hardware|RegDesloc:ShiftControl|temp[1]  ;
-; 16:1               ; 6 bits    ; 60 ALUTs      ; 48 ALUTs             ; 12 ALUTs               ; Yes        ; |Hardware|RegDesloc:ShiftControl|temp[4]  ;
+; 16:1               ; 6 bits    ; 60 ALUTs      ; 48 ALUTs             ; 12 ALUTs               ; Yes        ; |Hardware|RegDesloc:ShiftControl|temp[11] ;
 ; 129:1              ; 12 bits   ; 1032 ALUTs    ; 552 ALUTs            ; 480 ALUTs              ; Yes        ; |Hardware|Controle:inst4|PCSource[0]      ;
-; 131:1              ; 31 bits   ; 2697 ALUTs    ; 0 ALUTs              ; 2697 ALUTs             ; Yes        ; |Hardware|Controle:inst4|contadorMult[15] ;
-; 16:1               ; 4 bits    ; 40 ALUTs      ; 32 ALUTs             ; 8 ALUTs                ; Yes        ; |Hardware|RegDesloc:ShiftControl|temp[8]  ;
-; 191:1              ; 7 bits    ; 889 ALUTs     ; 357 ALUTs            ; 532 ALUTs              ; Yes        ; |Hardware|Controle:inst4|ShiftAmt[1]      ;
-; 191:1              ; 9 bits    ; 1143 ALUTs    ; 441 ALUTs            ; 702 ALUTs              ; Yes        ; |Hardware|Controle:inst4|SSControl[1]     ;
-; 253:1              ; 4 bits    ; 672 ALUTs     ; 228 ALUTs            ; 444 ALUTs              ; Yes        ; |Hardware|Controle:inst4|DataSrc[2]       ;
+; 131:1              ; 31 bits   ; 2697 ALUTs    ; 0 ALUTs              ; 2697 ALUTs             ; Yes        ; |Hardware|Controle:inst4|contadorMult[13] ;
+; 16:1               ; 4 bits    ; 40 ALUTs      ; 32 ALUTs             ; 8 ALUTs                ; Yes        ; |Hardware|RegDesloc:ShiftControl|temp[9]  ;
+; 191:1              ; 7 bits    ; 889 ALUTs     ; 357 ALUTs            ; 532 ALUTs              ; Yes        ; |Hardware|Controle:inst4|PCSource[1]      ;
+; 191:1              ; 9 bits    ; 1143 ALUTs    ; 441 ALUTs            ; 702 ALUTs              ; Yes        ; |Hardware|Controle:inst4|IorD[0]          ;
+; 253:1              ; 4 bits    ; 672 ALUTs     ; 228 ALUTs            ; 444 ALUTs              ; Yes        ; |Hardware|Controle:inst4|ALUSrcA[0]       ;
 ; 255:1              ; 2 bits    ; 340 ALUTs     ; 110 ALUTs            ; 230 ALUTs              ; Yes        ; |Hardware|Controle:inst4|ALUControl[0]    ;
-; 3:1                ; 15 bits   ; 30 ALUTs      ; 30 ALUTs             ; 0 ALUTs                ; No         ; |Hardware|ALUSrcB:inst6|Mux14             ;
+; 3:1                ; 32 bits   ; 64 ALUTs      ; 64 ALUTs             ; 0 ALUTs                ; No         ; |Hardware|mult:inst8|Prod                 ;
+; 3:1                ; 94 bits   ; 188 ALUTs     ; 188 ALUTs            ; 0 ALUTs                ; No         ; |Hardware|mult:inst8|AHelp                ;
+; 3:1                ; 15 bits   ; 30 ALUTs      ; 30 ALUTs             ; 0 ALUTs                ; No         ; |Hardware|ALUSrcB:inst6|Mux1              ;
 ; 4:1                ; 2 bits    ; 4 ALUTs       ; 4 ALUTs              ; 0 ALUTs                ; No         ; |Hardware|ALUSrcB:inst6|Mux31             ;
-; 4:1                ; 13 bits   ; 26 ALUTs      ; 26 ALUTs             ; 0 ALUTs                ; No         ; |Hardware|ALUSrcB:inst6|Mux29             ;
-; 4:1                ; 32 bits   ; 64 ALUTs      ; 64 ALUTs             ; 0 ALUTs                ; No         ; |Hardware|ALUSrcA:inst5|Mux4              ;
-; 3:1                ; 8 bits    ; 16 ALUTs      ; 8 ALUTs              ; 8 ALUTs                ; No         ; |Hardware|LS:inst14|LSOut[9]              ;
+; 4:1                ; 13 bits   ; 26 ALUTs      ; 26 ALUTs             ; 0 ALUTs                ; No         ; |Hardware|ALUSrcB:inst6|Mux19             ;
+; 4:1                ; 32 bits   ; 64 ALUTs      ; 64 ALUTs             ; 0 ALUTs                ; No         ; |Hardware|ALUSrcA:inst5|Mux24             ;
+; 3:1                ; 8 bits    ; 16 ALUTs      ; 8 ALUTs              ; 8 ALUTs                ; No         ; |Hardware|LS:inst14|LSOut[10]             ;
 ; 4:1                ; 6 bits    ; 12 ALUTs      ; 12 ALUTs             ; 0 ALUTs                ; No         ; |Hardware|IorD:inst1|Mux27                ;
-; 4:1                ; 2 bits    ; 4 ALUTs       ; 4 ALUTs              ; 0 ALUTs                ; No         ; |Hardware|IorD:inst1|Mux31                ;
-; 3:1                ; 4 bits    ; 8 ALUTs       ; 8 ALUTs              ; 0 ALUTs                ; No         ; |Hardware|ShiftAmount:ShiftAmt|Mux4       ;
+; 4:1                ; 2 bits    ; 4 ALUTs       ; 4 ALUTs              ; 0 ALUTs                ; No         ; |Hardware|IorD:inst1|Mux30                ;
+; 3:1                ; 4 bits    ; 8 ALUTs       ; 8 ALUTs              ; 0 ALUTs                ; No         ; |Hardware|ShiftAmount:ShiftAmt|Mux2       ;
 ; 3:1                ; 8 bits    ; 16 ALUTs      ; 8 ALUTs              ; 8 ALUTs                ; No         ; |Hardware|SS:inst15|toWriteData[13]       ;
-; 4:1                ; 2 bits    ; 4 ALUTs       ; 4 ALUTs              ; 0 ALUTs                ; No         ; |Hardware|ALUSrcB:inst6|Mux16             ;
-; 8:1                ; 32 bits   ; 160 ALUTs     ; 64 ALUTs             ; 96 ALUTs               ; No         ; |Hardware|Ula32:ALUControl|Mux47          ;
-; 8:1                ; 32 bits   ; 160 ALUTs     ; 128 ALUTs            ; 32 ALUTs               ; No         ; |Hardware|Ula32:ALUControl|Mux20          ;
+; 4:1                ; 2 bits    ; 4 ALUTs       ; 4 ALUTs              ; 0 ALUTs                ; No         ; |Hardware|ALUSrcB:inst6|Mux15             ;
+; 8:1                ; 32 bits   ; 160 ALUTs     ; 64 ALUTs             ; 96 ALUTs               ; No         ; |Hardware|Ula32:ALUControl|Mux59          ;
+; 8:1                ; 32 bits   ; 160 ALUTs     ; 128 ALUTs            ; 32 ALUTs               ; No         ; |Hardware|Ula32:ALUControl|Mux4           ;
 ; 8:1                ; 5 bits    ; 25 ALUTs      ; 20 ALUTs             ; 5 ALUTs                ; No         ; |Hardware|RegDst:inst2|Mux3               ;
-; 16:1               ; 29 bits   ; 290 ALUTs     ; 232 ALUTs            ; 58 ALUTs               ; No         ; |Hardware|DataSrc:inst3|Mux13             ;
-; 12:1               ; 2 bits    ; 16 ALUTs      ; 12 ALUTs             ; 4 ALUTs                ; No         ; |Hardware|DataSrc:inst3|Mux1              ;
+; 16:1               ; 29 bits   ; 290 ALUTs     ; 232 ALUTs            ; 58 ALUTs               ; No         ; |Hardware|DataSrc:inst3|Mux15             ;
+; 12:1               ; 2 bits    ; 16 ALUTs      ; 12 ALUTs             ; 4 ALUTs                ; No         ; |Hardware|DataSrc:inst3|Mux0              ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------+
 
 
@@ -803,7 +789,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
-    Info: Processing started: Fri Oct 18 20:38:16 2019
+    Info: Processing started: Fri Oct 18 20:55:14 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ProjetoCPU -c ProjetoCPU
 Info: Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info: Found 2 design units, including 1 entities, in source file banco_reg.vhd
@@ -931,7 +917,7 @@ Info: Elaborated megafunction instantiation "Memoria:MemCtrl|LPM_RAM_DQ:MEM|altr
 Info: Found 1 design units, including 1 entities, in source file db/altsyncram_g2a1.tdf
     Info: Found entity 1: altsyncram_g2a1
 Info: Elaborating entity "altsyncram_g2a1" for hierarchy "Memoria:MemCtrl|LPM_RAM_DQ:MEM|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated"
-Critical Warning: Memory depth (256) in the design file differs from memory depth (12) in the Memory Initialization File "instrucoes.mif" -- setting initial value for remaining addresses to 0
+Critical Warning: Memory depth (256) in the design file differs from memory depth (20) in the Memory Initialization File "instrucoes.mif" -- setting initial value for remaining addresses to 0
 Info: Elaborating entity "IorD" for hierarchy "IorD:inst1"
 Info: Elaborating entity "ExcpMux" for hierarchy "ExcpMux:inst13"
 Warning (10270): Verilog HDL Case Statement warning at ExcpMux.v(4): incomplete case statement has no default case item
@@ -1007,7 +993,7 @@ Info: Elaborating entity "Instr_Reg" for hierarchy "Instr_Reg:IRWrite"
 Info: Elaborating entity "DataSrc" for hierarchy "DataSrc:inst3"
 Info: Elaborating entity "MorD" for hierarchy "MorD:MUX_HI"
 Info: Elaborating entity "mult" for hierarchy "mult:inst8"
-Info (10264): Verilog HDL Case Statement information at mult.v(22): all case item expressions in this case statement are onehot
+Info (10264): Verilog HDL Case Statement information at mult.v(27): all case item expressions in this case statement are onehot
 Info: Elaborating entity "SignExtend1to32bits" for hierarchy "SignExtend1to32bits:inst7"
 Info: Elaborating entity "RegDesloc" for hierarchy "RegDesloc:ShiftControl"
 Warning (10492): VHDL Process Statement warning at RegDesloc.vhd(1072): signal "temp" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
@@ -1119,16 +1105,16 @@ Warning: Latch SS:inst15|toWriteData[30] has unsafe behavior
 Warning: Latch SS:inst15|toWriteData[31] has unsafe behavior
     Warning: Ports D and ENA on the latch are fed by the same signal Controle:inst4|SSControl[0]
 Info: Generated suppressed messages file E:/Users/alpvj/Desktop/pasta/ProjetoHw/ProjetoCPU.map.smsg
-Info: Implemented 4202 device resources after synthesis - the final resource count might be different
+Info: Implemented 4108 device resources after synthesis - the final resource count might be different
     Info: Implemented 1 input pins
     Info: Implemented 437 output pins
-    Info: Implemented 3732 logic cells
+    Info: Implemented 3638 logic cells
     Info: Implemented 32 RAM segments
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 106 warnings
-    Info: Peak virtual memory: 4542 megabytes
-    Info: Processing ended: Fri Oct 18 20:38:36 2019
-    Info: Elapsed time: 00:00:20
-    Info: Total CPU time (on all processors): 00:00:23
+    Info: Peak virtual memory: 4548 megabytes
+    Info: Processing ended: Fri Oct 18 20:55:33 2019
+    Info: Elapsed time: 00:00:19
+    Info: Total CPU time (on all processors): 00:00:22
 
 
 +------------------------------------------+

@@ -10,9 +10,14 @@ always @ (posedge clk) begin
 	if(reset) begin
 		resultHi = 32'd0;
 		resultLo = 32'd0;
+		AHelp = 65'd0;
+		Negativ = 32'd0;
+		ANeg = 32'd0;
+		Prod = 32'd0;
 	end
 	
 	if(MDControl) begin
+		contador = 32;
 		Negativ = ~A + 1;
 		AHelp = {A[31:0], 33'd0};
 		ANeg = {Negativ[31:0], 33'd0};
