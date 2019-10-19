@@ -1506,6 +1506,62 @@ MorD:MUX_LO
 
 # end
 # entity
+mult
+# storage
+db|ProjetoCPU.(30).cnf
+db|ProjetoCPU.(30).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+mult.v
+94b770666af47ef08b4d2ba56796b57
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+mult:inst8
+}
+# macro_sequence
+
+# end
+# entity
+Hardware
+# storage
+db|ProjetoCPU.(0).cnf
+db|ProjetoCPU.(0).cnf
+# case_insensitive
+# source_file
+hardware.bdf
+3b41bf7ddab2c566918db8240a354c3
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
 Controle
 # storage
 db|ProjetoCPU.(1).cnf
@@ -1517,7 +1573,7 @@ ON
 # case_sensitive
 # source_file
 controle.sv
-8e66acf0b6cdc95e28db82cd97174f42
+59a1a1e8afc3559648c47fbb677cc6d9
 9
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -1936,6 +1992,34 @@ mflo2
 1100010
 PARAMETER_UNSIGNED_BIN
 USR
+div2
+1100011
+PARAMETER_UNSIGNED_BIN
+USR
+div3
+1100100
+PARAMETER_UNSIGNED_BIN
+USR
+DIV00
+1100101
+PARAMETER_UNSIGNED_BIN
+USR
+div02
+1100110
+PARAMETER_UNSIGNED_BIN
+USR
+div03
+1100111
+PARAMETER_UNSIGNED_BIN
+USR
+div04
+1101000
+PARAMETER_UNSIGNED_BIN
+USR
+div05
+1101001
+PARAMETER_UNSIGNED_BIN
+USR
 ADD
 100000
 PARAMETER_UNSIGNED_BIN
@@ -1998,6 +2082,10 @@ PARAMETER_UNSIGNED_BIN
 USR
 MFLO
 010010
+PARAMETER_UNSIGNED_BIN
+USR
+DIV
+011010
 PARAMETER_UNSIGNED_BIN
 USR
 ARIT
@@ -2075,26 +2163,6 @@ USR
 }
 # hierarchies {
 Controle:inst4
-}
-# macro_sequence
-
-# end
-# entity
-Hardware
-# storage
-db|ProjetoCPU.(0).cnf
-db|ProjetoCPU.(0).cnf
-# case_insensitive
-# source_file
-hardware.bdf
-4b9ce73bb44a953a1403e49288699b1
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-|
 }
 # macro_sequence
 
@@ -2194,7 +2262,7 @@ address_a0
 }
 # memory_file {
 instrucoes.mif
-4f8bacc6552ef28a56b97ccdb4becaf5
+492a215a90cadc749f76d45c15f79d45
 }
 # hierarchies {
 Memoria:MemCtrl|lpm_ram_dq:MEM|altram:sram|altsyncram:ram_block|altsyncram_g2a1:auto_generated
@@ -2206,18 +2274,18 @@ Memoria:MemCtrl|lpm_ram_dq:MEM_plus_Three|altram:sram|altsyncram:ram_block|altsy
 
 # end
 # entity
-mult
+div
 # storage
-db|ProjetoCPU.(30).cnf
-db|ProjetoCPU.(30).cnf
+db|ProjetoCPU.(31).cnf
+db|ProjetoCPU.(31).cnf
 # logic_option {
 AUTO_RAM_RECOGNITION
 ON
 }
 # case_sensitive
 # source_file
-mult.v
-94b770666af47ef08b4d2ba56796b57
+div.v
+e03b96ae8ec78426c9dae7530a028d0
 8
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -2236,7 +2304,7 @@ VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
 }
 # hierarchies {
-mult:inst8
+div:inst11
 }
 # macro_sequence
 

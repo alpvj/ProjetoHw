@@ -490,6 +490,7 @@
 		<CBX_INST_ENTRY INSTANCE_NAME="|Hardware|Banco_reg:Reg_Control|lpm_mux:Mux500" CBX_FILE_NAME="mux_kpc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|Hardware|Banco_reg:Reg_Control|lpm_mux:Mux894" CBX_FILE_NAME="mux_kpc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|Hardware|Banco_reg:Reg_Control|lpm_mux:Mux975" CBX_FILE_NAME="mux_kpc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Hardware|div:inst11|lpm_mux:Mux0" CBX_FILE_NAME="mux_kpc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|Hardware|ALUSrcB:inst6|lpm_mux:Mux31" CBX_FILE_NAME="mux_0oc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|Hardware|Banco_reg:Reg_Control|lpm_mux:Mux1041" CBX_FILE_NAME="mux_kpc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|Hardware|Banco_reg:Reg_Control|lpm_mux:Mux420" CBX_FILE_NAME="mux_kpc.tdf"/>
